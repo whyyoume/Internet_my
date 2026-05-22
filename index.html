@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="AI Model Pricing - Compare token prices, context windows, and capabilities across 300+ models from OpenAI, Anthropic, Google, Meta, Mistral and more. OpenRouter price comparison.">
+<title>AI Token Prices - Model Pricing Comparison</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #fafafa;
+  --bg-card: #ffffff;
+  --text: #1a1a2e;
+  --text-secondary: #555;
+  --text-tertiary: #999;
+  --border: #e8e8e8;
+  --accent: #2563eb;
+  --accent-light: #eff6ff;
+  --green: #059669;
+  --orange: #d97706;
+  --radius: 12px;
+  --shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+.container { max-width: 1400px; margin: 0 auto; padding: 32px 24px; }
+
+/* Header */
+.header { margin-bottom: 32px; }
+.header h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.02em; }
+.header .subtitle { font-size: 14px; color: var(--text-secondary); margin-top: 4px; }
+.header .update { font-size: 12px; color: var(--text-tertiary); margin-top: 8px; }
+.header .stats { font-size: 13px; color: var(--text-secondary); margin-top: 4px; }
+
+/* Carousel */
+.carousel-section { margin-bottom: 40px; }
+.carousel-section h2 { font-size: 16px; font-weight: 600; margin-bottom: 16px; color: var(--text-secondary); }
+.carousel {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 8px;
+  scrollbar-width: thin;
+}
+.carousel::-webkit-scrollbar { height: 6px; }
+.carousel::-webkit-scrollbar-track { background: var(--border); border-radius: 3px; }
+.carousel::-webkit-scrollbar-thumb { background: #ccc; border-radius: 3px; }
+.card {
+  flex: 0 0 300px;
+  scroll-snap-align: start;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+.card .label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-tertiary); margin-bottom: 8px; }
+.card .model-name { font-size: 17px; font-weight: 700; margin-bottom: 4px; }
+.card .model-value { font-size: 24px; font-weight: 700; color: var(--accent); }
+.card .model-value .unit { font-size: 13px; font-weight: 400; color: var(--text-secondary); }
+.card .model-provider { font-size: 12px; color: var(--text-secondary); margin-top: 2px; }
+.card .model-detail { font-size: 12px; color: var(--text-tertiary); margin-top: 8px; }
+
+/* Filters */
+.filter-bar {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 16px 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.filter-bar select, .filter-bar input {
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 13px;
+  background: white;
+  color: var(--text);
+}
+.filter-bar select:focus, .filter-bar input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-light);
+}
+.filter-bar label { font-size: 12px; color: var(--text-secondary); font-weight: 500; }
+.filter-bar .count { font-size: 13px; color: var(--text-tertiary); margin-left: auto; }
+
+/* Table */
+.table-wrapper {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.table-scroll { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; min-width: 800px; font-size: 13px; }
+thead { background: #f8f9fa; }
+th {
+  padding: 12px 14px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 11px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border-bottom: 2px solid var(--border);
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+}
+th:hover { color: var(--text); background: #f0f1f3; }
+th::after { content: ' ↕'; font-size: 10px; opacity: 0.3; }
+th.sort-asc::after { content: ' ↑'; opacity: 1; color: var(--accent); }
+th.sort-desc::after { content: ' ↓'; opacity: 1; color: var(--accent); }
+td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+tbody tr { transition: background 0.1s; }
+tbody tr:hover { background: var(--accent-light); }
+.provider-badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  background: #f0f0f0;
+  color: var(--text-secondary);
+}
+.price { font-weight: 600; color: var(--text); }
+.price-cheap { color: var(--green); }
+.price-expensive { color: #dc2626; }
+.context-bar {
+  display: inline-block;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--accent);
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.tag-multi {
+  display: inline-block;
+  padding: 1px 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 600;
+  background: #ede9fe;
+  color: #6d28d9;
+}
+
+/* Empty */
+.empty { text-align: center; padding: 60px 20px; color: var(--text-tertiary); font-size: 14px; }
+
+@media (max-width: 768px) {
+  .container { padding: 16px 12px; }
+  .header h1 { font-size: 22px; }
+  .card { flex: 0 0 260px; }
+  .filter-bar { padding: 12px; }
+  .filter-bar select, .filter-bar input { font-size: 12px; padding: 6px 10px; }
+  th, td { padding: 8px 10px; font-size: 12px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>AI Token Prices</h1>
+    <div class="subtitle">Compare token pricing, context windows &amp; capabilities across 300+ AI models</div>
+    <div class="update" id="updateInfo">Loading...</div>
+    <div class="stats" id="statsInfo"></div>
+  </div>
+
+  <div class="carousel-section">
+    <h2>🏆 场景精选 &nbsp;← 左右滑动</h2>
+    <div class="carousel" id="carousel"></div>
+  </div>
+
+  <div class="filter-bar">
+    <label>Provider</label>
+    <select id="filterProvider"><option value="">All</option></select>
+    <label>Min Context</label>
+    <select id="filterContext">
+      <option value="0">Any</option>
+      <option value="8000">8K+</option>
+      <option value="16000">16K+</option>
+      <option value="32000">32K+</option>
+      <option value="64000">64K+</option>
+      <option value="128000">128K+</option>
+      <option value="1000000">1M+</option>
+    </select>
+    <label>Sort</label>
+    <select id="filterSort">
+      <option value="avg">Avg Price ↑</option>
+      <option value="-avg">Avg Price ↓</option>
+      <option value="context">Context ↑</option>
+      <option value="-context">Context ↓</option>
+      <option value="name">Name A-Z</option>
+      <option value="created">Newest</option>
+    </select>
+    <div class="count" id="resultCount"></div>
+  </div>
+
+  <div class="table-wrapper">
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th data-sort="name">Model</th>
+            <th data-sort="provider">Provider</th>
+            <th data-sort="prompt" class="sort-asc">Input /1M</th>
+            <th data-sort="completion">Output /1M</th>
+            <th data-sort="avg">Avg /1M</th>
+            <th data-sort="context">Context</th>
+            <th data-sort="created">Released</th>
+            <th>Modality</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<script>
+let models = [];
+let sortKey = 'avg';
+let sortAsc = true;
+
+function fmtPrice(v) {
+  if (v === null || v === undefined) return '-';
+  if (v === 0) return 'Free';
+  if (v < 0.01) return '<$0.01';
+  return '$' + v.toFixed(2);
+}
+
+function fmtContext(v) {
+  if (!v || v === 0) return '-';
+  if (v >= 1000000) return (v / 1000000).toFixed(1) + 'M';
+  if (v >= 1000) return (v / 1000).toFixed(0) + 'K';
+  return v.toLocaleString();
+}
+
+function fmtDate(ts) {
+  if (!ts) return '-';
+  const d = new Date(ts * 1000);
+  const now = new Date();
+  const diff = (now - d) / (1000 * 60 * 60 * 24);
+  if (diff < 30) return Math.round(diff) + 'd ago';
+  return d.toISOString().slice(0, 10);
+}
+
+function priceClass(v) {
+  if (v === null || v === 0) return 'price-cheap';
+  if (v < 1) return 'price-cheap';
+  if (v > 10) return 'price-expensive';
+  return '';
+}
+
+function getProviderColor(provider) {
+  const colors = {
+    'openai': '#10a37f', 'anthropic': '#d97706', 'google': '#2563eb',
+    'meta-llama': '#0891b2', 'mistralai': '#7c3aed', 'cohere': '#059669',
+    'deepseek': '#dc2626', 'microsoft': '#00a4ef', 'amazon': '#ff9900',
+    'qwen': '#7c3aed', 'nousresearch': '#9333ea'
+  };
+  return colors[provider] || '#888';
+}
+
+function renderCarousel(scenarios) {
+  const el = document.getElementById('carousel');
+  const labels = {
+    'cheapest': '💰 最便宜',
+    'cheapest-coding': '⚡ 编程最省',
+    'largest-context': '📐 上下文最大',
+    'newest': '🆕 最新模型',
+    'best-value': '🏆 性价比最高',
+    'multimodal': '🖼️ 多模态最省'
+  };
+  el.innerHTML = scenarios.map(s => {
+    const m = s.model;
+    return `<div class="card">
+      <div class="label">${labels[s.key] || s.key}</div>
+      <div class="model-name">${m.name}</div>
+      <div class="model-value">${s.value} <span class="unit">${s.unit || ''}</span></div>
+      <div class="model-provider">${m.provider}</div>
+      <div class="model-detail">Context: ${fmtContext(m.contextLength)}</div>
+    </div>`;
+  }).join('');
+}
+
+function getScenarios(data) {
+  const valid = data.filter(m => m.pricing.avgPer1M > 0);
+  const cheapest = valid.reduce((a, b) => a.pricing.avgPer1M < b.pricing.avgPer1M ? a : b);
+  const largestCtx = data.reduce((a, b) => a.contextLength > b.contextLength ? a : b);
+  const newest = data.reduce((a, b) => a.created > b.created ? a : b);
+  const coding = valid.filter(m => (m.pricing.completionPer1M || 999) <= 5).reduce((a, b) => a.pricing.completionPer1M < b.pricing.completionPer1M ? a : b);
+  const multi = data.filter(m => m.multimodal && m.pricing.avgPer1M > 0).reduce((a, b) => a.pricing.avgPer1M < b.pricing.avgPer1M ? a : b);
+  const bestValue = valid.filter(m => m.contextLength > 0).reduce((a, b) => {
+    const ra = a.pricing.avgPer1M / a.contextLength;
+    const rb = b.pricing.avgPer1M / b.contextLength;
+    return ra < rb ? a : b;
+  });
+  return [
+    { key: 'cheapest', model: cheapest, value: '$' + cheapest.pricing.avgPer1M.toFixed(2), unit: '/1M tokens' },
+    { key: 'cheapest-coding', model: coding, value: '$' + coding.pricing.completionPer1M.toFixed(2), unit: '/1M output' },
+    { key: 'largest-context', model: largestCtx, value: fmtContext(largestCtx.contextLength), unit: 'tokens' },
+    { key: 'newest', model: newest, value: fmtDate(newest.created), unit: '' },
+    { key: 'best-value', model: bestValue, value: '$' + (bestValue.pricing.avgPer1M / bestValue.contextLength * 1000).toFixed(4), unit: '/1K ctx' },
+    { key: 'multimodal', model: multi, value: '$' + multi.pricing.avgPer1M.toFixed(2), unit: '/1M tokens' }
+  ];
+}
+
+function renderTable(data) {
+  const tbody = document.getElementById('tableBody');
+  if (data.length === 0) {
+    tbody.innerHTML = '<tr><td colspan="8" class="empty">No models match your filters</td></tr>';
+    return;
+  }
+  tbody.innerHTML = data.map(m => `<tr>
+    <td><strong>${m.name}</strong></td>
+    <td><span class="provider-badge" style="background:${getProviderColor(m.provider)}20;color:${getProviderColor(m.provider)}">${m.provider}</span></td>
+    <td class="price ${priceClass(m.pricing.promptPer1M)}">${fmtPrice(m.pricing.promptPer1M)}</td>
+    <td class="price ${priceClass(m.pricing.completionPer1M)}">${fmtPrice(m.pricing.completionPer1M)}</td>
+    <td class="price ${priceClass(m.pricing.avgPer1M)}">${fmtPrice(m.pricing.avgPer1M)}</td>
+    <td>${fmtContext(m.contextLength)}</td>
+    <td>${fmtDate(m.created)}</td>
+    <td>${m.multimodal ? '<span class="tag-multi">Multi</span>' : 'Text'}</td>
+  </tr>`).join('');
+}
+
+function filterAndSort() {
+  const provider = document.getElementById('filterProvider').value;
+  const minCtx = parseInt(document.getElementById('filterContext').value) || 0;
+  const sort = document.getElementById('filterSort').value;
+
+  let filtered = models.filter(m => {
+    if (provider && m.provider !== provider) return false;
+    if (m.contextLength < minCtx) return false;
+    return true;
+  });
+
+  const desc = sort.startsWith('-');
+  const key = desc ? sort.slice(1) : sort;
+  filtered.sort((a, b) => {
+    let va, vb;
+    if (key === 'name') { va = a.name.toLowerCase(); vb = b.name.toLowerCase(); return desc ? vb.localeCompare(va) : va.localeCompare(vb); }
+    if (key === 'provider') { va = a.provider; vb = b.provider; return desc ? vb.localeCompare(va) : va.localeCompare(vb); }
+    if (key === 'prompt') { va = a.pricing.promptPer1M || 0; vb = b.pricing.promptPer1M || 0; }
+    else if (key === 'completion') { va = a.pricing.completionPer1M || 0; vb = b.pricing.completionPer1M || 0; }
+    else if (key === 'avg') { va = a.pricing.avgPer1M || 0; vb = b.pricing.avgPer1M || 0; }
+    else if (key === 'context') { va = a.contextLength || 0; vb = b.contextLength || 0; }
+    else if (key === 'created') { va = a.created || 0; vb = b.created || 0; }
+    return desc ? vb - va : va - vb;
+  });
+
+  document.getElementById('resultCount').textContent = filtered.length + ' models';
+  renderTable(filtered);
+}
+
+function populateFilters(data) {
+  const providers = [...new Set(data.map(m => m.provider))].sort();
+  const sel = document.getElementById('filterProvider');
+  providers.forEach(p => {
+    const opt = document.createElement('option');
+    opt.value = p; opt.textContent = p;
+    sel.appendChild(opt);
+  });
+}
+
+document.getElementById('filterProvider').addEventListener('change', filterAndSort);
+document.getElementById('filterContext').addEventListener('change', filterAndSort);
+document.getElementById('filterSort').addEventListener('change', filterAndSort);
+
+document.querySelectorAll('th[data-sort]').forEach(th => {
+  th.addEventListener('click', () => {
+    const key = th.dataset.sort;
+    document.querySelectorAll('th').forEach(t => t.classList.remove('sort-asc', 'sort-desc'));
+    if (sortKey === key) { sortAsc = !sortAsc; }
+    else { sortKey = key; sortAsc = true; }
+    th.classList.add(sortAsc ? 'sort-asc' : 'sort-desc');
+    const sortVal = (sortAsc ? '' : '-') + sortKey;
+    document.getElementById('filterSort').value = sortVal;
+    filterAndSort();
+  });
+});
+
+fetch('data/models.json').then(r => r.json()).then(data => {
+  models = data.models;
+  document.getElementById('updateInfo').textContent = 'Updated: ' + new Date(data.updatedAt).toLocaleString();
+  document.getElementById('statsInfo').textContent = 'Tracking ' + data.total + ' models from OpenRouter';
+  renderCarousel(getScenarios(models));
+  populateFilters(models);
+  filterAndSort();
+}).catch(() => {
+  document.getElementById('updateInfo').textContent = 'Failed to load model data';
+});
+</script>
+</body>
+</html>

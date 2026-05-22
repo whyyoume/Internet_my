@@ -1,0 +1,29 @@
+name: Fetch Models Daily
+
+on:
+  schedule:
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/fetch-models.js
+      - run: |
+          if git diff --quiet data/models.json; then
+            echo "No changes"
+          else
+            git config user.name "github-actions"
+            git config user.email "github-actions@github.com"
+            git add data/models.json
+            git commit -m "auto: update model prices $(date +%Y-%m-%d)"
+            git push
+          fi
