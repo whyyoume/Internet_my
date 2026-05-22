@@ -47,34 +47,51 @@ body {
 .header-meta { display: flex; gap: 20px; margin-top: 8px; font-size: 12px; color: var(--text-tertiary); }
 .header-meta span { display: flex; align-items: center; gap: 4px; }
 
-/* Carousel */
-.carousel-section { margin-bottom: 36px; }
-.carousel-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
-.carousel-header h2 { font-size: 14px; font-weight: 600; color: var(--text-secondary); letter-spacing: 0.01em; }
-.carousel-hint { font-size: 12px; color: var(--text-tertiary); }
-.carousel {
+/* Coding Plan Comparison */
+.plan-section { margin-bottom: 36px; }
+.plan-header { margin-bottom: 14px; }
+.plan-header h2 { font-size: 14px; font-weight: 600; color: var(--text-secondary); letter-spacing: 0.01em; }
+.plan-scroll {
   display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch; padding-bottom: 6px;
+  -webkit-overflow-scrolling: touch; padding-bottom: 8px;
   scrollbar-width: thin; scrollbar-color: var(--border) transparent;
 }
-.carousel::-webkit-scrollbar { height: 4px; }
-.carousel::-webkit-scrollbar-track { background: transparent; }
-.carousel::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
-.card {
-  flex: 0 0 280px; scroll-snap-align: start;
+.plan-scroll::-webkit-scrollbar { height: 4px; }
+.plan-scroll::-webkit-scrollbar-track { background: transparent; }
+.plan-scroll::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+.plan-card {
+  flex: 0 0 300px; scroll-snap-align: start;
   background: var(--surface); border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md); padding: 18px 20px;
+  border-radius: var(--radius-md); padding: 20px;
   box-shadow: var(--shadow-sm); transition: box-shadow 0.2s var(--ease), border-color 0.2s var(--ease);
+  display: flex; flex-direction: column;
 }
-.card:hover { box-shadow: var(--shadow-md); border-color: var(--border); }
-.card-top { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
-.card-icon { font-size: 18px; line-height: 1; }
-.card-label { font-size: 11px; font-weight: 600; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.04em; }
-.card-name { font-size: 15px; font-weight: 650; margin-bottom: 2px; color: var(--text-primary); }
-.card-provider { font-size: 12px; color: var(--text-secondary); }
-.card-value { font-size: 21px; font-weight: 650; margin-top: 8px; color: var(--accent); letter-spacing: -0.01em; }
-.card-value .unit { font-size: 12px; font-weight: 400; color: var(--text-tertiary); }
-.card-detail { font-size: 12px; color: var(--text-tertiary); margin-top: 4px; }
+.plan-card:hover { box-shadow: var(--shadow-md); border-color: var(--border); }
+.plan-card-top { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.plan-card-icon { font-size: 22px; line-height: 1; }
+.plan-card-name { font-size: 16px; font-weight: 650; }
+.plan-card-price { font-size: 24px; font-weight: 700; color: var(--accent); letter-spacing: -0.01em; margin-bottom: 12px; }
+.plan-card-price .unit { font-size: 13px; font-weight: 400; color: var(--text-tertiary); }
+.plan-card-price .orig { font-size: 13px; font-weight: 400; color: var(--text-tertiary); text-decoration: line-through; margin-left: 6px; }
+.plan-card-divider { border: none; border-top: 1px solid var(--border-subtle); margin: 10px 0; }
+.plan-card-label { font-size: 11px; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 6px; }
+.plan-card-models { display: flex; flex-wrap: wrap; gap: 4px; min-height: 48px; }
+.plan-card-tag {
+  display: inline-flex; padding: 2px 8px; border-radius: 4px;
+  font-size: 10px; font-weight: 500; background: var(--accent-bg); color: var(--accent);
+}
+.plan-card-stat { font-size: 13px; color: var(--text-secondary); margin-bottom: 4px; }
+.plan-card-stat strong { color: var(--text-primary); font-weight: 600; }
+.plan-card-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 4px;
+  margin-top: auto; padding: 8px 16px; border-radius: var(--radius-sm);
+  font-size: 13px; font-weight: 600; text-decoration: none;
+  background: var(--accent-bg); color: var(--accent); border: 1px solid transparent;
+  transition: all 0.15s var(--ease);
+}
+.plan-card-btn:hover { background: var(--accent); color: white; }
+.plan-card-btn .arrow { font-size: 14px; transition: transform 0.15s var(--ease); }
+.plan-card-btn:hover .arrow { transform: translateX(3px); }
 
 /* Filters */
 .filter-bar {
@@ -157,8 +174,8 @@ tbody tr:hover td { background: var(--accent-bg); }
 @media (max-width: 900px) {
   .container { padding: 24px 16px 48px; }
   .header h1 { font-size: 20px; }
-  .card { flex: 0 0 240px; padding: 14px 16px; }
-  .card-value { font-size: 18px; }
+  .plan-card { flex: 0 0 260px; padding: 16px; }
+  .plan-card-price { font-size: 20px; }
   .filter-bar { padding: 10px 14px; gap: 8px; }
   .filter-bar select { font-size: 12px; padding: 5px 24px 5px 8px; }
   th, td { padding: 8px 12px; font-size: 12px; }
@@ -167,9 +184,9 @@ tbody tr:hover td { background: var(--accent-bg); }
   .container { padding: 16px 12px 40px; }
   .header h1 { font-size: 18px; }
   .header-meta { flex-direction: column; gap: 4px; }
-  .card { flex: 0 0 200px; padding: 12px 14px; }
-  .card-name { font-size: 13px; }
-  .card-value { font-size: 16px; }
+  .plan-card { flex: 0 0 240px; padding: 14px; }
+  .plan-card-name { font-size: 14px; }
+  .plan-card-price { font-size: 18px; }
   .filter-group { width: 100%; }
   .filter-bar select { flex: 1; }
   .filter-bar .count { margin-left: 0; width: 100%; text-align: right; }
@@ -195,12 +212,132 @@ tbody tr:hover td { background: var(--accent-bg); }
     </div>
   </div>
 
-  <div class="carousel-section">
-    <div class="carousel-header">
-      <h2>场景推荐</h2>
-      <span class="carousel-hint">← 左右滑动</span>
+  <div class="plan-section">
+    <div class="plan-header">
+      <h2>Coding Plan 对比 · 国内主流套餐 vs OpenCode Go</h2>
     </div>
-    <div class="carousel" id="carousel"></div>
+    <div class="plan-scroll" id="planScroll">
+      <div class="plan-card">
+        <div class="plan-card-top">
+          <span class="plan-card-icon">⚡</span>
+          <span class="plan-card-name">OpenCode Go</span>
+        </div>
+        <div class="plan-card-price">$10<span class="unit">/月</span><span class="orig">$5/首月</span></div>
+        <hr class="plan-card-divider">
+        <div class="plan-card-label">可用模型 (12+)</div>
+        <div class="plan-card-models">
+          <span class="plan-card-tag">GLM-5.1</span>
+          <span class="plan-card-tag">Kimi K2.6</span>
+          <span class="plan-card-tag">MiMo V2.5-Pro</span>
+          <span class="plan-card-tag">Qwen3.6 Plus</span>
+          <span class="plan-card-tag">MiniMax M2.7</span>
+          <span class="plan-card-tag">DeepSeek V4 Pro</span>
+          <span class="plan-card-tag">DeepSeek V4 Flash</span>
+          <span class="plan-card-tag">+ 更多</span>
+        </div>
+        <hr class="plan-card-divider">
+        <div class="plan-card-stat">额度: <strong>慷慨额度</strong> · 可充值</div>
+        <div class="plan-card-stat">使用: <strong>任意 Agent</strong> (OpenCode / Cursor 等)</div>
+        <a class="plan-card-btn" href="https://opencode.ai/go?ref=X1E3T8TFJZ" target="_blank" rel="noopener">试用 Go <span class="arrow">→</span></a>
+      </div>
+
+      <div class="plan-card">
+        <div class="plan-card-top">
+          <span class="plan-card-icon">🧠</span>
+          <span class="plan-card-name">智谱AI</span>
+        </div>
+        <div class="plan-card-price">¥49<span class="unit">/月</span><span class="orig">¥46.55/首月</span></div>
+        <hr class="plan-card-divider">
+        <div class="plan-card-label">可用模型</div>
+        <div class="plan-card-models">
+          <span class="plan-card-tag">GLM-5.1</span>
+          <span class="plan-card-tag">GLM-5-Turbo</span>
+        </div>
+        <hr class="plan-card-divider">
+        <div class="plan-card-stat">月请求: <strong>24,000</strong> 次</div>
+        <div class="plan-card-stat">5h限制: <strong>1,200</strong> 次</div>
+        <a class="plan-card-btn" href="https://api.dreamfree.space/c/s/cpyqzhipu" target="_blank" rel="noopener">查看 <span class="arrow">→</span></a>
+      </div>
+
+      <div class="plan-card">
+        <div class="plan-card-top">
+          <span class="plan-card-icon">💠</span>
+          <span class="plan-card-name">MiniMax</span>
+        </div>
+        <div class="plan-card-price">¥29<span class="unit">/月</span><span class="orig">¥26.1/首月</span></div>
+        <hr class="plan-card-divider">
+        <div class="plan-card-label">可用模型</div>
+        <div class="plan-card-models">
+          <span class="plan-card-tag">MiniMax-M2.7</span>
+          <span class="plan-card-tag">MiniMax-M2.5</span>
+        </div>
+        <hr class="plan-card-divider">
+        <div class="plan-card-stat">月请求: <strong>24,000</strong> 次</div>
+        <div class="plan-card-stat">5h限制: <strong>600</strong> 次</div>
+        <a class="plan-card-btn" href="https://api.dreamfree.space/c/s/cpyqminimax" target="_blank" rel="noopener">查看 <span class="arrow">→</span></a>
+      </div>
+
+      <div class="plan-card">
+        <div class="plan-card-top">
+          <span class="plan-card-icon">🔥</span>
+          <span class="plan-card-name">讯飞·星火</span>
+        </div>
+        <div class="plan-card-price">¥39<span class="unit">/月</span></div>
+        <hr class="plan-card-divider">
+        <div class="plan-card-label">可用模型</div>
+        <div class="plan-card-models">
+          <span class="plan-card-tag">GLM-5.1</span>
+          <span class="plan-card-tag">Qwen-3.5-Plus</span>
+          <span class="plan-card-tag">MiniMax-M2.5</span>
+          <span class="plan-card-tag">Kimi-K2.5</span>
+          <span class="plan-card-tag">DeepSeek-V3.2</span>
+        </div>
+        <hr class="plan-card-divider">
+        <div class="plan-card-stat">月请求: <strong>18,000</strong> 次</div>
+        <div class="plan-card-stat">5h限制: <strong>1,200</strong> 次</div>
+        <a class="plan-card-btn" href="https://api.dreamfree.space/c/s/cpyqxunfei" target="_blank" rel="noopener">查看 <span class="arrow">→</span></a>
+      </div>
+
+      <div class="plan-card">
+        <div class="plan-card-top">
+          <span class="plan-card-icon">🌙</span>
+          <span class="plan-card-name">Kimi</span>
+        </div>
+        <div class="plan-card-price">¥49<span class="unit">/月</span></div>
+        <hr class="plan-card-divider">
+        <div class="plan-card-label">可用模型</div>
+        <div class="plan-card-models">
+          <span class="plan-card-tag">Kimi-K2.6</span>
+          <span class="plan-card-tag">Kimi-K2.5</span>
+          <span class="plan-card-tag">Kimi-K2</span>
+        </div>
+        <hr class="plan-card-divider">
+        <div class="plan-card-stat">月请求: <strong>未公开</strong></div>
+        <div class="plan-card-stat">用量: <strong>Agent 4 倍速</strong></div>
+        <a class="plan-card-btn" href="https://api.dreamfree.space/c/s/cpyqkimi" target="_blank" rel="noopener">查看 <span class="arrow">→</span></a>
+      </div>
+
+      <div class="plan-card">
+        <div class="plan-card-top">
+          <span class="plan-card-icon">📦</span>
+          <span class="plan-card-name">字节·方舟</span>
+        </div>
+        <div class="plan-card-price">¥40<span class="unit">/月</span><span class="orig">¥36/首月</span></div>
+        <hr class="plan-card-divider">
+        <div class="plan-card-label">可用模型</div>
+        <div class="plan-card-models">
+          <span class="plan-card-tag">Doubao-Seed-2.0</span>
+          <span class="plan-card-tag">MiniMax-M2.7</span>
+          <span class="plan-card-tag">Kimi-K2.6</span>
+          <span class="plan-card-tag">GLM-5.1</span>
+          <span class="plan-card-tag">DeepSeek-V3.2</span>
+        </div>
+        <hr class="plan-card-divider">
+        <div class="plan-card-stat">月请求: <strong>18,000</strong> 次</div>
+        <div class="plan-card-stat">注意: <strong>已开始限购</strong></div>
+        <a class="plan-card-btn" href="https://api.dreamfree.space/c/s/cpyqfangzhou" target="_blank" rel="noopener">查看 <span class="arrow">→</span></a>
+      </div>
+    </div>
   </div>
 
   <div class="filter-bar">
@@ -305,46 +442,6 @@ const providerColors = {
 
 const getProviderColor = p => providerColors[p] || '#888';
 
-function getScenarios(data) {
-  const valid = data.filter(m => m.pricing.avgPer1M > 0);
-  if (!valid.length || !data.length) return [];
-  const cheapest = valid.reduce((a, b) => a.pricing.avgPer1M < b.pricing.avgPer1M ? a : b);
-  const coding = valid.filter(m => (m.pricing.completionPer1M || 999) <= 5).reduce((a, b) => a.pricing.completionPer1M < b.pricing.completionPer1M ? a : b, valid[0]);
-  const largestCtx = data.reduce((a, b) => (a.contextLength || 0) > (b.contextLength || 0) ? a : b);
-  const newest = data.reduce((a, b) => (a.created || 0) > (b.created || 0) ? a : b);
-  const multi = data.filter(m => m.multimodal && m.pricing.avgPer1M > 0).reduce((a, b) => a.pricing.avgPer1M < b.pricing.avgPer1M ? a : b, valid[0]);
-  const bestValue = valid.filter(m => m.contextLength > 0).reduce((a, b) => {
-    const ra = a.pricing.avgPer1M / a.contextLength;
-    const rb = b.pricing.avgPer1M / b.contextLength;
-    return ra < rb ? a : b;
-  });
-  return [
-    { icon: '💰', label: '最便宜', model: cheapest, value: '$' + cheapest.pricing.avgPer1M.toFixed(2), unit: '/百万 tokens' },
-    { icon: '⚡', label: '编程最优', model: coding, value: '$' + coding.pricing.completionPer1M.toFixed(2), unit: '/百万输出' },
-    { icon: '📐', label: '上下文最大', model: largestCtx, value: fmtContext(largestCtx.contextLength), unit: 'tokens' },
-    { icon: '🆕', label: '最新模型', model: newest, value: fmtDate(newest.created), unit: '' },
-    { icon: '🏆', label: '性价比最高', model: bestValue, value: '$' + (bestValue.pricing.avgPer1M / bestValue.contextLength * 1000).toFixed(4), unit: '/千 context' },
-    { icon: '🖼️', label: '多模态最省', model: multi, value: '$' + multi.pricing.avgPer1M.toFixed(2), unit: '/百万 tokens' },
-  ];
-}
-
-function renderCarousel(scenarios) {
-  const el = document.getElementById('carousel');
-  el.innerHTML = scenarios.map(s => {
-    const m = s.model;
-    return `<div class="card">
-      <div class="card-top">
-        <span class="card-icon">${s.icon}</span>
-        <span class="card-label">${s.label}</span>
-      </div>
-      <div class="card-name">${m.name}</div>
-      <div class="card-provider">${m.provider}</div>
-      <div class="card-value">${s.value} <span class="unit">${s.unit}</span></div>
-      <div class="card-detail">上下文：${fmtContext(m.contextLength)}</div>
-    </div>`;
-  }).join('');
-}
-
 function renderTable(data) {
   const tbody = document.getElementById('tableBody');
   if (!data.length) {
@@ -428,7 +525,6 @@ fetch('/models.json').then(r => r.json()).then(data => {
   models = data.models;
   document.getElementById('updateInfo').textContent = '更新于 ' + new Date(data.updatedAt).toLocaleString();
   document.getElementById('statsInfo').textContent = data.total + ' 个模型，' + new Set(data.models.map(m => m.provider)).size + ' 个平台';
-  renderCarousel(getScenarios(models));
   populateFilters(models);
   filterAndSort();
 }).catch(() => {
