@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const API_URL = 'https://openrouter.ai/api/v1/models';
-const OUTPUT_PATH = path.join(__dirname, '..', 'data', 'models.json');
+const OUTPUT_PATH = path.join(__dirname, '..', 'models.json');
 
 function fetch(url) {
   return new Promise((resolve, reject) => {
