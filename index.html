@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="AI Model Pricing - Compare token prices, context windows, and capabilities across 300+ models from OpenAI, Anthropic, Google, Meta, Mistral and more.">
-<title>AI Token Prices</title>
+<meta name="description" content="AI 模型价格对比工具 - 对比 300+ 模型的 Token 价格、上下文窗口和能力，覆盖 OpenAI、Anthropic、Google、Meta、Mistral 等主流平台。">
+<title>AI 模型价格对比 - Token 价格、上下文窗口对比</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -186,32 +186,32 @@ tbody tr:hover td { background: var(--accent-bg); }
 <div class="container">
   <div class="header">
     <div class="header-top">
-      <h1>AI Token Prices</h1>
-      <span class="subtitle">Compare pricing, context, and capabilities</span>
+      <h1>AI 模型比价</h1>
+      <span class="subtitle">对比 Token 价格、上下文窗口与模型能力</span>
     </div>
     <div class="header-meta">
-      <span id="updateInfo">Loading data<span class="loading-dots"></span></span>
+      <span id="updateInfo">加载中<span class="loading-dots"></span></span>
       <span id="statsInfo"></span>
     </div>
   </div>
 
   <div class="carousel-section">
     <div class="carousel-header">
-      <h2>Scenarios</h2>
-      <span class="carousel-hint">Scroll for more</span>
+      <h2>场景推荐</h2>
+      <span class="carousel-hint">← 左右滑动</span>
     </div>
     <div class="carousel" id="carousel"></div>
   </div>
 
   <div class="filter-bar">
     <div class="filter-group">
-      <label for="filterProvider">Provider</label>
-      <select id="filterProvider"><option value="">All</option></select>
+      <label for="filterProvider">平台</label>
+      <select id="filterProvider"><option value="">全部</option></select>
     </div>
     <div class="filter-group">
-      <label for="filterContext">Context</label>
+      <label for="filterContext">上下文</label>
       <select id="filterContext">
-        <option value="0">Any</option>
+        <option value="0">不限</option>
         <option value="8000">8K+</option>
         <option value="16000">16K+</option>
         <option value="32000">32K+</option>
@@ -221,19 +221,19 @@ tbody tr:hover td { background: var(--accent-bg); }
       </select>
     </div>
     <div class="filter-group">
-      <label for="filterSort">Sort</label>
+      <label for="filterSort">排序</label>
       <select id="filterSort">
-        <option value="avg">Avg price ascending</option>
-        <option value="-avg">Avg price descending</option>
-        <option value="context">Context ascending</option>
-        <option value="-context">Context descending</option>
-        <option value="name">Name A-Z</option>
-        <option value="-name">Name Z-A</option>
-        <option value="-created">Newest first</option>
-        <option value="created">Oldest first</option>
+        <option value="avg">均价 ↑</option>
+        <option value="-avg">均价 ↓</option>
+        <option value="context">上下文 ↑</option>
+        <option value="-context">上下文 ↓</option>
+        <option value="name">名称 A-Z</option>
+        <option value="-name">名称 Z-A</option>
+        <option value="-created">最新</option>
+        <option value="created">最旧</option>
       </select>
     </div>
-    <div class="count" id="resultCount"><strong>0</strong> models</div>
+    <div class="count" id="resultCount"><strong>0</strong> 个模型</div>
   </div>
 
   <div class="table-wrapper">
@@ -241,14 +241,14 @@ tbody tr:hover td { background: var(--accent-bg); }
       <table>
         <thead>
           <tr>
-            <th data-sort="name">Model <span class="sort-icon">&#8595;&#8593;</span></th>
-            <th data-sort="provider">Provider <span class="sort-icon">&#8595;&#8593;</span></th>
-            <th data-sort="prompt" class="sort-asc">Input /1M <span class="sort-icon">&#8595;&#8593;</span></th>
-            <th data-sort="completion">Output /1M <span class="sort-icon">&#8595;&#8593;</span></th>
-            <th data-sort="avg">Avg /1M <span class="sort-icon">&#8595;&#8593;</span></th>
-            <th data-sort="context">Context <span class="sort-icon">&#8595;&#8593;</span></th>
-            <th data-sort="-created">Released <span class="sort-icon">&#8595;&#8593;</span></th>
-            <th>Modality</th>
+            <th data-sort="name">模型 <span class="sort-icon">&#8595;&#8593;</span></th>
+            <th data-sort="provider">平台 <span class="sort-icon">&#8595;&#8593;</span></th>
+            <th data-sort="prompt" class="sort-asc">输入价/百万 <span class="sort-icon">&#8595;&#8593;</span></th>
+            <th data-sort="completion">输出价/百万 <span class="sort-icon">&#8595;&#8593;</span></th>
+            <th data-sort="avg">均价/百万 <span class="sort-icon">&#8595;&#8593;</span></th>
+            <th data-sort="context">上下文 <span class="sort-icon">&#8595;&#8593;</span></th>
+            <th data-sort="-created">发布 <span class="sort-icon">&#8595;&#8593;</span></th>
+            <th>模态</th>
           </tr>
         </thead>
         <tbody id="tableBody"></tbody>
@@ -268,7 +268,7 @@ let sortKey = 'prompt';
 let sortAsc = true;
 
 const fmtPrice = v => {
-  if (v === null || v === undefined) return '<span class="price-free">Free</span>';
+  if (v === null || v === undefined) return '<span class="price-free">免费</span>';
   return '$' + v.toFixed(2);
 };
 
@@ -284,8 +284,8 @@ const fmtDate = ts => {
   const d = new Date(ts * 1000);
   const now = new Date();
   const diff = Math.round((now - d) / (1000 * 60 * 60 * 24));
-  if (diff < 30) return diff + 'd ago';
-  if (diff < 365) return Math.round(diff / 30) + 'mo ago';
+  if (diff < 30) return diff + ' 天前';
+  if (diff < 365) return Math.round(diff / 30) + ' 个月前';
   return d.toISOString().slice(0, 10);
 };
 
@@ -319,12 +319,12 @@ function getScenarios(data) {
     return ra < rb ? a : b;
   });
   return [
-    { icon: '💰', label: 'Cheapest overall', model: cheapest, value: '$' + cheapest.pricing.avgPer1M.toFixed(2), unit: '/1M tokens' },
-    { icon: '⚡', label: 'Best for coding', model: coding, value: '$' + coding.pricing.completionPer1M.toFixed(2), unit: '/1M output tokens' },
-    { icon: '📐', label: 'Largest context', model: largestCtx, value: fmtContext(largestCtx.contextLength), unit: 'tokens context' },
-    { icon: '🆕', label: 'Newest model', model: newest, value: fmtDate(newest.created), unit: '' },
-    { icon: '🏆', label: 'Best value', model: bestValue, value: '$' + (bestValue.pricing.avgPer1M / bestValue.contextLength * 1000).toFixed(4), unit: '/1K context tokens' },
-    { icon: '🖼️', label: 'Cheapest multimodal', model: multi, value: '$' + multi.pricing.avgPer1M.toFixed(2), unit: '/1M tokens' },
+    { icon: '💰', label: '最便宜', model: cheapest, value: '$' + cheapest.pricing.avgPer1M.toFixed(2), unit: '/百万 tokens' },
+    { icon: '⚡', label: '编程最优', model: coding, value: '$' + coding.pricing.completionPer1M.toFixed(2), unit: '/百万输出' },
+    { icon: '📐', label: '上下文最大', model: largestCtx, value: fmtContext(largestCtx.contextLength), unit: 'tokens' },
+    { icon: '🆕', label: '最新模型', model: newest, value: fmtDate(newest.created), unit: '' },
+    { icon: '🏆', label: '性价比最高', model: bestValue, value: '$' + (bestValue.pricing.avgPer1M / bestValue.contextLength * 1000).toFixed(4), unit: '/千 context' },
+    { icon: '🖼️', label: '多模态最省', model: multi, value: '$' + multi.pricing.avgPer1M.toFixed(2), unit: '/百万 tokens' },
   ];
 }
 
@@ -340,7 +340,7 @@ function renderCarousel(scenarios) {
       <div class="card-name">${m.name}</div>
       <div class="card-provider">${m.provider}</div>
       <div class="card-value">${s.value} <span class="unit">${s.unit}</span></div>
-      <div class="card-detail">Context: ${fmtContext(m.contextLength)}</div>
+      <div class="card-detail">上下文：${fmtContext(m.contextLength)}</div>
     </div>`;
   }).join('');
 }
@@ -348,7 +348,7 @@ function renderCarousel(scenarios) {
 function renderTable(data) {
   const tbody = document.getElementById('tableBody');
   if (!data.length) {
-    tbody.innerHTML = '<tr><td colspan="8"><div class="empty-state"><div class="empty-state-icon">🔍</div><div class="empty-state-text">No models match your filters</div></div></td></tr>';
+    tbody.innerHTML = '<tr><td colspan="8"><div class="empty-state"><div class="empty-state-icon">🔍</div><div class="empty-state-text">没有符合条件的模型</div></div></td></tr>';
     return;
   }
   tbody.innerHTML = data.map(m => {
@@ -361,7 +361,7 @@ function renderTable(data) {
       <td class="price ${priceClass(m.pricing.avgPer1M)}">${fmtPrice(m.pricing.avgPer1M)}</td>
       <td>${fmtContext(m.contextLength)}</td>
       <td>${fmtDate(m.created)}</td>
-      <td>${m.multimodal ? '<span class="tag-multi">Multi</span>' : 'Text'}</td>
+      <td>${m.multimodal ? '<span class="tag-multi">多模态</span>' : '文本'}</td>
     </tr>`;
   }).join('');
 }
@@ -391,7 +391,7 @@ function filterAndSort() {
     return desc ? vb - va : va - vb;
   });
 
-  document.getElementById('resultCount').innerHTML = '<strong>' + filtered.length + '</strong> models';
+  document.getElementById('resultCount').innerHTML = '<strong>' + filtered.length + '</strong> 个模型';
   renderTable(filtered);
 }
 
@@ -426,13 +426,13 @@ document.querySelectorAll('th[data-sort]').forEach(th => {
 
 fetch('data/models.json').then(r => r.json()).then(data => {
   models = data.models;
-  document.getElementById('updateInfo').textContent = 'Updated ' + new Date(data.updatedAt).toLocaleString();
-  document.getElementById('statsInfo').textContent = data.total + ' models across ' + new Set(data.models.map(m => m.provider)).size + ' providers';
+  document.getElementById('updateInfo').textContent = '更新于 ' + new Date(data.updatedAt).toLocaleString();
+  document.getElementById('statsInfo').textContent = data.total + ' 个模型，' + new Set(data.models.map(m => m.provider)).size + ' 个平台';
   renderCarousel(getScenarios(models));
   populateFilters(models);
   filterAndSort();
 }).catch(() => {
-  document.getElementById('updateInfo').textContent = 'Failed to load model data';
+  document.getElementById('updateInfo').textContent = '数据加载失败';
 });
 </script>
 </body>
