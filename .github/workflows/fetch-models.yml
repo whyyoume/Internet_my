@@ -16,14 +16,20 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: node scripts/fetch-models.js
-      - run: |
-          if git diff --quiet data/models.json; then
+
+      - name: Fetch models from OpenRouter
+        run: node scripts/fetch-models.js
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet models.json; then
             echo "No changes"
           else
             git config user.name "github-actions"
             git config user.email "github-actions@github.com"
-            git add data/models.json
+            git add models.json
             git commit -m "auto: update model prices $(date +%Y-%m-%d)"
             git push
           fi
+
+
