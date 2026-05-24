@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-22T06:09:26.827Z",
+  "updatedAt": "2026-05-24T05:53:44.718Z",
   "total": 327,
   "models": [
     {
@@ -1032,11 +1032,11 @@
       "provider": "deepseek",
       "created": 1777000666,
       "contextLength": 1048576,
-      "maxCompletionTokens": null,
+      "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.11,
-        "completionPer1M": 0.22,
-        "avgPer1M": 0.17
+        "promptPer1M": 0.1,
+        "completionPer1M": 0.2,
+        "avgPer1M": 0.15
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1248,7 +1248,7 @@
       },
       "architecture": "text+image+file+audio+video->text",
       "multimodal": true,
-      "description": "Gemini 2.5 Pro is Google’s state-of-the-art AI model designed for advanced reasoning, coding, mathematics, and scientific tasks. It employs ���thinking” capabilities, enabling it to reason through res"
+      "description": "Gemini 2.5 Pro is Google’s state-of-the-art AI model designed for advanced reasoning, coding, mathematics, and scientific tasks. It employs “thinking” capabilities, enabling it to reason through respo"
     },
     {
       "id": "google/gemini-2.5-pro-preview",
@@ -4472,7 +4472,7 @@
       "provider": "qwen",
       "created": 1777260255,
       "contextLength": 262144,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": 262140,
       "pricing": {
         "promptPer1M": 0.15,
         "completionPer1M": 1,
@@ -4490,9 +4490,9 @@
       "contextLength": 1000000,
       "maxCompletionTokens": 65536,
       "pricing": {
-        "promptPer1M": 0.12,
-        "completionPer1M": 0.74,
-        "avgPer1M": 0.43
+        "promptPer1M": 0.19,
+        "completionPer1M": 1.13,
+        "avgPer1M": 0.66
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -4522,9 +4522,9 @@
       "contextLength": 1000000,
       "maxCompletionTokens": 65536,
       "pricing": {
-        "promptPer1M": 0.18,
-        "completionPer1M": 1.07,
-        "avgPer1M": 0.63
+        "promptPer1M": 0.33,
+        "completionPer1M": 1.95,
+        "avgPer1M": 1.14
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
