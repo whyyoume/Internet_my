@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-25T06:17:01.110Z",
-  "total": 327,
+  "updatedAt": "2026-05-26T05:58:17.852Z",
+  "total": 326,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -225,22 +225,6 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "A finetuned 7 billion parameters Code LLaMA - Instruct model to generate Solidity smart contract using 4-bit QLoRA finetuning provided by PEFT library."
-    },
-    {
-      "id": "alibaba/tongyi-deepresearch-30b-a3b",
-      "name": "Tongyi DeepResearch 30B A3B",
-      "provider": "alibaba",
-      "created": 1758210804,
-      "contextLength": 131072,
-      "maxCompletionTokens": 131072,
-      "pricing": {
-        "promptPer1M": 0.09,
-        "completionPer1M": 0.45,
-        "avgPer1M": 0.27
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "Tongyi DeepResearch is an agentic large language model developed by Tongyi Lab, with 30 billion total parameters activating only 3 billion per token. It's optimized for long-horizon, deep information-"
     },
     {
       "id": "allenai/olmo-3-32b-think",
@@ -919,12 +903,12 @@
       "name": "DeepSeek: DeepSeek V3",
       "provider": "deepseek",
       "created": 1735241320,
-      "contextLength": 163840,
-      "maxCompletionTokens": 16384,
+      "contextLength": 131072,
+      "maxCompletionTokens": 16000,
       "pricing": {
-        "promptPer1M": 0.32,
-        "completionPer1M": 0.89,
-        "avgPer1M": 0.61
+        "promptPer1M": 0.23,
+        "completionPer1M": 0.91,
+        "avgPer1M": 0.57
       },
       "architecture": "text->text",
       "multimodal": false,
