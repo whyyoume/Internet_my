@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-26T05:58:17.852Z",
+  "updatedAt": "2026-05-27T06:08:39.966Z",
   "total": 326,
   "models": [
     {
@@ -4440,9 +4440,9 @@
       "provider": "qwen",
       "created": 1777255064,
       "contextLength": 262144,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": 262140,
       "pricing": {
-        "promptPer1M": 0.3,
+        "promptPer1M": 0.29,
         "completionPer1M": 3.2,
         "avgPer1M": 1.75
       },
@@ -4458,7 +4458,7 @@
       "contextLength": 262144,
       "maxCompletionTokens": 262140,
       "pricing": {
-        "promptPer1M": 0.15,
+        "promptPer1M": 0.14,
         "completionPer1M": 1,
         "avgPer1M": 0.57
       },
@@ -4522,9 +4522,9 @@
       "contextLength": 1000000,
       "maxCompletionTokens": 65536,
       "pricing": {
-        "promptPer1M": 2.5,
-        "completionPer1M": 7.5,
-        "avgPer1M": 5
+        "promptPer1M": 1.25,
+        "completionPer1M": 3.75,
+        "avgPer1M": 2.5
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -5002,9 +5002,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.4,
-        "completionPer1M": 2,
-        "avgPer1M": 1.2
+        "promptPer1M": 0.14,
+        "completionPer1M": 0.28,
+        "avgPer1M": 0.21
       },
       "architecture": "text+image+audio+video->text",
       "multimodal": true,
@@ -5016,11 +5016,11 @@
       "provider": "xiaomi",
       "created": 1776874273,
       "contextLength": 1048576,
-      "maxCompletionTokens": 16384,
+      "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 1,
-        "completionPer1M": 3,
-        "avgPer1M": 2
+        "promptPer1M": 0.44,
+        "completionPer1M": 0.87,
+        "avgPer1M": 0.65
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -5064,11 +5064,11 @@
       "provider": "z-ai",
       "created": 1753471258,
       "contextLength": 131072,
-      "maxCompletionTokens": 98304,
+      "maxCompletionTokens": 131070,
       "pricing": {
         "promptPer1M": 0.13,
-        "completionPer1M": 0.85,
-        "avgPer1M": 0.49
+        "completionPer1M": 0.84,
+        "avgPer1M": 0.48
       },
       "architecture": "text->text",
       "multimodal": false,
