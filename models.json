@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-27T06:08:39.966Z",
+  "updatedAt": "2026-05-28T06:01:59.152Z",
   "total": 326,
   "models": [
     {
@@ -2979,22 +2979,6 @@
       "description": "The 2024-08-06 version of GPT-4o offers improved performance in structured outputs, with the ability to supply a JSON schema in the respone_format. Read more [here](https://openai.com/index/introducin"
     },
     {
-      "id": "openai/gpt-4o",
-      "name": "OpenAI: GPT-4o",
-      "provider": "openai",
-      "created": 1715558400,
-      "contextLength": 128000,
-      "maxCompletionTokens": 16384,
-      "pricing": {
-        "promptPer1M": 2.5,
-        "completionPer1M": 10,
-        "avgPer1M": 6.25
-      },
-      "architecture": "text+image+file->text",
-      "multimodal": true,
-      "description": "GPT-4o (\"o\" for \"omni\") is OpenAI's latest AI model, supporting both text and image inputs with text outputs. It maintains the intelligence level of [GPT-4 Turbo](/models/openai/gpt-4-turbo) while bei"
-    },
-    {
       "id": "openai/gpt-4o-2024-05-13",
       "name": "OpenAI: GPT-4o",
       "provider": "openai",
@@ -3005,6 +2989,22 @@
         "promptPer1M": 5,
         "completionPer1M": 15,
         "avgPer1M": 10
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-4o (\"o\" for \"omni\") is OpenAI's latest AI model, supporting both text and image inputs with text outputs. It maintains the intelligence level of [GPT-4 Turbo](/models/openai/gpt-4-turbo) while bei"
+    },
+    {
+      "id": "openai/gpt-4o",
+      "name": "OpenAI: GPT-4o",
+      "provider": "openai",
+      "created": 1715558400,
+      "contextLength": 128000,
+      "maxCompletionTokens": 16384,
+      "pricing": {
+        "promptPer1M": 2.5,
+        "completionPer1M": 10,
+        "avgPer1M": 6.25
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
@@ -3240,7 +3240,7 @@
       "provider": "openai",
       "created": 1763060302,
       "contextLength": 128000,
-      "maxCompletionTokens": 16384,
+      "maxCompletionTokens": 32000,
       "pricing": {
         "promptPer1M": 1.25,
         "completionPer1M": 10,
@@ -3288,7 +3288,7 @@
       "provider": "openai",
       "created": 1763057820,
       "contextLength": 400000,
-      "maxCompletionTokens": 128000,
+      "maxCompletionTokens": 100000,
       "pricing": {
         "promptPer1M": 0.25,
         "completionPer1M": 2,
@@ -3320,7 +3320,7 @@
       "provider": "openai",
       "created": 1765389783,
       "contextLength": 128000,
-      "maxCompletionTokens": 32000,
+      "maxCompletionTokens": 16384,
       "pricing": {
         "promptPer1M": 1.75,
         "completionPer1M": 14,
@@ -4760,11 +4760,11 @@
       "provider": "tencent",
       "created": 1776878150,
       "contextLength": 262144,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 0.07,
-        "completionPer1M": 0.26,
-        "avgPer1M": 0.16
+        "promptPer1M": 0.06,
+        "completionPer1M": 0.21,
+        "avgPer1M": 0.14
       },
       "architecture": "text->text",
       "multimodal": false,
