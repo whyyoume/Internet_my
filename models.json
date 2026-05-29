@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-28T06:01:59.152Z",
-  "total": 326,
+  "updatedAt": "2026-05-29T06:03:55.832Z",
+  "total": 327,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -499,6 +499,38 @@
       "description": "Opus 4.7 is the next generation of Anthropic's Opus family, built for long-running, asynchronous agents. Building on the coding and agentic strengths of Opus 4.6, it delivers stronger performance on.."
     },
     {
+      "id": "anthropic/claude-opus-4.8-fast",
+      "name": "Anthropic: Claude Opus 4.8",
+      "provider": "anthropic",
+      "created": 1779913703,
+      "contextLength": 1000000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 10,
+        "completionPer1M": 50,
+        "avgPer1M": 30
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "Fast-mode variant of [Opus 4.8](/anthropic/claude-opus-4.8) - identical capabilities with higher output speed at 2x pricing relative to regular Opus 4.8.\n\nLearn more in Anthropic's docs: https://platf"
+    },
+    {
+      "id": "anthropic/claude-opus-4.8",
+      "name": "Anthropic: Claude Opus 4.8",
+      "provider": "anthropic",
+      "created": 1779905091,
+      "contextLength": 1000000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 5,
+        "completionPer1M": 25,
+        "avgPer1M": 15
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "Claude Opus 4.8 is Anthropic's most capable generally available model in the Opus family. It supports text, image, and file inputs with text output, with reasoning support and a 1M-token..."
+    },
+    {
       "id": "anthropic/claude-sonnet-4",
       "name": "Anthropic: Claude Sonnet 4",
       "provider": "anthropic",
@@ -721,22 +753,6 @@
       "architecture": "text+image->text",
       "multimodal": true,
       "description": "ERNIE-4.5-VL-424B-A47B is a multimodal Mixture-of-Experts (MoE) model from Baidu’s ERNIE 4.5 series, featuring 424B total parameters with 47B active per token. It is trained jointly on text and image "
-    },
-    {
-      "id": "baidu/qianfan-ocr-fast",
-      "name": "Baidu: Qianfan-OCR-Fast",
-      "provider": "baidu",
-      "created": 1776707472,
-      "contextLength": 65536,
-      "maxCompletionTokens": 28672,
-      "pricing": {
-        "promptPer1M": 0.68,
-        "completionPer1M": 2.81,
-        "avgPer1M": 1.75
-      },
-      "architecture": "text+image->text",
-      "multimodal": true,
-      "description": "Qianfan-OCR-Fast is a domain-specific multimodal large model purpose-built for OCR. By leveraging specialized OCR training data while preserving versatile multimodal intelligence, it provides a powerf"
     },
     {
       "id": "bytedance/ui-tars-1.5-7b",
@@ -993,22 +1009,6 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "DeepSeek-V3.2-Exp is an experimental large language model released by DeepSeek as an intermediate step between V3.1 and future architectures. It introduces DeepSeek Sparse Attention (DSA), a fine-grai"
-    },
-    {
-      "id": "deepseek/deepseek-v3.2-speciale",
-      "name": "DeepSeek: DeepSeek V3.2 Speciale",
-      "provider": "deepseek",
-      "created": 1764594837,
-      "contextLength": 163840,
-      "maxCompletionTokens": 163840,
-      "pricing": {
-        "promptPer1M": 0.29,
-        "completionPer1M": 0.43,
-        "avgPer1M": 0.36
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "DeepSeek-V3.2-Speciale is a high-compute variant of DeepSeek-V3.2 optimized for maximum reasoning and agentic performance. It builds on DeepSeek Sparse Attention (DSA) for efficient long-context proce"
     },
     {
       "id": "deepseek/deepseek-v4-flash",
@@ -3043,7 +3043,7 @@
       "description": "GPT-4o Search Previewis a specialized model for web search in Chat Completions. It is trained to understand and execute web search queries."
     },
     {
-      "id": "openai/gpt-4o-mini-2024-07-18",
+      "id": "openai/gpt-4o-mini",
       "name": "OpenAI: GPT-4o-mini",
       "provider": "openai",
       "created": 1721260800,
@@ -3059,7 +3059,7 @@
       "description": "GPT-4o mini is OpenAI's newest model after [GPT-4 Omni](/models/openai/gpt-4o), supporting both text and image inputs with text outputs. As their most advanced small model, it is many multiples more a"
     },
     {
-      "id": "openai/gpt-4o-mini",
+      "id": "openai/gpt-4o-mini-2024-07-18",
       "name": "OpenAI: GPT-4o-mini",
       "provider": "openai",
       "created": 1721260800,
@@ -4723,6 +4723,22 @@
       "description": "Step 3.5 Flash is StepFun's most capable open-source foundation model. Built on a sparse Mixture of Experts (MoE) architecture, it selectively activates only 11B of its 196B parameters per token...."
     },
     {
+      "id": "stepfun/step-3.7-flash",
+      "name": "StepFun: Step 3.7 Flash",
+      "provider": "stepfun",
+      "created": 1779985069,
+      "contextLength": 256000,
+      "maxCompletionTokens": 256000,
+      "pricing": {
+        "promptPer1M": 0.2,
+        "completionPer1M": 1.15,
+        "avgPer1M": 0.68
+      },
+      "architecture": "text+image+video->text",
+      "multimodal": true,
+      "description": "Step 3.7 Flash is StepFun's latest high-efficiency multimodal Mixture-of-Experts model. It pairs a 196B-parameter language backbone with a vision encoder for native image and video understanding, acti"
+    },
+    {
       "id": "switchpoint/router",
       "name": "Switchpoint Router",
       "provider": "switchpoint",
@@ -5067,8 +5083,8 @@
       "maxCompletionTokens": 131070,
       "pricing": {
         "promptPer1M": 0.13,
-        "completionPer1M": 0.84,
-        "avgPer1M": 0.48
+        "completionPer1M": 0.85,
+        "avgPer1M": 0.49
       },
       "architecture": "text->text",
       "multimodal": false,
