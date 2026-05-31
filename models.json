@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-30T05:40:22.298Z",
-  "total": 326,
+  "updatedAt": "2026-05-31T06:08:20.382Z",
+  "total": 321,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -209,22 +209,6 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "Aion-RP-Llama-3.1-8B ranks the highest in the character evaluation portion of the RPBench-Auto benchmark, a roleplaying-specific variant of Arena-Hard-Auto, where LLMs evaluate each other’s responses."
-    },
-    {
-      "id": "alfredpros/codellama-7b-instruct-solidity",
-      "name": "AlfredPros: CodeLLaMa 7B Instruct Solidity",
-      "provider": "alfredpros",
-      "created": 1744641874,
-      "contextLength": 4096,
-      "maxCompletionTokens": 4096,
-      "pricing": {
-        "promptPer1M": 0.8,
-        "completionPer1M": 1.2,
-        "avgPer1M": 1
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "A finetuned 7 billion parameters Code LLaMA - Instruct model to generate Solidity smart contract using 4-bit QLoRA finetuning provided by PEFT library."
     },
     {
       "id": "allenai/olmo-3-32b-think",
@@ -673,38 +657,6 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "Virtuoso‑Large is Arcee's top‑tier general‑purpose LLM at 72 B parameters, tuned to tackle cross‑domain reasoning, creative writing and enterprise QA. Unlike many 70 B peers, it retains the 128 k..."
-    },
-    {
-      "id": "baidu/ernie-4.5-21b-a3b",
-      "name": "Baidu: ERNIE 4.5 21B A3B",
-      "provider": "baidu",
-      "created": 1755034167,
-      "contextLength": 131072,
-      "maxCompletionTokens": 8000,
-      "pricing": {
-        "promptPer1M": 0.07,
-        "completionPer1M": 0.28,
-        "avgPer1M": 0.18
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "A sophisticated text-based Mixture-of-Experts (MoE) model featuring 21B total parameters with 3B activated per token, delivering exceptional multimodal understanding and generation through heterogeneo"
-    },
-    {
-      "id": "baidu/ernie-4.5-21b-a3b-thinking",
-      "name": "Baidu: ERNIE 4.5 21B A3B Thinking",
-      "provider": "baidu",
-      "created": 1760048887,
-      "contextLength": 131072,
-      "maxCompletionTokens": 65536,
-      "pricing": {
-        "promptPer1M": 0.07,
-        "completionPer1M": 0.28,
-        "avgPer1M": 0.18
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "ERNIE-4.5-21B-A3B-Thinking is Baidu's upgraded lightweight MoE model, refined to boost reasoning depth and quality for top-tier performance in logical puzzles, math, science, coding, text generation, "
     },
     {
       "id": "baidu/ernie-4.5-300b-a47b",
@@ -2024,11 +1976,11 @@
       "provider": "minimax",
       "created": 1773836697,
       "contextLength": 204800,
-      "maxCompletionTokens": 131072,
+      "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 0.28,
+        "promptPer1M": 0.26,
         "completionPer1M": 1.2,
-        "avgPer1M": 0.74
+        "avgPer1M": 0.73
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -2209,22 +2161,6 @@
       "architecture": "text+image->text",
       "multimodal": true,
       "description": "A balanced model in the Ministral 3 family, Ministral 3 8B is a powerful, efficient tiny language model with vision capabilities."
-    },
-    {
-      "id": "mistralai/mistral-7b-instruct-v0.1",
-      "name": "Mistral: Mistral 7B Instruct v0.1",
-      "provider": "mistralai",
-      "created": 1695859200,
-      "contextLength": 4096,
-      "maxCompletionTokens": 2824,
-      "pricing": {
-        "promptPer1M": 0.11,
-        "completionPer1M": 0.19,
-        "avgPer1M": 0.15
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "A 7.3B parameter model that outperforms Llama 2 13B on all benchmarks, with optimizations for speed and context length."
     },
     {
       "id": "mistralai/mistral-large-2512",
@@ -3512,11 +3448,11 @@
       "provider": "openai",
       "created": 1754414229,
       "contextLength": 131072,
-      "maxCompletionTokens": 131072,
+      "maxCompletionTokens": null,
       "pricing": {
         "promptPer1M": 0.03,
         "completionPer1M": 0.14,
-        "avgPer1M": 0.09
+        "avgPer1M": 0.08
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -3944,11 +3880,11 @@
       "provider": "qwen",
       "created": 1753449557,
       "contextLength": 262144,
-      "maxCompletionTokens": null,
+      "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.15,
-        "completionPer1M": 1.5,
-        "avgPer1M": 0.82
+        "promptPer1M": 0.1,
+        "completionPer1M": 0.1,
+        "avgPer1M": 0.1
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -4376,7 +4312,7 @@
       "provider": "qwen",
       "created": 1772053822,
       "contextLength": 262144,
-      "maxCompletionTokens": null,
+      "maxCompletionTokens": 262144,
       "pricing": {
         "promptPer1M": 0.14,
         "completionPer1M": 1,
@@ -4849,22 +4785,6 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "A recreation trial of the original MythoMax-L2-B13 but with updated models. #merge"
-    },
-    {
-      "id": "upstage/solar-pro-3",
-      "name": "Upstage: Solar Pro 3",
-      "provider": "upstage",
-      "created": 1769481200,
-      "contextLength": 128000,
-      "maxCompletionTokens": null,
-      "pricing": {
-        "promptPer1M": 0.15,
-        "completionPer1M": 0.6,
-        "avgPer1M": 0.38
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "Solar Pro 3 is Upstage's powerful Mixture-of-Experts (MoE) language model. With 102B total parameters and 12B active parameters per forward pass, it delivers exceptional performance while maintaining "
     },
     {
       "id": "writer/palmyra-x5",
