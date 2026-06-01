@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-31T06:08:20.382Z",
-  "total": 321,
+  "updatedAt": "2026-06-01T06:45:19.581Z",
+  "total": 317,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -1562,9 +1562,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 65536,
       "pricing": {
-        "promptPer1M": 0.08,
-        "completionPer1M": 0.63,
-        "avgPer1M": 0.35
+        "promptPer1M": 0.3,
+        "completionPer1M": 2.5,
+        "avgPer1M": 1.4
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1987,6 +1987,22 @@
       "description": "MiniMax-M2.7 is a next-generation large language model designed for autonomous, real-world productivity and continuous improvement. Built to actively participate in its own evolution, M2.7 integrates "
     },
     {
+      "id": "minimax/minimax-m3",
+      "name": "MiniMax: MiniMax M3",
+      "provider": "minimax",
+      "created": 1780245374,
+      "contextLength": 1048576,
+      "maxCompletionTokens": 512000,
+      "pricing": {
+        "promptPer1M": 0.3,
+        "completionPer1M": 1.2,
+        "avgPer1M": 0.75
+      },
+      "architecture": "text+image+video->text",
+      "multimodal": true,
+      "description": "MiniMax-M3 is a multimodal foundation model from MiniMax. It supports text, image, and video inputs with text output, a 1M-token context window, and is suited for long-horizon agentic work, coding,..."
+    },
+    {
       "id": "minimax/minimax-01",
       "name": "MiniMax: MiniMax-01",
       "provider": "minimax",
@@ -2035,22 +2051,6 @@
       "description": "This is Mistral AI's flagship model, Mistral Large 2 (version mistral-large-2407). It's a proprietary weights-available model and excels at reasoning, code, JSON, chat, and more. Read the launch annou"
     },
     {
-      "id": "mistralai/mistral-large-2411",
-      "name": "Mistral Large 2411",
-      "provider": "mistralai",
-      "created": 1731978685,
-      "contextLength": 131072,
-      "maxCompletionTokens": null,
-      "pricing": {
-        "promptPer1M": 2,
-        "completionPer1M": 6,
-        "avgPer1M": 4
-      },
-      "architecture": "text+file->text",
-      "multimodal": true,
-      "description": "Mistral Large 2 2411 is an update of [Mistral Large 2](/mistralai/mistral-large) released together with [Pixtral Large 2411](/mistralai/pixtral-large-2411) It provides a significant upgrade on the pre"
-    },
-    {
       "id": "mistralai/codestral-2508",
       "name": "Mistral: Codestral 2508",
       "provider": "mistralai",
@@ -2081,38 +2081,6 @@
       "architecture": "text+file->text",
       "multimodal": true,
       "description": "Devstral 2 is a state-of-the-art open-source model by Mistral AI specializing in agentic coding. It is a 123B-parameter dense transformer model supporting a 256K context window. Devstral 2 supports ex"
-    },
-    {
-      "id": "mistralai/devstral-medium",
-      "name": "Mistral: Devstral Medium",
-      "provider": "mistralai",
-      "created": 1752161321,
-      "contextLength": 131072,
-      "maxCompletionTokens": null,
-      "pricing": {
-        "promptPer1M": 0.4,
-        "completionPer1M": 2,
-        "avgPer1M": 1.2
-      },
-      "architecture": "text+file->text",
-      "multimodal": true,
-      "description": "Devstral Medium is a high-performance code generation and agentic reasoning model developed jointly by Mistral AI and All Hands AI. Positioned as a step up from Devstral Small, it achieves..."
-    },
-    {
-      "id": "mistralai/devstral-small",
-      "name": "Mistral: Devstral Small 1.1",
-      "provider": "mistralai",
-      "created": 1752160751,
-      "contextLength": 131072,
-      "maxCompletionTokens": null,
-      "pricing": {
-        "promptPer1M": 0.1,
-        "completionPer1M": 0.3,
-        "avgPer1M": 0.2
-      },
-      "architecture": "text+file->text",
-      "multimodal": true,
-      "description": "Devstral Small 1.1 is a 24B parameter open-weight language model for software engineering agents, developed by Mistral AI in collaboration with All Hands AI. Finetuned from Mistral Small 3.1 and..."
     },
     {
       "id": "mistralai/ministral-14b-2512",
@@ -2321,22 +2289,6 @@
       "architecture": "text+file->text",
       "multimodal": true,
       "description": "Mistral's official instruct fine-tuned version of [Mixtral 8x22B](/models/mistralai/mixtral-8x22b). It uses 39B active parameters out of 141B, offering unparalleled cost efficiency for its size. Its s"
-    },
-    {
-      "id": "mistralai/pixtral-large-2411",
-      "name": "Mistral: Pixtral Large 2411",
-      "provider": "mistralai",
-      "created": 1731977388,
-      "contextLength": 131072,
-      "maxCompletionTokens": null,
-      "pricing": {
-        "promptPer1M": 2,
-        "completionPer1M": 6,
-        "avgPer1M": 4
-      },
-      "architecture": "text+image+file->text",
-      "multimodal": true,
-      "description": "Pixtral Large is a 124B parameter, open-weight, multimodal model built on top of [Mistral Large 2](/mistralai/mistral-large-2411). The model is able to understand documents, charts and natural images."
     },
     {
       "id": "mistralai/mistral-saba",
@@ -2755,22 +2707,6 @@
       "description": "This model is a variant of GPT-3.5 Turbo tuned for instructional prompts and omitting chat-related optimizations. Training data: up to Sep 2021."
     },
     {
-      "id": "openai/gpt-4-0314",
-      "name": "OpenAI: GPT-4",
-      "provider": "openai",
-      "created": 1685232000,
-      "contextLength": 8191,
-      "maxCompletionTokens": 4096,
-      "pricing": {
-        "promptPer1M": 30,
-        "completionPer1M": 60,
-        "avgPer1M": 45
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "GPT-4-0314 is the first version of GPT-4 released, with a context length of 8,192 tokens, and was supported until June 14. Training data: up to Sep 2021."
-    },
-    {
       "id": "openai/gpt-4",
       "name": "OpenAI: GPT-4",
       "provider": "openai",
@@ -2785,6 +2721,22 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "OpenAI's flagship model, GPT-4 is a large-scale multimodal language model capable of solving difficult problems with greater accuracy than previous models due to its broader general knowledge and adva"
+    },
+    {
+      "id": "openai/gpt-4-0314",
+      "name": "OpenAI: GPT-4",
+      "provider": "openai",
+      "created": 1685232000,
+      "contextLength": 8191,
+      "maxCompletionTokens": 4096,
+      "pricing": {
+        "promptPer1M": 30,
+        "completionPer1M": 60,
+        "avgPer1M": 45
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "GPT-4-0314 is the first version of GPT-4 released, with a context length of 8,192 tokens, and was supported until June 14. Training data: up to Sep 2021."
     },
     {
       "id": "openai/gpt-4-turbo",
@@ -2963,7 +2915,7 @@
       "description": "GPT-4o Search Previewis a specialized model for web search in Chat Completions. It is trained to understand and execute web search queries."
     },
     {
-      "id": "openai/gpt-4o-mini-2024-07-18",
+      "id": "openai/gpt-4o-mini",
       "name": "OpenAI: GPT-4o-mini",
       "provider": "openai",
       "created": 1721260800,
@@ -2979,7 +2931,7 @@
       "description": "GPT-4o mini is OpenAI's newest model after [GPT-4 Omni](/models/openai/gpt-4o), supporting both text and image inputs with text outputs. As their most advanced small model, it is many multiples more a"
     },
     {
-      "id": "openai/gpt-4o-mini",
+      "id": "openai/gpt-4o-mini-2024-07-18",
       "name": "OpenAI: GPT-4o-mini",
       "provider": "openai",
       "created": 1721260800,
@@ -4787,6 +4739,22 @@
       "description": "A recreation trial of the original MythoMax-L2-B13 but with updated models. #merge"
     },
     {
+      "id": "upstage/solar-pro-3",
+      "name": "Upstage: Solar Pro 3",
+      "provider": "upstage",
+      "created": 1769481200,
+      "contextLength": 128000,
+      "maxCompletionTokens": null,
+      "pricing": {
+        "promptPer1M": 0.15,
+        "completionPer1M": 0.6,
+        "avgPer1M": 0.38
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "Solar Pro 3 is Upstage's powerful Mixture-of-Experts (MoE) language model. With 102B total parameters and 12B active parameters per forward pass, it delivers exceptional performance while maintaining "
+    },
+    {
       "id": "writer/palmyra-x5",
       "name": "Writer: Palmyra X5",
       "provider": "writer",
@@ -4881,38 +4849,6 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "MiMo-V2-Flash is an open-source foundation language model developed by Xiaomi. It is a Mixture-of-Experts model with 309B total parameters and 15B active parameters, adopting hybrid attention architec"
-    },
-    {
-      "id": "xiaomi/mimo-v2-omni",
-      "name": "Xiaomi: MiMo-V2-Omni",
-      "provider": "xiaomi",
-      "created": 1773863703,
-      "contextLength": 262144,
-      "maxCompletionTokens": 65536,
-      "pricing": {
-        "promptPer1M": 0.4,
-        "completionPer1M": 2,
-        "avgPer1M": 1.2
-      },
-      "architecture": "text+image+audio+video->text",
-      "multimodal": true,
-      "description": "MiMo-V2-Omni is a frontier omni-modal model that natively processes image, video, and audio inputs within a unified architecture. It combines strong multimodal perception with agentic capability - vis"
-    },
-    {
-      "id": "xiaomi/mimo-v2-pro",
-      "name": "Xiaomi: MiMo-V2-Pro",
-      "provider": "xiaomi",
-      "created": 1773863643,
-      "contextLength": 1048576,
-      "maxCompletionTokens": 131072,
-      "pricing": {
-        "promptPer1M": 1,
-        "completionPer1M": 3,
-        "avgPer1M": 2
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "MiMo-V2-Pro is Xiaomi's flagship foundation model, featuring over 1T total parameters and a 1M context length, deeply optimized for agentic scenarios. It is highly adaptable to general agent framework"
     },
     {
       "id": "xiaomi/mimo-v2.5",
