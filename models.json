@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-01T06:45:19.581Z",
-  "total": 317,
+  "updatedAt": "2026-06-02T06:27:13.514Z",
+  "total": 315,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -874,9 +874,9 @@
       "contextLength": 131072,
       "maxCompletionTokens": 16000,
       "pricing": {
-        "promptPer1M": 0.23,
-        "completionPer1M": 0.91,
-        "avgPer1M": 0.57
+        "promptPer1M": 0.2,
+        "completionPer1M": 0.8,
+        "avgPer1M": 0.5
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -936,11 +936,11 @@
       "provider": "deepseek",
       "created": 1764594642,
       "contextLength": 131072,
-      "maxCompletionTokens": 65536,
+      "maxCompletionTokens": 64000,
       "pricing": {
-        "promptPer1M": 0.25,
-        "completionPer1M": 0.38,
-        "avgPer1M": 0.32
+        "promptPer1M": 0.23,
+        "completionPer1M": 0.34,
+        "avgPer1M": 0.29
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1073,38 +1073,6 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "Rnj-1 is an 8B-parameter, dense, open-weight model family developed by Essential AI and trained from scratch with a focus on programming, math, and scientific reasoning. The model demonstrates strong "
-    },
-    {
-      "id": "google/gemini-2.0-flash-001",
-      "name": "Google: Gemini 2.0 Flash",
-      "provider": "google",
-      "created": 1738769413,
-      "contextLength": 1048576,
-      "maxCompletionTokens": 8192,
-      "pricing": {
-        "promptPer1M": 0.1,
-        "completionPer1M": 0.4,
-        "avgPer1M": 0.25
-      },
-      "architecture": "text+image+file+audio+video->text",
-      "multimodal": true,
-      "description": "Gemini Flash 2.0 offers a significantly faster time to first token (TTFT) compared to [Gemini Flash 1.5](/google/gemini-flash-1.5), while maintaining quality on par with larger models like [Gemini Pro"
-    },
-    {
-      "id": "google/gemini-2.0-flash-lite-001",
-      "name": "Google: Gemini 2.0 Flash Lite",
-      "provider": "google",
-      "created": 1740506212,
-      "contextLength": 1048576,
-      "maxCompletionTokens": 8192,
-      "pricing": {
-        "promptPer1M": 0.08,
-        "completionPer1M": 0.3,
-        "avgPer1M": 0.19
-      },
-      "architecture": "text+image+file+audio+video->text",
-      "multimodal": true,
-      "description": "Gemini 2.0 Flash Lite offers a significantly faster time to first token (TTFT) compared to [Gemini Flash 1.5](/google/gemini-flash-1.5), while maintaining quality on par with larger models like [Gemin"
     },
     {
       "id": "google/gemini-2.5-flash",
@@ -1976,11 +1944,11 @@
       "provider": "minimax",
       "created": 1773836697,
       "contextLength": 204800,
-      "maxCompletionTokens": null,
+      "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.26,
+        "promptPer1M": 0.28,
         "completionPer1M": 1.2,
-        "avgPer1M": 0.73
+        "avgPer1M": 0.74
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -3863,12 +3831,12 @@
       "name": "Qwen: Qwen3 30B A3B Instruct 2507",
       "provider": "qwen",
       "created": 1753806965,
-      "contextLength": 262144,
-      "maxCompletionTokens": 262144,
+      "contextLength": 131072,
+      "maxCompletionTokens": 32000,
       "pricing": {
-        "promptPer1M": 0.09,
-        "completionPer1M": 0.3,
-        "avgPer1M": 0.2
+        "promptPer1M": 0.04,
+        "completionPer1M": 0.17,
+        "avgPer1M": 0.11
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -5016,11 +4984,11 @@
       "provider": "z-ai",
       "created": 1770829182,
       "contextLength": 202752,
-      "maxCompletionTokens": null,
+      "maxCompletionTokens": 16384,
       "pricing": {
         "promptPer1M": 0.6,
-        "completionPer1M": 1.92,
-        "avgPer1M": 1.26
+        "completionPer1M": 2.08,
+        "avgPer1M": 1.34
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -5048,7 +5016,7 @@
       "provider": "z-ai",
       "created": 1775578025,
       "contextLength": 202752,
-      "maxCompletionTokens": null,
+      "maxCompletionTokens": 131072,
       "pricing": {
         "promptPer1M": 0.98,
         "completionPer1M": 3.08,
