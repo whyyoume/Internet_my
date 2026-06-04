@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-03T06:43:49.526Z",
+  "updatedAt": "2026-06-04T06:27:45.849Z",
   "total": 314,
   "models": [
     {
@@ -2659,22 +2659,6 @@
       "description": "This model is a variant of GPT-3.5 Turbo tuned for instructional prompts and omitting chat-related optimizations. Training data: up to Sep 2021."
     },
     {
-      "id": "openai/gpt-4-0314",
-      "name": "OpenAI: GPT-4",
-      "provider": "openai",
-      "created": 1685232000,
-      "contextLength": 8191,
-      "maxCompletionTokens": 4096,
-      "pricing": {
-        "promptPer1M": 30,
-        "completionPer1M": 60,
-        "avgPer1M": 45
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "GPT-4-0314 is the first version of GPT-4 released, with a context length of 8,192 tokens, and was supported until June 14. Training data: up to Sep 2021."
-    },
-    {
       "id": "openai/gpt-4",
       "name": "OpenAI: GPT-4",
       "provider": "openai",
@@ -4355,6 +4339,22 @@
       "description": "Qwen3.7-Max is the flagship model in Alibaba's Qwen3.7 series. It supports text input and output and is designed for agent-centric workloads, with particular strengths in coding, office and productivi"
     },
     {
+      "id": "qwen/qwen3.7-plus",
+      "name": "Qwen: Qwen3.7 Plus",
+      "provider": "qwen",
+      "created": 1780491783,
+      "contextLength": 1000000,
+      "maxCompletionTokens": 65536,
+      "pricing": {
+        "promptPer1M": 0.4,
+        "completionPer1M": 1.6,
+        "avgPer1M": 1
+      },
+      "architecture": "text+image->text",
+      "multimodal": true,
+      "description": "Qwen3.7-Plus is a cost-effective model in Alibaba's Qwen3.7 series. It supports text and image input with text output, building on the series' text capabilities with a comprehensive upgrade to its..."
+    },
+    {
       "id": "qwen/qwen-2.5-72b-instruct",
       "name": "Qwen2.5 72B Instruct",
       "provider": "qwen",
@@ -4968,11 +4968,11 @@
       "provider": "z-ai",
       "created": 1770829182,
       "contextLength": 202752,
-      "maxCompletionTokens": 16384,
+      "maxCompletionTokens": null,
       "pricing": {
         "promptPer1M": 0.6,
-        "completionPer1M": 2.08,
-        "avgPer1M": 1.34
+        "completionPer1M": 1.92,
+        "avgPer1M": 1.26
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -5000,7 +5000,7 @@
       "provider": "z-ai",
       "created": 1775578025,
       "contextLength": 202752,
-      "maxCompletionTokens": 131072,
+      "maxCompletionTokens": null,
       "pricing": {
         "promptPer1M": 0.98,
         "completionPer1M": 3.08,
