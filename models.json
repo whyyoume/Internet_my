@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-04T06:27:45.849Z",
-  "total": 314,
+  "updatedAt": "2026-06-05T06:12:34.254Z",
+  "total": 315,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -1675,7 +1675,7 @@
       "maxCompletionTokens": 16384,
       "pricing": {
         "promptPer1M": 0.02,
-        "completionPer1M": 0.05,
+        "completionPer1M": 0.03,
         "avgPer1M": 0.03
       },
       "architecture": "text->text",
@@ -2529,6 +2529,22 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "NVIDIA Nemotron 3 Super is a 120B-parameter open hybrid MoE model, activating just 12B parameters for maximum compute efficiency and accuracy in complex multi-agent applications. Built on a hybrid Mam"
+    },
+    {
+      "id": "nvidia/nemotron-3-ultra-550b-a55b",
+      "name": "NVIDIA: Nemotron 3 Ultra",
+      "provider": "nvidia",
+      "created": 1780551208,
+      "contextLength": 1000000,
+      "maxCompletionTokens": 16384,
+      "pricing": {
+        "promptPer1M": 0.5,
+        "completionPer1M": 2.5,
+        "avgPer1M": 1.5
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "NVIDIA Nemotron 3 Ultra is an open frontier-reasoning and orchestration model from NVIDIA, with 55B active parameters out of 550B total (MoE). Built on a hybrid Transformer-Mamba mixture-of-experts ar"
     },
     {
       "id": "nvidia/nemotron-nano-9b-v2",
@@ -3802,9 +3818,9 @@
       "contextLength": 131072,
       "maxCompletionTokens": 32000,
       "pricing": {
-        "promptPer1M": 0.04,
-        "completionPer1M": 0.17,
-        "avgPer1M": 0.11
+        "promptPer1M": 0.05,
+        "completionPer1M": 0.19,
+        "avgPer1M": 0.12
       },
       "architecture": "text->text",
       "multimodal": false,
