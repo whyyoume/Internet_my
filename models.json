@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-06T05:45:56.418Z",
-  "total": 313,
+  "updatedAt": "2026-06-07T06:13:28.873Z",
+  "total": 310,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -595,22 +595,6 @@
       "description": "Maestro Reasoning is Arcee's flagship analysis model: a 32 B‑parameter derivative of Qwen 2.5‑32 B tuned with DPO and chain‑of‑thought RL for step‑by‑step logic. Compared to the earlier 7 B..."
     },
     {
-      "id": "arcee-ai/spotlight",
-      "name": "Arcee AI: Spotlight",
-      "provider": "arcee-ai",
-      "created": 1746481552,
-      "contextLength": 131072,
-      "maxCompletionTokens": 65537,
-      "pricing": {
-        "promptPer1M": 0.18,
-        "completionPer1M": 0.18,
-        "avgPer1M": 0.18
-      },
-      "architecture": "text+image->text",
-      "multimodal": true,
-      "description": "Spotlight is a 7‑billion‑parameter vision‑language model derived from Qwen 2.5‑VL and fine‑tuned by Arcee AI for tight image‑text grounding tasks. It offers a 32 k‑token context window, enabling rich "
-    },
-    {
       "id": "arcee-ai/trinity-large-thinking",
       "name": "Arcee AI: Trinity Large Thinking",
       "provider": "arcee-ai",
@@ -657,22 +641,6 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "Virtuoso‑Large is Arcee's top‑tier general‑purpose LLM at 72 B parameters, tuned to tackle cross‑domain reasoning, creative writing and enterprise QA. Unlike many 70 B peers, it retains the 128 k..."
-    },
-    {
-      "id": "baidu/ernie-4.5-vl-28b-a3b",
-      "name": "Baidu: ERNIE 4.5 VL 28B A3B",
-      "provider": "baidu",
-      "created": 1755032836,
-      "contextLength": 131072,
-      "maxCompletionTokens": 8000,
-      "pricing": {
-        "promptPer1M": 0.14,
-        "completionPer1M": 0.56,
-        "avgPer1M": 0.35
-      },
-      "architecture": "text+image->text",
-      "multimodal": true,
-      "description": "A powerful multimodal Mixture-of-Experts chat model featuring 28B total parameters with 3B activated per token, delivering exceptional text and vision understanding through its innovative heterogeneou"
     },
     {
       "id": "baidu/ernie-4.5-vl-424b-a47b",
@@ -1640,11 +1608,11 @@
       "provider": "meta-llama",
       "created": 1713398400,
       "contextLength": 8192,
-      "maxCompletionTokens": 8192,
+      "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 0.04,
-        "completionPer1M": 0.04,
-        "avgPer1M": 0.04
+        "promptPer1M": 0.14,
+        "completionPer1M": 0.14,
+        "avgPer1M": 0.14
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -2689,22 +2657,6 @@
       "architecture": "text+image->text",
       "multimodal": true,
       "description": "The latest GPT-4 Turbo model with vision capabilities. Vision requests can now use JSON mode and function calling.\n\nTraining data: up to December 2023."
-    },
-    {
-      "id": "openai/gpt-4-1106-preview",
-      "name": "OpenAI: GPT-4 Turbo",
-      "provider": "openai",
-      "created": 1699228800,
-      "contextLength": 128000,
-      "maxCompletionTokens": 4096,
-      "pricing": {
-        "promptPer1M": 10,
-        "completionPer1M": 30,
-        "avgPer1M": 20
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "The latest GPT-4 Turbo model with vision capabilities. Vision requests can now use JSON mode and function calling.\n\nTraining data: up to April 2023."
     },
     {
       "id": "openai/gpt-4-turbo-preview",
@@ -4248,11 +4200,11 @@
       "provider": "qwen",
       "created": 1777255064,
       "contextLength": 262144,
-      "maxCompletionTokens": 262140,
+      "maxCompletionTokens": 131072,
       "pricing": {
         "promptPer1M": 0.29,
-        "completionPer1M": 3.2,
-        "avgPer1M": 1.75
+        "completionPer1M": 2.4,
+        "avgPer1M": 1.34
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
