@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-07T06:13:28.873Z",
+  "updatedAt": "2026-06-08T06:27:40.886Z",
   "total": 310,
   "models": [
     {
@@ -88,10 +88,10 @@
       "provider": "~moonshotai",
       "created": 1777318428,
       "contextLength": 262144,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": 262142,
       "pricing": {
         "promptPer1M": 0.68,
-        "completionPer1M": 3.42,
+        "completionPer1M": 3.41,
         "avgPer1M": 2.05
       },
       "architecture": "text+image->text",
@@ -1242,9 +1242,9 @@
       "contextLength": 131072,
       "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.04,
-        "completionPer1M": 0.13,
-        "avgPer1M": 0.09
+        "promptPer1M": 0.05,
+        "completionPer1M": 0.15,
+        "avgPer1M": 0.1
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -1274,9 +1274,9 @@
       "contextLength": 131072,
       "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.04,
-        "completionPer1M": 0.08,
-        "avgPer1M": 0.06
+        "promptPer1M": 0.05,
+        "completionPer1M": 0.1,
+        "avgPer1M": 0.08
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -1658,9 +1658,9 @@
       "contextLength": 131072,
       "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.25,
-        "completionPer1M": 0.25,
-        "avgPer1M": 0.25
+        "promptPer1M": 0.35,
+        "completionPer1M": 0.35,
+        "avgPer1M": 0.35
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -1738,9 +1738,9 @@
       "contextLength": 10000000,
       "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.08,
+        "promptPer1M": 0.1,
         "completionPer1M": 0.3,
-        "avgPer1M": 0.19
+        "avgPer1M": 0.2
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -2312,10 +2312,10 @@
       "provider": "moonshotai",
       "created": 1776699402,
       "contextLength": 262144,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": 262142,
       "pricing": {
         "promptPer1M": 0.68,
-        "completionPer1M": 3.42,
+        "completionPer1M": 3.41,
         "avgPer1M": 2.05
       },
       "architecture": "text+image->text",
@@ -2394,9 +2394,9 @@
       "contextLength": 131072,
       "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.3,
-        "completionPer1M": 0.3,
-        "avgPer1M": 0.3
+        "promptPer1M": 0.7,
+        "completionPer1M": 0.7,
+        "avgPer1M": 0.7
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -2442,9 +2442,9 @@
       "contextLength": 131072,
       "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.1,
+        "promptPer1M": 0.4,
         "completionPer1M": 0.4,
-        "avgPer1M": 0.25
+        "avgPer1M": 0.4
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -3706,9 +3706,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.07,
+        "promptPer1M": 0.09,
         "completionPer1M": 0.1,
-        "avgPer1M": 0.09
+        "avgPer1M": 0.1
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -3738,9 +3738,9 @@
       "contextLength": 131072,
       "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.09,
-        "completionPer1M": 0.45,
-        "avgPer1M": 0.27
+        "promptPer1M": 0.12,
+        "completionPer1M": 0.5,
+        "avgPer1M": 0.31
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -4168,11 +4168,11 @@
       "provider": "qwen",
       "created": 1773152396,
       "contextLength": 262144,
-      "maxCompletionTokens": 81920,
+      "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.04,
+        "promptPer1M": 0.1,
         "completionPer1M": 0.15,
-        "avgPer1M": 0.1
+        "avgPer1M": 0.13
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
