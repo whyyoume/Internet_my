@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-08T06:27:40.886Z",
-  "total": 310,
+  "updatedAt": "2026-06-09T06:00:30.433Z",
+  "total": 309,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -2353,22 +2353,6 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "Morph's high-accuracy apply model for complex code edits. ~4,500 tokens/sec with 98% accuracy for precise code transformations. The model requires the prompt to be in the following format: <instructio"
-    },
-    {
-      "id": "nex-agi/deepseek-v3.1-nex-n1",
-      "name": "Nex AGI: DeepSeek V3.1 Nex N1",
-      "provider": "nex-agi",
-      "created": 1765204393,
-      "contextLength": 131072,
-      "maxCompletionTokens": 163840,
-      "pricing": {
-        "promptPer1M": 0.14,
-        "completionPer1M": 0.5,
-        "avgPer1M": 0.32
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "DeepSeek V3.1 Nex-N1 is the flagship release of the Nex-N1 series — a post-trained model designed to highlight agent autonomy, tool use, and real-world productivity. Nex-N1 demonstrates competitive pe"
     },
     {
       "id": "nousresearch/hermes-3-llama-3.1-405b",
