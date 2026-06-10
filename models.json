@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-09T06:00:30.433Z",
-  "total": 309,
+  "updatedAt": "2026-06-10T06:13:27.044Z",
+  "total": 308,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -33,6 +33,22 @@
       "architecture": "text+image+file->text",
       "multimodal": true,
       "description": "This model always redirects to the latest model in the Anthropic Claude Sonnet family."
+    },
+    {
+      "id": "~anthropic/claude-fable-latest",
+      "name": "Anthropic: Claude Fable Latest",
+      "provider": "~anthropic",
+      "created": 1781029944,
+      "contextLength": 1000000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 10,
+        "completionPer1M": 50,
+        "avgPer1M": 30
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "This model always redirects to the latest model in the Claude Fable family."
     },
     {
       "id": "~anthropic/claude-opus-latest",
@@ -355,6 +371,22 @@
       "description": "Claude 3.5 Haiku features offers enhanced capabilities in speed, coding accuracy, and tool use. Engineered to excel in real-time applications, it delivers quick response times that are essential for d"
     },
     {
+      "id": "anthropic/claude-fable-5",
+      "name": "Anthropic: Claude Fable 5",
+      "provider": "anthropic",
+      "created": 1781007515,
+      "contextLength": 1000000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 10,
+        "completionPer1M": 50,
+        "avgPer1M": 30
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "Claude Fable 5 is a Mythos-class model from Anthropic, built for autonomous knowledge work and coding. It supports text, image, and file inputs with text output, with reasoning support and..."
+    },
+    {
       "id": "anthropic/claude-haiku-4.5",
       "name": "Anthropic: Claude Haiku 4.5",
       "provider": "anthropic",
@@ -577,22 +609,6 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "Coder‑Large is a 32 B‑parameter offspring of Qwen 2.5‑Instruct that has been further trained on permissively‑licensed GitHub, CodeSearchNet and synthetic bug‑fix corpora. It supports a 32k context win"
-    },
-    {
-      "id": "arcee-ai/maestro-reasoning",
-      "name": "Arcee AI: Maestro Reasoning",
-      "provider": "arcee-ai",
-      "created": 1746481269,
-      "contextLength": 131072,
-      "maxCompletionTokens": 32000,
-      "pricing": {
-        "promptPer1M": 0.9,
-        "completionPer1M": 3.3,
-        "avgPer1M": 2.1
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "Maestro Reasoning is Arcee's flagship analysis model: a 32 B‑parameter derivative of Qwen 2.5‑32 B tuned with DPO and chain‑of‑thought RL for step‑by‑step logic. Compared to the earlier 7 B..."
     },
     {
       "id": "arcee-ai/trinity-large-thinking",
@@ -1883,8 +1899,8 @@
       "maxCompletionTokens": 196608,
       "pricing": {
         "promptPer1M": 0.15,
-        "completionPer1M": 1.15,
-        "avgPer1M": 0.65
+        "completionPer1M": 0.9,
+        "avgPer1M": 0.52
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1896,11 +1912,11 @@
       "provider": "minimax",
       "created": 1773836697,
       "contextLength": 204800,
-      "maxCompletionTokens": 196608,
+      "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.28,
-        "completionPer1M": 1.2,
-        "avgPer1M": 0.74
+        "promptPer1M": 0.27,
+        "completionPer1M": 1.08,
+        "avgPer1M": 0.68
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -2296,11 +2312,11 @@
       "provider": "moonshotai",
       "created": 1769487076,
       "contextLength": 262144,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 0.4,
-        "completionPer1M": 1.9,
-        "avgPer1M": 1.15
+        "promptPer1M": 0.35,
+        "completionPer1M": 1.89,
+        "avgPer1M": 1.12
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -4755,22 +4771,6 @@
       "description": "MiMo-V2.5-Pro is Xiaomi’s flagship model, delivering strong performance in general agentic capabilities, complex software engineering, and long-horizon tasks, with top rankings on benchmarks such as C"
     },
     {
-      "id": "z-ai/glm-4-32b",
-      "name": "Z.ai: GLM 4 32B",
-      "provider": "z-ai",
-      "created": 1753376617,
-      "contextLength": 128000,
-      "maxCompletionTokens": null,
-      "pricing": {
-        "promptPer1M": 0.1,
-        "completionPer1M": 0.1,
-        "avgPer1M": 0.1
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "GLM 4 32B is a cost-effective foundation language model. It can efficiently perform complex tasks and has significantly enhanced capabilities in tool use, online search, and code-related intelligent t"
-    },
-    {
       "id": "z-ai/glm-4.5",
       "name": "Z.ai: GLM 4.5",
       "provider": "z-ai",
@@ -4840,7 +4840,7 @@
       "provider": "z-ai",
       "created": 1765207462,
       "contextLength": 131072,
-      "maxCompletionTokens": 24000,
+      "maxCompletionTokens": 32768,
       "pricing": {
         "promptPer1M": 0.3,
         "completionPer1M": 0.9,
@@ -4903,7 +4903,7 @@
       "name": "Z.ai: GLM 5 Turbo",
       "provider": "z-ai",
       "created": 1773583573,
-      "contextLength": 202752,
+      "contextLength": 262144,
       "maxCompletionTokens": 131072,
       "pricing": {
         "promptPer1M": 1.2,
@@ -4929,22 +4929,6 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "GLM-5.1 delivers a major leap in coding capability, with particularly significant gains in handling long-horizon tasks. Unlike previous models built around minute-level interactions, GLM-5.1 can work "
-    },
-    {
-      "id": "z-ai/glm-5v-turbo",
-      "name": "Z.ai: GLM 5V Turbo",
-      "provider": "z-ai",
-      "created": 1775061458,
-      "contextLength": 202752,
-      "maxCompletionTokens": 131072,
-      "pricing": {
-        "promptPer1M": 1.2,
-        "completionPer1M": 4,
-        "avgPer1M": 2.6
-      },
-      "architecture": "text+image+video->text",
-      "multimodal": true,
-      "description": "GLM-5V-Turbo is Z.ai’s first native multimodal agent foundation model, built for vision-based coding and agent-driven tasks. It natively handles image, video, and text inputs, excels at long-horizon p"
     }
   ]
 }
