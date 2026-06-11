@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-10T06:13:27.044Z",
+  "updatedAt": "2026-06-11T06:39:50.887Z",
   "total": 308,
   "models": [
     {
@@ -855,7 +855,7 @@
       "name": "DeepSeek: DeepSeek V3 0324",
       "provider": "deepseek",
       "created": 1742824755,
-      "contextLength": 163840,
+      "contextLength": 131072,
       "maxCompletionTokens": 16384,
       "pricing": {
         "promptPer1M": 0.2,
@@ -4216,9 +4216,9 @@
       "provider": "qwen",
       "created": 1777260255,
       "contextLength": 262144,
-      "maxCompletionTokens": 262140,
+      "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.14,
+        "promptPer1M": 0.15,
         "completionPer1M": 1,
         "avgPer1M": 0.57
       },
