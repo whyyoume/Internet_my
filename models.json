@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-11T06:39:50.887Z",
-  "total": 308,
+  "updatedAt": "2026-06-12T06:24:33.432Z",
+  "total": 307,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -104,11 +104,11 @@
       "provider": "~moonshotai",
       "created": 1777318428,
       "contextLength": 262144,
-      "maxCompletionTokens": 262142,
+      "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.68,
-        "completionPer1M": 3.41,
-        "avgPer1M": 2.05
+        "promptPer1M": 0.67,
+        "completionPer1M": 3.39,
+        "avgPer1M": 2.03
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -855,7 +855,7 @@
       "name": "DeepSeek: DeepSeek V3 0324",
       "provider": "deepseek",
       "created": 1742824755,
-      "contextLength": 131072,
+      "contextLength": 163840,
       "maxCompletionTokens": 16384,
       "pricing": {
         "promptPer1M": 0.2,
@@ -936,7 +936,7 @@
       "provider": "deepseek",
       "created": 1777000666,
       "contextLength": 1048576,
-      "maxCompletionTokens": 131072,
+      "maxCompletionTokens": null,
       "pricing": {
         "promptPer1M": 0.1,
         "completionPer1M": 0.2,
@@ -999,12 +999,12 @@
       "name": "DeepSeek: R1 Distill Llama 70B",
       "provider": "deepseek",
       "created": 1737663169,
-      "contextLength": 131072,
-      "maxCompletionTokens": 16384,
+      "contextLength": 128000,
+      "maxCompletionTokens": 8192,
       "pricing": {
-        "promptPer1M": 0.7,
+        "promptPer1M": 0.8,
         "completionPer1M": 0.8,
-        "avgPer1M": 0.75
+        "avgPer1M": 0.8
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1336,10 +1336,10 @@
       "provider": "google",
       "created": 1775148486,
       "contextLength": 262144,
-      "maxCompletionTokens": 8192,
+      "maxCompletionTokens": 262144,
       "pricing": {
         "promptPer1M": 0.12,
-        "completionPer1M": 0.36,
+        "completionPer1M": 0.35,
         "avgPer1M": 0.24
       },
       "architecture": "text+image+video->text",
@@ -1914,9 +1914,9 @@
       "contextLength": 204800,
       "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.27,
-        "completionPer1M": 1.08,
-        "avgPer1M": 0.68
+        "promptPer1M": 0.25,
+        "completionPer1M": 1,
+        "avgPer1M": 0.63
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -2328,11 +2328,11 @@
       "provider": "moonshotai",
       "created": 1776699402,
       "contextLength": 262144,
-      "maxCompletionTokens": 262142,
+      "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.68,
-        "completionPer1M": 3.41,
-        "avgPer1M": 2.05
+        "promptPer1M": 0.67,
+        "completionPer1M": 3.39,
+        "avgPer1M": 2.03
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -2497,22 +2497,6 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "NVIDIA Nemotron 3 Ultra is an open frontier-reasoning and orchestration model from NVIDIA, with 55B active parameters out of 550B total (MoE). Built on a hybrid Transformer-Mamba mixture-of-experts ar"
-    },
-    {
-      "id": "nvidia/nemotron-nano-9b-v2",
-      "name": "NVIDIA: Nemotron Nano 9B V2",
-      "provider": "nvidia",
-      "created": 1757106807,
-      "contextLength": 131072,
-      "maxCompletionTokens": 16384,
-      "pricing": {
-        "promptPer1M": 0.04,
-        "completionPer1M": 0.16,
-        "avgPer1M": 0.1
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "NVIDIA-Nemotron-Nano-9B-v2 is a large language model (LLM) trained from scratch by NVIDIA, and designed as a unified model for both reasoning and non-reasoning tasks. It responds to user queries and.."
     },
     {
       "id": "openai/gpt-audio",
@@ -3656,11 +3640,11 @@
       "provider": "qwen",
       "created": 1738410311,
       "contextLength": 131072,
-      "maxCompletionTokens": null,
+      "maxCompletionTokens": 128000,
       "pricing": {
-        "promptPer1M": 0.25,
-        "completionPer1M": 0.75,
-        "avgPer1M": 0.5
+        "promptPer1M": 0.8,
+        "completionPer1M": 1,
+        "avgPer1M": 0.9
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -4298,9 +4282,9 @@
       "contextLength": 1000000,
       "maxCompletionTokens": 65536,
       "pricing": {
-        "promptPer1M": 0.4,
-        "completionPer1M": 1.6,
-        "avgPer1M": 1
+        "promptPer1M": 0.32,
+        "completionPer1M": 1.28,
+        "avgPer1M": 0.8
       },
       "architecture": "text+image->text",
       "multimodal": true,
