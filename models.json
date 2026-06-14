@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-13T06:07:30.813Z",
+  "updatedAt": "2026-06-14T06:24:54.065Z",
   "total": 307,
   "models": [
     {
@@ -936,11 +936,11 @@
       "provider": "deepseek",
       "created": 1777000666,
       "contextLength": 1048576,
-      "maxCompletionTokens": null,
+      "maxCompletionTokens": 65536,
       "pricing": {
-        "promptPer1M": 0.1,
-        "completionPer1M": 0.2,
-        "avgPer1M": 0.15
+        "promptPer1M": 0.09,
+        "completionPer1M": 0.18,
+        "avgPer1M": 0.14
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -2328,13 +2328,13 @@
       "provider": "moonshotai",
       "created": 1781266361,
       "contextLength": 262144,
-      "maxCompletionTokens": null,
+      "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.95,
-        "completionPer1M": 4,
-        "avgPer1M": 2.48
+        "promptPer1M": 0.75,
+        "completionPer1M": 3.5,
+        "avgPer1M": 2.13
       },
-      "architecture": "text+image+video->text",
+      "architecture": "text+image->text",
       "multimodal": true,
       "description": "MoonshotAI: Kimi K2.7 Code is a coding-focused model in Moonshot AI's Kimi K2 family, built to complete end-to-end programming tasks reliably over long contexts. It uses a native multimodal mixture-of"
     },
