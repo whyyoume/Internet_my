@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-15T07:07:46.749Z",
+  "updatedAt": "2026-06-16T07:13:49.937Z",
   "total": 307,
   "models": [
     {
@@ -936,11 +936,11 @@
       "provider": "deepseek",
       "created": 1777000666,
       "contextLength": 1048576,
-      "maxCompletionTokens": 65536,
+      "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 0.09,
-        "completionPer1M": 0.18,
-        "avgPer1M": 0.14
+        "promptPer1M": 0.1,
+        "completionPer1M": 0.2,
+        "avgPer1M": 0.15
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -4055,12 +4055,12 @@
       "name": "Qwen: Qwen3.5 397B A17B",
       "provider": "qwen",
       "created": 1771223018,
-      "contextLength": 262144,
-      "maxCompletionTokens": 65536,
+      "contextLength": 256000,
+      "maxCompletionTokens": null,
       "pricing": {
         "promptPer1M": 0.39,
-        "completionPer1M": 2.34,
-        "avgPer1M": 1.37
+        "completionPer1M": 2.45,
+        "avgPer1M": 1.42
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -4136,7 +4136,7 @@
       "provider": "qwen",
       "created": 1772053822,
       "contextLength": 262144,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": 81920,
       "pricing": {
         "promptPer1M": 0.14,
         "completionPer1M": 1,
@@ -4520,11 +4520,11 @@
       "provider": "tencent",
       "created": 1776878150,
       "contextLength": 262144,
-      "maxCompletionTokens": null,
+      "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.06,
-        "completionPer1M": 0.21,
-        "avgPer1M": 0.14
+        "promptPer1M": 0.07,
+        "completionPer1M": 0.26,
+        "avgPer1M": 0.16
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -4666,9 +4666,9 @@
       "contextLength": 2000000,
       "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 2,
-        "completionPer1M": 6,
-        "avgPer1M": 4
+        "promptPer1M": 1.25,
+        "completionPer1M": 2.5,
+        "avgPer1M": 1.88
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
