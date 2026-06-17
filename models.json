@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-16T07:13:49.937Z",
+  "updatedAt": "2026-06-17T06:58:46.696Z",
   "total": 307,
   "models": [
     {
@@ -936,11 +936,11 @@
       "provider": "deepseek",
       "created": 1777000666,
       "contextLength": 1048576,
-      "maxCompletionTokens": null,
+      "maxCompletionTokens": 65536,
       "pricing": {
-        "promptPer1M": 0.1,
-        "completionPer1M": 0.2,
-        "avgPer1M": 0.15
+        "promptPer1M": 0.09,
+        "completionPer1M": 0.18,
+        "avgPer1M": 0.14
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1009,22 +1009,6 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "DeepSeek R1 Distill Llama 70B is a distilled large language model based on [Llama-3.3-70B-Instruct](/meta-llama/llama-3.3-70b-instruct), using outputs from [DeepSeek R1](/deepseek/deepseek-r1). The mo"
-    },
-    {
-      "id": "deepseek/deepseek-r1-distill-qwen-32b",
-      "name": "DeepSeek: R1 Distill Qwen 32B",
-      "provider": "deepseek",
-      "created": 1738194830,
-      "contextLength": 128000,
-      "maxCompletionTokens": 32768,
-      "pricing": {
-        "promptPer1M": 0.29,
-        "completionPer1M": 0.29,
-        "avgPer1M": 0.29
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "DeepSeek R1 Distill Qwen 32B is a distilled large language model based on [Qwen 2.5 32B](https://huggingface.co/Qwen/Qwen2.5-32B), using outputs from [DeepSeek R1](/deepseek/deepseek-r1). It outperfor"
     },
     {
       "id": "essentialai/rnj-1-instruct",
@@ -2328,11 +2312,11 @@
       "provider": "moonshotai",
       "created": 1781266361,
       "contextLength": 262144,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.75,
+        "promptPer1M": 0.74,
         "completionPer1M": 3.5,
-        "avgPer1M": 2.13
+        "avgPer1M": 2.12
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -2491,8 +2475,8 @@
       "maxCompletionTokens": 16384,
       "pricing": {
         "promptPer1M": 0.5,
-        "completionPer1M": 2.5,
-        "avgPer1M": 1.5
+        "completionPer1M": 2.2,
+        "avgPer1M": 1.35
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -4776,7 +4760,7 @@
       "provider": "z-ai",
       "created": 1753471258,
       "contextLength": 131072,
-      "maxCompletionTokens": 131070,
+      "maxCompletionTokens": 98304,
       "pricing": {
         "promptPer1M": 0.13,
         "completionPer1M": 0.85,
@@ -4913,6 +4897,22 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "GLM-5.1 delivers a major leap in coding capability, with particularly significant gains in handling long-horizon tasks. Unlike previous models built around minute-level interactions, GLM-5.1 can work "
+    },
+    {
+      "id": "z-ai/glm-5.2",
+      "name": "Z.ai: GLM 5.2",
+      "provider": "z-ai",
+      "created": 1781631930,
+      "contextLength": 1048576,
+      "maxCompletionTokens": 262144,
+      "pricing": {
+        "promptPer1M": 1.4,
+        "completionPer1M": 4.4,
+        "avgPer1M": 2.9
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "GLM-5.2 is Z.ai’s flagship model for the era of long-horizon tasks. With a truly usable 1M-token context window, it can handle project-level engineering context, execute long-running tasks more reliab"
     }
   ]
 }
