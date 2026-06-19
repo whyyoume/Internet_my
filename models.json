@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-18T06:43:10.620Z",
-  "total": 308,
+  "updatedAt": "2026-06-19T06:55:47.521Z",
+  "total": 310,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -104,11 +104,11 @@
       "provider": "~moonshotai",
       "created": 1777318428,
       "contextLength": 262144,
-      "maxCompletionTokens": 262142,
+      "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.68,
-        "completionPer1M": 3.41,
-        "avgPer1M": 2.05
+        "promptPer1M": 0.67,
+        "completionPer1M": 3.5,
+        "avgPer1M": 2.09
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -2328,11 +2328,11 @@
       "provider": "moonshotai",
       "created": 1776699402,
       "contextLength": 262144,
-      "maxCompletionTokens": 262142,
+      "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.68,
-        "completionPer1M": 3.41,
-        "avgPer1M": 2.05
+        "promptPer1M": 0.67,
+        "completionPer1M": 3.5,
+        "avgPer1M": 2.09
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -3571,6 +3571,38 @@
       "description": "Note: Sonar Pro pricing includes Perplexity search pricing. See [details here](https://docs.perplexity.ai/guides/pricing#detailed-pricing-breakdown-for-sonar-reasoning-pro-and-sonar-pro) Sonar Reasoni"
     },
     {
+      "id": "poolside/laguna-m.1",
+      "name": "Poolside: Laguna M.1",
+      "provider": "poolside",
+      "created": 1777388504,
+      "contextLength": 262144,
+      "maxCompletionTokens": 32768,
+      "pricing": {
+        "promptPer1M": 0.2,
+        "completionPer1M": 0.4,
+        "avgPer1M": 0.3
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "Laguna M.1 is the flagship coding agent model from [Poolside](https://poolside.ai/), optimized for complex software engineering tasks. Designed for agentic coding workflows, it supports tool calling a"
+    },
+    {
+      "id": "poolside/laguna-xs.2",
+      "name": "Poolside: Laguna XS.2",
+      "provider": "poolside",
+      "created": 1777389604,
+      "contextLength": 262144,
+      "maxCompletionTokens": 32768,
+      "pricing": {
+        "promptPer1M": 0.1,
+        "completionPer1M": 0.2,
+        "avgPer1M": 0.15
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "Laguna XS.2 is the second-generation model in the XS size class from [Poolside](https://poolside.ai/), their efficient coding agent series. It combines tool calling and reasoning capabilities with a c"
+    },
+    {
       "id": "prime-intellect/intellect-3",
       "name": "Prime Intellect: INTELLECT-3",
       "provider": "prime-intellect",
@@ -4152,7 +4184,7 @@
       "provider": "qwen",
       "created": 1772053822,
       "contextLength": 262144,
-      "maxCompletionTokens": 81920,
+      "maxCompletionTokens": 262144,
       "pricing": {
         "promptPer1M": 0.14,
         "completionPer1M": 1,
@@ -4218,7 +4250,7 @@
       "contextLength": 262144,
       "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.15,
+        "promptPer1M": 0.14,
         "completionPer1M": 1,
         "avgPer1M": 0.57
       },
@@ -4920,11 +4952,11 @@
       "provider": "z-ai",
       "created": 1781631930,
       "contextLength": 1048576,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 1.4,
-        "completionPer1M": 4.4,
-        "avgPer1M": 2.9
+        "promptPer1M": 1.2,
+        "completionPer1M": 4.1,
+        "avgPer1M": 2.65
       },
       "architecture": "text->text",
       "multimodal": false,
