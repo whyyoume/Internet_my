@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-19T06:55:47.521Z",
-  "total": 310,
+  "updatedAt": "2026-06-20T06:09:55.804Z",
+  "total": 309,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -1603,22 +1603,6 @@
       "description": "An attempt to recreate Claude-style verbosity, but don't expect the same level of coherence or memory. Meant for use in roleplay/narrative situations."
     },
     {
-      "id": "meta-llama/llama-3-70b-instruct",
-      "name": "Meta: Llama 3 70B Instruct",
-      "provider": "meta-llama",
-      "created": 1713398400,
-      "contextLength": 8192,
-      "maxCompletionTokens": 8000,
-      "pricing": {
-        "promptPer1M": 0.51,
-        "completionPer1M": 0.74,
-        "avgPer1M": 0.63
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "Meta's latest class of model (Llama 3) launched with a variety of sizes & flavors. This 70B instruct-tuned version was optimized for high quality dialogue usecases. It has demonstrated strong..."
-    },
-    {
       "id": "meta-llama/llama-3-8b-instruct",
       "name": "Meta: Llama 3 8B Instruct",
       "provider": "meta-llama",
@@ -2344,11 +2328,11 @@
       "provider": "moonshotai",
       "created": 1781266361,
       "contextLength": 262144,
-      "maxCompletionTokens": 16384,
+      "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.74,
-        "completionPer1M": 3.5,
-        "avgPer1M": 2.12
+        "promptPer1M": 0.61,
+        "completionPer1M": 3.07,
+        "avgPer1M": 1.84
       },
       "architecture": "text+image->text",
       "multimodal": true,
