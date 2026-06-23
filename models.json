@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-22T07:10:22.445Z",
-  "total": 309,
+  "updatedAt": "2026-06-23T05:58:21.551Z",
+  "total": 310,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -2314,9 +2314,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.61,
-        "completionPer1M": 3.07,
-        "avgPer1M": 1.84
+        "promptPer1M": 0.68,
+        "completionPer1M": 3.41,
+        "avgPer1M": 2.05
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -4936,15 +4936,31 @@
       "provider": "z-ai",
       "created": 1781631930,
       "contextLength": 1048576,
-      "maxCompletionTokens": 32768,
+      "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 1,
-        "completionPer1M": 4,
-        "avgPer1M": 2.5
+        "promptPer1M": 0.98,
+        "completionPer1M": 3.08,
+        "avgPer1M": 2.03
       },
       "architecture": "text->text",
       "multimodal": false,
       "description": "GLM 5.2 is a large-scale reasoning model from Z.ai. It supports text input and output with a 1M-token context window, and is suited for long-horizon agent workflows, project-level software engineering"
+    },
+    {
+      "id": "z-ai/glm-5v-turbo",
+      "name": "Z.ai: GLM 5V Turbo",
+      "provider": "z-ai",
+      "created": 1775061458,
+      "contextLength": 202752,
+      "maxCompletionTokens": 131072,
+      "pricing": {
+        "promptPer1M": 1.2,
+        "completionPer1M": 4,
+        "avgPer1M": 2.6
+      },
+      "architecture": "text+image+video->text",
+      "multimodal": true,
+      "description": "GLM-5V-Turbo is Z.ai’s first native multimodal agent foundation model, built for vision-based coding and agent-driven tasks. It natively handles image, video, and text inputs, excels at long-horizon p"
     }
   ]
 }
