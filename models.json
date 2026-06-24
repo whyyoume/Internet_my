@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-23T05:58:21.551Z",
-  "total": 310,
+  "updatedAt": "2026-06-24T05:58:07.574Z",
+  "total": 309,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -995,22 +995,6 @@
       "description": "DeepSeek R1 Distill Llama 70B is a distilled large language model based on [Llama-3.3-70B-Instruct](/meta-llama/llama-3.3-70b-instruct), using outputs from [DeepSeek R1](/deepseek/deepseek-r1). The mo"
     },
     {
-      "id": "essentialai/rnj-1-instruct",
-      "name": "EssentialAI: Rnj 1 Instruct",
-      "provider": "essentialai",
-      "created": 1765094847,
-      "contextLength": 32768,
-      "maxCompletionTokens": null,
-      "pricing": {
-        "promptPer1M": 0.15,
-        "completionPer1M": 0.15,
-        "avgPer1M": 0.15
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "Rnj-1 is an 8B-parameter, dense, open-weight model family developed by Essential AI and trained from scratch with a focus on programming, math, and scientific reasoning. The model demonstrates strong "
-    },
-    {
       "id": "google/gemini-2.5-flash",
       "name": "Google: Gemini 2.5 Flash",
       "provider": "google",
@@ -1336,7 +1320,7 @@
       "provider": "google",
       "created": 1781754065,
       "contextLength": 131072,
-      "maxCompletionTokens": 32768,
+      "maxCompletionTokens": 65536,
       "pricing": {
         "promptPer1M": 0.5,
         "completionPer1M": 3,
@@ -1352,7 +1336,7 @@
       "provider": "google",
       "created": 1772119558,
       "contextLength": 131072,
-      "maxCompletionTokens": 65536,
+      "maxCompletionTokens": 32768,
       "pricing": {
         "promptPer1M": 0.5,
         "completionPer1M": 3,
@@ -1367,7 +1351,7 @@
       "name": "Google: Nano Banana Pro",
       "provider": "google",
       "created": 1781754054,
-      "contextLength": 131072,
+      "contextLength": 65536,
       "maxCompletionTokens": 32768,
       "pricing": {
         "promptPer1M": 2,
@@ -1543,8 +1527,8 @@
       "name": "Kwaipilot: KAT-Coder-Pro V2",
       "provider": "kwaipilot",
       "created": 1774649310,
-      "contextLength": 262144,
-      "maxCompletionTokens": 144000,
+      "contextLength": 256000,
+      "maxCompletionTokens": 80000,
       "pricing": {
         "promptPer1M": 0.3,
         "completionPer1M": 1.2,
@@ -1756,7 +1740,7 @@
       "pricing": {
         "promptPer1M": 0.07,
         "completionPer1M": 0.14,
-        "avgPer1M": 0.1
+        "avgPer1M": 0.11
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1880,11 +1864,11 @@
       "provider": "minimax",
       "created": 1773836697,
       "contextLength": 204800,
-      "maxCompletionTokens": 131072,
+      "maxCompletionTokens": 196608,
       "pricing": {
-        "promptPer1M": 0.25,
-        "completionPer1M": 1,
-        "avgPer1M": 0.63
+        "promptPer1M": 0.24,
+        "completionPer1M": 0.96,
+        "avgPer1M": 0.6
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1896,7 +1880,7 @@
       "provider": "minimax",
       "created": 1780245374,
       "contextLength": 1048576,
-      "maxCompletionTokens": null,
+      "maxCompletionTokens": 512000,
       "pricing": {
         "promptPer1M": 0.3,
         "completionPer1M": 1.2,
@@ -2312,11 +2296,11 @@
       "provider": "moonshotai",
       "created": 1781266361,
       "contextLength": 262144,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.68,
-        "completionPer1M": 3.41,
-        "avgPer1M": 2.05
+        "promptPer1M": 0.74,
+        "completionPer1M": 3.5,
+        "avgPer1M": 2.12
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -2362,9 +2346,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.5,
-        "completionPer1M": 2.5,
-        "avgPer1M": 1.5
+        "promptPer1M": 0.25,
+        "completionPer1M": 1,
+        "avgPer1M": 0.63
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -2680,7 +2664,7 @@
       "provider": "openai",
       "created": 1744651381,
       "contextLength": 1047576,
-      "maxCompletionTokens": null,
+      "maxCompletionTokens": 32768,
       "pricing": {
         "promptPer1M": 0.4,
         "completionPer1M": 1.6,
@@ -2787,7 +2771,7 @@
       "description": "GPT-4o Search Previewis a specialized model for web search in Chat Completions. It is trained to understand and execute web search queries."
     },
     {
-      "id": "openai/gpt-4o-mini",
+      "id": "openai/gpt-4o-mini-2024-07-18",
       "name": "OpenAI: GPT-4o-mini",
       "provider": "openai",
       "created": 1721260800,
@@ -2803,7 +2787,7 @@
       "description": "GPT-4o mini is OpenAI's newest model after [GPT-4 Omni](/models/openai/gpt-4o), supporting both text and image inputs with text outputs. As their most advanced small model, it is many multiples more a"
     },
     {
-      "id": "openai/gpt-4o-mini-2024-07-18",
+      "id": "openai/gpt-4o-mini",
       "name": "OpenAI: GPT-4o-mini",
       "provider": "openai",
       "created": 1721260800,
@@ -2920,7 +2904,7 @@
       "provider": "openai",
       "created": 1754587407,
       "contextLength": 400000,
-      "maxCompletionTokens": null,
+      "maxCompletionTokens": 128000,
       "pricing": {
         "promptPer1M": 0.25,
         "completionPer1M": 2,
@@ -2984,7 +2968,7 @@
       "provider": "openai",
       "created": 1763060302,
       "contextLength": 128000,
-      "maxCompletionTokens": 16384,
+      "maxCompletionTokens": 32000,
       "pricing": {
         "promptPer1M": 1.25,
         "completionPer1M": 10,
@@ -3064,7 +3048,7 @@
       "provider": "openai",
       "created": 1765389783,
       "contextLength": 128000,
-      "maxCompletionTokens": 32000,
+      "maxCompletionTokens": 16384,
       "pricing": {
         "promptPer1M": 1.75,
         "completionPer1M": 14,
@@ -3585,22 +3569,6 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "Laguna XS.2 is the second-generation model in the XS size class from [Poolside](https://poolside.ai/), their efficient coding agent series. It combines tool calling and reasoning capabilities with a c"
-    },
-    {
-      "id": "prime-intellect/intellect-3",
-      "name": "Prime Intellect: INTELLECT-3",
-      "provider": "prime-intellect",
-      "created": 1764212534,
-      "contextLength": 131072,
-      "maxCompletionTokens": 131072,
-      "pricing": {
-        "promptPer1M": 0.2,
-        "completionPer1M": 1.1,
-        "avgPer1M": 0.65
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "INTELLECT-3 is a 106B-parameter Mixture-of-Experts model (12B active) post-trained from GLM-4.5-Air-Base using supervised fine-tuning (SFT) followed by large-scale reinforcement learning (RL). It offe"
     },
     {
       "id": "qwen/qwen-plus-2025-07-28:thinking",
@@ -4168,7 +4136,7 @@
       "provider": "qwen",
       "created": 1772053822,
       "contextLength": 262144,
-      "maxCompletionTokens": 81920,
+      "maxCompletionTokens": 262144,
       "pricing": {
         "promptPer1M": 0.14,
         "completionPer1M": 1,
@@ -4183,8 +4151,8 @@
       "name": "Qwen: Qwen3.5-9B",
       "provider": "qwen",
       "created": 1773152396,
-      "contextLength": 256000,
-      "maxCompletionTokens": 32768,
+      "contextLength": 262144,
+      "maxCompletionTokens": 262144,
       "pricing": {
         "promptPer1M": 0.1,
         "completionPer1M": 0.15,
@@ -4419,6 +4387,22 @@
       "description": "The relace-search model uses 4-12 `view_file` and `grep` tools in parallel to explore a codebase and return relevant files to the user request. In contrast to RAG, relace-search performs agentic..."
     },
     {
+      "id": "sakana/fugu-ultra",
+      "name": "Sakana: Fugu Ultra",
+      "provider": "sakana",
+      "created": 1782276303,
+      "contextLength": 1000000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 5,
+        "completionPer1M": 30,
+        "avgPer1M": 17.5
+      },
+      "architecture": "text+image->text",
+      "multimodal": true,
+      "description": "Fugu Ultra is the higher-performance model in Sakana AI's Fugu family. Rather than a single monolithic model, Fugu is a learned multi-agent orchestration system: a language model trained to route..."
+    },
+    {
       "id": "sao10k/l3-lunaris-8b",
       "name": "Sao10K: Llama 3 8B Lunaris",
       "provider": "sao10k",
@@ -4584,11 +4568,11 @@
       "provider": "thedrummer",
       "created": 1727654400,
       "contextLength": 32768,
-      "maxCompletionTokens": 32768,
+      "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 0.17,
-        "completionPer1M": 0.43,
-        "avgPer1M": 0.3
+        "promptPer1M": 0.25,
+        "completionPer1M": 0.5,
+        "avgPer1M": 0.38
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -4744,11 +4728,11 @@
       "provider": "xiaomi",
       "created": 1776874269,
       "contextLength": 1048576,
-      "maxCompletionTokens": 131072,
+      "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 0.14,
+        "promptPer1M": 0.11,
         "completionPer1M": 0.28,
-        "avgPer1M": 0.21
+        "avgPer1M": 0.19
       },
       "architecture": "text+image+audio+video->text",
       "multimodal": true,
@@ -4920,7 +4904,7 @@
       "provider": "z-ai",
       "created": 1775578025,
       "contextLength": 202752,
-      "maxCompletionTokens": null,
+      "maxCompletionTokens": 65535,
       "pricing": {
         "promptPer1M": 0.98,
         "completionPer1M": 3.08,
@@ -4936,11 +4920,11 @@
       "provider": "z-ai",
       "created": 1781631930,
       "contextLength": 1048576,
-      "maxCompletionTokens": null,
+      "maxCompletionTokens": 32768,
       "pricing": {
-        "promptPer1M": 0.98,
-        "completionPer1M": 3.08,
-        "avgPer1M": 2.03
+        "promptPer1M": 0.95,
+        "completionPer1M": 3,
+        "avgPer1M": 1.98
       },
       "architecture": "text->text",
       "multimodal": false,
