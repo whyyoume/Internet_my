@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-24T05:58:07.574Z",
+  "updatedAt": "2026-06-25T05:56:55.908Z",
   "total": 309,
   "models": [
     {
@@ -920,11 +920,11 @@
       "provider": "deepseek",
       "created": 1777000666,
       "contextLength": 1048576,
-      "maxCompletionTokens": 65536,
+      "maxCompletionTokens": null,
       "pricing": {
         "promptPer1M": 0.09,
-        "completionPer1M": 0.18,
-        "avgPer1M": 0.14
+        "completionPer1M": 0.22,
+        "avgPer1M": 0.16
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1304,7 +1304,7 @@
       "provider": "google",
       "created": 1759870431,
       "contextLength": 32768,
-      "maxCompletionTokens": 8192,
+      "maxCompletionTokens": 32768,
       "pricing": {
         "promptPer1M": 0.3,
         "completionPer1M": 2.5,
@@ -1320,7 +1320,7 @@
       "provider": "google",
       "created": 1781754065,
       "contextLength": 131072,
-      "maxCompletionTokens": 65536,
+      "maxCompletionTokens": 32768,
       "pricing": {
         "promptPer1M": 0.5,
         "completionPer1M": 3,
@@ -2771,7 +2771,7 @@
       "description": "GPT-4o Search Previewis a specialized model for web search in Chat Completions. It is trained to understand and execute web search queries."
     },
     {
-      "id": "openai/gpt-4o-mini-2024-07-18",
+      "id": "openai/gpt-4o-mini",
       "name": "OpenAI: GPT-4o-mini",
       "provider": "openai",
       "created": 1721260800,
@@ -2787,7 +2787,7 @@
       "description": "GPT-4o mini is OpenAI's newest model after [GPT-4 Omni](/models/openai/gpt-4o), supporting both text and image inputs with text outputs. As their most advanced small model, it is many multiples more a"
     },
     {
-      "id": "openai/gpt-4o-mini",
+      "id": "openai/gpt-4o-mini-2024-07-18",
       "name": "OpenAI: GPT-4o-mini",
       "provider": "openai",
       "created": 1721260800,
@@ -4136,7 +4136,7 @@
       "provider": "qwen",
       "created": 1772053822,
       "contextLength": 262144,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": 81920,
       "pricing": {
         "promptPer1M": 0.14,
         "completionPer1M": 1,
@@ -4904,7 +4904,7 @@
       "provider": "z-ai",
       "created": 1775578025,
       "contextLength": 202752,
-      "maxCompletionTokens": 65535,
+      "maxCompletionTokens": null,
       "pricing": {
         "promptPer1M": 0.98,
         "completionPer1M": 3.08,
