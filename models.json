@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-25T05:56:55.908Z",
+  "updatedAt": "2026-06-26T06:00:28.803Z",
   "total": 309,
   "models": [
     {
@@ -920,11 +920,11 @@
       "provider": "deepseek",
       "created": 1777000666,
       "contextLength": 1048576,
-      "maxCompletionTokens": null,
+      "maxCompletionTokens": 65536,
       "pricing": {
         "promptPer1M": 0.09,
-        "completionPer1M": 0.22,
-        "avgPer1M": 0.16
+        "completionPer1M": 0.18,
+        "avgPer1M": 0.14
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1120,7 +1120,7 @@
       },
       "architecture": "text+image+file+audio+video->text",
       "multimodal": true,
-      "description": "Gemini 3.1 Flash Lite is Google’s GA high-efficiency multimodal model optimized for low-latency, high-volume workloads. It supports text, image, video, audio, and PDF inputs, and is designed for light"
+      "description": "Gemini 3.1 Flash Lite is Google���s GA high-efficiency multimodal model optimized for low-latency, high-volume workloads. It supports text, image, video, audio, and PDF inputs, and is designed for lig"
     },
     {
       "id": "google/gemini-3.1-flash-lite-preview",
@@ -1850,9 +1850,9 @@
       "contextLength": 204800,
       "maxCompletionTokens": 196608,
       "pricing": {
-        "promptPer1M": 0.15,
-        "completionPer1M": 0.9,
-        "avgPer1M": 0.52
+        "promptPer1M": 0.12,
+        "completionPer1M": 0.48,
+        "avgPer1M": 0.3
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1866,9 +1866,9 @@
       "contextLength": 204800,
       "maxCompletionTokens": 196608,
       "pricing": {
-        "promptPer1M": 0.24,
-        "completionPer1M": 0.96,
-        "avgPer1M": 0.6
+        "promptPer1M": 0.18,
+        "completionPer1M": 0.72,
+        "avgPer1M": 0.45
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -2456,11 +2456,11 @@
       "provider": "nvidia",
       "created": 1773245239,
       "contextLength": 1000000,
-      "maxCompletionTokens": null,
+      "maxCompletionTokens": 16384,
       "pricing": {
         "promptPer1M": 0.09,
-        "completionPer1M": 0.45,
-        "avgPer1M": 0.27
+        "completionPer1M": 0.4,
+        "avgPer1M": 0.24
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -3240,11 +3240,11 @@
       "provider": "openai",
       "created": 1754414231,
       "contextLength": 131072,
-      "maxCompletionTokens": null,
+      "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.04,
-        "completionPer1M": 0.18,
-        "avgPer1M": 0.11
+        "promptPer1M": 0.03,
+        "completionPer1M": 0.15,
+        "avgPer1M": 0.09
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -4702,7 +4702,7 @@
         "completionPer1M": 2.5,
         "avgPer1M": 1.88
       },
-      "architecture": "text+image->text",
+      "architecture": "text+image+file->text",
       "multimodal": true,
       "description": "Grok 4.3 is a reasoning model from xAI. It accepts text and image inputs with text output, and is suited for agentic workflows, instruction-following tasks, and applications requiring high factual..."
     },
