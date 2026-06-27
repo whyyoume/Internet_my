@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-26T06:00:28.803Z",
+  "updatedAt": "2026-06-27T05:45:16.595Z",
   "total": 309,
   "models": [
     {
@@ -1120,7 +1120,7 @@
       },
       "architecture": "text+image+file+audio+video->text",
       "multimodal": true,
-      "description": "Gemini 3.1 Flash Lite is Google���s GA high-efficiency multimodal model optimized for low-latency, high-volume workloads. It supports text, image, video, audio, and PDF inputs, and is designed for lig"
+      "description": "Gemini 3.1 Flash Lite is Google’s GA high-efficiency multimodal model optimized for low-latency, high-volume workloads. It supports text, image, video, audio, and PDF inputs, and is designed for light"
     },
     {
       "id": "google/gemini-3.1-flash-lite-preview",
@@ -4187,8 +4187,8 @@
       "maxCompletionTokens": 262140,
       "pricing": {
         "promptPer1M": 0.29,
-        "completionPer1M": 3.17,
-        "avgPer1M": 1.73
+        "completionPer1M": 2.65,
+        "avgPer1M": 1.47
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
