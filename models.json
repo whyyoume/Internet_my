@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-28T06:07:03.500Z",
+  "updatedAt": "2026-06-29T06:27:41.378Z",
   "total": 309,
   "models": [
     {
@@ -106,9 +106,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.66,
-        "completionPer1M": 3.41,
-        "avgPer1M": 2.04
+        "promptPer1M": 0.55,
+        "completionPer1M": 3.2,
+        "avgPer1M": 1.88
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -2282,9 +2282,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.66,
-        "completionPer1M": 3.41,
-        "avgPer1M": 2.04
+        "promptPer1M": 0.55,
+        "completionPer1M": 3.2,
+        "avgPer1M": 1.88
       },
       "architecture": "text+image->text",
       "multimodal": true,
