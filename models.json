@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-29T06:27:41.378Z",
-  "total": 309,
+  "updatedAt": "2026-06-30T06:01:12.330Z",
+  "total": 308,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -433,22 +433,6 @@
       "architecture": "text+image+file->text",
       "multimodal": true,
       "description": "Claude Opus 4.5 is Anthropic’s frontier reasoning model optimized for complex software engineering, agentic workflows, and long-horizon computer use. It offers strong multimodal capabilities, competit"
-    },
-    {
-      "id": "anthropic/claude-opus-4.6-fast",
-      "name": "Anthropic: Claude Opus 4.6",
-      "provider": "anthropic",
-      "created": 1775592472,
-      "contextLength": 1000000,
-      "maxCompletionTokens": 128000,
-      "pricing": {
-        "promptPer1M": 30,
-        "completionPer1M": 150,
-        "avgPer1M": 90
-      },
-      "architecture": "text+image+file->text",
-      "multimodal": true,
-      "description": "Fast-mode variant of [Opus 4.6](/anthropic/claude-opus-4.6) - identical capabilities with higher output speed at premium 6x pricing.\n\nLearn more in Anthropic's docs: https://platform.claude.com/docs/e"
     },
     {
       "id": "anthropic/claude-opus-4.6",
@@ -2216,7 +2200,7 @@
       "provider": "moonshotai",
       "created": 1752263252,
       "contextLength": 131072,
-      "maxCompletionTokens": 32768,
+      "maxCompletionTokens": 100352,
       "pricing": {
         "promptPer1M": 0.57,
         "completionPer1M": 2.3,
@@ -2232,7 +2216,7 @@
       "provider": "moonshotai",
       "created": 1757021147,
       "contextLength": 262144,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": 100352,
       "pricing": {
         "promptPer1M": 0.6,
         "completionPer1M": 2.5,
@@ -4472,9 +4456,9 @@
       "provider": "stepfun",
       "created": 1769728337,
       "contextLength": 262144,
-      "maxCompletionTokens": 16384,
+      "maxCompletionTokens": 65536,
       "pricing": {
-        "promptPer1M": 0.09,
+        "promptPer1M": 0.1,
         "completionPer1M": 0.3,
         "avgPer1M": 0.2
       },
@@ -4907,8 +4891,8 @@
       "maxCompletionTokens": null,
       "pricing": {
         "promptPer1M": 0.98,
-        "completionPer1M": 3.08,
-        "avgPer1M": 2.03
+        "completionPer1M": 4.3,
+        "avgPer1M": 2.64
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -4920,11 +4904,11 @@
       "provider": "z-ai",
       "created": 1781631930,
       "contextLength": 1048576,
-      "maxCompletionTokens": 32768,
+      "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 0.95,
+        "promptPer1M": 0.94,
         "completionPer1M": 3,
-        "avgPer1M": 1.98
+        "avgPer1M": 1.97
       },
       "architecture": "text->text",
       "multimodal": false,
