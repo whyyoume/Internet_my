@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-02T05:48:36.105Z",
-  "total": 309,
+  "updatedAt": "2026-07-03T05:42:44.496Z",
+  "total": 310,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -106,9 +106,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.55,
-        "completionPer1M": 3.2,
-        "avgPer1M": 1.88
+        "promptPer1M": 0.66,
+        "completionPer1M": 3.41,
+        "avgPer1M": 2.04
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -2282,9 +2282,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.55,
-        "completionPer1M": 3.2,
-        "avgPer1M": 1.88
+        "promptPer1M": 0.66,
+        "completionPer1M": 3.41,
+        "avgPer1M": 2.04
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -2723,22 +2723,6 @@
       "description": "The 2024-08-06 version of GPT-4o offers improved performance in structured outputs, with the ability to supply a JSON schema in the respone_format. Read more [here](https://openai.com/index/introducin"
     },
     {
-      "id": "openai/gpt-4o-2024-05-13",
-      "name": "OpenAI: GPT-4o",
-      "provider": "openai",
-      "created": 1715558400,
-      "contextLength": 128000,
-      "maxCompletionTokens": 4096,
-      "pricing": {
-        "promptPer1M": 5,
-        "completionPer1M": 15,
-        "avgPer1M": 10
-      },
-      "architecture": "text+image+file->text",
-      "multimodal": true,
-      "description": "GPT-4o (\"o\" for \"omni\") is OpenAI's latest AI model, supporting both text and image inputs with text outputs. It maintains the intelligence level of [GPT-4 Turbo](/models/openai/gpt-4-turbo) while bei"
-    },
-    {
       "id": "openai/gpt-4o",
       "name": "OpenAI: GPT-4o",
       "provider": "openai",
@@ -2749,6 +2733,22 @@
         "promptPer1M": 2.5,
         "completionPer1M": 10,
         "avgPer1M": 6.25
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-4o (\"o\" for \"omni\") is OpenAI's latest AI model, supporting both text and image inputs with text outputs. It maintains the intelligence level of [GPT-4 Turbo](/models/openai/gpt-4-turbo) while bei"
+    },
+    {
+      "id": "openai/gpt-4o-2024-05-13",
+      "name": "OpenAI: GPT-4o",
+      "provider": "openai",
+      "created": 1715558400,
+      "contextLength": 128000,
+      "maxCompletionTokens": 4096,
+      "pricing": {
+        "promptPer1M": 5,
+        "completionPer1M": 15,
+        "avgPer1M": 10
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
@@ -2771,7 +2771,7 @@
       "description": "GPT-4o Search Previewis a specialized model for web search in Chat Completions. It is trained to understand and execute web search queries."
     },
     {
-      "id": "openai/gpt-4o-mini-2024-07-18",
+      "id": "openai/gpt-4o-mini",
       "name": "OpenAI: GPT-4o-mini",
       "provider": "openai",
       "created": 1721260800,
@@ -2787,7 +2787,7 @@
       "description": "GPT-4o mini is OpenAI's newest model after [GPT-4 Omni](/models/openai/gpt-4o), supporting both text and image inputs with text outputs. As their most advanced small model, it is many multiples more a"
     },
     {
-      "id": "openai/gpt-4o-mini",
+      "id": "openai/gpt-4o-mini-2024-07-18",
       "name": "OpenAI: GPT-4o-mini",
       "provider": "openai",
       "created": 1721260800,
@@ -3555,6 +3555,22 @@
       "description": "Laguna M.1 is the flagship coding agent model from [Poolside](https://poolside.ai/), optimized for complex software engineering tasks. Designed for agentic coding workflows, it supports tool calling a"
     },
     {
+      "id": "poolside/laguna-xs-2.1",
+      "name": "Poolside: Laguna XS 2.1",
+      "provider": "poolside",
+      "created": 1783002429,
+      "contextLength": 262144,
+      "maxCompletionTokens": 32768,
+      "pricing": {
+        "promptPer1M": 0.06,
+        "completionPer1M": 0.12,
+        "avgPer1M": 0.09
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "Laguna XS 2.1 is the latest coding agent model in the 33B-A3B category from [Poolside](https://poolside.ai/) and a step forward from their Laguna XS.2 model (released in April 2026). It combines..."
+    },
+    {
       "id": "poolside/laguna-xs.2",
       "name": "Poolside: Laguna XS.2",
       "provider": "poolside",
@@ -4026,8 +4042,8 @@
       "contextLength": 256000,
       "maxCompletionTokens": 32768,
       "pricing": {
-        "promptPer1M": 0.08,
-        "completionPer1M": 0.5,
+        "promptPer1M": 0.12,
+        "completionPer1M": 0.45,
         "avgPer1M": 0.29
       },
       "architecture": "text+image->text",
@@ -4904,11 +4920,11 @@
       "provider": "z-ai",
       "created": 1775578025,
       "contextLength": 202752,
-      "maxCompletionTokens": null,
+      "maxCompletionTokens": 128000,
       "pricing": {
-        "promptPer1M": 0.98,
-        "completionPer1M": 4.3,
-        "avgPer1M": 2.64
+        "promptPer1M": 0.97,
+        "completionPer1M": 3.04,
+        "avgPer1M": 2
       },
       "architecture": "text->text",
       "multimodal": false,
