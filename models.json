@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-04T05:36:39.712Z",
+  "updatedAt": "2026-07-05T05:54:45.168Z",
   "total": 310,
   "models": [
     {
@@ -4936,11 +4936,11 @@
       "provider": "z-ai",
       "created": 1781631930,
       "contextLength": 1048576,
-      "maxCompletionTokens": 128000,
+      "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.91,
-        "completionPer1M": 2.86,
-        "avgPer1M": 1.89
+        "promptPer1M": 0.73,
+        "completionPer1M": 2.29,
+        "avgPer1M": 1.51
       },
       "architecture": "text->text",
       "multimodal": false,
