@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-05T05:54:45.168Z",
+  "updatedAt": "2026-07-06T06:18:03.417Z",
   "total": 310,
   "models": [
     {
@@ -4938,9 +4938,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.73,
-        "completionPer1M": 2.29,
-        "avgPer1M": 1.51
+        "promptPer1M": 0.69,
+        "completionPer1M": 2.16,
+        "avgPer1M": 1.42
       },
       "architecture": "text->text",
       "multimodal": false,
