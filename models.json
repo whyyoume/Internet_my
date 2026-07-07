@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-06T06:18:03.417Z",
-  "total": 310,
+  "updatedAt": "2026-07-07T05:58:21.689Z",
+  "total": 312,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -1672,10 +1672,10 @@
       "provider": "meta-llama",
       "created": 1727222400,
       "contextLength": 131072,
-      "maxCompletionTokens": 80000,
+      "maxCompletionTokens": 131072,
       "pricing": {
         "promptPer1M": 0.05,
-        "completionPer1M": 0.34,
+        "completionPer1M": 0.33,
         "avgPer1M": 0.19
       },
       "architecture": "text->text",
@@ -2339,6 +2339,22 @@
       "description": "Morph's high-accuracy apply model for complex code edits. ~4,500 tokens/sec with 98% accuracy for precise code transformations. The model requires the prompt to be in the following format: <instructio"
     },
     {
+      "id": "nex-agi/nex-n2-mini",
+      "name": "Nex AGI: Nex-N2-Mini",
+      "provider": "nex-agi",
+      "created": 1782312964,
+      "contextLength": 262144,
+      "maxCompletionTokens": 262144,
+      "pricing": {
+        "promptPer1M": 0.03,
+        "completionPer1M": 0.1,
+        "avgPer1M": 0.06
+      },
+      "architecture": "text+image->text",
+      "multimodal": true,
+      "description": "Nex-N2-Mini is an open-source agentic mixture-of-experts model from Nex AGI, the smaller sibling in the Nex-N2 series. It accepts text and image input and is built for coding, tool use,..."
+    },
+    {
       "id": "nex-agi/nex-n2-pro",
       "name": "Nex AGI: Nex-N2-Pro",
       "provider": "nex-agi",
@@ -2771,7 +2787,7 @@
       "description": "GPT-4o Search Previewis a specialized model for web search in Chat Completions. It is trained to understand and execute web search queries."
     },
     {
-      "id": "openai/gpt-4o-mini",
+      "id": "openai/gpt-4o-mini-2024-07-18",
       "name": "OpenAI: GPT-4o-mini",
       "provider": "openai",
       "created": 1721260800,
@@ -2787,7 +2803,7 @@
       "description": "GPT-4o mini is OpenAI's newest model after [GPT-4 Omni](/models/openai/gpt-4o), supporting both text and image inputs with text outputs. As their most advanced small model, it is many multiples more a"
     },
     {
-      "id": "openai/gpt-4o-mini-2024-07-18",
+      "id": "openai/gpt-4o-mini",
       "name": "OpenAI: GPT-4o-mini",
       "provider": "openai",
       "created": 1721260800,
@@ -4547,6 +4563,22 @@
       "description": "Hunyuan-A13B is a 13B active parameter Mixture-of-Experts (MoE) language model developed by Tencent, with a total parameter count of 80B and support for reasoning via Chain-of-Thought. It offers compe"
     },
     {
+      "id": "tencent/hy3",
+      "name": "Tencent: Hy3",
+      "provider": "tencent",
+      "created": 1783344048,
+      "contextLength": 262144,
+      "maxCompletionTokens": 131072,
+      "pricing": {
+        "promptPer1M": 0.2,
+        "completionPer1M": 0.8,
+        "avgPer1M": 0.5
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "Hy3 is a 295B-parameter Mixture-of-Experts model from Tencent (21B active, 192 experts with top-8 routing) built for reasoning, agentic workflows, and real-world production use. It supports a configur"
+    },
+    {
       "id": "tencent/hy3-preview",
       "name": "Tencent: Hy3 preview",
       "provider": "tencent",
@@ -4938,9 +4970,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.69,
-        "completionPer1M": 2.16,
-        "avgPer1M": 1.42
+        "promptPer1M": 0.91,
+        "completionPer1M": 2.86,
+        "avgPer1M": 1.88
       },
       "architecture": "text->text",
       "multimodal": false,
