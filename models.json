@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-07T05:58:21.689Z",
+  "updatedAt": "2026-07-08T04:58:05.045Z",
   "total": 312,
   "models": [
     {
@@ -163,38 +163,6 @@
       "description": "Jamba Large 1.7 is the latest model in the Jamba open family, offering improvements in grounding, instruction-following, and overall efficiency. Built on a hybrid SSM-Transformer architecture with a 2"
     },
     {
-      "id": "aion-labs/aion-1.0",
-      "name": "AionLabs: Aion-1.0",
-      "provider": "aion-labs",
-      "created": 1738697557,
-      "contextLength": 131072,
-      "maxCompletionTokens": 32768,
-      "pricing": {
-        "promptPer1M": 4,
-        "completionPer1M": 8,
-        "avgPer1M": 6
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "Aion-1.0 is a multi-model system designed for high performance across various tasks, including reasoning and coding. It is built on DeepSeek-R1, augmented with additional models and techniques such as"
-    },
-    {
-      "id": "aion-labs/aion-1.0-mini",
-      "name": "AionLabs: Aion-1.0-Mini",
-      "provider": "aion-labs",
-      "created": 1738697107,
-      "contextLength": 131072,
-      "maxCompletionTokens": 32768,
-      "pricing": {
-        "promptPer1M": 0.7,
-        "completionPer1M": 1.4,
-        "avgPer1M": 1.05
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "Aion-1.0-Mini 32B parameter model is a distilled version of the DeepSeek-R1 model, designed for strong performance in reasoning domains such as mathematics, coding, and logic. It is a modified variant"
-    },
-    {
       "id": "aion-labs/aion-2.0",
       "name": "AionLabs: Aion-2.0",
       "provider": "aion-labs",
@@ -209,6 +177,38 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "Aion-2.0 is a variant of DeepSeek V3.2 optimized for immersive roleplaying and storytelling. It is particularly strong at introducing tension, crises, and conflict into stories, making narratives feel"
+    },
+    {
+      "id": "aion-labs/aion-3.0",
+      "name": "AionLabs: Aion-3.0",
+      "provider": "aion-labs",
+      "created": 1783443095,
+      "contextLength": 131072,
+      "maxCompletionTokens": 32768,
+      "pricing": {
+        "promptPer1M": 3,
+        "completionPer1M": 6,
+        "avgPer1M": 4.5
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "Aion-3.0 is a multi-model roleplaying and storytelling system from AionLabs, built on the GLM family of models. It uses a collaborative generation process in which multiple specialized models each con"
+    },
+    {
+      "id": "aion-labs/aion-3.0-mini",
+      "name": "AionLabs: Aion-3.0-Mini",
+      "provider": "aion-labs",
+      "created": 1783443096,
+      "contextLength": 131072,
+      "maxCompletionTokens": 32768,
+      "pricing": {
+        "promptPer1M": 0.7,
+        "completionPer1M": 1.4,
+        "avgPer1M": 1.05
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "Aion-3.0 Mini is a multi-model roleplaying and storytelling system from AionLabs, built on the DeepSeek family of models. It uses a collaborative generation process in which multiple specialized model"
     },
     {
       "id": "aion-labs/aion-rp-llama-3.1-8b",
@@ -920,7 +920,7 @@
       "provider": "deepseek",
       "created": 1777000666,
       "contextLength": 1048576,
-      "maxCompletionTokens": 16384,
+      "maxCompletionTokens": 65536,
       "pricing": {
         "promptPer1M": 0.09,
         "completionPer1M": 0.18,
@@ -2739,22 +2739,6 @@
       "description": "The 2024-08-06 version of GPT-4o offers improved performance in structured outputs, with the ability to supply a JSON schema in the respone_format. Read more [here](https://openai.com/index/introducin"
     },
     {
-      "id": "openai/gpt-4o",
-      "name": "OpenAI: GPT-4o",
-      "provider": "openai",
-      "created": 1715558400,
-      "contextLength": 128000,
-      "maxCompletionTokens": 16384,
-      "pricing": {
-        "promptPer1M": 2.5,
-        "completionPer1M": 10,
-        "avgPer1M": 6.25
-      },
-      "architecture": "text+image+file->text",
-      "multimodal": true,
-      "description": "GPT-4o (\"o\" for \"omni\") is OpenAI's latest AI model, supporting both text and image inputs with text outputs. It maintains the intelligence level of [GPT-4 Turbo](/models/openai/gpt-4-turbo) while bei"
-    },
-    {
       "id": "openai/gpt-4o-2024-05-13",
       "name": "OpenAI: GPT-4o",
       "provider": "openai",
@@ -2765,6 +2749,22 @@
         "promptPer1M": 5,
         "completionPer1M": 15,
         "avgPer1M": 10
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-4o (\"o\" for \"omni\") is OpenAI's latest AI model, supporting both text and image inputs with text outputs. It maintains the intelligence level of [GPT-4 Turbo](/models/openai/gpt-4-turbo) while bei"
+    },
+    {
+      "id": "openai/gpt-4o",
+      "name": "OpenAI: GPT-4o",
+      "provider": "openai",
+      "created": 1715558400,
+      "contextLength": 128000,
+      "maxCompletionTokens": 16384,
+      "pricing": {
+        "promptPer1M": 2.5,
+        "completionPer1M": 10,
+        "avgPer1M": 6.25
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
@@ -2787,7 +2787,7 @@
       "description": "GPT-4o Search Previewis a specialized model for web search in Chat Completions. It is trained to understand and execute web search queries."
     },
     {
-      "id": "openai/gpt-4o-mini-2024-07-18",
+      "id": "openai/gpt-4o-mini",
       "name": "OpenAI: GPT-4o-mini",
       "provider": "openai",
       "created": 1721260800,
@@ -2803,7 +2803,7 @@
       "description": "GPT-4o mini is OpenAI's newest model after [GPT-4 Omni](/models/openai/gpt-4o), supporting both text and image inputs with text outputs. As their most advanced small model, it is many multiples more a"
     },
     {
-      "id": "openai/gpt-4o-mini",
+      "id": "openai/gpt-4o-mini-2024-07-18",
       "name": "OpenAI: GPT-4o-mini",
       "provider": "openai",
       "created": 1721260800,
@@ -4615,8 +4615,8 @@
       "name": "TheDrummer: Rocinante 12B",
       "provider": "thedrummer",
       "created": 1727654400,
-      "contextLength": 32768,
-      "maxCompletionTokens": null,
+      "contextLength": 65536,
+      "maxCompletionTokens": 65536,
       "pricing": {
         "promptPer1M": 0.25,
         "completionPer1M": 0.5,
@@ -4766,7 +4766,7 @@
         "completionPer1M": 2,
         "avgPer1M": 1.5
       },
-      "architecture": "text+image->text",
+      "architecture": "text+image+file->text",
       "multimodal": true,
       "description": "Grok Build 0.1 is xAI’s fast coding model trained specifically for agentic software engineering workflows. It supports text and image inputs with text output, and is optimized for interactive coding.."
     },
@@ -4968,11 +4968,11 @@
       "provider": "z-ai",
       "created": 1781631930,
       "contextLength": 1048576,
-      "maxCompletionTokens": 131072,
+      "maxCompletionTokens": 32768,
       "pricing": {
-        "promptPer1M": 0.91,
-        "completionPer1M": 2.86,
-        "avgPer1M": 1.88
+        "promptPer1M": 0.93,
+        "completionPer1M": 3,
+        "avgPer1M": 1.97
       },
       "architecture": "text->text",
       "multimodal": false,
