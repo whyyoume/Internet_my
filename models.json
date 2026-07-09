@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-08T04:58:05.045Z",
-  "total": 312,
+  "updatedAt": "2026-07-09T05:54:51.097Z",
+  "total": 313,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -106,9 +106,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.66,
+        "promptPer1M": 0.65,
         "completionPer1M": 3.41,
-        "avgPer1M": 2.04
+        "avgPer1M": 2.03
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -145,6 +145,22 @@
       "architecture": "text+image+file->text",
       "multimodal": true,
       "description": "This model always redirects to the latest model in the OpenAI GPT Mini family."
+    },
+    {
+      "id": "~x-ai/grok-latest",
+      "name": "xAI: Grok Latest",
+      "provider": "~x-ai",
+      "created": 1783519360,
+      "contextLength": 500000,
+      "maxCompletionTokens": null,
+      "pricing": {
+        "promptPer1M": 2,
+        "completionPer1M": 6,
+        "avgPer1M": 4
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "This model always redirects to the latest Grok model from xAI."
     },
     {
       "id": "ai21/jamba-large-1.7",
@@ -384,7 +400,7 @@
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
-      "description": "Claude Haiku 4.5 is Anthropic’s fastest and most efficient model, delivering near-frontier intelligence at a fraction of the cost and latency of larger Claude models. Matching Claude Sonnet 4’s perfor"
+      "description": "Claude Haiku 4.5 is Anthropic��s fastest and most efficient model, delivering near-frontier intelligence at a fraction of the cost and latency of larger Claude models. Matching Claude Sonnet 4’s perfo"
     },
     {
       "id": "anthropic/claude-opus-4",
@@ -2282,9 +2298,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.66,
+        "promptPer1M": 0.65,
         "completionPer1M": 3.41,
-        "avgPer1M": 2.04
+        "avgPer1M": 2.03
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -2787,7 +2803,7 @@
       "description": "GPT-4o Search Previewis a specialized model for web search in Chat Completions. It is trained to understand and execute web search queries."
     },
     {
-      "id": "openai/gpt-4o-mini",
+      "id": "openai/gpt-4o-mini-2024-07-18",
       "name": "OpenAI: GPT-4o-mini",
       "provider": "openai",
       "created": 1721260800,
@@ -2803,7 +2819,7 @@
       "description": "GPT-4o mini is OpenAI's newest model after [GPT-4 Omni](/models/openai/gpt-4o), supporting both text and image inputs with text outputs. As their most advanced small model, it is many multiples more a"
     },
     {
-      "id": "openai/gpt-4o-mini-2024-07-18",
+      "id": "openai/gpt-4o-mini",
       "name": "OpenAI: GPT-4o-mini",
       "provider": "openai",
       "created": 1721260800,
@@ -4531,22 +4547,6 @@
       "description": "Step 3.7 Flash is StepFun's latest high-efficiency multimodal Mixture-of-Experts model. It pairs a 196B-parameter language backbone with a vision encoder for native image and video understanding, acti"
     },
     {
-      "id": "switchpoint/router",
-      "name": "Switchpoint Router",
-      "provider": "switchpoint",
-      "created": 1752272899,
-      "contextLength": 131072,
-      "maxCompletionTokens": null,
-      "pricing": {
-        "promptPer1M": 0.85,
-        "completionPer1M": 3.4,
-        "avgPer1M": 2.13
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "Switchpoint AI's router instantly analyzes your request and directs it to the optimal AI from an ever-evolving library. As the world of LLMs advances, our router gets smarter, ensuring you..."
-    },
-    {
       "id": "tencent/hunyuan-a13b-instruct",
       "name": "Tencent: Hunyuan A13B Instruct",
       "provider": "tencent",
@@ -4568,11 +4568,11 @@
       "provider": "tencent",
       "created": 1783344048,
       "contextLength": 262144,
-      "maxCompletionTokens": 131072,
+      "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 0.2,
-        "completionPer1M": 0.8,
-        "avgPer1M": 0.5
+        "promptPer1M": 0.14,
+        "completionPer1M": 0.58,
+        "avgPer1M": 0.36
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -4753,6 +4753,22 @@
       "architecture": "text+image+file->text",
       "multimodal": true,
       "description": "Grok 4.3 is a reasoning model from xAI. It accepts text and image inputs with text output, and is suited for agentic workflows, instruction-following tasks, and applications requiring high factual..."
+    },
+    {
+      "id": "x-ai/grok-4.5",
+      "name": "xAI: Grok 4.5",
+      "provider": "x-ai",
+      "created": 1783523154,
+      "contextLength": 500000,
+      "maxCompletionTokens": null,
+      "pricing": {
+        "promptPer1M": 2,
+        "completionPer1M": 6,
+        "avgPer1M": 4
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "Grok 4.5 is SpaceXAI's smartest model with frontier performance on coding, knowledge work, and STEM."
     },
     {
       "id": "x-ai/grok-build-0.1",
@@ -4968,11 +4984,11 @@
       "provider": "z-ai",
       "created": 1781631930,
       "contextLength": 1048576,
-      "maxCompletionTokens": 32768,
+      "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.93,
-        "completionPer1M": 3,
-        "avgPer1M": 1.97
+        "promptPer1M": 0.84,
+        "completionPer1M": 2.64,
+        "avgPer1M": 1.74
       },
       "architecture": "text->text",
       "multimodal": false,
