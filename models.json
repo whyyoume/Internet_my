@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-09T05:54:51.097Z",
-  "total": 313,
+  "updatedAt": "2026-07-10T05:53:53.132Z",
+  "total": 317,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -106,9 +106,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.65,
+        "promptPer1M": 0.66,
         "completionPer1M": 3.41,
-        "avgPer1M": 2.03
+        "avgPer1M": 2.04
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -400,7 +400,7 @@
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
-      "description": "Claude Haiku 4.5 is Anthropic��s fastest and most efficient model, delivering near-frontier intelligence at a fraction of the cost and latency of larger Claude models. Matching Claude Sonnet 4’s perfo"
+      "description": "Claude Haiku 4.5 is Anthropic’s fastest and most efficient model, delivering near-frontier intelligence at a fraction of the cost and latency of larger Claude models. Matching Claude Sonnet 4’s perfor"
     },
     {
       "id": "anthropic/claude-opus-4",
@@ -755,6 +755,22 @@
       "description": "Seed-2.0-mini targets latency-sensitive, high-concurrency, and cost-sensitive scenarios, emphasizing fast response and flexible inference deployment. It delivers performance comparable to ByteDance-Se"
     },
     {
+      "id": "cognitivecomputations/dolphin-mistral-24b-venice-edition",
+      "name": "Venice: Uncensored",
+      "provider": "cognitivecomputations",
+      "created": 1752094966,
+      "contextLength": 128000,
+      "maxCompletionTokens": 8192,
+      "pricing": {
+        "promptPer1M": 0.2,
+        "completionPer1M": 0.9,
+        "avgPer1M": 0.55
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "Venice Uncensored Dolphin Mistral 24B Venice Edition is a fine-tuned variant of Mistral-Small-24B-Instruct-2501, developed by dphn.ai in collaboration with Venice.ai. This model is designed as an “unc"
+    },
+    {
       "id": "cohere/command-a",
       "name": "Cohere: Command A",
       "provider": "cohere",
@@ -906,9 +922,9 @@
       "contextLength": 131072,
       "maxCompletionTokens": 64000,
       "pricing": {
-        "promptPer1M": 0.23,
-        "completionPer1M": 0.34,
-        "avgPer1M": 0.29
+        "promptPer1M": 0.21,
+        "completionPer1M": 0.32,
+        "avgPer1M": 0.27
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1031,22 +1047,6 @@
       "name": "Google: Gemini 2.5 Flash Lite",
       "provider": "google",
       "created": 1753200276,
-      "contextLength": 1048576,
-      "maxCompletionTokens": 65535,
-      "pricing": {
-        "promptPer1M": 0.1,
-        "completionPer1M": 0.4,
-        "avgPer1M": 0.25
-      },
-      "architecture": "text+image+file+audio+video->text",
-      "multimodal": true,
-      "description": "Gemini 2.5 Flash-Lite is a lightweight reasoning model in the Gemini 2.5 family, optimized for ultra-low latency and cost efficiency. It offers improved throughput, faster token generation, and better"
-    },
-    {
-      "id": "google/gemini-2.5-flash-lite-preview-09-2025",
-      "name": "Google: Gemini 2.5 Flash Lite Preview 09-2025",
-      "provider": "google",
-      "created": 1758819686,
       "contextLength": 1048576,
       "maxCompletionTokens": 65535,
       "pricing": {
@@ -1571,22 +1571,6 @@
       "description": "KAT-Coder-Pro V2 is the latest high-performance model in KwaiKAT’s KAT-Coder series, designed for complex enterprise-grade software engineering and SaaS integration. It builds on the agentic coding st"
     },
     {
-      "id": "liquid/lfm-2-24b-a2b",
-      "name": "LiquidAI: LFM2-24B-A2B",
-      "provider": "liquid",
-      "created": 1772048711,
-      "contextLength": 128000,
-      "maxCompletionTokens": null,
-      "pricing": {
-        "promptPer1M": 0.03,
-        "completionPer1M": 0.12,
-        "avgPer1M": 0.08
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "LFM2-24B-A2B is the largest model in the LFM2 family of hybrid architectures designed for efficient on-device deployment. Built as a 24B parameter Mixture-of-Experts model with only 2B active paramete"
-    },
-    {
       "id": "mancer/weaver",
       "name": "Mancer: Weaver",
       "provider": "mancer",
@@ -1866,9 +1850,9 @@
       "contextLength": 204800,
       "maxCompletionTokens": 196608,
       "pricing": {
-        "promptPer1M": 0.12,
-        "completionPer1M": 0.48,
-        "avgPer1M": 0.3
+        "promptPer1M": 0.15,
+        "completionPer1M": 0.9,
+        "avgPer1M": 0.52
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1882,9 +1866,9 @@
       "contextLength": 204800,
       "maxCompletionTokens": 196608,
       "pricing": {
-        "promptPer1M": 0.18,
-        "completionPer1M": 0.72,
-        "avgPer1M": 0.45
+        "promptPer1M": 0.24,
+        "completionPer1M": 0.96,
+        "avgPer1M": 0.6
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1896,7 +1880,7 @@
       "provider": "minimax",
       "created": 1780245374,
       "contextLength": 1048576,
-      "maxCompletionTokens": 512000,
+      "maxCompletionTokens": 131072,
       "pricing": {
         "promptPer1M": 0.3,
         "completionPer1M": 1.2,
@@ -2298,9 +2282,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.65,
+        "promptPer1M": 0.66,
         "completionPer1M": 3.41,
-        "avgPer1M": 2.03
+        "avgPer1M": 2.04
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -2312,11 +2296,11 @@
       "provider": "moonshotai",
       "created": 1781266361,
       "contextLength": 262144,
-      "maxCompletionTokens": 16384,
+      "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.74,
-        "completionPer1M": 3.5,
-        "avgPer1M": 2.12
+        "promptPer1M": 0.72,
+        "completionPer1M": 3.49,
+        "avgPer1M": 2.11
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -3267,16 +3251,112 @@
       "description": "GPT-5.5 Pro is OpenAI’s high-capability model optimized for deep reasoning and accuracy on complex, high-stakes workloads. It features a 1M+ token context window (922K input, 128K output) with support"
     },
     {
+      "id": "openai/gpt-5.6-luna",
+      "name": "OpenAI: GPT-5.6 Luna",
+      "provider": "openai",
+      "created": 1783590864,
+      "contextLength": 1050000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 1,
+        "completionPer1M": 6,
+        "avgPer1M": 3.5
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-5.6 Luna is a fast, cost-efficient model in OpenAI's GPT-5.6 series. It is suited for high-volume, latency-sensitive tasks such as chat, classification, and lightweight agentic workflows, providin"
+    },
+    {
+      "id": "openai/gpt-5.6-luna-pro",
+      "name": "OpenAI: GPT-5.6 Luna Pro",
+      "provider": "openai",
+      "created": 1783590867,
+      "contextLength": 1050000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 1,
+        "completionPer1M": 6,
+        "avgPer1M": 3.5
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-5.6 Luna Pro is the same underlying model as [GPT-5.6 Luna](https://openrouter.ai/openai/gpt-5.6-luna), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n\nLe"
+    },
+    {
+      "id": "openai/gpt-5.6-sol",
+      "name": "OpenAI: GPT-5.6 Sol",
+      "provider": "openai",
+      "created": 1783590850,
+      "contextLength": 1050000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 5,
+        "completionPer1M": 30,
+        "avgPer1M": 17.5
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-5.6 Sol is the flagship model in OpenAI's GPT-5.6 series. It is suited for complex reasoning, coding, and agentic workflows, and is particularly strong at command-line and multi-step coding tasks."
+    },
+    {
+      "id": "openai/gpt-5.6-sol-pro",
+      "name": "OpenAI: GPT-5.6 Sol Pro",
+      "provider": "openai",
+      "created": 1783590854,
+      "contextLength": 1050000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 5,
+        "completionPer1M": 30,
+        "avgPer1M": 17.5
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-5.6 Sol Pro is the same underlying model as [GPT-5.6 Sol](https://openrouter.ai/openai/gpt-5.6-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n\nLearn"
+    },
+    {
+      "id": "openai/gpt-5.6-terra",
+      "name": "OpenAI: GPT-5.6 Terra",
+      "provider": "openai",
+      "created": 1783590857,
+      "contextLength": 1050000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 2.5,
+        "completionPer1M": 15,
+        "avgPer1M": 8.75
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-5.6 Terra is a balanced model in OpenAI's GPT-5.6 series, positioned between the flagship Sol tier and the cost-efficient Luna tier. It is suited for everyday coding, reasoning, and agentic..."
+    },
+    {
+      "id": "openai/gpt-5.6-terra-pro",
+      "name": "OpenAI: GPT-5.6 Terra Pro",
+      "provider": "openai",
+      "created": 1783590861,
+      "contextLength": 1050000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 2.5,
+        "completionPer1M": 15,
+        "avgPer1M": 8.75
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-5.6 Terra Pro is the same underlying model as [GPT-5.6 Terra](https://openrouter.ai/openai/gpt-5.6-terra), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n"
+    },
+    {
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "provider": "openai",
       "created": 1754414231,
       "contextLength": 131072,
-      "maxCompletionTokens": 131072,
+      "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 0.03,
-        "completionPer1M": 0.15,
-        "avgPer1M": 0.09
+        "promptPer1M": 0.04,
+        "completionPer1M": 0.18,
+        "avgPer1M": 0.11
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -3601,22 +3681,6 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "Laguna XS 2.1 is the latest coding agent model in the 33B-A3B category from [Poolside](https://poolside.ai/) and a step forward from their Laguna XS.2 model (released in April 2026). It combines..."
-    },
-    {
-      "id": "poolside/laguna-xs.2",
-      "name": "Poolside: Laguna XS.2",
-      "provider": "poolside",
-      "created": 1777389604,
-      "contextLength": 262144,
-      "maxCompletionTokens": 32768,
-      "pricing": {
-        "promptPer1M": 0.1,
-        "completionPer1M": 0.2,
-        "avgPer1M": 0.15
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "Laguna XS.2 is the second-generation model in the XS size class from [Poolside](https://poolside.ai/), their efficient coding agent series. It combines tool calling and reasoning capabilities with a c"
     },
     {
       "id": "qwen/qwen-plus-2025-07-28:thinking",
@@ -4984,11 +5048,11 @@
       "provider": "z-ai",
       "created": 1781631930,
       "contextLength": 1048576,
-      "maxCompletionTokens": 131072,
+      "maxCompletionTokens": 101376,
       "pricing": {
-        "promptPer1M": 0.84,
-        "completionPer1M": 2.64,
-        "avgPer1M": 1.74
+        "promptPer1M": 0.54,
+        "completionPer1M": 1.76,
+        "avgPer1M": 1.15
       },
       "architecture": "text->text",
       "multimodal": false,
