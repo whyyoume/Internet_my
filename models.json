@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-10T05:53:53.132Z",
-  "total": 317,
+  "updatedAt": "2026-07-11T04:53:04.546Z",
+  "total": 315,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -627,22 +627,6 @@
       "description": "Trinity Large Thinking is a powerful open source reasoning model from the team at Arcee AI. It shows strong performance in PinchBench, agentic workloads, and reasoning tasks. Launch video: https://you"
     },
     {
-      "id": "arcee-ai/trinity-mini",
-      "name": "Arcee AI: Trinity Mini",
-      "provider": "arcee-ai",
-      "created": 1764601720,
-      "contextLength": 131072,
-      "maxCompletionTokens": 131072,
-      "pricing": {
-        "promptPer1M": 0.05,
-        "completionPer1M": 0.15,
-        "avgPer1M": 0.1
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "Trinity Mini is a 26B-parameter (3B active) sparse mixture-of-experts language model featuring 128 experts with 8 active per token. Engineered for efficient reasoning over long contexts (131k) with ro"
-    },
-    {
       "id": "arcee-ai/virtuoso-large",
       "name": "Arcee AI: Virtuoso Large",
       "provider": "arcee-ai",
@@ -952,11 +936,11 @@
       "provider": "deepseek",
       "created": 1777000666,
       "contextLength": 1048576,
-      "maxCompletionTokens": 65536,
+      "maxCompletionTokens": 384000,
       "pricing": {
-        "promptPer1M": 0.09,
-        "completionPer1M": 0.18,
-        "avgPer1M": 0.14
+        "promptPer1M": 0.08,
+        "completionPer1M": 0.17,
+        "avgPer1M": 0.13
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1585,22 +1569,6 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "An attempt to recreate Claude-style verbosity, but don't expect the same level of coherence or memory. Meant for use in roleplay/narrative situations."
-    },
-    {
-      "id": "meta-llama/llama-3-8b-instruct",
-      "name": "Meta: Llama 3 8B Instruct",
-      "provider": "meta-llama",
-      "created": 1713398400,
-      "contextLength": 8192,
-      "maxCompletionTokens": null,
-      "pricing": {
-        "promptPer1M": 0.14,
-        "completionPer1M": 0.14,
-        "avgPer1M": 0.14
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "Meta's latest class of model (Llama 3) launched with a variety of sizes & flavors. This 8B instruct-tuned version was optimized for high quality dialogue usecases. It has demonstrated strong..."
     },
     {
       "id": "meta-llama/llama-3.1-70b-instruct",
@@ -5048,11 +5016,11 @@
       "provider": "z-ai",
       "created": 1781631930,
       "contextLength": 1048576,
-      "maxCompletionTokens": 101376,
+      "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.54,
-        "completionPer1M": 1.76,
-        "avgPer1M": 1.15
+        "promptPer1M": 0.42,
+        "completionPer1M": 1.32,
+        "avgPer1M": 0.87
       },
       "architecture": "text->text",
       "multimodal": false,
