@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-11T04:53:04.546Z",
+  "updatedAt": "2026-07-12T05:15:43.838Z",
   "total": 315,
   "models": [
     {
@@ -939,8 +939,8 @@
       "maxCompletionTokens": 384000,
       "pricing": {
         "promptPer1M": 0.08,
-        "completionPer1M": 0.17,
-        "avgPer1M": 0.13
+        "completionPer1M": 0.15,
+        "avgPer1M": 0.12
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -2267,7 +2267,7 @@
       "maxCompletionTokens": 262144,
       "pricing": {
         "promptPer1M": 0.72,
-        "completionPer1M": 3.49,
+        "completionPer1M": 3.5,
         "avgPer1M": 2.11
       },
       "architecture": "text+image->text",
@@ -3720,11 +3720,11 @@
       "provider": "qwen",
       "created": 1738410311,
       "contextLength": 131072,
-      "maxCompletionTokens": 128000,
+      "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 0.8,
-        "completionPer1M": 1,
-        "avgPer1M": 0.9
+        "promptPer1M": 0.25,
+        "completionPer1M": 0.75,
+        "avgPer1M": 0.5
       },
       "architecture": "text+image->text",
       "multimodal": true,
