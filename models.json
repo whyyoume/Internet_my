@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-13T05:25:05.163Z",
-  "total": 315,
+  "updatedAt": "2026-07-14T04:39:49.312Z",
+  "total": 317,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -874,9 +874,9 @@
       "contextLength": 163840,
       "maxCompletionTokens": 32768,
       "pricing": {
-        "promptPer1M": 0.21,
-        "completionPer1M": 0.79,
-        "avgPer1M": 0.5
+        "promptPer1M": 0.25,
+        "completionPer1M": 0.95,
+        "avgPer1M": 0.6
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -936,11 +936,11 @@
       "provider": "deepseek",
       "created": 1777000666,
       "contextLength": 1048576,
-      "maxCompletionTokens": 384000,
+      "maxCompletionTokens": 65536,
       "pricing": {
-        "promptPer1M": 0.08,
-        "completionPer1M": 0.15,
-        "avgPer1M": 0.12
+        "promptPer1M": 0.09,
+        "completionPer1M": 0.18,
+        "avgPer1M": 0.14
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1539,6 +1539,22 @@
       "description": "Inflection 3 Productivity is optimized for following instructions. It is better for tasks requiring JSON output or precise adherence to provided guidelines. It has access to recent news. For emotional"
     },
     {
+      "id": "kwaipilot/kat-coder-air-v2.5",
+      "name": "Kwaipilot: KAT-Coder-Air V2.5",
+      "provider": "kwaipilot",
+      "created": 1783714590,
+      "contextLength": 256000,
+      "maxCompletionTokens": 80000,
+      "pricing": {
+        "promptPer1M": 0.15,
+        "completionPer1M": 0.6,
+        "avgPer1M": 0.38
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": ""
+    },
+    {
       "id": "kwaipilot/kat-coder-pro-v2",
       "name": "Kwaipilot: KAT-Coder-Pro V2",
       "provider": "kwaipilot",
@@ -1553,6 +1569,22 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "KAT-Coder-Pro V2 is the latest high-performance model in KwaiKAT’s KAT-Coder series, designed for complex enterprise-grade software engineering and SaaS integration. It builds on the agentic coding st"
+    },
+    {
+      "id": "kwaipilot/kat-coder-pro-v2.5",
+      "name": "Kwaipilot: KAT-Coder-Pro V2.5",
+      "provider": "kwaipilot",
+      "created": 1783714589,
+      "contextLength": 256000,
+      "maxCompletionTokens": 80000,
+      "pricing": {
+        "promptPer1M": 0.74,
+        "completionPer1M": 2.96,
+        "avgPer1M": 1.85
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": ""
     },
     {
       "id": "mancer/weaver",
@@ -2707,22 +2739,6 @@
       "description": "The 2024-08-06 version of GPT-4o offers improved performance in structured outputs, with the ability to supply a JSON schema in the respone_format. Read more [here](https://openai.com/index/introducin"
     },
     {
-      "id": "openai/gpt-4o-2024-05-13",
-      "name": "OpenAI: GPT-4o",
-      "provider": "openai",
-      "created": 1715558400,
-      "contextLength": 128000,
-      "maxCompletionTokens": 4096,
-      "pricing": {
-        "promptPer1M": 5,
-        "completionPer1M": 15,
-        "avgPer1M": 10
-      },
-      "architecture": "text+image+file->text",
-      "multimodal": true,
-      "description": "GPT-4o (\"o\" for \"omni\") is OpenAI's latest AI model, supporting both text and image inputs with text outputs. It maintains the intelligence level of [GPT-4 Turbo](/models/openai/gpt-4-turbo) while bei"
-    },
-    {
       "id": "openai/gpt-4o",
       "name": "OpenAI: GPT-4o",
       "provider": "openai",
@@ -2733,6 +2749,22 @@
         "promptPer1M": 2.5,
         "completionPer1M": 10,
         "avgPer1M": 6.25
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-4o (\"o\" for \"omni\") is OpenAI's latest AI model, supporting both text and image inputs with text outputs. It maintains the intelligence level of [GPT-4 Turbo](/models/openai/gpt-4-turbo) while bei"
+    },
+    {
+      "id": "openai/gpt-4o-2024-05-13",
+      "name": "OpenAI: GPT-4o",
+      "provider": "openai",
+      "created": 1715558400,
+      "contextLength": 128000,
+      "maxCompletionTokens": 4096,
+      "pricing": {
+        "promptPer1M": 5,
+        "completionPer1M": 15,
+        "avgPer1M": 10
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
@@ -2755,7 +2787,7 @@
       "description": "GPT-4o Search Previewis a specialized model for web search in Chat Completions. It is trained to understand and execute web search queries."
     },
     {
-      "id": "openai/gpt-4o-mini-2024-07-18",
+      "id": "openai/gpt-4o-mini",
       "name": "OpenAI: GPT-4o-mini",
       "provider": "openai",
       "created": 1721260800,
@@ -2771,7 +2803,7 @@
       "description": "GPT-4o mini is OpenAI's newest model after [GPT-4 Omni](/models/openai/gpt-4o), supporting both text and image inputs with text outputs. As their most advanced small model, it is many multiples more a"
     },
     {
-      "id": "openai/gpt-4o-mini",
+      "id": "openai/gpt-4o-mini-2024-07-18",
       "name": "OpenAI: GPT-4o-mini",
       "provider": "openai",
       "created": 1721260800,
@@ -2904,7 +2936,7 @@
       "provider": "openai",
       "created": 1754587402,
       "contextLength": 400000,
-      "maxCompletionTokens": null,
+      "maxCompletionTokens": 128000,
       "pricing": {
         "promptPer1M": 0.05,
         "completionPer1M": 0.4,
@@ -3320,11 +3352,11 @@
       "provider": "openai",
       "created": 1754414231,
       "contextLength": 131072,
-      "maxCompletionTokens": null,
+      "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.04,
-        "completionPer1M": 0.18,
-        "avgPer1M": 0.11
+        "promptPer1M": 0.03,
+        "completionPer1M": 0.15,
+        "avgPer1M": 0.09
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -3651,7 +3683,7 @@
       "description": "Laguna XS 2.1 is the latest coding agent model in the 33B-A3B category from [Poolside](https://poolside.ai/) and a step forward from their Laguna XS.2 model (released in April 2026). It combines..."
     },
     {
-      "id": "qwen/qwen-plus-2025-07-28:thinking",
+      "id": "qwen/qwen-plus-2025-07-28",
       "name": "Qwen: Qwen Plus 0728",
       "provider": "qwen",
       "created": 1757347599,
@@ -3667,7 +3699,7 @@
       "description": "Qwen Plus 0728, based on the Qwen3 foundation model, is a 1 million context hybrid reasoning model with a balanced performance, speed, and cost combination."
     },
     {
-      "id": "qwen/qwen-plus-2025-07-28",
+      "id": "qwen/qwen-plus-2025-07-28:thinking",
       "name": "Qwen: Qwen Plus 0728",
       "provider": "qwen",
       "created": 1757347599,
@@ -4264,7 +4296,7 @@
       "provider": "qwen",
       "created": 1777255064,
       "contextLength": 262144,
-      "maxCompletionTokens": 262140,
+      "maxCompletionTokens": 131072,
       "pricing": {
         "promptPer1M": 0.29,
         "completionPer1M": 2.4,
@@ -5016,11 +5048,11 @@
       "provider": "z-ai",
       "created": 1781631930,
       "contextLength": 1048576,
-      "maxCompletionTokens": 1048576,
+      "maxCompletionTokens": 128000,
       "pricing": {
-        "promptPer1M": 0.85,
-        "completionPer1M": 2.5,
-        "avgPer1M": 1.68
+        "promptPer1M": 0.93,
+        "completionPer1M": 2.92,
+        "avgPer1M": 1.93
       },
       "architecture": "text->text",
       "multimodal": false,
