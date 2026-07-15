@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-14T04:39:49.312Z",
-  "total": 317,
+  "updatedAt": "2026-07-15T04:39:32.575Z",
+  "total": 316,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -1552,7 +1552,7 @@
       },
       "architecture": "text->text",
       "multimodal": false,
-      "description": ""
+      "description": "KAT-Coder-Air V2.5 is a flagship-level Agentic Coding model that can directly hand over an entire issue or an entire business workflow to it, allowing it to autonomously locate and make..."
     },
     {
       "id": "kwaipilot/kat-coder-pro-v2",
@@ -1584,7 +1584,7 @@
       },
       "architecture": "text->text",
       "multimodal": false,
-      "description": ""
+      "description": "KAT-Coder-Pro V2.5 is a flagship-level Agentic Coding model that can directly hand over an entire issue or an entire business workflow to it, allowing it to autonomously locate and make..."
     },
     {
       "id": "mancer/weaver",
@@ -4531,22 +4531,6 @@
       "description": "Lunaris 8B is a versatile generalist and roleplaying model based on Llama 3. It's a strategic merge of multiple models, designed to balance creativity with improved logic and general knowledge...."
     },
     {
-      "id": "sao10k/l3.1-70b-hanami-x1",
-      "name": "Sao10K: Llama 3.1 70B Hanami x1",
-      "provider": "sao10k",
-      "created": 1736302854,
-      "contextLength": 16000,
-      "maxCompletionTokens": null,
-      "pricing": {
-        "promptPer1M": 3,
-        "completionPer1M": 3,
-        "avgPer1M": 3
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "This is [Sao10K](/sao10k)'s experiment over [Euryale v2.2](/sao10k/l3.1-euryale-70b)."
-    },
-    {
       "id": "sao10k/l3.1-euryale-70b",
       "name": "Sao10K: Llama 3.1 Euryale 70B v2.2",
       "provider": "sao10k",
@@ -5000,7 +4984,7 @@
       "provider": "z-ai",
       "created": 1770829182,
       "contextLength": 202752,
-      "maxCompletionTokens": null,
+      "maxCompletionTokens": 128000,
       "pricing": {
         "promptPer1M": 0.6,
         "completionPer1M": 1.92,
@@ -5050,9 +5034,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 128000,
       "pricing": {
-        "promptPer1M": 0.93,
-        "completionPer1M": 2.92,
-        "avgPer1M": 1.93
+        "promptPer1M": 0.9,
+        "completionPer1M": 2.82,
+        "avgPer1M": 1.86
       },
       "architecture": "text->text",
       "multimodal": false,
