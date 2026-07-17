@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-16T04:49:53.019Z",
-  "total": 315,
+  "updatedAt": "2026-07-17T04:52:51.539Z",
+  "total": 317,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -103,12 +103,12 @@
       "name": "MoonshotAI Kimi Latest",
       "provider": "~moonshotai",
       "created": 1777318428,
-      "contextLength": 262144,
-      "maxCompletionTokens": 262144,
+      "contextLength": 1048576,
+      "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 0.66,
-        "completionPer1M": 3.41,
-        "avgPer1M": 2.04
+        "promptPer1M": 3,
+        "completionPer1M": 15,
+        "avgPer1M": 9
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -1208,11 +1208,11 @@
       "provider": "google",
       "created": 1741756359,
       "contextLength": 131072,
-      "maxCompletionTokens": 131072,
+      "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 0.08,
-        "completionPer1M": 0.45,
-        "avgPer1M": 0.26
+        "promptPer1M": 0.1,
+        "completionPer1M": 0.3,
+        "avgPer1M": 0.2
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -1587,6 +1587,22 @@
       "description": "An attempt to recreate Claude-style verbosity, but don't expect the same level of coherence or memory. Meant for use in roleplay/narrative situations."
     },
     {
+      "id": "meta/muse-spark-1.1",
+      "name": "Meta: Muse Spark 1.1",
+      "provider": "meta",
+      "created": 1784215741,
+      "contextLength": 1048576,
+      "maxCompletionTokens": null,
+      "pricing": {
+        "promptPer1M": 1.25,
+        "completionPer1M": 4.25,
+        "avgPer1M": 2.75
+      },
+      "architecture": "text+image+file+audio+video->text",
+      "multimodal": true,
+      "description": "Muse Spark 1.1 is a multimodal reasoning model from Meta, built for agentic tasks. It accepts text, images, video, audio, and PDF documents and returns text, with a 1M-token context..."
+    },
+    {
       "id": "meta-llama/llama-3.1-70b-instruct",
       "name": "Meta: Llama 3.1 70B Instruct",
       "provider": "meta-llama",
@@ -1656,10 +1672,10 @@
       "provider": "meta-llama",
       "created": 1727222400,
       "contextLength": 131072,
-      "maxCompletionTokens": 131072,
+      "maxCompletionTokens": 80000,
       "pricing": {
         "promptPer1M": 0.05,
-        "completionPer1M": 0.33,
+        "completionPer1M": 0.34,
         "avgPer1M": 0.19
       },
       "architecture": "text->text",
@@ -1850,9 +1866,9 @@
       "contextLength": 204800,
       "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.3,
-        "completionPer1M": 1.2,
-        "avgPer1M": 0.75
+        "promptPer1M": 0.25,
+        "completionPer1M": 1,
+        "avgPer1M": 0.63
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -2075,8 +2091,8 @@
       "maxCompletionTokens": 16384,
       "pricing": {
         "promptPer1M": 0.02,
-        "completionPer1M": 0.04,
-        "avgPer1M": 0.03
+        "completionPer1M": 0.03,
+        "avgPer1M": 0.02
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -2264,11 +2280,11 @@
       "provider": "moonshotai",
       "created": 1776699402,
       "contextLength": 262144,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 0.66,
-        "completionPer1M": 3.41,
-        "avgPer1M": 2.04
+        "promptPer1M": 0.95,
+        "completionPer1M": 4,
+        "avgPer1M": 2.48
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -2282,13 +2298,29 @@
       "contextLength": 262144,
       "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.72,
-        "completionPer1M": 3.49,
-        "avgPer1M": 2.1
+        "promptPer1M": 0.75,
+        "completionPer1M": 3.5,
+        "avgPer1M": 2.13
       },
       "architecture": "text+image->text",
       "multimodal": true,
       "description": "MoonshotAI: Kimi K2.7 Code is a coding-focused model in Moonshot AI's Kimi K2 family, built to complete end-to-end programming tasks reliably over long contexts. It uses a native multimodal mixture-of"
+    },
+    {
+      "id": "moonshotai/kimi-k3",
+      "name": "MoonshotAI: Kimi K3",
+      "provider": "moonshotai",
+      "created": 1784215858,
+      "contextLength": 1048576,
+      "maxCompletionTokens": null,
+      "pricing": {
+        "promptPer1M": 3,
+        "completionPer1M": 15,
+        "avgPer1M": 9
+      },
+      "architecture": "text+image->text",
+      "multimodal": true,
+      "description": "Kimi K3 is a 2.8T parameter open-weight multimodal reasoning model from Moonshot AI. It is suited for complex coding, knowledge work, and long-horizon agentic workflows, and is particularly strong at."
     },
     {
       "id": "morph/morph-v3-fast",
@@ -3752,11 +3784,11 @@
       "provider": "qwen",
       "created": 1745876478,
       "contextLength": 131702,
-      "maxCompletionTokens": 16384,
+      "maxCompletionTokens": 40960,
       "pricing": {
-        "promptPer1M": 0.12,
+        "promptPer1M": 0.1,
         "completionPer1M": 0.24,
-        "avgPer1M": 0.18
+        "avgPer1M": 0.17
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -4154,9 +4186,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 65536,
       "pricing": {
-        "promptPer1M": 0.45,
-        "completionPer1M": 3,
-        "avgPer1M": 1.73
+        "promptPer1M": 0.39,
+        "completionPer1M": 2.34,
+        "avgPer1M": 1.37
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -5018,9 +5050,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.95,
-        "completionPer1M": 3,
-        "avgPer1M": 1.98
+        "promptPer1M": 0.98,
+        "completionPer1M": 3.07,
+        "avgPer1M": 2.02
       },
       "architecture": "text->text",
       "multimodal": false,
