@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-18T04:37:55.531Z",
+  "updatedAt": "2026-07-19T05:00:12.847Z",
   "total": 316,
   "models": [
     {
@@ -1256,11 +1256,11 @@
       "provider": "google",
       "created": 1775227989,
       "contextLength": 262144,
-      "maxCompletionTokens": 256000,
+      "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.1,
-        "completionPer1M": 0.3,
-        "avgPer1M": 0.2
+        "promptPer1M": 0.07,
+        "completionPer1M": 0.34,
+        "avgPer1M": 0.21
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -1786,9 +1786,9 @@
       "contextLength": 204800,
       "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.26,
-        "completionPer1M": 1.02,
-        "avgPer1M": 0.64
+        "promptPer1M": 0.3,
+        "completionPer1M": 1.2,
+        "avgPer1M": 0.75
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -2264,11 +2264,11 @@
       "provider": "moonshotai",
       "created": 1776699402,
       "contextLength": 262144,
-      "maxCompletionTokens": null,
+      "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.95,
-        "completionPer1M": 4,
-        "avgPer1M": 2.48
+        "promptPer1M": 0.68,
+        "completionPer1M": 3.42,
+        "avgPer1M": 2.05
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -2282,9 +2282,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 1,
-        "completionPer1M": 4.4,
-        "avgPer1M": 2.7
+        "promptPer1M": 0.85,
+        "completionPer1M": 3.8,
+        "avgPer1M": 2.32
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -3752,11 +3752,11 @@
       "provider": "qwen",
       "created": 1745876478,
       "contextLength": 131702,
-      "maxCompletionTokens": 16384,
+      "maxCompletionTokens": 8192,
       "pricing": {
-        "promptPer1M": 0.12,
-        "completionPer1M": 0.24,
-        "avgPer1M": 0.18
+        "promptPer1M": 0.23,
+        "completionPer1M": 0.91,
+        "avgPer1M": 0.57
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -5034,9 +5034,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.41,
-        "completionPer1M": 1.28,
-        "avgPer1M": 0.85
+        "promptPer1M": 0.25,
+        "completionPer1M": 0.79,
+        "avgPer1M": 0.52
       },
       "architecture": "text->text",
       "multimodal": false,
