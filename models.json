@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-19T05:00:12.847Z",
+  "updatedAt": "2026-07-20T05:29:38.123Z",
   "total": 316,
   "models": [
     {
@@ -2456,11 +2456,11 @@
       "provider": "nvidia",
       "created": 1773245239,
       "contextLength": 1000000,
-      "maxCompletionTokens": null,
+      "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.21,
-        "completionPer1M": 0.45,
-        "avgPer1M": 0.33
+        "promptPer1M": 0.09,
+        "completionPer1M": 0.4,
+        "avgPer1M": 0.24
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -3752,11 +3752,11 @@
       "provider": "qwen",
       "created": 1745876478,
       "contextLength": 131702,
-      "maxCompletionTokens": 8192,
+      "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.23,
-        "completionPer1M": 0.91,
-        "avgPer1M": 0.57
+        "promptPer1M": 0.12,
+        "completionPer1M": 0.24,
+        "avgPer1M": 0.18
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -3800,11 +3800,11 @@
       "provider": "qwen",
       "created": 1753449557,
       "contextLength": 262144,
-      "maxCompletionTokens": null,
+      "maxCompletionTokens": 32768,
       "pricing": {
-        "promptPer1M": 0.15,
-        "completionPer1M": 1.5,
-        "avgPer1M": 0.82
+        "promptPer1M": 0.3,
+        "completionPer1M": 3,
+        "avgPer1M": 1.65
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -4983,12 +4983,12 @@
       "name": "Z.ai: GLM 5",
       "provider": "z-ai",
       "created": 1770829182,
-      "contextLength": 202752,
-      "maxCompletionTokens": 202752,
+      "contextLength": 204800,
+      "maxCompletionTokens": 131072,
       "pricing": {
         "promptPer1M": 0.95,
-        "completionPer1M": 3.15,
-        "avgPer1M": 2.05
+        "completionPer1M": 2.55,
+        "avgPer1M": 1.75
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -5034,9 +5034,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.25,
-        "completionPer1M": 0.79,
-        "avgPer1M": 0.52
+        "promptPer1M": 0.97,
+        "completionPer1M": 3.05,
+        "avgPer1M": 2.01
       },
       "architecture": "text->text",
       "multimodal": false,
