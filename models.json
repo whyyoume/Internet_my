@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-20T05:29:38.123Z",
-  "total": 316,
+  "updatedAt": "2026-07-21T04:57:53.847Z",
+  "total": 317,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -922,9 +922,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 0.1,
-        "completionPer1M": 0.2,
-        "avgPer1M": 0.15
+        "promptPer1M": 0.09,
+        "completionPer1M": 0.19,
+        "avgPer1M": 0.14
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1272,11 +1272,11 @@
       "provider": "google",
       "created": 1775148486,
       "contextLength": 262144,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.22,
-        "completionPer1M": 0.55,
-        "avgPer1M": 0.39
+        "promptPer1M": 0.12,
+        "completionPer1M": 0.37,
+        "avgPer1M": 0.25
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -1585,6 +1585,22 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "An attempt to recreate Claude-style verbosity, but don't expect the same level of coherence or memory. Meant for use in roleplay/narrative situations."
+    },
+    {
+      "id": "meituan/longcat-2.0",
+      "name": "Meituan: LongCat 2.0",
+      "provider": "meituan",
+      "created": 1784554658,
+      "contextLength": 1048756,
+      "maxCompletionTokens": 262144,
+      "pricing": {
+        "promptPer1M": 0.3,
+        "completionPer1M": 1.2,
+        "avgPer1M": 0.75
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "LongCat 2.0 is a sparse mixture-of-experts language model from Meituan, with 48B active parameters out of 1.6T total. It is suited for coding, repository-level changes, long-horizon problem solving, a"
     },
     {
       "id": "meta/muse-spark-1.1",
@@ -2282,9 +2298,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.85,
-        "completionPer1M": 3.8,
-        "avgPer1M": 2.32
+        "promptPer1M": 0.82,
+        "completionPer1M": 3.75,
+        "avgPer1M": 2.29
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -2456,11 +2472,11 @@
       "provider": "nvidia",
       "created": 1773245239,
       "contextLength": 1000000,
-      "maxCompletionTokens": 16384,
+      "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 0.09,
-        "completionPer1M": 0.4,
-        "avgPer1M": 0.24
+        "promptPer1M": 0.08,
+        "completionPer1M": 0.45,
+        "avgPer1M": 0.26
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -4008,11 +4024,11 @@
       "provider": "qwen",
       "created": 1757612213,
       "contextLength": 262144,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": 32768,
       "pricing": {
         "promptPer1M": 0.1,
-        "completionPer1M": 1.1,
-        "avgPer1M": 0.6
+        "completionPer1M": 0.78,
+        "avgPer1M": 0.44
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -4600,11 +4616,11 @@
       "provider": "tencent",
       "created": 1783344048,
       "contextLength": 262144,
-      "maxCompletionTokens": 131072,
+      "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.2,
-        "completionPer1M": 0.8,
-        "avgPer1M": 0.5
+        "promptPer1M": 0.14,
+        "completionPer1M": 0.58,
+        "avgPer1M": 0.36
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -5034,9 +5050,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.97,
-        "completionPer1M": 3.05,
-        "avgPer1M": 2.01
+        "promptPer1M": 0.96,
+        "completionPer1M": 3.03,
+        "avgPer1M": 2
       },
       "architecture": "text->text",
       "multimodal": false,
