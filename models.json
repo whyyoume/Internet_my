@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-23T05:14:41.909Z",
+  "updatedAt": "2026-07-24T04:59:22.930Z",
   "total": 320,
   "models": [
     {
@@ -1240,11 +1240,11 @@
       "provider": "google",
       "created": 1741756359,
       "contextLength": 262144,
-      "maxCompletionTokens": null,
+      "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.1,
-        "completionPer1M": 0.3,
-        "avgPer1M": 0.2
+        "promptPer1M": 0.08,
+        "completionPer1M": 0.45,
+        "avgPer1M": 0.26
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -1304,11 +1304,11 @@
       "provider": "google",
       "created": 1775148486,
       "contextLength": 262144,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": 8192,
       "pricing": {
-        "promptPer1M": 0.12,
+        "promptPer1M": 0.1,
         "completionPer1M": 0.35,
-        "avgPer1M": 0.24
+        "avgPer1M": 0.22
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -1392,7 +1392,7 @@
       },
       "architecture": "text+image->text+image",
       "multimodal": true,
-      "description": "Nano Banana Pro is Google’s most advanced image-generation and editing model, built on Gemini 3 Pro. It extends the original Nano Banana with significantly improved multimodal reasoning, real-world gr"
+      "description": "Nano Banana Pro is Google��s most advanced image-generation and editing model, built on Gemini 3 Pro. It extends the original Nano Banana with significantly improved multimodal reasoning, real-world g"
     },
     {
       "id": "google/gemini-3-pro-image-preview",
@@ -1898,9 +1898,9 @@
       "contextLength": 204800,
       "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.25,
-        "completionPer1M": 1,
-        "avgPer1M": 0.63
+        "promptPer1M": 0.3,
+        "completionPer1M": 1.2,
+        "avgPer1M": 0.75
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -2330,9 +2330,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.82,
-        "completionPer1M": 3.75,
-        "avgPer1M": 2.29
+        "promptPer1M": 0.71,
+        "completionPer1M": 3.49,
+        "avgPer1M": 2.1
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -3400,10 +3400,10 @@
       "provider": "openai",
       "created": 1754414229,
       "contextLength": 131072,
-      "maxCompletionTokens": 131072,
+      "maxCompletionTokens": null,
       "pricing": {
         "promptPer1M": 0.03,
-        "completionPer1M": 0.13,
+        "completionPer1M": 0.14,
         "avgPer1M": 0.08
       },
       "architecture": "text->text",
@@ -3978,9 +3978,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 65536,
       "pricing": {
-        "promptPer1M": 0.3,
-        "completionPer1M": 1,
-        "avgPer1M": 0.65
+        "promptPer1M": 0.38,
+        "completionPer1M": 1.55,
+        "avgPer1M": 0.97
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -4280,11 +4280,11 @@
       "provider": "qwen",
       "created": 1772053810,
       "contextLength": 262144,
-      "maxCompletionTokens": 81920,
+      "maxCompletionTokens": 65536,
       "pricing": {
-        "promptPer1M": 0.26,
-        "completionPer1M": 2.6,
-        "avgPer1M": 1.43
+        "promptPer1M": 0.2,
+        "completionPer1M": 1.56,
+        "avgPer1M": 0.88
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -4344,11 +4344,11 @@
       "provider": "qwen",
       "created": 1777255064,
       "contextLength": 262144,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 0.6,
-        "completionPer1M": 3.6,
-        "avgPer1M": 2.1
+        "promptPer1M": 0.29,
+        "completionPer1M": 2.4,
+        "avgPer1M": 1.34
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -4664,11 +4664,11 @@
       "provider": "tencent",
       "created": 1783344048,
       "contextLength": 262144,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": 128000,
       "pricing": {
-        "promptPer1M": 0.14,
-        "completionPer1M": 0.58,
-        "avgPer1M": 0.36
+        "promptPer1M": 0.13,
+        "completionPer1M": 0.53,
+        "avgPer1M": 0.33
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -4759,7 +4759,7 @@
       "name": "Thinking Machines: Inkling",
       "provider": "thinkingmachines",
       "created": 1784325956,
-      "contextLength": 524288,
+      "contextLength": 1048576,
       "maxCompletionTokens": null,
       "pricing": {
         "promptPer1M": 1,
@@ -5098,9 +5098,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.82,
-        "completionPer1M": 2.58,
-        "avgPer1M": 1.7
+        "promptPer1M": 0.98,
+        "completionPer1M": 3.08,
+        "avgPer1M": 2.03
       },
       "architecture": "text->text",
       "multimodal": false,
