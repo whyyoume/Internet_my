@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-26T05:20:33.822Z",
-  "total": 322,
+  "updatedAt": "2026-07-27T05:39:06.115Z",
+  "total": 319,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -1383,7 +1383,7 @@
       "name": "Google: Nano Banana 2",
       "provider": "google",
       "created": 1772119558,
-      "contextLength": 131072,
+      "contextLength": 65536,
       "maxCompletionTokens": 65536,
       "pricing": {
         "promptPer1M": 0.5,
@@ -1553,38 +1553,6 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "Ring-2.6-1T is a 1T-parameter-scale thinking model with 63B active parameters, built for real-world agent workflows that require both strong capability and operational efficiency. It is optimized for "
-    },
-    {
-      "id": "inflection/inflection-3-pi",
-      "name": "Inflection: Inflection 3 Pi",
-      "provider": "inflection",
-      "created": 1728604800,
-      "contextLength": 8000,
-      "maxCompletionTokens": 1024,
-      "pricing": {
-        "promptPer1M": 2.5,
-        "completionPer1M": 10,
-        "avgPer1M": 6.25
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "Inflection 3 Pi powers Inflection's [Pi](https://pi.ai) chatbot, including backstory, emotional intelligence, productivity, and safety. It has access to recent news, and excels in scenarios like custo"
-    },
-    {
-      "id": "inflection/inflection-3-productivity",
-      "name": "Inflection: Inflection 3 Productivity",
-      "provider": "inflection",
-      "created": 1728604800,
-      "contextLength": 8000,
-      "maxCompletionTokens": 1024,
-      "pricing": {
-        "promptPer1M": 2.5,
-        "completionPer1M": 10,
-        "avgPer1M": 6.25
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "Inflection 3 Productivity is optimized for following instructions. It is better for tasks requiring JSON output or precise adherence to provided guidelines. It has access to recent news. For emotional"
     },
     {
       "id": "kwaipilot/kat-coder-air-v2.5",
@@ -2362,9 +2330,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.75,
+        "promptPer1M": 0.73,
         "completionPer1M": 3.5,
-        "avgPer1M": 2.13
+        "avgPer1M": 2.12
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -2552,11 +2520,11 @@
       "provider": "nvidia",
       "created": 1780551208,
       "contextLength": 512288,
-      "maxCompletionTokens": null,
+      "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.6,
-        "completionPer1M": 3.6,
-        "avgPer1M": 2.1
+        "promptPer1M": 0.5,
+        "completionPer1M": 2.2,
+        "avgPer1M": 1.35
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -2883,22 +2851,6 @@
       "description": "GPT-4o mini is OpenAI's newest model after [GPT-4 Omni](/models/openai/gpt-4o), supporting both text and image inputs with text outputs. As their most advanced small model, it is many multiples more a"
     },
     {
-      "id": "openai/gpt-4o-mini-search-preview",
-      "name": "OpenAI: GPT-4o-mini Search Preview",
-      "provider": "openai",
-      "created": 1741818122,
-      "contextLength": 128000,
-      "maxCompletionTokens": 16384,
-      "pricing": {
-        "promptPer1M": 0.15,
-        "completionPer1M": 0.6,
-        "avgPer1M": 0.38
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "GPT-4o mini Search Preview is a specialized model for web search in Chat Completions. It is trained to understand and execute web search queries."
-    },
-    {
       "id": "openai/gpt-5",
       "name": "OpenAI: GPT-5",
       "provider": "openai",
@@ -3096,7 +3048,7 @@
       "provider": "openai",
       "created": 1763057820,
       "contextLength": 400000,
-      "maxCompletionTokens": 100000,
+      "maxCompletionTokens": 128000,
       "pricing": {
         "promptPer1M": 0.25,
         "completionPer1M": 2,
@@ -5130,9 +5082,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.71,
-        "completionPer1M": 2.24,
-        "avgPer1M": 1.48
+        "promptPer1M": 0.82,
+        "completionPer1M": 2.59,
+        "avgPer1M": 1.71
       },
       "architecture": "text->text",
       "multimodal": false,
