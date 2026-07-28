@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-27T05:39:06.115Z",
-  "total": 319,
+  "updatedAt": "2026-07-28T04:53:14.073Z",
+  "total": 318,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -104,7 +104,7 @@
       "provider": "~moonshotai",
       "created": 1777318428,
       "contextLength": 1048576,
-      "maxCompletionTokens": null,
+      "maxCompletionTokens": 262144,
       "pricing": {
         "promptPer1M": 3,
         "completionPer1M": 15,
@@ -1322,9 +1322,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.12,
-        "completionPer1M": 0.35,
-        "avgPer1M": 0.24
+        "promptPer1M": 0.14,
+        "completionPer1M": 0.42,
+        "avgPer1M": 0.28
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -2520,11 +2520,11 @@
       "provider": "nvidia",
       "created": 1780551208,
       "contextLength": 512288,
-      "maxCompletionTokens": 16384,
+      "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 0.5,
-        "completionPer1M": 2.2,
-        "avgPer1M": 1.35
+        "promptPer1M": 0.6,
+        "completionPer1M": 3.6,
+        "avgPer1M": 2.1
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -2803,22 +2803,6 @@
       "description": "GPT-4o (\"o\" for \"omni\") is OpenAI's latest AI model, supporting both text and image inputs with text outputs. It maintains the intelligence level of [GPT-4 Turbo](/models/openai/gpt-4-turbo) while bei"
     },
     {
-      "id": "openai/gpt-4o-search-preview",
-      "name": "OpenAI: GPT-4o Search Preview",
-      "provider": "openai",
-      "created": 1741817949,
-      "contextLength": 128000,
-      "maxCompletionTokens": 16384,
-      "pricing": {
-        "promptPer1M": 2.5,
-        "completionPer1M": 10,
-        "avgPer1M": 6.25
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "GPT-4o Search Previewis a specialized model for web search in Chat Completions. It is trained to understand and execute web search queries."
-    },
-    {
       "id": "openai/gpt-4o-mini",
       "name": "OpenAI: GPT-4o-mini",
       "provider": "openai",
@@ -2865,22 +2849,6 @@
       "architecture": "text+image+file->text",
       "multimodal": true,
       "description": "GPT-5 is OpenAI’s most advanced model, offering major improvements in reasoning, code quality, and user experience. It is optimized for complex tasks that require step-by-step reasoning, instruction f"
-    },
-    {
-      "id": "openai/gpt-5-chat",
-      "name": "OpenAI: GPT-5 Chat",
-      "provider": "openai",
-      "created": 1754587837,
-      "contextLength": 128000,
-      "maxCompletionTokens": 16384,
-      "pricing": {
-        "promptPer1M": 1.25,
-        "completionPer1M": 10,
-        "avgPer1M": 5.63
-      },
-      "architecture": "text+image+file->text",
-      "multimodal": true,
-      "description": "GPT-5 Chat is designed for advanced, natural, multimodal, and context-aware conversations for enterprise applications."
     },
     {
       "id": "openai/gpt-5-codex",
@@ -3000,7 +2968,7 @@
       "provider": "openai",
       "created": 1763060302,
       "contextLength": 128000,
-      "maxCompletionTokens": 16384,
+      "maxCompletionTokens": 32000,
       "pricing": {
         "promptPer1M": 1.25,
         "completionPer1M": 10,
@@ -3274,9 +3242,9 @@
       "contextLength": 1050000,
       "maxCompletionTokens": 128000,
       "pricing": {
-        "promptPer1M": 1,
-        "completionPer1M": 6,
-        "avgPer1M": 3.5
+        "promptPer1M": 0.5,
+        "completionPer1M": 3,
+        "avgPer1M": 1.75
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
@@ -3290,9 +3258,9 @@
       "contextLength": 1050000,
       "maxCompletionTokens": 128000,
       "pricing": {
-        "promptPer1M": 1,
-        "completionPer1M": 6,
-        "avgPer1M": 3.5
+        "promptPer1M": 0.5,
+        "completionPer1M": 3,
+        "avgPer1M": 1.75
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
@@ -3338,9 +3306,9 @@
       "contextLength": 1050000,
       "maxCompletionTokens": 128000,
       "pricing": {
-        "promptPer1M": 2.5,
-        "completionPer1M": 15,
-        "avgPer1M": 8.75
+        "promptPer1M": 1.25,
+        "completionPer1M": 7.5,
+        "avgPer1M": 4.38
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
@@ -3354,9 +3322,9 @@
       "contextLength": 1050000,
       "maxCompletionTokens": 128000,
       "pricing": {
-        "promptPer1M": 2.5,
-        "completionPer1M": 15,
-        "avgPer1M": 8.75
+        "promptPer1M": 1.25,
+        "completionPer1M": 7.5,
+        "avgPer1M": 4.38
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
@@ -4403,6 +4371,22 @@
       "description": "Qwen 3.6 Plus builds on a hybrid architecture that combines efficient linear attention with sparse mixture-of-experts routing, enabling strong scalability and high-performance inference. Compared to t"
     },
     {
+      "id": "qwen/qwen3.7-flash",
+      "name": "Qwen: Qwen3.7 Flash",
+      "provider": "qwen",
+      "created": 1785190561,
+      "contextLength": 1000000,
+      "maxCompletionTokens": 65536,
+      "pricing": {
+        "promptPer1M": 0.03,
+        "completionPer1M": 0.13,
+        "avgPer1M": 0.08
+      },
+      "architecture": "text+image+video->text",
+      "multimodal": true,
+      "description": "Qwen3.7 Flash is a vision-language reasoning model from Alibaba. It is suited for multimodal agents, visual coding, search, and computer interaction, with strengths in object recognition, spatial unde"
+    },
+    {
       "id": "qwen/qwen3.7-max",
       "name": "Qwen: Qwen3.7 Max",
       "provider": "qwen",
@@ -5082,9 +5066,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.82,
-        "completionPer1M": 2.59,
-        "avgPer1M": 1.71
+        "promptPer1M": 0.73,
+        "completionPer1M": 2.28,
+        "avgPer1M": 1.5
       },
       "architecture": "text->text",
       "multimodal": false,
