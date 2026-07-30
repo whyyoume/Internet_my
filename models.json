@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-29T04:58:21.157Z",
+  "updatedAt": "2026-07-30T04:46:41.337Z",
   "total": 345,
   "models": [
     {
@@ -1608,11 +1608,11 @@
       "provider": "google",
       "created": 1775227989,
       "contextLength": 262144,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.15,
-        "completionPer1M": 0.6,
-        "avgPer1M": 0.38
+        "promptPer1M": 0.07,
+        "completionPer1M": 0.34,
+        "avgPer1M": 0.21
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -1626,9 +1626,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.14,
-        "completionPer1M": 0.4,
-        "avgPer1M": 0.27
+        "promptPer1M": 0.1,
+        "completionPer1M": 0.34,
+        "avgPer1M": 0.22
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -1688,7 +1688,7 @@
       "provider": "google",
       "created": 1782837225,
       "contextLength": 65536,
-      "maxCompletionTokens": 66000,
+      "maxCompletionTokens": 65536,
       "pricing": {
         "promptPer1M": 0.25,
         "completionPer1M": 1.5,
@@ -4170,9 +4170,9 @@
       "contextLength": 32768,
       "maxCompletionTokens": 32768,
       "pricing": {
-        "promptPer1M": 0.04,
-        "completionPer1M": 0.1,
-        "avgPer1M": 0.07
+        "promptPer1M": 0.1,
+        "completionPer1M": 0.2,
+        "avgPer1M": 0.15
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -4392,11 +4392,11 @@
       "provider": "qwen",
       "created": 1770164101,
       "contextLength": 262144,
-      "maxCompletionTokens": 64000,
+      "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.18,
-        "completionPer1M": 0.9,
-        "avgPer1M": 0.54
+        "promptPer1M": 0.12,
+        "completionPer1M": 0.8,
+        "avgPer1M": 0.46
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -4682,7 +4682,7 @@
       "contextLength": 262144,
       "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.15,
+        "promptPer1M": 0.14,
         "completionPer1M": 1,
         "avgPer1M": 0.57
       },
@@ -4778,9 +4778,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 65536,
       "pricing": {
-        "promptPer1M": 1.04,
-        "completionPer1M": 6.24,
-        "avgPer1M": 3.64
+        "promptPer1M": 1.03,
+        "completionPer1M": 6.16,
+        "avgPer1M": 3.59
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -4826,9 +4826,9 @@
       "contextLength": 1000000,
       "maxCompletionTokens": 65536,
       "pricing": {
-        "promptPer1M": 1.25,
-        "completionPer1M": 3.75,
-        "avgPer1M": 2.5
+        "promptPer1M": 1.48,
+        "completionPer1M": 4.43,
+        "avgPer1M": 2.95
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -5496,11 +5496,11 @@
       "provider": "z-ai",
       "created": 1781631930,
       "contextLength": 1048576,
-      "maxCompletionTokens": 131072,
+      "maxCompletionTokens": 128000,
       "pricing": {
-        "promptPer1M": 0.76,
-        "completionPer1M": 2.38,
-        "avgPer1M": 1.57
+        "promptPer1M": 0.68,
+        "completionPer1M": 2.13,
+        "avgPer1M": 1.4
       },
       "architecture": "text->text",
       "multimodal": false,
