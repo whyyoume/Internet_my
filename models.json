@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-01T05:16:50.666Z",
-  "total": 314,
+  "updatedAt": "2026-08-02T05:16:09.755Z",
+  "total": 315,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -65,6 +65,22 @@
       "architecture": "text+image+file->text",
       "multimodal": true,
       "description": "This model always redirects to the latest model in the Claude Opus family."
+    },
+    {
+      "id": "~deepseek/deepseek-v4-flash-latest",
+      "name": "DeepSeek V4 Flash Latest",
+      "provider": "~deepseek",
+      "created": 1785606009,
+      "contextLength": 1048576,
+      "maxCompletionTokens": 65536,
+      "pricing": {
+        "promptPer1M": 0.09,
+        "completionPer1M": 0.18,
+        "avgPer1M": 0.14
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "This model always redirects to the latest model in the DeepSeek V4 Flash family."
     },
     {
       "id": "~google/gemini-flash-latest",
@@ -968,11 +984,11 @@
       "provider": "deepseek",
       "created": 1785478908,
       "contextLength": 1048576,
-      "maxCompletionTokens": 384000,
+      "maxCompletionTokens": 65536,
       "pricing": {
-        "promptPer1M": 0.14,
-        "completionPer1M": 0.28,
-        "avgPer1M": 0.21
+        "promptPer1M": 0.09,
+        "completionPer1M": 0.18,
+        "avgPer1M": 0.14
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -3323,8 +3339,8 @@
       "maxCompletionTokens": 131072,
       "pricing": {
         "promptPer1M": 0.03,
-        "completionPer1M": 0.14,
-        "avgPer1M": 0.09
+        "completionPer1M": 0.13,
+        "avgPer1M": 0.08
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -5000,11 +5016,11 @@
       "provider": "z-ai",
       "created": 1781631930,
       "contextLength": 1048576,
-      "maxCompletionTokens": 128000,
+      "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.76,
-        "completionPer1M": 2.39,
-        "avgPer1M": 1.57
+        "promptPer1M": 0.37,
+        "completionPer1M": 1.16,
+        "avgPer1M": 0.76
       },
       "architecture": "text->text",
       "multimodal": false,
