@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T05:16:09.755Z",
+  "updatedAt": "2026-08-03T05:30:31.916Z",
   "total": 315,
   "models": [
     {
@@ -3736,11 +3736,11 @@
       "provider": "qwen",
       "created": 1753119555,
       "contextLength": 262144,
-      "maxCompletionTokens": 16384,
+      "maxCompletionTokens": 32768,
       "pricing": {
-        "promptPer1M": 0.09,
-        "completionPer1M": 0.55,
-        "avgPer1M": 0.32
+        "promptPer1M": 0.15,
+        "completionPer1M": 0.6,
+        "avgPer1M": 0.37
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -4010,9 +4010,9 @@
       "contextLength": 131072,
       "maxCompletionTokens": 32768,
       "pricing": {
-        "promptPer1M": 0.4,
-        "completionPer1M": 4,
-        "avgPer1M": 2.2
+        "promptPer1M": 0.98,
+        "completionPer1M": 3.95,
+        "avgPer1M": 2.47
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -4154,9 +4154,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 65536,
       "pricing": {
-        "promptPer1M": 0.26,
-        "completionPer1M": 2.08,
-        "avgPer1M": 1.17
+        "promptPer1M": 0.4,
+        "completionPer1M": 3.2,
+        "avgPer1M": 1.8
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -4648,7 +4648,7 @@
       "provider": "thedrummer",
       "created": 1731103448,
       "contextLength": 1024000,
-      "maxCompletionTokens": 32768,
+      "maxCompletionTokens": 1024000,
       "pricing": {
         "promptPer1M": 0.4,
         "completionPer1M": 0.4,
@@ -5016,11 +5016,11 @@
       "provider": "z-ai",
       "created": 1781631930,
       "contextLength": 1048576,
-      "maxCompletionTokens": 131072,
+      "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.37,
-        "completionPer1M": 1.16,
-        "avgPer1M": 0.76
+        "promptPer1M": 1.19,
+        "completionPer1M": 3.74,
+        "avgPer1M": 2.47
       },
       "architecture": "text->text",
       "multimodal": false,
