@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-03T05:30:31.916Z",
-  "total": 315,
+  "updatedAt": "2026-08-04T04:53:32.539Z",
+  "total": 316,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -964,7 +964,7 @@
     },
     {
       "id": "deepseek/deepseek-v4-flash",
-      "name": "DeepSeek: DeepSeek V4 Flash",
+      "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "provider": "deepseek",
       "created": 1777000666,
       "contextLength": 1048576,
@@ -1482,9 +1482,9 @@
       "contextLength": 8192,
       "maxCompletionTokens": 4096,
       "pricing": {
-        "promptPer1M": 0.06,
-        "completionPer1M": 0.06,
-        "avgPer1M": 0.06
+        "promptPer1M": 0.08,
+        "completionPer1M": 0.11,
+        "avgPer1M": 0.1
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1752,11 +1752,11 @@
       "provider": "meta-llama",
       "created": 1733506137,
       "contextLength": 131072,
-      "maxCompletionTokens": 128000,
+      "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.13,
-        "completionPer1M": 0.4,
-        "avgPer1M": 0.27
+        "promptPer1M": 0.1,
+        "completionPer1M": 0.32,
+        "avgPer1M": 0.21
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -2330,9 +2330,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.6,
-        "completionPer1M": 3.41,
-        "avgPer1M": 2.01
+        "promptPer1M": 0.59,
+        "completionPer1M": 2.48,
+        "avgPer1M": 1.53
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -3848,11 +3848,11 @@
       "provider": "qwen",
       "created": 1753972379,
       "contextLength": 262144,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": 32768,
       "pricing": {
         "promptPer1M": 0.07,
-        "completionPer1M": 0.28,
-        "avgPer1M": 0.18
+        "completionPer1M": 0.27,
+        "avgPer1M": 0.17
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -3960,9 +3960,9 @@
       "provider": "qwen",
       "created": 1757612213,
       "contextLength": 262144,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.1,
+        "promptPer1M": 0.09,
         "completionPer1M": 1.1,
         "avgPer1M": 0.6
       },
@@ -3976,7 +3976,7 @@
       "provider": "qwen",
       "created": 1757612284,
       "contextLength": 262144,
-      "maxCompletionTokens": 32768,
+      "maxCompletionTokens": null,
       "pricing": {
         "promptPer1M": 0.15,
         "completionPer1M": 1.2,
@@ -4024,11 +4024,11 @@
       "provider": "qwen",
       "created": 1759794476,
       "contextLength": 262144,
-      "maxCompletionTokens": 32768,
+      "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.13,
-        "completionPer1M": 0.52,
-        "avgPer1M": 0.33
+        "promptPer1M": 0.15,
+        "completionPer1M": 0.6,
+        "avgPer1M": 0.38
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -4154,9 +4154,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 65536,
       "pricing": {
-        "promptPer1M": 0.4,
-        "completionPer1M": 3.2,
-        "avgPer1M": 1.8
+        "promptPer1M": 0.26,
+        "completionPer1M": 2.08,
+        "avgPer1M": 1.17
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -4232,11 +4232,11 @@
       "provider": "qwen",
       "created": 1777255064,
       "contextLength": 262144,
-      "maxCompletionTokens": 65536,
+      "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.3,
-        "completionPer1M": 2,
-        "avgPer1M": 1.15
+        "promptPer1M": 0.29,
+        "completionPer1M": 2.4,
+        "avgPer1M": 1.34
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -4353,6 +4353,22 @@
       "architecture": "text+image->text",
       "multimodal": true,
       "description": "Qwen3.7-Plus is a cost-effective model in Alibaba's Qwen3.7 series. It supports text and image input with text output, building on the series' text capabilities with a comprehensive upgrade to its..."
+    },
+    {
+      "id": "qwen/qwen3.8-max",
+      "name": "Qwen: Qwen3.8 Max",
+      "provider": "qwen",
+      "created": 1785731612,
+      "contextLength": 1000000,
+      "maxCompletionTokens": 131072,
+      "pricing": {
+        "promptPer1M": 2,
+        "completionPer1M": 6,
+        "avgPer1M": 4
+      },
+      "architecture": "text+image+video->text",
+      "multimodal": true,
+      "description": "Qwen3.8 Max is the flagship model in Alibaba's Qwen3.8 series, the general-availability successor to the Qwen3.8 Max Preview. It is a multimodal reasoning model intended for complex reasoning, visual "
     },
     {
       "id": "qwen/qwen-2.5-72b-instruct",
@@ -5018,9 +5034,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 1.19,
-        "completionPer1M": 3.74,
-        "avgPer1M": 2.47
+        "promptPer1M": 0.76,
+        "completionPer1M": 2.42,
+        "avgPer1M": 1.59
       },
       "architecture": "text->text",
       "multimodal": false,
