@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T04:53:32.539Z",
+  "updatedAt": "2026-08-05T04:54:00.426Z",
   "total": 316,
   "models": [
     {
@@ -1930,9 +1930,9 @@
       "contextLength": 204800,
       "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.25,
-        "completionPer1M": 1,
-        "avgPer1M": 0.63
+        "promptPer1M": 0.27,
+        "completionPer1M": 1.08,
+        "avgPer1M": 0.68
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -2186,9 +2186,9 @@
       "contextLength": 256000,
       "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.08,
-        "completionPer1M": 0.2,
-        "avgPer1M": 0.14
+        "promptPer1M": 0.09,
+        "completionPer1M": 0.25,
+        "avgPer1M": 0.17
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -3688,11 +3688,11 @@
       "provider": "qwen",
       "created": 1738410311,
       "contextLength": 128000,
-      "maxCompletionTokens": 128000,
+      "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 0.8,
-        "completionPer1M": 1,
-        "avgPer1M": 0.9
+        "promptPer1M": 0.25,
+        "completionPer1M": 0.75,
+        "avgPer1M": 0.5
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -4756,7 +4756,7 @@
     },
     {
       "id": "x-ai/grok-4.20",
-      "name": "xAI: Grok 4.20",
+      "name": "SpaceXAI: Grok 4.20",
       "provider": "x-ai",
       "created": 1774979019,
       "contextLength": 2000000,
@@ -4768,11 +4768,11 @@
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
-      "description": "Grok 4.20 is a reasoning model from xAI with industry-leading speed and agentic tool calling capabilities. It combines the lowest hallucination rate on the market with strict prompt adherance, deliver"
+      "description": "Grok 4.20 is a reasoning model from SpaceXAI with industry-leading speed and agentic tool calling capabilities. It combines the lowest hallucination rate on the market with strict prompt adherance, de"
     },
     {
       "id": "x-ai/grok-4.20-multi-agent",
-      "name": "xAI: Grok 4.20 Multi-Agent",
+      "name": "SpaceXAI: Grok 4.20 Multi-Agent",
       "provider": "x-ai",
       "created": 1774979158,
       "contextLength": 2000000,
@@ -4784,11 +4784,11 @@
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
-      "description": "Grok 4.20 Multi-Agent is a variant of xAI’s Grok 4.20 designed for collaborative, agent-based workflows. Multiple agents operate in parallel to conduct deep research, coordinate tool use, and synthesi"
+      "description": "Grok 4.20 Multi-Agent is a variant of SpaceXAI’s Grok 4.20 designed for collaborative, agent-based workflows. Multiple agents operate in parallel to conduct deep research, coordinate tool use, and syn"
     },
     {
       "id": "x-ai/grok-4.3",
-      "name": "xAI: Grok 4.3",
+      "name": "SpaceXAI: Grok 4.3",
       "provider": "x-ai",
       "created": 1777591821,
       "contextLength": 1000000,
@@ -4800,11 +4800,11 @@
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
-      "description": "Grok 4.3 is a reasoning model from xAI. It accepts text and image inputs with text output, and is suited for agentic workflows, instruction-following tasks, and applications requiring high factual..."
+      "description": "Grok 4.3 is a reasoning model from SpaceXAI. It accepts text and image inputs with text output, and is suited for agentic workflows, instruction-following tasks, and applications requiring high factua"
     },
     {
       "id": "x-ai/grok-4.5",
-      "name": "xAI: Grok 4.5",
+      "name": "SpaceXAI: Grok 4.5",
       "provider": "x-ai",
       "created": 1783523154,
       "contextLength": 500000,
@@ -4820,7 +4820,7 @@
     },
     {
       "id": "x-ai/grok-build-0.1",
-      "name": "xAI: Grok Build 0.1",
+      "name": "SpaceXAI: Grok Build 0.1",
       "provider": "x-ai",
       "created": 1779298123,
       "contextLength": 256000,
@@ -4832,7 +4832,7 @@
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
-      "description": "Grok Build 0.1 is xAI’s fast coding model trained specifically for agentic software engineering workflows. It supports text and image inputs with text output, and is optimized for interactive coding.."
+      "description": "Grok Build 0.1 is SpaceXAI’s fast coding model trained specifically for agentic software engineering workflows. It supports text and image inputs with text output, and is optimized for interactive cod"
     },
     {
       "id": "xiaomi/mimo-v2.5",
