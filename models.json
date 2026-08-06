@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-05T04:54:00.426Z",
-  "total": 316,
+  "updatedAt": "2026-08-06T04:54:27.908Z",
+  "total": 318,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -968,11 +968,11 @@
       "provider": "deepseek",
       "created": 1777000666,
       "contextLength": 1048576,
-      "maxCompletionTokens": 393216,
+      "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.14,
-        "completionPer1M": 0.28,
-        "avgPer1M": 0.21
+        "promptPer1M": 0.09,
+        "completionPer1M": 0.18,
+        "avgPer1M": 0.13
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1587,6 +1587,22 @@
       "description": "Ring-2.6-1T is a 1T-parameter-scale thinking model with 63B active parameters, built for real-world agent workflows that require both strong capability and operational efficiency. It is optimized for "
     },
     {
+      "id": "inclusionai/ling-3.0-flash",
+      "name": "Ling-3.0-flash",
+      "provider": "inclusionai",
+      "created": 1784818580,
+      "contextLength": 131072,
+      "maxCompletionTokens": 16384,
+      "pricing": {
+        "promptPer1M": 0.08,
+        "completionPer1M": 0.22,
+        "avgPer1M": 0.15
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "*Ling-3.0-flash* is a *124B-parameter Mixture-of-Experts (MoE) model*, with approximately *5.1B parameters activated per token*. The model is designed with *token efficiency and production-scale agent"
+    },
+    {
       "id": "kwaipilot/kat-coder-air-v2.5",
       "name": "Kwaipilot: KAT-Coder-Air V2.5",
       "provider": "kwaipilot",
@@ -1681,6 +1697,22 @@
       "architecture": "text+image+file+audio+video->text",
       "multimodal": true,
       "description": "Muse Spark 1.1 is a multimodal reasoning model from Meta, built for agentic tasks. It accepts text, images, video, audio, and PDF documents and returns text, with a 1M-token context..."
+    },
+    {
+      "id": "meta/muse-spark-1.2",
+      "name": "Meta: Muse Spark 1.2",
+      "provider": "meta",
+      "created": 1785959287,
+      "contextLength": 1048576,
+      "maxCompletionTokens": null,
+      "pricing": {
+        "promptPer1M": 1.25,
+        "completionPer1M": 4.25,
+        "avgPer1M": 2.75
+      },
+      "architecture": "text+image+file+audio+video->text",
+      "multimodal": true,
+      "description": "Muse Spark 1.2 is a reasoning model from Meta, designed for complex agentic tasks. It accepts text, images, video, audio, and PDF documents, returns text, and offers a 1M-token context..."
     },
     {
       "id": "meta-llama/llama-3.1-70b-instruct",
@@ -1914,9 +1946,9 @@
       "contextLength": 204800,
       "maxCompletionTokens": 196608,
       "pricing": {
-        "promptPer1M": 0.15,
+        "promptPer1M": 0.22,
         "completionPer1M": 0.9,
-        "avgPer1M": 0.52
+        "avgPer1M": 0.56
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -2346,9 +2378,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.73,
+        "promptPer1M": 0.7,
         "completionPer1M": 3.5,
-        "avgPer1M": 2.12
+        "avgPer1M": 2.1
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -3736,11 +3768,11 @@
       "provider": "qwen",
       "created": 1753119555,
       "contextLength": 262144,
-      "maxCompletionTokens": 32768,
+      "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.15,
-        "completionPer1M": 0.6,
-        "avgPer1M": 0.37
+        "promptPer1M": 0.09,
+        "completionPer1M": 0.55,
+        "avgPer1M": 0.32
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -4232,11 +4264,11 @@
       "provider": "qwen",
       "created": 1777255064,
       "contextLength": 262144,
-      "maxCompletionTokens": 131072,
+      "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.29,
-        "completionPer1M": 2.4,
-        "avgPer1M": 1.34
+        "promptPer1M": 0.6,
+        "completionPer1M": 3.6,
+        "avgPer1M": 2.1
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -4727,8 +4759,8 @@
       "name": "Upstage: Solar Pro 3",
       "provider": "upstage",
       "created": 1769481200,
-      "contextLength": 128000,
-      "maxCompletionTokens": null,
+      "contextLength": 131072,
+      "maxCompletionTokens": 131072,
       "pricing": {
         "promptPer1M": 0.15,
         "completionPer1M": 0.6,
@@ -5016,11 +5048,11 @@
       "provider": "z-ai",
       "created": 1775578025,
       "contextLength": 204800,
-      "maxCompletionTokens": 128000,
+      "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.97,
-        "completionPer1M": 3.04,
-        "avgPer1M": 2
+        "promptPer1M": 0.95,
+        "completionPer1M": 2.99,
+        "avgPer1M": 1.97
       },
       "architecture": "text->text",
       "multimodal": false,
