@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-10T03:42:34.605Z",
-  "total": 378,
+  "updatedAt": "2026-08-11T03:25:09.314Z",
+  "total": 380,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -1162,9 +1162,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 384000,
       "pricing": {
-        "promptPer1M": 0.09,
+        "promptPer1M": 0.08,
         "completionPer1M": 0.18,
-        "avgPer1M": 0.14
+        "avgPer1M": 0.13
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1176,11 +1176,11 @@
       "provider": "deepseek",
       "created": 1777000679,
       "contextLength": 1048576,
-      "maxCompletionTokens": 384000,
+      "maxCompletionTokens": 393216,
       "pricing": {
-        "promptPer1M": 0.44,
-        "completionPer1M": 0.87,
-        "avgPer1M": 0.65
+        "promptPer1M": 0.64,
+        "completionPer1M": 1.29,
+        "avgPer1M": 0.97
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -2001,6 +2001,22 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "LongCat 2.0 is a sparse mixture-of-experts language model from Meituan, with 48B active parameters out of 1.6T total. It is suited for coding, repository-level changes, long-horizon problem solving, a"
+    },
+    {
+      "id": "meta/muse-glimmer-30b",
+      "name": "Meta: Muse Glimmer 30B",
+      "provider": "meta",
+      "created": 1786302394,
+      "contextLength": 131072,
+      "maxCompletionTokens": null,
+      "pricing": {
+        "promptPer1M": 0.35,
+        "completionPer1M": 1.5,
+        "avgPer1M": 0.93
+      },
+      "architecture": "text+image->text",
+      "multimodal": true,
+      "description": "Muse Glimmer 30B is a dense, open-weight multimodal model from Meta Superintelligence Labs, distilled from Muse Spark and optimized for autonomous agents on consumer hardware. It is suited for long-ho"
     },
     {
       "id": "meta/muse-spark-1.1",
@@ -3656,7 +3672,7 @@
       "provider": "openai",
       "created": 1765389783,
       "contextLength": 128000,
-      "maxCompletionTokens": 16384,
+      "maxCompletionTokens": 32000,
       "pricing": {
         "promptPer1M": 1.75,
         "completionPer1M": 14,
@@ -3713,22 +3729,6 @@
       "architecture": "text+image->text",
       "multimodal": true,
       "description": "GPT-5.2-Codex is an upgraded version of GPT-5.1-Codex optimized for software engineering and coding workflows. It is designed for both interactive development sessions and long, independent execution "
-    },
-    {
-      "id": "openai/gpt-5.3-chat",
-      "name": "OpenAI: GPT-5.3 Chat",
-      "provider": "openai",
-      "created": 1772564061,
-      "contextLength": 128000,
-      "maxCompletionTokens": 16384,
-      "pricing": {
-        "promptPer1M": 1.75,
-        "completionPer1M": 14,
-        "avgPer1M": 7.88
-      },
-      "architecture": "text+image+file->text",
-      "multimodal": true,
-      "description": "GPT-5.3 Chat is an update to ChatGPT's most-used model that makes everyday conversations smoother, more useful, and more directly helpful. It delivers more accurate answers with better contextualizati"
     },
     {
       "id": "openai/gpt-5.3-codex",
@@ -4808,11 +4808,11 @@
       "provider": "qwen",
       "created": 1753972379,
       "contextLength": 262144,
-      "maxCompletionTokens": 32768,
+      "maxCompletionTokens": 262144,
       "pricing": {
         "promptPer1M": 0.07,
-        "completionPer1M": 0.27,
-        "avgPer1M": 0.17
+        "completionPer1M": 0.28,
+        "avgPer1M": 0.18
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -4936,7 +4936,7 @@
       "provider": "qwen",
       "created": 1757612284,
       "contextLength": 262144,
-      "maxCompletionTokens": 32768,
+      "maxCompletionTokens": 262144,
       "pricing": {
         "promptPer1M": 0.15,
         "completionPer1M": 1.2,
@@ -5064,11 +5064,11 @@
       "provider": "qwen",
       "created": 1771223018,
       "contextLength": 262144,
-      "maxCompletionTokens": 65536,
+      "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.39,
-        "completionPer1M": 2.34,
-        "avgPer1M": 1.37
+        "promptPer1M": 0.5,
+        "completionPer1M": 3.6,
+        "avgPer1M": 2.05
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -5443,6 +5443,22 @@
       "description": "Fugu Ultra is the higher-performance model in Sakana AI's Fugu family. Rather than a single monolithic model, Fugu is a learned multi-agent orchestration system: a language model trained to route..."
     },
     {
+      "id": "sakana/sakana-namazu",
+      "name": "Sakana: Sakana Namazu",
+      "provider": "sakana",
+      "created": 1786410129,
+      "contextLength": 262144,
+      "maxCompletionTokens": 65536,
+      "pricing": {
+        "promptPer1M": 0.95,
+        "completionPer1M": 4,
+        "avgPer1M": 2.48
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "Sakana Namazu is a Japanese-specialized reasoning model from Sakana AI, based on Kimi K2.6 with additional training for Japanese language and business contexts. It is suited for Japanese instruction f"
+    },
+    {
       "id": "sao10k/l3-lunaris-8b",
       "name": "Sao10K: Llama 3 8B Lunaris",
       "provider": "sao10k",
@@ -5713,6 +5729,22 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "Solar Pro 3 is Upstage's powerful Mixture-of-Experts (MoE) language model. With 102B total parameters and 12B active parameters per forward pass, it delivers exceptional performance while maintaining "
+    },
+    {
+      "id": "upstage/solar-pro4",
+      "name": "Upstage: Solar Pro 4",
+      "provider": "upstage",
+      "created": 1786371636,
+      "contextLength": 524288,
+      "maxCompletionTokens": 131072,
+      "pricing": {
+        "promptPer1M": 0.03,
+        "completionPer1M": 0.12,
+        "avgPer1M": 0.08
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "Solar Pro 4 is a large language model from Upstage. It is suited for agentic workflows, office productivity, document-intensive work, and coding."
     },
     {
       "id": "writer/palmyra-x5",
