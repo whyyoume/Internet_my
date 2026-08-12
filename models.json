@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-11T03:25:09.314Z",
-  "total": 380,
+  "updatedAt": "2026-08-12T03:53:55.283Z",
+  "total": 382,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -72,11 +72,11 @@
       "provider": "~deepseek",
       "created": 1785606009,
       "contextLength": 1048576,
-      "maxCompletionTokens": null,
+      "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.08,
-        "completionPer1M": 0.25,
-        "avgPer1M": 0.17
+        "promptPer1M": 0.07,
+        "completionPer1M": 0.14,
+        "avgPer1M": 0.11
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -126,7 +126,7 @@
         "completionPer1M": 14,
         "avgPer1M": 8.4
       },
-      "architecture": "text+image->text",
+      "architecture": "text+image+video->text",
       "multimodal": true,
       "description": "This model always redirects to the latest model in the MoonshotAI Kimi family."
     },
@@ -915,6 +915,22 @@
       "description": "Seed 1.6 Flash is an ultra-fast multimodal deep thinking model by ByteDance Seed, supporting both text and visual understanding. It features a 256k context window and can generate outputs of..."
     },
     {
+      "id": "bytedance-seed/seed-2.0-code",
+      "name": "ByteDance Seed: Seed-2.0-Code",
+      "provider": "bytedance-seed",
+      "created": 1785451719,
+      "contextLength": 262144,
+      "maxCompletionTokens": 131072,
+      "pricing": {
+        "promptPer1M": 0.5,
+        "completionPer1M": 3,
+        "avgPer1M": 1.75
+      },
+      "architecture": "text+image+video->text",
+      "multimodal": true,
+      "description": "Seed 2.0 Code is a model from ByteDance Seed optimized for agentic coding. It is suited for frontend development, multilingual programming tasks, and coding-agent workflows in tools such as Claude..."
+    },
+    {
       "id": "bytedance-seed/seed-2.0-lite",
       "name": "ByteDance Seed: Seed-2.0-Lite",
       "provider": "bytedance-seed",
@@ -1099,8 +1115,8 @@
       "maxCompletionTokens": 32768,
       "pricing": {
         "promptPer1M": 0.27,
-        "completionPer1M": 1,
-        "avgPer1M": 0.64
+        "completionPer1M": 0.95,
+        "avgPer1M": 0.61
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1178,9 +1194,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 393216,
       "pricing": {
-        "promptPer1M": 0.64,
-        "completionPer1M": 1.29,
-        "avgPer1M": 0.97
+        "promptPer1M": 0.63,
+        "completionPer1M": 1.26,
+        "avgPer1M": 0.95
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -2766,7 +2782,7 @@
         "completionPer1M": 15,
         "avgPer1M": 9
       },
-      "architecture": "text+image->text",
+      "architecture": "text+image+video->text",
       "multimodal": true,
       "description": "Kimi K3 is a 2.8T parameter open-weight multimodal reasoning model from Moonshot AI. It is suited for complex coding, knowledge work, and long-horizon agentic workflows, and is particularly strong at."
     },
@@ -2961,6 +2977,22 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "NVIDIA Nemotron 3 Ultra is an open frontier-reasoning and orchestration model from NVIDIA, with 55B active parameters out of 550B total (MoE). Built on a hybrid Transformer-Mamba mixture-of-experts ar"
+    },
+    {
+      "id": "nvidia/nemotron-3.5-lightning",
+      "name": "NVIDIA: Nemotron 3.5 Lightning",
+      "provider": "nvidia",
+      "created": 1786452751,
+      "contextLength": 262144,
+      "maxCompletionTokens": 262144,
+      "pricing": {
+        "promptPer1M": 0.1,
+        "completionPer1M": 0.25,
+        "avgPer1M": 0.18
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "NVIDIA Nemotron 3.5 Lightning is an open mixture-of-experts model from NVIDIA, with 3B active parameters out of 30B total. It is suited for high-throughput agentic workloads and specialized tasks that"
     },
     {
       "id": "openai/gpt-audio",
@@ -4154,7 +4186,7 @@
       "contextLength": 131072,
       "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.04,
+        "promptPer1M": 0.03,
         "completionPer1M": 0.17,
         "avgPer1M": 0.1
       },
@@ -4954,9 +4986,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 32768,
       "pricing": {
-        "promptPer1M": 0.21,
-        "completionPer1M": 1.9,
-        "avgPer1M": 1.06
+        "promptPer1M": 0.26,
+        "completionPer1M": 1.04,
+        "avgPer1M": 0.65
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -5930,9 +5962,9 @@
       "contextLength": 204800,
       "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.5,
-        "completionPer1M": 2,
-        "avgPer1M": 1.25
+        "promptPer1M": 0.55,
+        "completionPer1M": 2.2,
+        "avgPer1M": 1.38
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -6040,11 +6072,11 @@
       "provider": "z-ai",
       "created": 1781631930,
       "contextLength": 1048576,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": 1048576,
       "pricing": {
-        "promptPer1M": 0.76,
-        "completionPer1M": 2.42,
-        "avgPer1M": 1.59
+        "promptPer1M": 0.42,
+        "completionPer1M": 1.4,
+        "avgPer1M": 0.91
       },
       "architecture": "text->text",
       "multimodal": false,
