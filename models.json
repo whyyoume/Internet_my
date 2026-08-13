@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-12T03:53:55.283Z",
-  "total": 382,
+  "updatedAt": "2026-08-13T03:58:32.369Z",
+  "total": 386,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -72,11 +72,11 @@
       "provider": "~deepseek",
       "created": 1785606009,
       "contextLength": 1048576,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 0.07,
-        "completionPer1M": 0.14,
-        "avgPer1M": 0.11
+        "promptPer1M": 0.08,
+        "completionPer1M": 0.25,
+        "avgPer1M": 0.17
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -915,10 +915,26 @@
       "description": "Seed 1.6 Flash is an ultra-fast multimodal deep thinking model by ByteDance Seed, supporting both text and visual understanding. It features a 256k context window and can generate outputs of..."
     },
     {
+      "id": "bytedance-seed/seed-2-1-turbo",
+      "name": "ByteDance Seed: Seed 2.1 Turbo",
+      "provider": "bytedance-seed",
+      "created": 1786552176,
+      "contextLength": 262144,
+      "maxCompletionTokens": 262144,
+      "pricing": {
+        "promptPer1M": 0.5,
+        "completionPer1M": 2.5,
+        "avgPer1M": 1.5
+      },
+      "architecture": "text+image+video->text",
+      "multimodal": true,
+      "description": "Seed 2.1 Turbo is a multimodal model from ByteDance Seed for coding and long-horizon agent workflows. It is suited for end-to-end software delivery, multi-step task execution, and understanding visual"
+    },
+    {
       "id": "bytedance-seed/seed-2.0-code",
       "name": "ByteDance Seed: Seed-2.0-Code",
       "provider": "bytedance-seed",
-      "created": 1785451719,
+      "created": 1786550701,
       "contextLength": 262144,
       "maxCompletionTokens": 131072,
       "pricing": {
@@ -1194,13 +1210,29 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 393216,
       "pricing": {
-        "promptPer1M": 0.63,
-        "completionPer1M": 1.26,
-        "avgPer1M": 0.95
+        "promptPer1M": 1.17,
+        "completionPer1M": 2.34,
+        "avgPer1M": 1.75
       },
       "architecture": "text->text",
       "multimodal": false,
       "description": "DeepSeek V4 Pro is a large-scale Mixture-of-Experts model from DeepSeek with 1.6T total parameters and 49B activated parameters, supporting a 1M-token context window. It is designed for advanced reaso"
+    },
+    {
+      "id": "deepseek/deepseek-v4-pro-0813",
+      "name": "DeepSeek: DeepSeek V4 Pro 0813",
+      "provider": "deepseek",
+      "created": 1786549364,
+      "contextLength": 1048576,
+      "maxCompletionTokens": 384000,
+      "pricing": {
+        "promptPer1M": 0.44,
+        "completionPer1M": 0.87,
+        "avgPer1M": 0.65
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "DeepSeek V4 Pro 0813 is a large-scale mixture-of-experts model from DeepSeek. This is the GA release of DeepSeek V4 Pro."
     },
     {
       "id": "deepseek/deepseek-r1",
@@ -2746,9 +2778,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.7,
-        "completionPer1M": 3.5,
-        "avgPer1M": 2.1
+        "promptPer1M": 0.67,
+        "completionPer1M": 3.4,
+        "avgPer1M": 2.04
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -2983,7 +3015,7 @@
       "name": "NVIDIA: Nemotron 3.5 Lightning",
       "provider": "nvidia",
       "created": 1786452751,
-      "contextLength": 262144,
+      "contextLength": 1000000,
       "maxCompletionTokens": 262144,
       "pricing": {
         "promptPer1M": 0.1,
@@ -5096,11 +5128,11 @@
       "provider": "qwen",
       "created": 1771223018,
       "contextLength": 262144,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": 65536,
       "pricing": {
-        "promptPer1M": 0.5,
-        "completionPer1M": 3.6,
-        "avgPer1M": 2.05
+        "promptPer1M": 0.45,
+        "completionPer1M": 3,
+        "avgPer1M": 1.73
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -5178,9 +5210,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.14,
-        "completionPer1M": 1,
-        "avgPer1M": 0.57
+        "promptPer1M": 0.25,
+        "completionPer1M": 1.25,
+        "avgPer1M": 0.75
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -5345,6 +5377,22 @@
       "architecture": "text+image->text",
       "multimodal": true,
       "description": "Qwen3.7-Plus is a cost-effective model in Alibaba's Qwen3.7 series. It supports text and image input with text output, building on the series' text capabilities with a comprehensive upgrade to its..."
+    },
+    {
+      "id": "qwen/qwen3.8-2.4t-a95b",
+      "name": "Qwen: Qwen3.8 2.4T A95B",
+      "provider": "qwen",
+      "created": 1786551702,
+      "contextLength": 1000000,
+      "maxCompletionTokens": 52429,
+      "pricing": {
+        "promptPer1M": 2,
+        "completionPer1M": 6,
+        "avgPer1M": 4
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "Qwen3.8 2.4T A95B is an open-weight sparse mixture-of-experts model from Qwen and the open-weight variant of [Qwen3.8 Max](/qwen/qwen3.8-max), with 95 billion active parameters out of 2.4 trillion tot"
     },
     {
       "id": "qwen/qwen3.8-max",
@@ -5856,7 +5904,23 @@
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
-      "description": "Grok 4.5 is SpaceXAI's smartest model with frontier performance on coding, knowledge work, and STEM."
+      "description": "Grok 4.5 is a model from SpaceXAI with frontier performance on coding, knowledge work, and STEM."
+    },
+    {
+      "id": "x-ai/grok-4.6",
+      "name": "SpaceXAI: Grok 4.6",
+      "provider": "x-ai",
+      "created": 1786548957,
+      "contextLength": 500000,
+      "maxCompletionTokens": null,
+      "pricing": {
+        "promptPer1M": 2,
+        "completionPer1M": 6,
+        "avgPer1M": 4
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "Grok 4.6 is SpaceXAI's smartest model with frontier performance on coding, knowledge work, and STEM."
     },
     {
       "id": "x-ai/grok-build-0.1",
@@ -5962,9 +6026,9 @@
       "contextLength": 204800,
       "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.55,
-        "completionPer1M": 2.2,
-        "avgPer1M": 1.38
+        "promptPer1M": 0.5,
+        "completionPer1M": 2,
+        "avgPer1M": 1.25
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -6072,11 +6136,11 @@
       "provider": "z-ai",
       "created": 1781631930,
       "contextLength": 1048576,
-      "maxCompletionTokens": 1048576,
+      "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.42,
-        "completionPer1M": 1.4,
-        "avgPer1M": 0.91
+        "promptPer1M": 0.5,
+        "completionPer1M": 3.15,
+        "avgPer1M": 1.83
       },
       "architecture": "text->text",
       "multimodal": false,
