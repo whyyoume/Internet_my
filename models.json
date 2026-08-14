@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-13T03:58:32.369Z",
-  "total": 386,
+  "updatedAt": "2026-08-14T03:54:37.152Z",
+  "total": 388,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -90,9 +90,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 65536,
       "pricing": {
-        "promptPer1M": 1.5,
-        "completionPer1M": 7.5,
-        "avgPer1M": 4.5
+        "promptPer1M": 0.38,
+        "completionPer1M": 1.88,
+        "avgPer1M": 1.13
       },
       "architecture": "text+image+file+audio+video->text",
       "multimodal": true,
@@ -359,8 +359,8 @@
       "name": "Magnum v4 72B",
       "provider": "anthracite-org",
       "created": 1729555200,
-      "contextLength": 16384,
-      "maxCompletionTokens": 2048,
+      "contextLength": 32768,
+      "maxCompletionTokens": 4096,
       "pricing": {
         "promptPer1M": 3,
         "completionPer1M": 5,
@@ -1192,11 +1192,11 @@
       "provider": "deepseek",
       "created": 1785478908,
       "contextLength": 1048576,
-      "maxCompletionTokens": 384000,
+      "maxCompletionTokens": 393216,
       "pricing": {
-        "promptPer1M": 0.08,
-        "completionPer1M": 0.18,
-        "avgPer1M": 0.13
+        "promptPer1M": 0.14,
+        "completionPer1M": 0.28,
+        "avgPer1M": 0.21
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1239,7 +1239,7 @@
       "name": "DeepSeek: R1",
       "provider": "deepseek",
       "created": 1737381095,
-      "contextLength": 163840,
+      "contextLength": 64000,
       "maxCompletionTokens": 16000,
       "pricing": {
         "promptPer1M": 0.7,
@@ -1610,9 +1610,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 65536,
       "pricing": {
-        "promptPer1M": 1.5,
-        "completionPer1M": 7.5,
-        "avgPer1M": 4.5
+        "promptPer1M": 0.75,
+        "completionPer1M": 3.75,
+        "avgPer1M": 2.25
       },
       "architecture": "text+image+file+audio+video->text",
       "multimodal": true,
@@ -1626,13 +1626,45 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 65536,
       "pricing": {
-        "promptPer1M": 0.75,
-        "completionPer1M": 3.75,
-        "avgPer1M": 2.25
+        "promptPer1M": 0.38,
+        "completionPer1M": 1.88,
+        "avgPer1M": 1.13
       },
       "architecture": "text+image+file+audio+video->text",
       "multimodal": true,
       "description": "Gemini 3.6 Flash is a high-efficiency model from Google for coding, agentic workflows, and web and app development. It is designed to produce polished outputs with fewer unnecessary edits and..."
+    },
+    {
+      "id": "google/gemini-3.7-flash",
+      "name": "Google: Gemini 3.7 Flash",
+      "provider": "google",
+      "created": 1786640581,
+      "contextLength": 1048576,
+      "maxCompletionTokens": 65536,
+      "pricing": {
+        "promptPer1M": 0.38,
+        "completionPer1M": 1.88,
+        "avgPer1M": 1.13
+      },
+      "architecture": "text+image+file+audio+video->text",
+      "multimodal": true,
+      "description": "Gemini 3.7 Flash is a multimodal model from Google for fast agentic workflows, coding, and complex multi-step reasoning. It is designed for tasks that require responsive performance and reliable multi"
+    },
+    {
+      "id": "google/gemini-3.7-flash:batch",
+      "name": "Google: Gemini 3.7 Flash",
+      "provider": "google",
+      "created": 1786640581,
+      "contextLength": 1048576,
+      "maxCompletionTokens": 65536,
+      "pricing": {
+        "promptPer1M": 0.19,
+        "completionPer1M": 0.94,
+        "avgPer1M": 0.56
+      },
+      "architecture": "text+image+file+audio+video->text",
+      "multimodal": true,
+      "description": "Gemini 3.7 Flash is a multimodal model from Google for fast agentic workflows, coding, and complex multi-step reasoning. It is designed for tasks that require responsive performance and reliable multi"
     },
     {
       "id": "google/gemma-2-27b-it",
@@ -1800,7 +1832,7 @@
       "provider": "google",
       "created": 1782837225,
       "contextLength": 65536,
-      "maxCompletionTokens": 65536,
+      "maxCompletionTokens": 66000,
       "pricing": {
         "promptPer1M": 0.25,
         "completionPer1M": 1.5,
@@ -4984,9 +5016,9 @@
       "provider": "qwen",
       "created": 1757612213,
       "contextLength": 262144,
-      "maxCompletionTokens": 16384,
+      "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.09,
+        "promptPer1M": 0.1,
         "completionPer1M": 1.1,
         "avgPer1M": 0.6
       },
@@ -5000,7 +5032,7 @@
       "provider": "qwen",
       "created": 1757612284,
       "contextLength": 262144,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": 32768,
       "pricing": {
         "promptPer1M": 0.15,
         "completionPer1M": 1.2,
@@ -5048,11 +5080,11 @@
       "provider": "qwen",
       "created": 1759794476,
       "contextLength": 262144,
-      "maxCompletionTokens": 16384,
+      "maxCompletionTokens": 32768,
       "pricing": {
-        "promptPer1M": 0.15,
-        "completionPer1M": 0.6,
-        "avgPer1M": 0.38
+        "promptPer1M": 0.13,
+        "completionPer1M": 0.52,
+        "avgPer1M": 0.33
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -5128,11 +5160,11 @@
       "provider": "qwen",
       "created": 1771223018,
       "contextLength": 262144,
-      "maxCompletionTokens": 65536,
+      "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.45,
-        "completionPer1M": 3,
-        "avgPer1M": 1.73
+        "promptPer1M": 0.5,
+        "completionPer1M": 3.6,
+        "avgPer1M": 2.05
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -5383,8 +5415,8 @@
       "name": "Qwen: Qwen3.8 2.4T A95B",
       "provider": "qwen",
       "created": 1786551702,
-      "contextLength": 1000000,
-      "maxCompletionTokens": 52429,
+      "contextLength": 1010000,
+      "maxCompletionTokens": 262144,
       "pricing": {
         "promptPer1M": 2,
         "completionPer1M": 6,
@@ -5824,7 +5856,7 @@
       },
       "architecture": "text->text",
       "multimodal": false,
-      "description": "Solar Pro 4 is a large language model from Upstage. It is suited for agentic workflows, office productivity, document-intensive work, and coding."
+      "description": "Solar Pro 4 is Upstage's cost-efficient large language model, featuring a 524K context window. It is built for long-horizon tasks and agentic workflows, with strong capabilities in office productivity"
     },
     {
       "id": "writer/palmyra-x5",
@@ -6136,11 +6168,11 @@
       "provider": "z-ai",
       "created": 1781631930,
       "contextLength": 1048576,
-      "maxCompletionTokens": 131072,
+      "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 0.5,
-        "completionPer1M": 3.15,
-        "avgPer1M": 1.83
+        "promptPer1M": 0.63,
+        "completionPer1M": 1.98,
+        "avgPer1M": 1.31
       },
       "architecture": "text->text",
       "multimodal": false,
