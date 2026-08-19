@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-18T02:46:20.958Z",
-  "total": 389,
+  "updatedAt": "2026-08-19T02:48:13.486Z",
+  "total": 390,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -72,11 +72,11 @@
       "provider": "~deepseek",
       "created": 1785606009,
       "contextLength": 1310720,
-      "maxCompletionTokens": 384000,
+      "maxCompletionTokens": 262144,
       "pricing": {
         "promptPer1M": 0.08,
-        "completionPer1M": 0.16,
-        "avgPer1M": 0.12
+        "completionPer1M": 0.15,
+        "avgPer1M": 0.11
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1768,11 +1768,11 @@
       "provider": "google",
       "created": 1775148486,
       "contextLength": 262144,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.1,
+        "promptPer1M": 0.09,
         "completionPer1M": 0.34,
-        "avgPer1M": 0.22
+        "avgPer1M": 0.21
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -2410,9 +2410,9 @@
       "contextLength": 524288,
       "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 0.15,
-        "completionPer1M": 0.6,
-        "avgPer1M": 0.38
+        "promptPer1M": 0.3,
+        "completionPer1M": 1.2,
+        "avgPer1M": 0.75
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -2778,9 +2778,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.57,
-        "completionPer1M": 2.85,
-        "avgPer1M": 1.71
+        "promptPer1M": 0.45,
+        "completionPer1M": 2.25,
+        "avgPer1M": 1.35
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -2826,9 +2826,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 0.48,
-        "completionPer1M": 2,
-        "avgPer1M": 1.24
+        "promptPer1M": 0.95,
+        "completionPer1M": 4,
+        "avgPer1M": 2.48
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -3034,9 +3034,9 @@
       "contextLength": 512288,
       "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 0.3,
-        "completionPer1M": 1.8,
-        "avgPer1M": 1.05
+        "promptPer1M": 0.6,
+        "completionPer1M": 3.6,
+        "avgPer1M": 2.1
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -5016,9 +5016,9 @@
       "provider": "qwen",
       "created": 1757612213,
       "contextLength": 262144,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.1,
+        "promptPer1M": 0.09,
         "completionPer1M": 1.1,
         "avgPer1M": 0.6
       },
@@ -5288,11 +5288,11 @@
       "provider": "qwen",
       "created": 1777255064,
       "contextLength": 262144,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": 65536,
       "pricing": {
-        "promptPer1M": 0.6,
-        "completionPer1M": 3.6,
-        "avgPer1M": 2.1
+        "promptPer1M": 0.3,
+        "completionPer1M": 2,
+        "avgPer1M": 1.15
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -5802,9 +5802,9 @@
       "contextLength": 524288,
       "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 0.5,
-        "completionPer1M": 2.03,
-        "avgPer1M": 1.26
+        "promptPer1M": 1,
+        "completionPer1M": 4.05,
+        "avgPer1M": 2.53
       },
       "architecture": "text+image+audio->text",
       "multimodal": true,
@@ -6186,9 +6186,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.5,
-        "completionPer1M": 3.15,
-        "avgPer1M": 1.83
+        "promptPer1M": 0.97,
+        "completionPer1M": 3.04,
+        "avgPer1M": 2
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -6202,13 +6202,29 @@
       "contextLength": 512000,
       "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 0.7,
-        "completionPer1M": 2.2,
-        "avgPer1M": 1.45
+        "promptPer1M": 1.4,
+        "completionPer1M": 4.4,
+        "avgPer1M": 2.9
       },
       "architecture": "text->text",
       "multimodal": false,
       "description": "GLM 5.2 is a large-scale reasoning model from Z.ai. It supports text input and output with a 1M-token context window, and is suited for long-horizon agent workflows, project-level software engineering"
+    },
+    {
+      "id": "z-ai/glm-5.3",
+      "name": "Z.ai: GLM 5.3",
+      "provider": "z-ai",
+      "created": 1787086655,
+      "contextLength": 1048576,
+      "maxCompletionTokens": 131072,
+      "pricing": {
+        "promptPer1M": 1.4,
+        "completionPer1M": 4.4,
+        "avgPer1M": 2.9
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "GLM-5.3 is a large-scale reasoning model from Z.ai, built for complex software engineering and long-horizon agent tasks. It supports text input and output with a 1M-token context window, and improves."
     },
     {
       "id": "z-ai/glm-5v-turbo",
