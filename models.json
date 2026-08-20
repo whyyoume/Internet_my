@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-19T02:48:13.486Z",
-  "total": 390,
+  "updatedAt": "2026-08-20T02:47:57.725Z",
+  "total": 389,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -74,9 +74,9 @@
       "contextLength": 1310720,
       "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.08,
-        "completionPer1M": 0.15,
-        "avgPer1M": 0.11
+        "promptPer1M": 0.07,
+        "completionPer1M": 0.14,
+        "avgPer1M": 0.1
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -179,20 +179,20 @@
       "description": "This model always redirects to the latest Grok model from xAI."
     },
     {
-      "id": "ai21/jamba-large-1.7",
-      "name": "AI21: Jamba Large 1.7",
-      "provider": "ai21",
-      "created": 1754669020,
-      "contextLength": 256000,
-      "maxCompletionTokens": 4096,
+      "id": "~z-ai/glm-latest",
+      "name": "Z.ai: GLM Latest",
+      "provider": "~z-ai",
+      "created": 1787151053,
+      "contextLength": 1048576,
+      "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 2,
-        "completionPer1M": 8,
-        "avgPer1M": 5
+        "promptPer1M": 1.4,
+        "completionPer1M": 4.4,
+        "avgPer1M": 2.9
       },
       "architecture": "text->text",
       "multimodal": false,
-      "description": "Jamba Large 1.7 is the latest model in the Jamba open family, offering improvements in grounding, instruction-following, and overall efficiency. Built on a hybrid SSM-Transformer architecture with a 2"
+      "description": "This model always redirects to the latest GLM model from Z.ai."
     },
     {
       "id": "aion-labs/aion-2.0",
@@ -1096,11 +1096,11 @@
       "provider": "deepseek",
       "created": 1742824755,
       "contextLength": 163840,
-      "maxCompletionTokens": 65536,
+      "maxCompletionTokens": 163840,
       "pricing": {
-        "promptPer1M": 0.27,
-        "completionPer1M": 1.12,
-        "avgPer1M": 0.7
+        "promptPer1M": 0.25,
+        "completionPer1M": 1,
+        "avgPer1M": 0.63
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1178,9 +1178,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 384000,
       "pricing": {
-        "promptPer1M": 0.08,
-        "completionPer1M": 0.17,
-        "avgPer1M": 0.12
+        "promptPer1M": 0.09,
+        "completionPer1M": 0.18,
+        "avgPer1M": 0.13
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1208,11 +1208,11 @@
       "provider": "deepseek",
       "created": 1777000679,
       "contextLength": 1048576,
-      "maxCompletionTokens": 384000,
+      "maxCompletionTokens": 393216,
       "pricing": {
-        "promptPer1M": 1.32,
-        "completionPer1M": 3.96,
-        "avgPer1M": 2.64
+        "promptPer1M": 1.44,
+        "completionPer1M": 2.88,
+        "avgPer1M": 2.16
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1224,11 +1224,11 @@
       "provider": "deepseek",
       "created": 1786549364,
       "contextLength": 1048576,
-      "maxCompletionTokens": 384000,
+      "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 1.32,
-        "completionPer1M": 3.96,
-        "avgPer1M": 2.64
+        "promptPer1M": 1.19,
+        "completionPer1M": 3.56,
+        "avgPer1M": 2.38
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1832,7 +1832,7 @@
       "provider": "google",
       "created": 1782837225,
       "contextLength": 65536,
-      "maxCompletionTokens": 66000,
+      "maxCompletionTokens": 65536,
       "pricing": {
         "promptPer1M": 0.25,
         "completionPer1M": 1.5,
@@ -2049,22 +2049,6 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "KAT-Coder-Pro V2.5 is a flagship-level Agentic Coding model that can directly hand over an entire issue or an entire business workflow to it, allowing it to autonomously locate and make..."
-    },
-    {
-      "id": "mancer/weaver",
-      "name": "Mancer: Weaver",
-      "provider": "mancer",
-      "created": 1690934400,
-      "contextLength": 8000,
-      "maxCompletionTokens": 6000,
-      "pricing": {
-        "promptPer1M": 0.5,
-        "completionPer1M": 0.75,
-        "avgPer1M": 0.63
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "An attempt to recreate Claude-style verbosity, but don't expect the same level of coherence or memory. Meant for use in roleplay/narrative situations."
     },
     {
       "id": "meituan/longcat-2.0",
@@ -2360,7 +2344,7 @@
       "provider": "minimax",
       "created": 1770908502,
       "contextLength": 204800,
-      "maxCompletionTokens": 196608,
+      "maxCompletionTokens": null,
       "pricing": {
         "promptPer1M": 0.22,
         "completionPer1M": 0.9,
@@ -5240,11 +5224,11 @@
       "provider": "qwen",
       "created": 1772053822,
       "contextLength": 262144,
-      "maxCompletionTokens": 65536,
+      "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.22,
-        "completionPer1M": 1.8,
-        "avgPer1M": 1.01
+        "promptPer1M": 0.25,
+        "completionPer1M": 1.25,
+        "avgPer1M": 0.75
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -5288,11 +5272,11 @@
       "provider": "qwen",
       "created": 1777255064,
       "contextLength": 262144,
-      "maxCompletionTokens": 65536,
+      "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.3,
-        "completionPer1M": 2,
-        "avgPer1M": 1.15
+        "promptPer1M": 0.6,
+        "completionPer1M": 3.6,
+        "avgPer1M": 2.1
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -5431,7 +5415,7 @@
       "name": "Qwen: Qwen3.8 27B",
       "provider": "qwen",
       "created": 1786722910,
-      "contextLength": 262144,
+      "contextLength": 1000000,
       "maxCompletionTokens": 131072,
       "pricing": {
         "promptPer1M": 0.45,
