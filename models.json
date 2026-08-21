@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-20T02:47:57.725Z",
-  "total": 389,
+  "updatedAt": "2026-08-21T02:53:39.028Z",
+  "total": 393,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -1128,7 +1128,7 @@
       "provider": "deepseek",
       "created": 1758548275,
       "contextLength": 163840,
-      "maxCompletionTokens": 163840,
+      "maxCompletionTokens": 32768,
       "pricing": {
         "promptPer1M": 0.27,
         "completionPer1M": 1,
@@ -1178,9 +1178,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 384000,
       "pricing": {
-        "promptPer1M": 0.09,
-        "completionPer1M": 0.18,
-        "avgPer1M": 0.13
+        "promptPer1M": 0.08,
+        "completionPer1M": 0.17,
+        "avgPer1M": 0.12
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1210,9 +1210,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 393216,
       "pricing": {
-        "promptPer1M": 1.44,
-        "completionPer1M": 2.88,
-        "avgPer1M": 2.16
+        "promptPer1M": 1.6,
+        "completionPer1M": 3.2,
+        "avgPer1M": 2.4
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1768,11 +1768,11 @@
       "provider": "google",
       "created": 1775148486,
       "contextLength": 262144,
-      "maxCompletionTokens": 16384,
+      "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.09,
+        "promptPer1M": 0.1,
         "completionPer1M": 0.34,
-        "avgPer1M": 0.21
+        "avgPer1M": 0.22
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -2051,6 +2051,22 @@
       "description": "KAT-Coder-Pro V2.5 is a flagship-level Agentic Coding model that can directly hand over an entire issue or an entire business workflow to it, allowing it to autonomously locate and make..."
     },
     {
+      "id": "mancer/weaver",
+      "name": "Mancer: Weaver",
+      "provider": "mancer",
+      "created": 1690934400,
+      "contextLength": 8000,
+      "maxCompletionTokens": 6000,
+      "pricing": {
+        "promptPer1M": 0.5,
+        "completionPer1M": 0.75,
+        "avgPer1M": 0.63
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "An attempt to recreate Claude-style verbosity, but don't expect the same level of coherence or memory. Meant for use in roleplay/narrative situations."
+    },
+    {
       "id": "meituan/longcat-2.0",
       "name": "Meituan: LongCat 2.0",
       "provider": "meituan",
@@ -2072,11 +2088,11 @@
       "provider": "meta",
       "created": 1786302394,
       "contextLength": 131072,
-      "maxCompletionTokens": null,
+      "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.35,
-        "completionPer1M": 1.5,
-        "avgPer1M": 0.93
+        "promptPer1M": 0.3,
+        "completionPer1M": 1.1,
+        "avgPer1M": 0.7
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -2515,6 +2531,22 @@
       "description": "A balanced model in the Ministral 3 family, Ministral 3 8B is a powerful, efficient tiny language model with vision capabilities."
     },
     {
+      "id": "mistralai/ministral-8b",
+      "name": "Mistral: Ministral 8B",
+      "provider": "mistralai",
+      "created": 1729123200,
+      "contextLength": 128000,
+      "maxCompletionTokens": null,
+      "pricing": {
+        "promptPer1M": 0.11,
+        "completionPer1M": 0.11,
+        "avgPer1M": 0.11
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "Ministral 8B is an 8B parameter model featuring a unique interleaved sliding-window attention pattern for faster, memory-efficient inference. Designed for edge use cases, it supports up to 128k contex"
+    },
+    {
       "id": "mistralai/mistral-large-2512",
       "name": "Mistral: Mistral Large 3 2512",
       "provider": "mistralai",
@@ -2794,9 +2826,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.71,
-        "completionPer1M": 3.5,
-        "avgPer1M": 2.11
+        "promptPer1M": 0.67,
+        "completionPer1M": 3.4,
+        "avgPer1M": 2.04
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -3031,7 +3063,7 @@
       "name": "NVIDIA: Nemotron 3.5 Lightning",
       "provider": "nvidia",
       "created": 1786452751,
-      "contextLength": 1000000,
+      "contextLength": 262144,
       "maxCompletionTokens": 131072,
       "pricing": {
         "promptPer1M": 0.08,
@@ -5192,7 +5224,7 @@
       "provider": "qwen",
       "created": 1772053789,
       "contextLength": 262144,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": 65536,
       "pricing": {
         "promptPer1M": 0.26,
         "completionPer1M": 2.08,
@@ -5667,6 +5699,38 @@
       "description": "Hunyuan-A13B is a 13B active parameter Mixture-of-Experts (MoE) language model developed by Tencent, with a total parameter count of 80B and support for reasoning via Chain-of-Thought. It offers compe"
     },
     {
+      "id": "tencent/hy-mt2-1.8b",
+      "name": "Tencent: Hy-MT2-1.8B",
+      "provider": "tencent",
+      "created": 1787231581,
+      "contextLength": 8192,
+      "maxCompletionTokens": 4096,
+      "pricing": {
+        "promptPer1M": 0.04,
+        "completionPer1M": 0.18,
+        "avgPer1M": 0.11
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "Hy-MT2-1.8B is a compact 1.8B-parameter translation model from Tencent. It supports 33 language pairs and five Chinese dialect and minority-language pairs, with workflows for structured, delimiter-bas"
+    },
+    {
+      "id": "tencent/hy-mt2-30b-a3b",
+      "name": "Tencent: Hy-MT2-30B-A3B",
+      "provider": "tencent",
+      "created": 1787231561,
+      "contextLength": 8192,
+      "maxCompletionTokens": 4096,
+      "pricing": {
+        "promptPer1M": 0.07,
+        "completionPer1M": 0.3,
+        "avgPer1M": 0.18
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "Hy-MT2-30B-A3B is Tencent's flagship translation model in the Hy-MT2 family. It supports 33 language pairs and five Chinese dialect and minority-language pairs, with workflows for structured, delimite"
+    },
+    {
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "provider": "tencent",
@@ -5799,7 +5863,7 @@
       "name": "Thinking Machines: Inkling Small",
       "provider": "thinkingmachines",
       "created": 1785443117,
-      "contextLength": 524288,
+      "contextLength": 1048576,
       "maxCompletionTokens": 262144,
       "pricing": {
         "promptPer1M": 0.45,
@@ -6183,7 +6247,7 @@
       "name": "Z.ai: GLM 5.2",
       "provider": "z-ai",
       "created": 1781631930,
-      "contextLength": 512000,
+      "contextLength": 1048575,
       "maxCompletionTokens": null,
       "pricing": {
         "promptPer1M": 1.4,
