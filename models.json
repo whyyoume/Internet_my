@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-21T02:53:39.028Z",
-  "total": 393,
+  "updatedAt": "2026-08-22T02:45:22.972Z",
+  "total": 394,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -72,11 +72,11 @@
       "provider": "~deepseek",
       "created": 1785606009,
       "contextLength": 1310720,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": 1048576,
       "pricing": {
         "promptPer1M": 0.07,
-        "completionPer1M": 0.14,
-        "avgPer1M": 0.1
+        "completionPer1M": 0.18,
+        "avgPer1M": 0.12
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -138,9 +138,9 @@
       "contextLength": 1050000,
       "maxCompletionTokens": 128000,
       "pricing": {
-        "promptPer1M": 2.5,
-        "completionPer1M": 15,
-        "avgPer1M": 8.75
+        "promptPer1M": 2,
+        "completionPer1M": 10,
+        "avgPer1M": 6
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
@@ -1059,22 +1059,6 @@
       "description": "Command R7B (12-2024) is a small, fast update of the Command R+ model, delivered in December 2024. It excels at RAG, tool use, agents, and similar tasks requiring complex reasoning..."
     },
     {
-      "id": "deepcogito/cogito-v2.1-671b",
-      "name": "Deep Cogito: Cogito v2.1 671B",
-      "provider": "deepcogito",
-      "created": 1763071233,
-      "contextLength": 128000,
-      "maxCompletionTokens": null,
-      "pricing": {
-        "promptPer1M": 1.25,
-        "completionPer1M": 1.25,
-        "avgPer1M": 1.25
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "Cogito v2.1 671B MoE represents one of the strongest open models globally, matching performance of frontier closed and open models. This model is trained using self play with reinforcement learning..."
-    },
-    {
       "id": "deepseek/deepseek-chat",
       "name": "DeepSeek: DeepSeek V3",
       "provider": "deepseek",
@@ -1112,11 +1096,11 @@
       "provider": "deepseek",
       "created": 1755779628,
       "contextLength": 163840,
-      "maxCompletionTokens": 32768,
+      "maxCompletionTokens": 161000,
       "pricing": {
-        "promptPer1M": 0.25,
-        "completionPer1M": 0.95,
-        "avgPer1M": 0.6
+        "promptPer1M": 0.55,
+        "completionPer1M": 1.65,
+        "avgPer1M": 1.1
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1144,11 +1128,11 @@
       "provider": "deepseek",
       "created": 1764594642,
       "contextLength": 163840,
-      "maxCompletionTokens": 65536,
+      "maxCompletionTokens": 163840,
       "pricing": {
-        "promptPer1M": 0.27,
-        "completionPer1M": 0.4,
-        "avgPer1M": 0.33
+        "promptPer1M": 0.26,
+        "completionPer1M": 0.38,
+        "avgPer1M": 0.32
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1179,7 +1163,7 @@
       "maxCompletionTokens": 384000,
       "pricing": {
         "promptPer1M": 0.08,
-        "completionPer1M": 0.17,
+        "completionPer1M": 0.15,
         "avgPer1M": 0.12
       },
       "architecture": "text->text",
@@ -1192,15 +1176,31 @@
       "provider": "deepseek",
       "created": 1785478908,
       "contextLength": 1310720,
-      "maxCompletionTokens": 393216,
+      "maxCompletionTokens": 384000,
       "pricing": {
-        "promptPer1M": 0.14,
-        "completionPer1M": 0.28,
-        "avgPer1M": 0.21
+        "promptPer1M": 0.08,
+        "completionPer1M": 0.18,
+        "avgPer1M": 0.13
       },
       "architecture": "text->text",
       "multimodal": false,
       "description": "DeepSeek V4 Flash 0731 is a sparse mixture-of-experts model from DeepSeek, with 13B active parameters out of 284B total. This re-post-trained revision is suited for coding, reasoning, and agent workfl"
+    },
+    {
+      "id": "deepseek/deepseek-v4-flash-vision-exp",
+      "name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
+      "provider": "deepseek",
+      "created": 1787311563,
+      "contextLength": 1048576,
+      "maxCompletionTokens": 384000,
+      "pricing": {
+        "promptPer1M": 0.44,
+        "completionPer1M": 1.32,
+        "avgPer1M": 0.88
+      },
+      "architecture": "text+image->text",
+      "multimodal": true,
+      "description": "DeepSeek V4 Flash Vision Exp is an experimental vision-enabled version of [DeepSeek V4 Flash 0731](https://openrouter.ai/deepseek/deepseek-v4-flash-0731) from DeepSeek, adding image understanding whil"
     },
     {
       "id": "deepseek/deepseek-v4-pro",
@@ -1208,11 +1208,11 @@
       "provider": "deepseek",
       "created": 1777000679,
       "contextLength": 1048576,
-      "maxCompletionTokens": 393216,
+      "maxCompletionTokens": 384000,
       "pricing": {
-        "promptPer1M": 1.6,
-        "completionPer1M": 3.2,
-        "avgPer1M": 2.4
+        "promptPer1M": 0.53,
+        "completionPer1M": 1.06,
+        "avgPer1M": 0.8
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -2131,6 +2131,22 @@
       "description": "Muse Spark 1.2 is a reasoning model from Meta, designed for complex agentic tasks. It accepts text, images, video, audio, and PDF documents, returns text, and offers a 1M-token context..."
     },
     {
+      "id": "meta/muse-spark-1.2-contributor",
+      "name": "Meta: Muse Spark 1.2 Contributor",
+      "provider": "meta",
+      "created": 1787336476,
+      "contextLength": 1048576,
+      "maxCompletionTokens": null,
+      "pricing": {
+        "promptPer1M": 0.1,
+        "completionPer1M": 0.2,
+        "avgPer1M": 0.15
+      },
+      "architecture": "text+image+file+audio+video->text",
+      "multimodal": true,
+      "description": "Muse Spark 1.2 contributor tier is a reasoning model from Meta designed for developers who want to start building at an even lower cost. It’s meaningfully cheaper than Muse Spark..."
+    },
+    {
       "id": "meta-llama/llama-3.1-70b-instruct",
       "name": "Meta: Llama 3.1 70B Instruct",
       "provider": "meta-llama",
@@ -2360,11 +2376,11 @@
       "provider": "minimax",
       "created": 1770908502,
       "contextLength": 204800,
-      "maxCompletionTokens": null,
+      "maxCompletionTokens": 128000,
       "pricing": {
-        "promptPer1M": 0.22,
-        "completionPer1M": 0.9,
-        "avgPer1M": 0.56
+        "promptPer1M": 0.27,
+        "completionPer1M": 1.08,
+        "avgPer1M": 0.68
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -2663,12 +2679,12 @@
       "name": "Mistral: Mistral Small 3.2 24B",
       "provider": "mistralai",
       "created": 1750443016,
-      "contextLength": 256000,
+      "contextLength": 131072,
       "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.09,
-        "completionPer1M": 0.25,
-        "avgPer1M": 0.17
+        "promptPer1M": 0.08,
+        "completionPer1M": 0.2,
+        "avgPer1M": 0.14
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -2810,9 +2826,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.95,
-        "completionPer1M": 4,
-        "avgPer1M": 2.48
+        "promptPer1M": 0.56,
+        "completionPer1M": 2.36,
+        "avgPer1M": 1.46
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -4138,9 +4154,9 @@
       "contextLength": 1050000,
       "maxCompletionTokens": 128000,
       "pricing": {
-        "promptPer1M": 2.5,
-        "completionPer1M": 15,
-        "avgPer1M": 8.75
+        "promptPer1M": 2,
+        "completionPer1M": 10,
+        "avgPer1M": 6
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
@@ -4154,9 +4170,9 @@
       "contextLength": 1050000,
       "maxCompletionTokens": 128000,
       "pricing": {
-        "promptPer1M": 1.25,
-        "completionPer1M": 7.5,
-        "avgPer1M": 4.38
+        "promptPer1M": 1,
+        "completionPer1M": 5,
+        "avgPer1M": 3
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
@@ -4170,9 +4186,9 @@
       "contextLength": 1050000,
       "maxCompletionTokens": 128000,
       "pricing": {
-        "promptPer1M": 2.5,
-        "completionPer1M": 15,
-        "avgPer1M": 8.75
+        "promptPer1M": 2,
+        "completionPer1M": 10,
+        "avgPer1M": 6
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
@@ -4186,9 +4202,9 @@
       "contextLength": 1050000,
       "maxCompletionTokens": 128000,
       "pricing": {
-        "promptPer1M": 1.25,
-        "completionPer1M": 7.5,
-        "avgPer1M": 4.38
+        "promptPer1M": 1,
+        "completionPer1M": 5,
+        "avgPer1M": 3
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
@@ -5032,9 +5048,9 @@
       "provider": "qwen",
       "created": 1757612213,
       "contextLength": 262144,
-      "maxCompletionTokens": 16384,
+      "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.09,
+        "promptPer1M": 0.1,
         "completionPer1M": 1.1,
         "avgPer1M": 0.6
       },
@@ -5432,7 +5448,7 @@
       "provider": "qwen",
       "created": 1786551702,
       "contextLength": 1048576,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": 131072,
       "pricing": {
         "promptPer1M": 2,
         "completionPer1M": 6,
