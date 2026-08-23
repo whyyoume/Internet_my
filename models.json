@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-22T02:45:22.972Z",
-  "total": 394,
+  "updatedAt": "2026-08-23T02:53:36.189Z",
+  "total": 395,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -72,9 +72,9 @@
       "provider": "~deepseek",
       "created": 1785606009,
       "contextLength": 1310720,
-      "maxCompletionTokens": 1048576,
+      "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.07,
+        "promptPer1M": 0.06,
         "completionPer1M": 0.18,
         "avgPer1M": 0.12
       },
@@ -1162,9 +1162,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 384000,
       "pricing": {
-        "promptPer1M": 0.08,
-        "completionPer1M": 0.15,
-        "avgPer1M": 0.12
+        "promptPer1M": 0.05,
+        "completionPer1M": 0.11,
+        "avgPer1M": 0.08
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1194,9 +1194,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 384000,
       "pricing": {
-        "promptPer1M": 0.44,
-        "completionPer1M": 1.32,
-        "avgPer1M": 0.88
+        "promptPer1M": 0.22,
+        "completionPer1M": 0.66,
+        "avgPer1M": 0.44
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -1210,9 +1210,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 384000,
       "pricing": {
-        "promptPer1M": 0.53,
-        "completionPer1M": 1.06,
-        "avgPer1M": 0.8
+        "promptPer1M": 0.41,
+        "completionPer1M": 0.83,
+        "avgPer1M": 0.62
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1226,9 +1226,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 1.19,
-        "completionPer1M": 3.56,
-        "avgPer1M": 2.38
+        "promptPer1M": 1.12,
+        "completionPer1M": 3.37,
+        "avgPer1M": 2.24
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -2088,11 +2088,11 @@
       "provider": "meta",
       "created": 1786302394,
       "contextLength": 131072,
-      "maxCompletionTokens": 131072,
+      "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 0.3,
-        "completionPer1M": 1.1,
-        "avgPer1M": 0.7
+        "promptPer1M": 0.35,
+        "completionPer1M": 1.5,
+        "avgPer1M": 0.93
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -2824,11 +2824,11 @@
       "provider": "moonshotai",
       "created": 1776699402,
       "contextLength": 262144,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 0.56,
-        "completionPer1M": 2.36,
-        "avgPer1M": 1.46
+        "promptPer1M": 0.95,
+        "completionPer1M": 4,
+        "avgPer1M": 2.48
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -4282,7 +4282,7 @@
       "contextLength": 131072,
       "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.03,
+        "promptPer1M": 0.04,
         "completionPer1M": 0.17,
         "avgPer1M": 0.1
       },
@@ -4856,11 +4856,11 @@
       "provider": "qwen",
       "created": 1745878604,
       "contextLength": 131072,
-      "maxCompletionTokens": 8192,
+      "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.13,
-        "completionPer1M": 0.52,
-        "avgPer1M": 0.33
+        "promptPer1M": 0.12,
+        "completionPer1M": 0.5,
+        "avgPer1M": 0.31
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -5240,7 +5240,7 @@
       "provider": "qwen",
       "created": 1772053789,
       "contextLength": 262144,
-      "maxCompletionTokens": 65536,
+      "maxCompletionTokens": 262144,
       "pricing": {
         "promptPer1M": 0.26,
         "completionPer1M": 2.08,
@@ -5466,9 +5466,9 @@
       "contextLength": 1000000,
       "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.45,
-        "completionPer1M": 3.2,
-        "avgPer1M": 1.82
+        "promptPer1M": 0.4,
+        "completionPer1M": 3,
+        "avgPer1M": 1.7
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -5747,6 +5747,22 @@
       "description": "Hy-MT2-30B-A3B is Tencent's flagship translation model in the Hy-MT2 family. It supports 33 language pairs and five Chinese dialect and minority-language pairs, with workflows for structured, delimite"
     },
     {
+      "id": "tencent/hy-mt2-7b",
+      "name": "Tencent: Hy-MT2-7B",
+      "provider": "tencent",
+      "created": 1787148797,
+      "contextLength": 8192,
+      "maxCompletionTokens": 4096,
+      "pricing": {
+        "promptPer1M": 0.07,
+        "completionPer1M": 0.3,
+        "avgPer1M": 0.18
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "Hy-MT2-7B is a 7B-parameter translation model from Tencent. It supports 33 language pairs and five Chinese dialect and minority-language pairs, with workflows for structured, delimiter-based, contextu"
+    },
+    {
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "provider": "tencent",
@@ -5848,11 +5864,11 @@
       "provider": "thinkingmachines",
       "created": 1784325956,
       "contextLength": 1048576,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 0.95,
+        "promptPer1M": 1,
         "completionPer1M": 4.05,
-        "avgPer1M": 2.5
+        "avgPer1M": 2.53
       },
       "architecture": "text+image+audio->text",
       "multimodal": true,
