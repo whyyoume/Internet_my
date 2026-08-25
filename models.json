@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-24T02:54:11.899Z",
-  "total": 395,
+  "updatedAt": "2026-08-25T02:49:37.592Z",
+  "total": 393,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -75,8 +75,8 @@
       "maxCompletionTokens": 1048576,
       "pricing": {
         "promptPer1M": 0.04,
-        "completionPer1M": 0.08,
-        "avgPer1M": 0.06
+        "completionPer1M": 0.12,
+        "avgPer1M": 0.08
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -120,11 +120,11 @@
       "provider": "~moonshotai",
       "created": 1777318428,
       "contextLength": 1048576,
-      "maxCompletionTokens": 974842,
+      "maxCompletionTokens": 1048576,
       "pricing": {
-        "promptPer1M": 2.6,
-        "completionPer1M": 13,
-        "avgPer1M": 7.8
+        "promptPer1M": 2.8,
+        "completionPer1M": 14,
+        "avgPer1M": 8.4
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -1162,9 +1162,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 384000,
       "pricing": {
-        "promptPer1M": 0.06,
-        "completionPer1M": 0.11,
-        "avgPer1M": 0.09
+        "promptPer1M": 0.09,
+        "completionPer1M": 0.18,
+        "avgPer1M": 0.13
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1194,9 +1194,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 384000,
       "pricing": {
-        "promptPer1M": 0.22,
-        "completionPer1M": 0.66,
-        "avgPer1M": 0.44
+        "promptPer1M": 0.44,
+        "completionPer1M": 1.32,
+        "avgPer1M": 0.88
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -1210,9 +1210,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 384000,
       "pricing": {
-        "promptPer1M": 0.53,
-        "completionPer1M": 1.05,
-        "avgPer1M": 0.79
+        "promptPer1M": 0.79,
+        "completionPer1M": 1.58,
+        "avgPer1M": 1.19
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1939,54 +1939,6 @@
       "description": "Mercury 2 is an extremely fast reasoning LLM, and the first reasoning diffusion LLM (dLLM). Instead of generating tokens sequentially, Mercury 2 produces and refines multiple tokens in parallel, achie"
     },
     {
-      "id": "inclusionai/ling-2.6-1t",
-      "name": "inclusionAI: Ling-2.6-1T",
-      "provider": "inclusionai",
-      "created": 1776948238,
-      "contextLength": 262144,
-      "maxCompletionTokens": 32768,
-      "pricing": {
-        "promptPer1M": 0.08,
-        "completionPer1M": 0.63,
-        "avgPer1M": 0.35
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "Ling-2.6-1T is an instant (instruct) model from inclusionAI and the company’s trillion-parameter flagship, designed for real-world agents that require fast execution and high efficiency at scale. It u"
-    },
-    {
-      "id": "inclusionai/ling-2.6-flash",
-      "name": "inclusionAI: Ling-2.6-flash",
-      "provider": "inclusionai",
-      "created": 1776795886,
-      "contextLength": 262144,
-      "maxCompletionTokens": 32768,
-      "pricing": {
-        "promptPer1M": 0.01,
-        "completionPer1M": 0.03,
-        "avgPer1M": 0.02
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "Ling-2.6-flash is an instant (instruct) model from inclusionAI with 104B total parameters and 7.4B active parameters, designed for real-world agents that require fast responses, strong execution, and "
-    },
-    {
-      "id": "inclusionai/ring-2.6-1t",
-      "name": "inclusionAI: Ring-2.6-1T",
-      "provider": "inclusionai",
-      "created": 1778247440,
-      "contextLength": 262144,
-      "maxCompletionTokens": 65536,
-      "pricing": {
-        "promptPer1M": 0.08,
-        "completionPer1M": 0.63,
-        "avgPer1M": 0.35
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "Ring-2.6-1T is a 1T-parameter-scale thinking model with 63B active parameters, built for real-world agent workflows that require both strong capability and operational efficiency. It is optimized for "
-    },
-    {
       "id": "inclusionai/ling-3.0-flash",
       "name": "Ling-3.0-flash",
       "provider": "inclusionai",
@@ -2394,9 +2346,9 @@
       "contextLength": 204800,
       "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 0.24,
-        "completionPer1M": 0.96,
-        "avgPer1M": 0.6
+        "promptPer1M": 0.3,
+        "completionPer1M": 1.2,
+        "avgPer1M": 0.75
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -2497,6 +2449,22 @@
       "architecture": "text+file->text",
       "multimodal": true,
       "description": "Mistral's cutting-edge language model for coding released end of July 2025. Codestral specializes in low-latency, high-frequency tasks such as fill-in-the-middle (FIM), code correction and test genera"
+    },
+    {
+      "id": "mistralai/devstral-2512",
+      "name": "Mistral: Devstral 2 2512",
+      "provider": "mistralai",
+      "created": 1765285419,
+      "contextLength": 262144,
+      "maxCompletionTokens": null,
+      "pricing": {
+        "promptPer1M": 0.44,
+        "completionPer1M": 2.2,
+        "avgPer1M": 1.32
+      },
+      "architecture": "text+file->text",
+      "multimodal": true,
+      "description": "Devstral 2 is a state-of-the-art open-source model by Mistral AI specializing in agentic coding. It is a 123B-parameter dense transformer model supporting a 256K context window. Devstral 2 supports ex"
     },
     {
       "id": "mistralai/ministral-14b-2512",
@@ -2808,11 +2776,11 @@
       "provider": "moonshotai",
       "created": 1769487076,
       "contextLength": 262144,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": null,
       "pricing": {
-        "promptPer1M": 0.45,
-        "completionPer1M": 2.25,
-        "avgPer1M": 1.35
+        "promptPer1M": 0.6,
+        "completionPer1M": 3,
+        "avgPer1M": 1.8
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -4839,7 +4807,7 @@
       "name": "Qwen: Qwen3 235B A22B Thinking 2507",
       "provider": "qwen",
       "created": 1753449557,
-      "contextLength": 262144,
+      "contextLength": 131072,
       "maxCompletionTokens": null,
       "pricing": {
         "promptPer1M": 0.23,
@@ -5864,11 +5832,11 @@
       "provider": "thinkingmachines",
       "created": 1784325956,
       "contextLength": 1048576,
-      "maxCompletionTokens": null,
+      "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 1,
+        "promptPer1M": 0.95,
         "completionPer1M": 4.05,
-        "avgPer1M": 2.53
+        "avgPer1M": 2.5
       },
       "architecture": "text+image+audio->text",
       "multimodal": true,
@@ -5912,7 +5880,7 @@
       "provider": "undi95",
       "created": 1689984000,
       "contextLength": 6144,
-      "maxCompletionTokens": 6144,
+      "maxCompletionTokens": 4096,
       "pricing": {
         "promptPer1M": 0.45,
         "completionPer1M": 0.65,
@@ -6264,11 +6232,11 @@
       "provider": "z-ai",
       "created": 1781631930,
       "contextLength": 1048576,
-      "maxCompletionTokens": 131072,
+      "maxCompletionTokens": 262144,
       "pricing": {
-        "promptPer1M": 0.97,
-        "completionPer1M": 3.04,
-        "avgPer1M": 2
+        "promptPer1M": 1.19,
+        "completionPer1M": 3.74,
+        "avgPer1M": 2.47
       },
       "architecture": "text->text",
       "multimodal": false,
