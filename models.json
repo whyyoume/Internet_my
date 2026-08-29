@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-28T13:30:23.857Z",
-  "total": 361,
+  "updatedAt": "2026-08-29T08:23:58.880Z",
+  "total": 370,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -90,9 +90,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 65536,
       "pricing": {
-        "promptPer1M": 0.38,
-        "completionPer1M": 1.88,
-        "avgPer1M": 1.13
+        "promptPer1M": 0.75,
+        "completionPer1M": 3.75,
+        "avgPer1M": 2.25
       },
       "architecture": "text+image+file+audio+video->text",
       "multimodal": true,
@@ -183,12 +183,12 @@
       "name": "Z.ai: GLM Latest",
       "provider": "~z-ai",
       "created": 1787151053,
-      "contextLength": 1048576,
-      "maxCompletionTokens": 131072,
+      "contextLength": 1310720,
+      "maxCompletionTokens": 943718,
       "pricing": {
-        "promptPer1M": 1.4,
-        "completionPer1M": 4.4,
-        "avgPer1M": 2.9
+        "promptPer1M": 1.2,
+        "completionPer1M": 4,
+        "avgPer1M": 2.6
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -257,22 +257,6 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "Aion-RP-Llama-3.1-8B ranks the highest in the character evaluation portion of the RPBench-Auto benchmark, a roleplaying-specific variant of Arena-Hard-Auto, where LLMs evaluate each other’s responses."
-    },
-    {
-      "id": "allenai/olmo-3-32b-think",
-      "name": "AllenAI: Olmo 3 32B Think",
-      "provider": "allenai",
-      "created": 1763758276,
-      "contextLength": 65536,
-      "maxCompletionTokens": 58982,
-      "pricing": {
-        "promptPer1M": 0.15,
-        "completionPer1M": 0.5,
-        "avgPer1M": 0.33
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "Olmo 3 32B Think is a large-scale, 32-billion-parameter model purpose-built for deep reasoning, complex logic chains and advanced instruction-following scenarios. Its capacity enables strong performan"
     },
     {
       "id": "amazon/nova-2-lite-v1",
@@ -835,22 +819,6 @@
       "description": "Trinity Large Thinking is a powerful open source reasoning model from the team at Arcee AI. It shows strong performance in PinchBench, agentic workloads, and reasoning tasks. Launch video: https://you"
     },
     {
-      "id": "arcee-ai/virtuoso-large",
-      "name": "Arcee AI: Virtuoso Large",
-      "provider": "arcee-ai",
-      "created": 1746478885,
-      "contextLength": 131072,
-      "maxCompletionTokens": 64000,
-      "pricing": {
-        "promptPer1M": 0.75,
-        "completionPer1M": 1.2,
-        "avgPer1M": 0.98
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "Virtuoso‑Large is Arcee's top‑tier general‑purpose LLM at 72 B parameters, tuned to tackle cross‑domain reasoning, creative writing and enterprise QA. Unlike many 70 B peers, it retains the 128 k..."
-    },
-    {
       "id": "baidu/ernie-4.5-vl-424b-a47b",
       "name": "Baidu: ERNIE 4.5 VL 424B A47B",
       "provider": "baidu",
@@ -1162,7 +1130,7 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 384000,
       "pricing": {
-        "promptPer1M": 0.09,
+        "promptPer1M": 0.08,
         "completionPer1M": 0.17,
         "avgPer1M": 0.13
       },
@@ -1178,9 +1146,25 @@
       "contextLength": 1310720,
       "maxCompletionTokens": 943718,
       "pricing": {
-        "promptPer1M": 0.07,
-        "completionPer1M": 0.14,
-        "avgPer1M": 0.11
+        "promptPer1M": 0.05,
+        "completionPer1M": 0.09,
+        "avgPer1M": 0.07
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "DeepSeek V4 Flash 0731 is a sparse mixture-of-experts model from DeepSeek, with 13B active parameters out of 284B total. This re-post-trained revision is suited for coding, reasoning, and agent workfl"
+    },
+    {
+      "id": "deepseek/deepseek-v4-flash-0731:batch",
+      "name": "DeepSeek: DeepSeek V4 Flash 0731",
+      "provider": "deepseek",
+      "created": 1785478908,
+      "contextLength": 1048576,
+      "maxCompletionTokens": 943718,
+      "pricing": {
+        "promptPer1M": 0.14,
+        "completionPer1M": 0.28,
+        "avgPer1M": 0.21
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1210,9 +1194,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 384000,
       "pricing": {
-        "promptPer1M": 0.87,
-        "completionPer1M": 1.74,
-        "avgPer1M": 1.31
+        "promptPer1M": 0.66,
+        "completionPer1M": 1.32,
+        "avgPer1M": 0.99
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1229,6 +1213,22 @@
         "promptPer1M": 0.66,
         "completionPer1M": 1.98,
         "avgPer1M": 1.32
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "DeepSeek V4 Pro 0813 is a large-scale mixture-of-experts model from DeepSeek. This is the GA release of DeepSeek V4 Pro."
+    },
+    {
+      "id": "deepseek/deepseek-v4-pro-0813:batch",
+      "name": "DeepSeek: DeepSeek V4 Pro 0813",
+      "provider": "deepseek",
+      "created": 1786549364,
+      "contextLength": 1048576,
+      "maxCompletionTokens": 943718,
+      "pricing": {
+        "promptPer1M": 1.32,
+        "completionPer1M": 3.96,
+        "avgPer1M": 2.64
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1642,9 +1642,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 65536,
       "pricing": {
-        "promptPer1M": 0.38,
-        "completionPer1M": 1.88,
-        "avgPer1M": 1.13
+        "promptPer1M": 0.75,
+        "completionPer1M": 3.75,
+        "avgPer1M": 2.25
       },
       "architecture": "text+image+file+audio+video->text",
       "multimodal": true,
@@ -1757,6 +1757,22 @@
         "promptPer1M": 0.09,
         "completionPer1M": 0.34,
         "avgPer1M": 0.21
+      },
+      "architecture": "text+image+video->text",
+      "multimodal": true,
+      "description": "Gemma 4 31B Instruct is Google DeepMind's 30.7B dense multimodal model supporting text and image input with text output. Features a 256K token context window, configurable thinking/reasoning mode, nat"
+    },
+    {
+      "id": "google/gemma-4-31b-it:batch",
+      "name": "Google: Gemma 4 31B",
+      "provider": "google",
+      "created": 1775148486,
+      "contextLength": 262144,
+      "maxCompletionTokens": 235929,
+      "pricing": {
+        "promptPer1M": 0.39,
+        "completionPer1M": 0.97,
+        "avgPer1M": 0.68
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -2020,6 +2036,22 @@
     },
     {
       "id": "meta/muse-glimmer-30b",
+      "name": "Meta: Muse Glimmer 30B",
+      "provider": "meta",
+      "created": 1786302394,
+      "contextLength": 131072,
+      "maxCompletionTokens": 16384,
+      "pricing": {
+        "promptPer1M": 0.3,
+        "completionPer1M": 1.2,
+        "avgPer1M": 0.75
+      },
+      "architecture": "text+image->text",
+      "multimodal": true,
+      "description": "Muse Glimmer 30B is a dense, open-weight multimodal model from Meta Superintelligence Labs, distilled from Muse Spark and optimized for autonomous agents on consumer hardware. It is suited for long-ho"
+    },
+    {
+      "id": "meta/muse-glimmer-30b:batch",
       "name": "Meta: Muse Glimmer 30B",
       "provider": "meta",
       "created": 1786302394,
@@ -2544,7 +2576,7 @@
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
-      "description": "Mistral Large 3 2512 is Mistral���s most capable model to date, featuring a sparse mixture-of-experts architecture with 41B active parameters (675B total), and released under the Apache 2.0 license."
+      "description": "Mistral Large 3 2512 is Mistral’s most capable model to date, featuring a sparse mixture-of-experts architecture with 41B active parameters (675B total), and released under the Apache 2.0 license."
     },
     {
       "id": "mistralai/mistral-large-2512:batch",
@@ -2775,8 +2807,8 @@
       "name": "Mistral: Voxtral Small 24B 2507",
       "provider": "mistralai",
       "created": 1761835144,
-      "contextLength": 32000,
-      "maxCompletionTokens": 25600,
+      "contextLength": 32768,
+      "maxCompletionTokens": 26214,
       "pricing": {
         "promptPer1M": 0.1,
         "completionPer1M": 0.3,
@@ -2884,6 +2916,22 @@
     },
     {
       "id": "moonshotai/kimi-k3",
+      "name": "MoonshotAI: Kimi K3",
+      "provider": "moonshotai",
+      "created": 1784215858,
+      "contextLength": 1048576,
+      "maxCompletionTokens": 943718,
+      "pricing": {
+        "promptPer1M": 3,
+        "completionPer1M": 15,
+        "avgPer1M": 9
+      },
+      "architecture": "text+image+video->text",
+      "multimodal": true,
+      "description": "Kimi K3 is a 2.8T parameter open-weight multimodal reasoning model from Moonshot AI. It is suited for complex coding, knowledge work, and long-horizon agentic workflows, and is particularly strong at."
+    },
+    {
+      "id": "moonshotai/kimi-k3:batch",
       "name": "MoonshotAI: Kimi K3",
       "provider": "moonshotai",
       "created": 1784215858,
@@ -3096,11 +3144,11 @@
       "provider": "nvidia",
       "created": 1786452751,
       "contextLength": 262144,
-      "maxCompletionTokens": 235929,
+      "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.1,
-        "completionPer1M": 0.25,
-        "avgPer1M": 0.18
+        "promptPer1M": 0.08,
+        "completionPer1M": 0.2,
+        "avgPer1M": 0.14
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -3875,6 +3923,22 @@
       "description": "gpt-oss-120b is an open-weight, 117B-parameter Mixture-of-Experts (MoE) language model from OpenAI designed for high-reasoning, agentic, and general-purpose production use cases. It activates 5.1B par"
     },
     {
+      "id": "openai/gpt-oss-120b:batch",
+      "name": "OpenAI: gpt-oss-120b",
+      "provider": "openai",
+      "created": 1754414231,
+      "contextLength": 131072,
+      "maxCompletionTokens": 117964,
+      "pricing": {
+        "promptPer1M": 0.15,
+        "completionPer1M": 0.6,
+        "avgPer1M": 0.38
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "gpt-oss-120b is an open-weight, 117B-parameter Mixture-of-Experts (MoE) language model from OpenAI designed for high-reasoning, agentic, and general-purpose production use cases. It activates 5.1B par"
+    },
+    {
       "id": "openai/gpt-oss-20b",
       "name": "OpenAI: gpt-oss-20b",
       "provider": "openai",
@@ -3885,6 +3949,22 @@
         "promptPer1M": 0.03,
         "completionPer1M": 0.13,
         "avgPer1M": 0.08
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "gpt-oss-20b is an open-weight 21B parameter model released by OpenAI under the Apache 2.0 license. It uses a Mixture-of-Experts (MoE) architecture with 3.6B active parameters per forward pass, optimiz"
+    },
+    {
+      "id": "openai/gpt-oss-20b:batch",
+      "name": "OpenAI: gpt-oss-20b",
+      "provider": "openai",
+      "created": 1754414229,
+      "contextLength": 131072,
+      "maxCompletionTokens": 117964,
+      "pricing": {
+        "promptPer1M": 0.05,
+        "completionPer1M": 0.2,
+        "avgPer1M": 0.12
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -4552,11 +4632,11 @@
       "provider": "qwen",
       "created": 1759794476,
       "contextLength": 262144,
-      "maxCompletionTokens": 32768,
+      "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.13,
-        "completionPer1M": 0.52,
-        "avgPer1M": 0.33
+        "promptPer1M": 0.15,
+        "completionPer1M": 0.6,
+        "avgPer1M": 0.38
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -4739,6 +4819,22 @@
       "description": "Qwen3.5-9B is a multimodal foundation model from the Qwen3.5 family, designed to deliver strong reasoning, coding, and visual understanding in an efficient 9B-parameter architecture. It uses a unified"
     },
     {
+      "id": "qwen/qwen3.5-9b:batch",
+      "name": "Qwen: Qwen3.5-9B",
+      "provider": "qwen",
+      "created": 1773152396,
+      "contextLength": 262144,
+      "maxCompletionTokens": 235929,
+      "pricing": {
+        "promptPer1M": 0.17,
+        "completionPer1M": 0.25,
+        "avgPer1M": 0.21
+      },
+      "architecture": "text+image+video->text",
+      "multimodal": true,
+      "description": "Qwen3.5-9B is a multimodal foundation model from the Qwen3.5 family, designed to deliver strong reasoning, coding, and visual understanding in an efficient 9B-parameter architecture. It uses a unified"
+    },
+    {
       "id": "qwen/qwen3.5-flash-02-23",
       "name": "Qwen: Qwen3.5-Flash",
       "provider": "qwen",
@@ -4893,6 +4989,22 @@
         "promptPer1M": 2,
         "completionPer1M": 6,
         "avgPer1M": 4
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "Qwen3.8 2.4T A95B is an open-weight sparse mixture-of-experts model from Qwen and the open-weight variant of [Qwen3.8 Max](/qwen/qwen3.8-max), with 95 billion active parameters out of 2.4 trillion tot"
+    },
+    {
+      "id": "qwen/qwen3.8-2.4t-a95b:batch",
+      "name": "Qwen: Qwen3.8 2.4T A95B",
+      "provider": "qwen",
+      "created": 1786551702,
+      "contextLength": 1010000,
+      "maxCompletionTokens": 909000,
+      "pricing": {
+        "promptPer1M": 2.5,
+        "completionPer1M": 6.25,
+        "avgPer1M": 4.38
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -5363,6 +5475,22 @@
       "description": "Inkling Small is an open-weight multimodal mixture-of-experts model from Thinking Machines Lab, with 12B active parameters out of 276B total. It is positioned as the smaller, more efficient member of."
     },
     {
+      "id": "thinkingmachines/inkling-small:batch",
+      "name": "Thinking Machines: Inkling Small",
+      "provider": "thinkingmachines",
+      "created": 1785443117,
+      "contextLength": 524288,
+      "maxCompletionTokens": 471859,
+      "pricing": {
+        "promptPer1M": 0.5,
+        "completionPer1M": 1.2,
+        "avgPer1M": 0.85
+      },
+      "architecture": "text+image+audio->text",
+      "multimodal": true,
+      "description": "Inkling Small is an open-weight multimodal mixture-of-experts model from Thinking Machines Lab, with 12B active parameters out of 276B total. It is positioned as the smaller, more efficient member of."
+    },
+    {
       "id": "undi95/remm-slerp-l2-13b",
       "name": "ReMM SLERP 13B",
       "provider": "undi95",
@@ -5735,7 +5863,7 @@
       "name": "Z.ai: GLM 5.3",
       "provider": "z-ai",
       "created": 1787086655,
-      "contextLength": 1048576,
+      "contextLength": 1310720,
       "maxCompletionTokens": 131072,
       "pricing": {
         "promptPer1M": 1.4,
@@ -5757,6 +5885,22 @@
         "promptPer1M": 0.08,
         "completionPer1M": 0.25,
         "avgPer1M": 0.16
+      },
+      "architecture": "text+image+video->text",
+      "multimodal": true,
+      "description": "GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains accurate long-contex"
+    },
+    {
+      "id": "z-ai/glm-5.3-flash:batch",
+      "name": "Z.ai: GLM 5.3 Flash",
+      "provider": "z-ai",
+      "created": 1787752741,
+      "contextLength": 1048575,
+      "maxCompletionTokens": 943717,
+      "pricing": {
+        "promptPer1M": 0.15,
+        "completionPer1M": 0.5,
+        "avgPer1M": 0.33
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
