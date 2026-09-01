@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-31T07:51:04.578Z",
-  "total": 370,
+  "updatedAt": "2026-09-01T06:56:46.708Z",
+  "total": 394,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -74,9 +74,9 @@
       "contextLength": 1310720,
       "maxCompletionTokens": 393216,
       "pricing": {
-        "promptPer1M": 0.03,
+        "promptPer1M": 0.05,
         "completionPer1M": 0.16,
-        "avgPer1M": 0.1
+        "avgPer1M": 0.11
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -184,11 +184,11 @@
       "provider": "~z-ai",
       "created": 1787151053,
       "contextLength": 1310720,
-      "maxCompletionTokens": 131072,
+      "maxCompletionTokens": 943718,
       "pricing": {
-        "promptPer1M": 1.19,
-        "completionPer1M": 4.18,
-        "avgPer1M": 2.68
+        "promptPer1M": 1.17,
+        "completionPer1M": 3.96,
+        "avgPer1M": 2.57
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -346,9 +346,9 @@
       "contextLength": 32768,
       "maxCompletionTokens": 4096,
       "pricing": {
-        "promptPer1M": 3,
+        "promptPer1M": 2.5,
         "completionPer1M": 5,
-        "avgPer1M": 4
+        "avgPer1M": 3.75
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1130,9 +1130,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 384000,
       "pricing": {
-        "promptPer1M": 0.09,
-        "completionPer1M": 0.18,
-        "avgPer1M": 0.13
+        "promptPer1M": 0.08,
+        "completionPer1M": 0.16,
+        "avgPer1M": 0.12
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1210,9 +1210,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 384000,
       "pricing": {
-        "promptPer1M": 1.32,
-        "completionPer1M": 3.96,
-        "avgPer1M": 2.64
+        "promptPer1M": 1.12,
+        "completionPer1M": 3.35,
+        "avgPer1M": 2.23
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1880,11 +1880,11 @@
       "provider": "gryphe",
       "created": 1688256000,
       "contextLength": 8192,
-      "maxCompletionTokens": 3686,
+      "maxCompletionTokens": 7372,
       "pricing": {
-        "promptPer1M": 0.06,
-        "completionPer1M": 0.06,
-        "avgPer1M": 0.06
+        "promptPer1M": 0.35,
+        "completionPer1M": 0.6,
+        "avgPer1M": 0.48
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1923,6 +1923,22 @@
       "description": "Granite 4.1 8B is a dense, decoder-only 8-billion-parameter language model from IBM, part of the Granite 4.1 family. It supports a 131K-token context window and is designed for enterprise tasks..."
     },
     {
+      "id": "ibm-granite/granite-4.2-8b",
+      "name": "IBM: Granite 4.2 8B",
+      "provider": "ibm-granite",
+      "created": 1788206780,
+      "contextLength": 131072,
+      "maxCompletionTokens": 117964,
+      "pricing": {
+        "promptPer1M": 0.1,
+        "completionPer1M": 0.15,
+        "avgPer1M": 0.13
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "Granite 4.2 8B is a dense reasoning model from IBM. It is suited for mathematics, code generation, multilingual dialogue, and agentic workflows that need multi-step reasoning. It supports full, low-ef"
+    },
+    {
       "id": "inception/mercury-2",
       "name": "Inception: Mercury 2",
       "provider": "inception",
@@ -1955,28 +1971,12 @@
       "description": "*Ling-3.0-flash* is a *124B-parameter Mixture-of-Experts (MoE) model*, with approximately *5.1B parameters activated per token*. The model is designed with *token efficiency and production-scale agent"
     },
     {
-      "id": "kwaipilot/kat-coder-air-v2.5",
-      "name": "Kwaipilot: KAT-Coder-Air V2.5",
-      "provider": "kwaipilot",
-      "created": 1783714590,
-      "contextLength": 256000,
-      "maxCompletionTokens": 80000,
-      "pricing": {
-        "promptPer1M": 0.15,
-        "completionPer1M": 0.6,
-        "avgPer1M": 0.38
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "KAT-Coder-Air V2.5 is a flagship-level Agentic Coding model that can directly hand over an entire issue or an entire business workflow to it, allowing it to autonomously locate and make..."
-    },
-    {
       "id": "kwaipilot/kat-coder-pro-v2",
       "name": "Kwaipilot: KAT-Coder-Pro V2",
       "provider": "kwaipilot",
       "created": 1774649310,
       "contextLength": 262144,
-      "maxCompletionTokens": 80000,
+      "maxCompletionTokens": 144000,
       "pricing": {
         "promptPer1M": 0.3,
         "completionPer1M": 1.2,
@@ -1992,7 +1992,7 @@
       "provider": "kwaipilot",
       "created": 1783714589,
       "contextLength": 262144,
-      "maxCompletionTokens": 80000,
+      "maxCompletionTokens": 235929,
       "pricing": {
         "promptPer1M": 0.74,
         "completionPer1M": 2.96,
@@ -2010,9 +2010,9 @@
       "contextLength": 8000,
       "maxCompletionTokens": 6000,
       "pricing": {
-        "promptPer1M": 0.5,
+        "promptPer1M": 0.4,
         "completionPer1M": 0.75,
-        "avgPer1M": 0.63
+        "avgPer1M": 0.57
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -2216,11 +2216,11 @@
       "provider": "meta-llama",
       "created": 1743881519,
       "contextLength": 1310720,
-      "maxCompletionTokens": 8192,
+      "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.11,
-        "completionPer1M": 0.34,
-        "avgPer1M": 0.22
+        "promptPer1M": 0.1,
+        "completionPer1M": 0.3,
+        "avgPer1M": 0.2
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -2467,22 +2467,6 @@
       "description": "Mistral's cutting-edge language model for coding released end of July 2025. Codestral specializes in low-latency, high-frequency tasks such as fill-in-the-middle (FIM), code correction and test genera"
     },
     {
-      "id": "mistralai/codestral-2508:batch",
-      "name": "Mistral: Codestral 2508",
-      "provider": "mistralai",
-      "created": 1754079630,
-      "contextLength": 256000,
-      "maxCompletionTokens": 204800,
-      "pricing": {
-        "promptPer1M": 0.3,
-        "completionPer1M": 0.9,
-        "avgPer1M": 0.6
-      },
-      "architecture": "text+file->text",
-      "multimodal": true,
-      "description": "Mistral's cutting-edge language model for coding released end of July 2025. Codestral specializes in low-latency, high-frequency tasks such as fill-in-the-middle (FIM), code correction and test genera"
-    },
-    {
       "id": "mistralai/devstral-2512",
       "name": "Mistral: Devstral 2 2512",
       "provider": "mistralai",
@@ -2547,39 +2531,7 @@
       "description": "A balanced model in the Ministral 3 family, Ministral 3 8B is a powerful, efficient tiny language model with vision capabilities."
     },
     {
-      "id": "mistralai/ministral-8b-2512:batch",
-      "name": "Mistral: Ministral 3 8B 2512",
-      "provider": "mistralai",
-      "created": 1764681654,
-      "contextLength": 262144,
-      "maxCompletionTokens": 209715,
-      "pricing": {
-        "promptPer1M": 0.15,
-        "completionPer1M": 0.15,
-        "avgPer1M": 0.15
-      },
-      "architecture": "text+image->text",
-      "multimodal": true,
-      "description": "A balanced model in the Ministral 3 family, Ministral 3 8B is a powerful, efficient tiny language model with vision capabilities."
-    },
-    {
       "id": "mistralai/mistral-large-2512",
-      "name": "Mistral: Mistral Large 3 2512",
-      "provider": "mistralai",
-      "created": 1764624472,
-      "contextLength": 262144,
-      "maxCompletionTokens": 209715,
-      "pricing": {
-        "promptPer1M": 0.5,
-        "completionPer1M": 1.5,
-        "avgPer1M": 1
-      },
-      "architecture": "text+image+file->text",
-      "multimodal": true,
-      "description": "Mistral Large 3 2512 is Mistral’s most capable model to date, featuring a sparse mixture-of-experts architecture with 41B active parameters (675B total), and released under the Apache 2.0 license."
-    },
-    {
-      "id": "mistralai/mistral-large-2512:batch",
       "name": "Mistral: Mistral Large 3 2512",
       "provider": "mistralai",
       "created": 1764624472,
@@ -2612,22 +2564,6 @@
     },
     {
       "id": "mistralai/mistral-medium-3.1",
-      "name": "Mistral: Mistral Medium 3.1",
-      "provider": "mistralai",
-      "created": 1755095639,
-      "contextLength": 131072,
-      "maxCompletionTokens": 104857,
-      "pricing": {
-        "promptPer1M": 0.4,
-        "completionPer1M": 2,
-        "avgPer1M": 1.2
-      },
-      "architecture": "text+image+file->text",
-      "multimodal": true,
-      "description": "Mistral Medium 3.1 is an updated version of Mistral Medium 3, which is a high-performance enterprise-grade language model designed to deliver frontier-level capabilities at significantly reduced opera"
-    },
-    {
-      "id": "mistralai/mistral-medium-3.1:batch",
       "name": "Mistral: Mistral Medium 3.1",
       "provider": "mistralai",
       "created": 1755095639,
@@ -2740,22 +2676,6 @@
     },
     {
       "id": "mistralai/mistral-small-2603",
-      "name": "Mistral: Mistral Small 4",
-      "provider": "mistralai",
-      "created": 1773695685,
-      "contextLength": 262144,
-      "maxCompletionTokens": 209715,
-      "pricing": {
-        "promptPer1M": 0.15,
-        "completionPer1M": 0.6,
-        "avgPer1M": 0.38
-      },
-      "architecture": "text+image->text",
-      "multimodal": true,
-      "description": "Mistral Small 4 is the next major release in the Mistral Small family, unifying the capabilities of several flagship Mistral models into a single system. It combines strong reasoning from..."
-    },
-    {
-      "id": "mistralai/mistral-small-2603:batch",
       "name": "Mistral: Mistral Small 4",
       "provider": "mistralai",
       "created": 1773695685,
@@ -3235,6 +3155,22 @@
       "description": "GPT-3.5 Turbo is OpenAI's fastest model. It can understand and generate natural language or code, and is optimized for chat and traditional completion tasks.\n\nTraining data up to Sep 2021."
     },
     {
+      "id": "openai/gpt-3.5-turbo:batch",
+      "name": "OpenAI: GPT-3.5 Turbo",
+      "provider": "openai",
+      "created": 1685232000,
+      "contextLength": 16385,
+      "maxCompletionTokens": 4096,
+      "pricing": {
+        "promptPer1M": 0.25,
+        "completionPer1M": 0.75,
+        "avgPer1M": 0.5
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "GPT-3.5 Turbo is OpenAI's fastest model. It can understand and generate natural language or code, and is optimized for chat and traditional completion tasks.\n\nTraining data up to Sep 2021."
+    },
+    {
       "id": "openai/gpt-3.5-turbo-16k",
       "name": "OpenAI: GPT-3.5 Turbo 16k",
       "provider": "openai",
@@ -3299,6 +3235,22 @@
       "description": "The latest GPT-4 Turbo model with vision capabilities. Vision requests can now use JSON mode and function calling.\n\nTraining data: up to December 2023."
     },
     {
+      "id": "openai/gpt-4-turbo:batch",
+      "name": "OpenAI: GPT-4 Turbo",
+      "provider": "openai",
+      "created": 1712620800,
+      "contextLength": 128000,
+      "maxCompletionTokens": 4096,
+      "pricing": {
+        "promptPer1M": 5,
+        "completionPer1M": 15,
+        "avgPer1M": 10
+      },
+      "architecture": "text+image->text",
+      "multimodal": true,
+      "description": "The latest GPT-4 Turbo model with vision capabilities. Vision requests can now use JSON mode and function calling.\n\nTraining data: up to December 2023."
+    },
+    {
       "id": "openai/gpt-4-turbo-preview",
       "name": "OpenAI: GPT-4 Turbo Preview",
       "provider": "openai",
@@ -3331,6 +3283,22 @@
       "description": "GPT-4.1 is a flagship large language model optimized for advanced instruction following, real-world software engineering, and long-context reasoning. It supports a 1 million token context window and o"
     },
     {
+      "id": "openai/gpt-4.1:batch",
+      "name": "OpenAI: GPT-4.1",
+      "provider": "openai",
+      "created": 1744651385,
+      "contextLength": 1047576,
+      "maxCompletionTokens": 32768,
+      "pricing": {
+        "promptPer1M": 1,
+        "completionPer1M": 4,
+        "avgPer1M": 2.5
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-4.1 is a flagship large language model optimized for advanced instruction following, real-world software engineering, and long-context reasoning. It supports a 1 million token context window and o"
+    },
+    {
       "id": "openai/gpt-4.1-mini",
       "name": "OpenAI: GPT-4.1 Mini",
       "provider": "openai",
@@ -3347,6 +3315,22 @@
       "description": "GPT-4.1 Mini is a mid-sized model delivering performance competitive with GPT-4o at substantially lower latency and cost. It retains a 1 million token context window and scores 45.1% on hard..."
     },
     {
+      "id": "openai/gpt-4.1-mini:batch",
+      "name": "OpenAI: GPT-4.1 Mini",
+      "provider": "openai",
+      "created": 1744651381,
+      "contextLength": 1047576,
+      "maxCompletionTokens": 32768,
+      "pricing": {
+        "promptPer1M": 0.2,
+        "completionPer1M": 0.8,
+        "avgPer1M": 0.5
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-4.1 Mini is a mid-sized model delivering performance competitive with GPT-4o at substantially lower latency and cost. It retains a 1 million token context window and scores 45.1% on hard..."
+    },
+    {
       "id": "openai/gpt-4.1-nano",
       "name": "OpenAI: GPT-4.1 Nano",
       "provider": "openai",
@@ -3357,6 +3341,22 @@
         "promptPer1M": 0.1,
         "completionPer1M": 0.4,
         "avgPer1M": 0.25
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "For tasks that demand low latency, GPT‑4.1 nano is the fastest and cheapest model in the GPT-4.1 series. It delivers exceptional performance at a small size with its 1 million..."
+    },
+    {
+      "id": "openai/gpt-4.1-nano:batch",
+      "name": "OpenAI: GPT-4.1 Nano",
+      "provider": "openai",
+      "created": 1744651369,
+      "contextLength": 1047576,
+      "maxCompletionTokens": 32768,
+      "pricing": {
+        "promptPer1M": 0.05,
+        "completionPer1M": 0.2,
+        "avgPer1M": 0.12
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
@@ -3427,6 +3427,22 @@
       "description": "GPT-4o (\"o\" for \"omni\") is OpenAI's latest AI model, supporting both text and image inputs with text outputs. It maintains the intelligence level of [GPT-4 Turbo](/models/openai/gpt-4-turbo) while bei"
     },
     {
+      "id": "openai/gpt-4o:batch",
+      "name": "OpenAI: GPT-4o",
+      "provider": "openai",
+      "created": 1715558400,
+      "contextLength": 128000,
+      "maxCompletionTokens": 16384,
+      "pricing": {
+        "promptPer1M": 1.25,
+        "completionPer1M": 5,
+        "avgPer1M": 3.13
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-4o (\"o\" for \"omni\") is OpenAI's latest AI model, supporting both text and image inputs with text outputs. It maintains the intelligence level of [GPT-4 Turbo](/models/openai/gpt-4-turbo) while bei"
+    },
+    {
       "id": "openai/gpt-4o-mini",
       "name": "OpenAI: GPT-4o-mini",
       "provider": "openai",
@@ -3459,6 +3475,22 @@
       "description": "GPT-4o mini is OpenAI's newest model after [GPT-4 Omni](/models/openai/gpt-4o), supporting both text and image inputs with text outputs. As their most advanced small model, it is many multiples more a"
     },
     {
+      "id": "openai/gpt-4o-mini:batch",
+      "name": "OpenAI: GPT-4o-mini",
+      "provider": "openai",
+      "created": 1721260800,
+      "contextLength": 128000,
+      "maxCompletionTokens": 16384,
+      "pricing": {
+        "promptPer1M": 0.08,
+        "completionPer1M": 0.3,
+        "avgPer1M": 0.19
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-4o mini is OpenAI's newest model after [GPT-4 Omni](/models/openai/gpt-4o), supporting both text and image inputs with text outputs. As their most advanced small model, it is many multiples more a"
+    },
+    {
       "id": "openai/gpt-5",
       "name": "OpenAI: GPT-5",
       "provider": "openai",
@@ -3469,6 +3501,22 @@
         "promptPer1M": 1.25,
         "completionPer1M": 10,
         "avgPer1M": 5.63
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-5 is OpenAI’s most advanced model, offering major improvements in reasoning, code quality, and user experience. It is optimized for complex tasks that require step-by-step reasoning, instruction f"
+    },
+    {
+      "id": "openai/gpt-5:batch",
+      "name": "OpenAI: GPT-5",
+      "provider": "openai",
+      "created": 1754587413,
+      "contextLength": 400000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 0.63,
+        "completionPer1M": 5,
+        "avgPer1M": 2.81
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
@@ -3523,6 +3571,22 @@
       "description": "GPT-5 Mini is a compact version of GPT-5, designed to handle lighter-weight reasoning tasks. It provides the same instruction-following and safety-tuning benefits as GPT-5, but with reduced latency an"
     },
     {
+      "id": "openai/gpt-5-mini:batch",
+      "name": "OpenAI: GPT-5 Mini",
+      "provider": "openai",
+      "created": 1754587407,
+      "contextLength": 400000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 0.13,
+        "completionPer1M": 1,
+        "avgPer1M": 0.56
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-5 Mini is a compact version of GPT-5, designed to handle lighter-weight reasoning tasks. It provides the same instruction-following and safety-tuning benefits as GPT-5, but with reduced latency an"
+    },
+    {
       "id": "openai/gpt-5-nano",
       "name": "OpenAI: GPT-5 Nano",
       "provider": "openai",
@@ -3533,6 +3597,22 @@
         "promptPer1M": 0.05,
         "completionPer1M": 0.4,
         "avgPer1M": 0.22
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-5-Nano is the smallest and fastest variant in the GPT-5 system, optimized for developer tools, rapid interactions, and ultra-low latency environments. While limited in reasoning depth compared to "
+    },
+    {
+      "id": "openai/gpt-5-nano:batch",
+      "name": "OpenAI: GPT-5 Nano",
+      "provider": "openai",
+      "created": 1754587402,
+      "contextLength": 400000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 0.03,
+        "completionPer1M": 0.2,
+        "avgPer1M": 0.11
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
@@ -3555,6 +3635,22 @@
       "description": "GPT-5 Pro is OpenAI’s most advanced model, offering major improvements in reasoning, code quality, and user experience. It is optimized for complex tasks that require step-by-step reasoning, instructi"
     },
     {
+      "id": "openai/gpt-5-pro:batch",
+      "name": "OpenAI: GPT-5 Pro",
+      "provider": "openai",
+      "created": 1759776663,
+      "contextLength": 400000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 7.5,
+        "completionPer1M": 60,
+        "avgPer1M": 33.75
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-5 Pro is OpenAI’s most advanced model, offering major improvements in reasoning, code quality, and user experience. It is optimized for complex tasks that require step-by-step reasoning, instructi"
+    },
+    {
       "id": "openai/gpt-5.1",
       "name": "OpenAI: GPT-5.1",
       "provider": "openai",
@@ -3565,6 +3661,22 @@
         "promptPer1M": 1.25,
         "completionPer1M": 10,
         "avgPer1M": 5.63
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-5.1 is the latest frontier-grade model in the GPT-5 series, offering stronger general-purpose reasoning, improved instruction adherence, and a more natural conversational style compared to GPT-5. "
+    },
+    {
+      "id": "openai/gpt-5.1:batch",
+      "name": "OpenAI: GPT-5.1",
+      "provider": "openai",
+      "created": 1763060305,
+      "contextLength": 400000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 0.63,
+        "completionPer1M": 5,
+        "avgPer1M": 2.81
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
@@ -3635,6 +3747,22 @@
       "description": "GPT-5.2 is the latest frontier-grade model in the GPT-5 series, offering stronger agentic and long context perfomance compared to GPT-5.1. It uses adaptive reasoning to allocate computation dynamicall"
     },
     {
+      "id": "openai/gpt-5.2:batch",
+      "name": "OpenAI: GPT-5.2",
+      "provider": "openai",
+      "created": 1765389775,
+      "contextLength": 400000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 0.88,
+        "completionPer1M": 7,
+        "avgPer1M": 3.94
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-5.2 is the latest frontier-grade model in the GPT-5 series, offering stronger agentic and long context perfomance compared to GPT-5.1. It uses adaptive reasoning to allocate computation dynamicall"
+    },
+    {
       "id": "openai/gpt-5.2-chat",
       "name": "OpenAI: GPT-5.2 Chat",
       "provider": "openai",
@@ -3661,6 +3789,22 @@
         "promptPer1M": 21,
         "completionPer1M": 168,
         "avgPer1M": 94.5
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-5.2 Pro is OpenAI’s most advanced model, offering major improvements in agentic coding and long context performance over GPT-5 Pro. It is optimized for complex tasks that require step-by-step reas"
+    },
+    {
+      "id": "openai/gpt-5.2-pro:batch",
+      "name": "OpenAI: GPT-5.2 Pro",
+      "provider": "openai",
+      "created": 1765389780,
+      "contextLength": 400000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 10.5,
+        "completionPer1M": 84,
+        "avgPer1M": 47.25
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
@@ -3715,6 +3859,22 @@
       "description": "GPT-5.4 is OpenAI’s latest frontier model, unifying the Codex and GPT lines into a single system. It features a 1M+ token context window (922K input, 128K output) with support for..."
     },
     {
+      "id": "openai/gpt-5.4:batch",
+      "name": "OpenAI: GPT-5.4",
+      "provider": "openai",
+      "created": 1772734352,
+      "contextLength": 1050000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 1.25,
+        "completionPer1M": 7.5,
+        "avgPer1M": 4.38
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-5.4 is OpenAI’s latest frontier model, unifying the Codex and GPT lines into a single system. It features a 1M+ token context window (922K input, 128K output) with support for..."
+    },
+    {
       "id": "openai/gpt-5.4-image-2",
       "name": "OpenAI: GPT-5.4 Image 2",
       "provider": "openai",
@@ -3747,6 +3907,22 @@
       "description": "GPT-5.4 mini brings the core capabilities of GPT-5.4 to a faster, more efficient model optimized for high-throughput workloads. It supports text and image inputs with strong performance across reasoni"
     },
     {
+      "id": "openai/gpt-5.4-mini:batch",
+      "name": "OpenAI: GPT-5.4 Mini",
+      "provider": "openai",
+      "created": 1773748178,
+      "contextLength": 400000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 0.38,
+        "completionPer1M": 2.25,
+        "avgPer1M": 1.31
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-5.4 mini brings the core capabilities of GPT-5.4 to a faster, more efficient model optimized for high-throughput workloads. It supports text and image inputs with strong performance across reasoni"
+    },
+    {
       "id": "openai/gpt-5.4-nano",
       "name": "OpenAI: GPT-5.4 Nano",
       "provider": "openai",
@@ -3757,6 +3933,22 @@
         "promptPer1M": 0.2,
         "completionPer1M": 1.25,
         "avgPer1M": 0.73
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-5.4 nano is the most lightweight and cost-efficient variant of the GPT-5.4 family, optimized for speed-critical and high-volume tasks. It supports text and image inputs and is designed for low-lat"
+    },
+    {
+      "id": "openai/gpt-5.4-nano:batch",
+      "name": "OpenAI: GPT-5.4 Nano",
+      "provider": "openai",
+      "created": 1773748187,
+      "contextLength": 400000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 0.1,
+        "completionPer1M": 0.63,
+        "avgPer1M": 0.36
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
@@ -3779,6 +3971,22 @@
       "description": "GPT-5.4 Pro is OpenAI's most advanced model, building on GPT-5.4's unified architecture with enhanced reasoning capabilities for complex, high-stakes tasks. It features a 1M+ token context window (922"
     },
     {
+      "id": "openai/gpt-5.4-pro:batch",
+      "name": "OpenAI: GPT-5.4 Pro",
+      "provider": "openai",
+      "created": 1772734366,
+      "contextLength": 1050000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 15,
+        "completionPer1M": 90,
+        "avgPer1M": 52.5
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-5.4 Pro is OpenAI's most advanced model, building on GPT-5.4's unified architecture with enhanced reasoning capabilities for complex, high-stakes tasks. It features a 1M+ token context window (922"
+    },
+    {
       "id": "openai/gpt-5.5",
       "name": "OpenAI: GPT-5.5",
       "provider": "openai",
@@ -3789,6 +3997,22 @@
         "promptPer1M": 5,
         "completionPer1M": 30,
         "avgPer1M": 17.5
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-5.5 is OpenAI’s frontier model designed for complex professional workloads, building on GPT-5.4 with stronger reasoning, higher reliability, and improved token efficiency on hard tasks. It feature"
+    },
+    {
+      "id": "openai/gpt-5.5:batch",
+      "name": "OpenAI: GPT-5.5",
+      "provider": "openai",
+      "created": 1777051893,
+      "contextLength": 1050000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 2.5,
+        "completionPer1M": 15,
+        "avgPer1M": 8.75
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
@@ -3811,6 +4035,22 @@
       "description": "GPT-5.5 Pro is OpenAI’s high-capability model optimized for deep reasoning and accuracy on complex, high-stakes workloads. It features a 1M+ token context window (922K input, 128K output) with support"
     },
     {
+      "id": "openai/gpt-5.5-pro:batch",
+      "name": "OpenAI: GPT-5.5 Pro",
+      "provider": "openai",
+      "created": 1777051896,
+      "contextLength": 1050000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 15,
+        "completionPer1M": 90,
+        "avgPer1M": 52.5
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-5.5 Pro is OpenAI’s high-capability model optimized for deep reasoning and accuracy on complex, high-stakes workloads. It features a 1M+ token context window (922K input, 128K output) with support"
+    },
+    {
       "id": "openai/gpt-5.6-luna",
       "name": "OpenAI: GPT-5.6 Luna",
       "provider": "openai",
@@ -3821,6 +4061,22 @@
         "promptPer1M": 0.2,
         "completionPer1M": 1.2,
         "avgPer1M": 0.7
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-5.6 Luna is a fast, cost-efficient model in OpenAI's GPT-5.6 series. It is suited for high-volume, latency-sensitive tasks such as chat, classification, and lightweight agentic workflows, providin"
+    },
+    {
+      "id": "openai/gpt-5.6-luna:batch",
+      "name": "OpenAI: GPT-5.6 Luna",
+      "provider": "openai",
+      "created": 1783590864,
+      "contextLength": 1050000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 0.1,
+        "completionPer1M": 0.6,
+        "avgPer1M": 0.35
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
@@ -3843,6 +4099,22 @@
       "description": "GPT-5.6 Luna Pro is the same underlying model as [GPT-5.6 Luna](https://openrouter.ai/openai/gpt-5.6-luna), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n\nLe"
     },
     {
+      "id": "openai/gpt-5.6-luna-pro:batch",
+      "name": "OpenAI: GPT-5.6 Luna Pro",
+      "provider": "openai",
+      "created": 1783590867,
+      "contextLength": 1050000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 0.1,
+        "completionPer1M": 0.6,
+        "avgPer1M": 0.35
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-5.6 Luna Pro is the same underlying model as [GPT-5.6 Luna](https://openrouter.ai/openai/gpt-5.6-luna), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n\nLe"
+    },
+    {
       "id": "openai/gpt-5.6-sol",
       "name": "OpenAI: GPT-5.6 Sol",
       "provider": "openai",
@@ -3853,6 +4125,22 @@
         "promptPer1M": 2,
         "completionPer1M": 10,
         "avgPer1M": 6
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-5.6 Sol is the flagship model in OpenAI's GPT-5.6 series. It is suited for complex reasoning, coding, and agentic workflows, and is particularly strong at command-line and multi-step coding tasks."
+    },
+    {
+      "id": "openai/gpt-5.6-sol:batch",
+      "name": "OpenAI: GPT-5.6 Sol",
+      "provider": "openai",
+      "created": 1783590850,
+      "contextLength": 1050000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 1,
+        "completionPer1M": 5,
+        "avgPer1M": 3
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
@@ -3875,6 +4163,22 @@
       "description": "GPT-5.6 Sol Pro is the same underlying model as [GPT-5.6 Sol](https://openrouter.ai/openai/gpt-5.6-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n\nLearn"
     },
     {
+      "id": "openai/gpt-5.6-sol-pro:batch",
+      "name": "OpenAI: GPT-5.6 Sol Pro",
+      "provider": "openai",
+      "created": 1783590854,
+      "contextLength": 1050000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 1,
+        "completionPer1M": 5,
+        "avgPer1M": 3
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-5.6 Sol Pro is the same underlying model as [GPT-5.6 Sol](https://openrouter.ai/openai/gpt-5.6-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n\nLearn"
+    },
+    {
       "id": "openai/gpt-5.6-terra",
       "name": "OpenAI: GPT-5.6 Terra",
       "provider": "openai",
@@ -3891,6 +4195,22 @@
       "description": "GPT-5.6 Terra is a balanced model in OpenAI's GPT-5.6 series, positioned between the flagship Sol tier and the cost-efficient Luna tier. It is suited for everyday coding, reasoning, and agentic..."
     },
     {
+      "id": "openai/gpt-5.6-terra:batch",
+      "name": "OpenAI: GPT-5.6 Terra",
+      "provider": "openai",
+      "created": 1783590857,
+      "contextLength": 1050000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 1,
+        "completionPer1M": 6,
+        "avgPer1M": 3.5
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-5.6 Terra is a balanced model in OpenAI's GPT-5.6 series, positioned between the flagship Sol tier and the cost-efficient Luna tier. It is suited for everyday coding, reasoning, and agentic..."
+    },
+    {
       "id": "openai/gpt-5.6-terra-pro",
       "name": "OpenAI: GPT-5.6 Terra Pro",
       "provider": "openai",
@@ -3901,6 +4221,22 @@
         "promptPer1M": 2,
         "completionPer1M": 12,
         "avgPer1M": 7
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-5.6 Terra Pro is the same underlying model as [GPT-5.6 Terra](https://openrouter.ai/openai/gpt-5.6-terra), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n"
+    },
+    {
+      "id": "openai/gpt-5.6-terra-pro:batch",
+      "name": "OpenAI: GPT-5.6 Terra Pro",
+      "provider": "openai",
+      "created": 1783590861,
+      "contextLength": 1050000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 1,
+        "completionPer1M": 6,
+        "avgPer1M": 3.5
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
@@ -4035,6 +4371,22 @@
       "description": "o3 is a well-rounded and powerful model across domains. It sets a new standard for math, science, coding, and visual reasoning tasks. It also excels at technical writing and instruction-following...."
     },
     {
+      "id": "openai/o3:batch",
+      "name": "OpenAI: o3",
+      "provider": "openai",
+      "created": 1744823457,
+      "contextLength": 200000,
+      "maxCompletionTokens": 100000,
+      "pricing": {
+        "promptPer1M": 1,
+        "completionPer1M": 4,
+        "avgPer1M": 2.5
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "o3 is a well-rounded and powerful model across domains. It sets a new standard for math, science, coding, and visual reasoning tasks. It also excels at technical writing and instruction-following...."
+    },
+    {
       "id": "openai/o3-mini",
       "name": "OpenAI: o3 Mini",
       "provider": "openai",
@@ -4045,6 +4397,22 @@
         "promptPer1M": 1.1,
         "completionPer1M": 4.4,
         "avgPer1M": 2.75
+      },
+      "architecture": "text+file->text",
+      "multimodal": true,
+      "description": "OpenAI o3-mini is a cost-efficient language model optimized for STEM reasoning tasks, particularly excelling in science, mathematics, and coding. This model supports the `reasoning_effort` parameter, "
+    },
+    {
+      "id": "openai/o3-mini:batch",
+      "name": "OpenAI: o3 Mini",
+      "provider": "openai",
+      "created": 1738351721,
+      "contextLength": 200000,
+      "maxCompletionTokens": 100000,
+      "pricing": {
+        "promptPer1M": 0.55,
+        "completionPer1M": 2.2,
+        "avgPer1M": 1.38
       },
       "architecture": "text+file->text",
       "multimodal": true,
@@ -4093,6 +4461,22 @@
         "promptPer1M": 1.1,
         "completionPer1M": 4.4,
         "avgPer1M": 2.75
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "OpenAI o4-mini is a compact reasoning model in the o-series, optimized for fast, cost-efficient performance while retaining strong multimodal and agentic capabilities. It supports tool use and demonst"
+    },
+    {
+      "id": "openai/o4-mini:batch",
+      "name": "OpenAI: o4 Mini",
+      "provider": "openai",
+      "created": 1744820942,
+      "contextLength": 200000,
+      "maxCompletionTokens": 100000,
+      "pricing": {
+        "promptPer1M": 0.55,
+        "completionPer1M": 2.2,
+        "avgPer1M": 1.38
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
@@ -4344,11 +4728,11 @@
       "provider": "qwen",
       "created": 1753119555,
       "contextLength": 262144,
-      "maxCompletionTokens": 235929,
+      "maxCompletionTokens": 16384,
       "pricing": {
         "promptPer1M": 0.09,
-        "completionPer1M": 0.35,
-        "avgPer1M": 0.22
+        "completionPer1M": 0.55,
+        "avgPer1M": 0.32
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -4568,9 +4952,9 @@
       "provider": "qwen",
       "created": 1757612213,
       "contextLength": 262144,
-      "maxCompletionTokens": 16384,
+      "maxCompletionTokens": 235929,
       "pricing": {
-        "promptPer1M": 0.09,
+        "promptPer1M": 0.1,
         "completionPer1M": 1.1,
         "avgPer1M": 0.6
       },
