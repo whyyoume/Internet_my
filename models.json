@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-01T06:56:46.708Z",
-  "total": 394,
+  "updatedAt": "2026-09-02T06:35:39.456Z",
+  "total": 395,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -177,6 +177,22 @@
       "architecture": "text+image+file->text",
       "multimodal": true,
       "description": "This model always redirects to the latest Grok model from xAI."
+    },
+    {
+      "id": "~z-ai/glm-flash-latest",
+      "name": "Z.ai: GLM Flash Latest",
+      "provider": "~z-ai",
+      "created": 1787817633,
+      "contextLength": 1310720,
+      "maxCompletionTokens": 131072,
+      "pricing": {
+        "promptPer1M": 0.08,
+        "completionPer1M": 0.25,
+        "avgPer1M": 0.16
+      },
+      "architecture": "text+image+video->text",
+      "multimodal": true,
+      "description": "This model always redirects to the latest model in the GLM Flash family."
     },
     {
       "id": "~z-ai/glm-latest",
@@ -403,6 +419,38 @@
       "description": "Claude Fable 5 is a Mythos-class model from Anthropic, built for autonomous knowledge work and coding. It supports text, image, and file inputs with text output, with reasoning support and..."
     },
     {
+      "id": "anthropic/claude-fable-5.1",
+      "name": "Anthropic: Claude Fable 5.1",
+      "provider": "anthropic",
+      "created": 1788285838,
+      "contextLength": 1000000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 10,
+        "completionPer1M": 50,
+        "avgPer1M": 30
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "Claude Fable 5.1 improves on Claude Fable 5 across the board, with the biggest gains in agentic coding, long-running agentic workflows, and knowledge work: long code refactors, front-end and visual..."
+    },
+    {
+      "id": "anthropic/claude-fable-5.1:batch",
+      "name": "Anthropic: Claude Fable 5.1",
+      "provider": "anthropic",
+      "created": 1788285838,
+      "contextLength": 1000000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 5,
+        "completionPer1M": 25,
+        "avgPer1M": 15
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "Claude Fable 5.1 improves on Claude Fable 5 across the board, with the biggest gains in agentic coding, long-running agentic workflows, and knowledge work: long code refactors, front-end and visual..."
+    },
+    {
       "id": "anthropic/claude-haiku-4.5",
       "name": "Anthropic: Claude Haiku 4.5",
       "provider": "anthropic",
@@ -547,22 +595,6 @@
       "description": "Opus 4.6 is Anthropic’s strongest model for coding and long-running professional tasks. It is built for agents that operate across entire workflows rather than single prompts, making it especially eff"
     },
     {
-      "id": "anthropic/claude-opus-4.7-fast",
-      "name": "Anthropic: Claude Opus 4.7",
-      "provider": "anthropic",
-      "created": 1778613011,
-      "contextLength": 1000000,
-      "maxCompletionTokens": 128000,
-      "pricing": {
-        "promptPer1M": 30,
-        "completionPer1M": 150,
-        "avgPer1M": 90
-      },
-      "architecture": "text+image+file->text",
-      "multimodal": true,
-      "description": "Fast-mode variant of [Opus 4.7](/anthropic/claude-opus-4.7) - identical capabilities with higher output speed at premium 6x pricing.\n\nLearn more in Anthropic's docs: https://platform.claude.com/docs/e"
-    },
-    {
       "id": "anthropic/claude-opus-4.7",
       "name": "Anthropic: Claude Opus 4.7",
       "provider": "anthropic",
@@ -593,22 +625,6 @@
       "architecture": "text+image+file->text",
       "multimodal": true,
       "description": "Opus 4.7 is the next generation of Anthropic's Opus family, built for long-running, asynchronous agents. Building on the coding and agentic strengths of Opus 4.6, it delivers stronger performance on.."
-    },
-    {
-      "id": "anthropic/claude-opus-4.8-fast",
-      "name": "Anthropic: Claude Opus 4.8",
-      "provider": "anthropic",
-      "created": 1779913703,
-      "contextLength": 1000000,
-      "maxCompletionTokens": 128000,
-      "pricing": {
-        "promptPer1M": 10,
-        "completionPer1M": 50,
-        "avgPer1M": 30
-      },
-      "architecture": "text+image+file->text",
-      "multimodal": true,
-      "description": "Fast-mode variant of [Opus 4.8](/anthropic/claude-opus-4.8) - identical capabilities with higher output speed at 2x pricing relative to regular Opus 4.8.\n\nLearn more in Anthropic's docs: https://platf"
     },
     {
       "id": "anthropic/claude-opus-4.8",
@@ -753,22 +769,6 @@
       "architecture": "text+image+file->text",
       "multimodal": true,
       "description": "Sonnet 5 is Anthropic's most capable Sonnet-class model, with frontier performance across coding, agents, and professional work. It supports adaptive thinking with selectable reasoning effort levels ("
-    },
-    {
-      "id": "anthropic/claude-opus-5-fast",
-      "name": "Claude Opus 5",
-      "provider": "anthropic",
-      "created": 1784912546,
-      "contextLength": 1000000,
-      "maxCompletionTokens": 128000,
-      "pricing": {
-        "promptPer1M": 10,
-        "completionPer1M": 50,
-        "avgPer1M": 30
-      },
-      "architecture": "text+image+file->text",
-      "multimodal": true,
-      "description": "Fast-mode variant of [Opus 5](/anthropic/claude-opus-5) - identical capabilities with higher output speed at 2x pricing relative to regular Opus 5.\n\nLearn more in Anthropic's docs: https://platform.cl"
     },
     {
       "id": "anthropic/claude-opus-5",
@@ -1064,11 +1064,11 @@
       "provider": "deepseek",
       "created": 1755779628,
       "contextLength": 163840,
-      "maxCompletionTokens": 144900,
+      "maxCompletionTokens": 32768,
       "pricing": {
-        "promptPer1M": 0.55,
-        "completionPer1M": 1.65,
-        "avgPer1M": 1.1
+        "promptPer1M": 0.25,
+        "completionPer1M": 0.95,
+        "avgPer1M": 0.6
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1130,9 +1130,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 384000,
       "pricing": {
-        "promptPer1M": 0.08,
-        "completionPer1M": 0.16,
-        "avgPer1M": 0.12
+        "promptPer1M": 0.09,
+        "completionPer1M": 0.18,
+        "avgPer1M": 0.13
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1192,11 +1192,11 @@
       "provider": "deepseek",
       "created": 1777000679,
       "contextLength": 1048576,
-      "maxCompletionTokens": 393216,
+      "maxCompletionTokens": 384000,
       "pricing": {
-        "promptPer1M": 1.6,
-        "completionPer1M": 3.2,
-        "avgPer1M": 2.4
+        "promptPer1M": 1.04,
+        "completionPer1M": 2.08,
+        "avgPer1M": 1.56
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1880,11 +1880,11 @@
       "provider": "gryphe",
       "created": 1688256000,
       "contextLength": 8192,
-      "maxCompletionTokens": 7372,
+      "maxCompletionTokens": 3686,
       "pricing": {
-        "promptPer1M": 0.35,
-        "completionPer1M": 0.6,
-        "avgPer1M": 0.48
+        "promptPer1M": 0.06,
+        "completionPer1M": 0.06,
+        "avgPer1M": 0.06
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1953,6 +1953,22 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "Mercury 2 is an extremely fast reasoning LLM, and the first reasoning diffusion LLM (dLLM). Instead of generating tokens sequentially, Mercury 2 produces and refines multiple tokens in parallel, achie"
+    },
+    {
+      "id": "inception/mercury-2.5-preview",
+      "name": "Inception: Mercury 2.5 Preview",
+      "provider": "inception",
+      "created": 1788209864,
+      "contextLength": 260000,
+      "maxCompletionTokens": 65536,
+      "pricing": {
+        "promptPer1M": 0.04,
+        "completionPer1M": 0.15,
+        "avgPer1M": 0.1
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "Mercury 2.5 is the fastest reasoning LLM, and the latest diffusion LLM (dLLM) from Inception. Instead of generating tokens sequentially, Mercury 2.5 produces and refines multiple tokens in parallel, a"
     },
     {
       "id": "inclusionai/ling-3.0-flash",
@@ -3032,11 +3048,11 @@
       "provider": "nvidia",
       "created": 1780551208,
       "contextLength": 262144,
-      "maxCompletionTokens": 16384,
+      "maxCompletionTokens": 32768,
       "pricing": {
-        "promptPer1M": 0.5,
-        "completionPer1M": 2.2,
-        "avgPer1M": 1.35
+        "promptPer1M": 0.63,
+        "completionPer1M": 3.13,
+        "avgPer1M": 1.88
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -4728,11 +4744,11 @@
       "provider": "qwen",
       "created": 1753119555,
       "contextLength": 262144,
-      "maxCompletionTokens": 16384,
+      "maxCompletionTokens": 235929,
       "pricing": {
         "promptPer1M": 0.09,
-        "completionPer1M": 0.55,
-        "avgPer1M": 0.32
+        "completionPer1M": 0.35,
+        "avgPer1M": 0.22
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -5368,7 +5384,7 @@
       "provider": "qwen",
       "created": 1786551702,
       "contextLength": 1048576,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": 131072,
       "pricing": {
         "promptPer1M": 2,
         "completionPer1M": 6,
@@ -5386,9 +5402,9 @@
       "contextLength": 1010000,
       "maxCompletionTokens": 909000,
       "pricing": {
-        "promptPer1M": 2.5,
-        "completionPer1M": 6.25,
-        "avgPer1M": 4.38
+        "promptPer1M": 2,
+        "completionPer1M": 6,
+        "avgPer1M": 4
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -6232,11 +6248,11 @@
       "provider": "z-ai",
       "created": 1781631930,
       "contextLength": 1048576,
-      "maxCompletionTokens": 262144,
+      "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 1.19,
-        "completionPer1M": 3.74,
-        "avgPer1M": 2.47
+        "promptPer1M": 0.97,
+        "completionPer1M": 3.04,
+        "avgPer1M": 2
       },
       "architecture": "text->text",
       "multimodal": false,
