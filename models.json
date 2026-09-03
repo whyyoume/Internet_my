@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-02T06:35:39.456Z",
-  "total": 395,
+  "updatedAt": "2026-09-03T06:38:30.776Z",
+  "total": 398,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -184,7 +184,7 @@
       "provider": "~z-ai",
       "created": 1787817633,
       "contextLength": 1310720,
-      "maxCompletionTokens": 131072,
+      "maxCompletionTokens": 943718,
       "pricing": {
         "promptPer1M": 0.08,
         "completionPer1M": 0.25,
@@ -202,9 +202,9 @@
       "contextLength": 1310720,
       "maxCompletionTokens": 943718,
       "pricing": {
-        "promptPer1M": 1.17,
-        "completionPer1M": 3.96,
-        "avgPer1M": 2.57
+        "promptPer1M": 1.11,
+        "completionPer1M": 3.48,
+        "avgPer1M": 2.29
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1658,13 +1658,45 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 65536,
       "pricing": {
-        "promptPer1M": 0.19,
-        "completionPer1M": 0.94,
-        "avgPer1M": 0.56
+        "promptPer1M": 0.38,
+        "completionPer1M": 1.88,
+        "avgPer1M": 1.13
       },
       "architecture": "text+image+file+audio+video->text",
       "multimodal": true,
       "description": "Gemini 3.7 Flash is a multimodal model from Google for fast agentic workflows, coding, and complex multi-step reasoning. It is designed for tasks that require responsive performance and reliable multi"
+    },
+    {
+      "id": "google/gemini-3.8-flash",
+      "name": "Google: Gemini 3.8 Flash",
+      "provider": "google",
+      "created": 1788362056,
+      "contextLength": 1048576,
+      "maxCompletionTokens": 65536,
+      "pricing": {
+        "promptPer1M": 0.75,
+        "completionPer1M": 3.75,
+        "avgPer1M": 2.25
+      },
+      "architecture": "text+image+file+audio+video->text",
+      "multimodal": true,
+      "description": "Gemini 3.8 Flash is Google's most intelligent Flash model with significant gains from 3.7 Flash across software engineering, agentic tasks, and multi-step reasoning."
+    },
+    {
+      "id": "google/gemini-3.8-flash:batch",
+      "name": "Google: Gemini 3.8 Flash",
+      "provider": "google",
+      "created": 1788362056,
+      "contextLength": 1048576,
+      "maxCompletionTokens": 65536,
+      "pricing": {
+        "promptPer1M": 0.38,
+        "completionPer1M": 1.88,
+        "avgPer1M": 1.13
+      },
+      "architecture": "text+image+file+audio+video->text",
+      "multimodal": true,
+      "description": "Gemini 3.8 Flash is Google's most intelligent Flash model with significant gains from 3.7 Flash across software engineering, agentic tasks, and multi-step reasoning."
     },
     {
       "id": "google/gemma-2-27b-it",
@@ -2056,11 +2088,11 @@
       "provider": "meta",
       "created": 1786302394,
       "contextLength": 131072,
-      "maxCompletionTokens": 16384,
+      "maxCompletionTokens": 117964,
       "pricing": {
         "promptPer1M": 0.3,
-        "completionPer1M": 1.2,
-        "avgPer1M": 0.75
+        "completionPer1M": 1.1,
+        "avgPer1M": 0.7
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -2129,6 +2161,38 @@
       "architecture": "text+image+file+audio+video->text",
       "multimodal": true,
       "description": "Muse Spark 1.2 contributor tier is a reasoning model from Meta designed for developers who want to start building at an even lower cost. It’s meaningfully cheaper than Muse Spark..."
+    },
+    {
+      "id": "meta/muse-spark-1.3",
+      "name": "Meta: Muse Spark 1.3",
+      "provider": "meta",
+      "created": 1788378359,
+      "contextLength": 1048576,
+      "maxCompletionTokens": 943718,
+      "pricing": {
+        "promptPer1M": 1.25,
+        "completionPer1M": 4.25,
+        "avgPer1M": 2.75
+      },
+      "architecture": "text+image+file+audio+video->text",
+      "multimodal": true,
+      "description": "Muse Spark 1.3 is a multimodal reasoning model from Meta for long-running agentic, multi-agent, and coding workflows. It is designed to keep track of information across extended tasks, work through..."
+    },
+    {
+      "id": "meta/muse-spark-1.3-contributor",
+      "name": "Meta: Muse Spark 1.3 Contributor",
+      "provider": "meta",
+      "created": 1788381519,
+      "contextLength": 1048576,
+      "maxCompletionTokens": 943718,
+      "pricing": {
+        "promptPer1M": 0.1,
+        "completionPer1M": 0.2,
+        "avgPer1M": 0.15
+      },
+      "architecture": "text+image+file+audio+video->text",
+      "multimodal": true,
+      "description": "Muse Spark 1.3 Contributor is the cost-efficient contributor tier of Meta’s multimodal reasoning model for experimentation, learning, and early-stage agentic, multi-agent, and coding workflows. It is "
     },
     {
       "id": "meta-llama/llama-3.1-70b-instruct",
@@ -2200,11 +2264,11 @@
       "provider": "meta-llama",
       "created": 1733506137,
       "contextLength": 131072,
-      "maxCompletionTokens": 115200,
+      "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.71,
-        "completionPer1M": 0.71,
-        "avgPer1M": 0.71
+        "promptPer1M": 0.1,
+        "completionPer1M": 0.32,
+        "avgPer1M": 0.21
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -3016,7 +3080,7 @@
       "provider": "nvidia",
       "created": 1765731275,
       "contextLength": 262144,
-      "maxCompletionTokens": 228000,
+      "maxCompletionTokens": 235929,
       "pricing": {
         "promptPer1M": 0.05,
         "completionPer1M": 0.2,
@@ -3048,27 +3112,11 @@
       "provider": "nvidia",
       "created": 1780551208,
       "contextLength": 262144,
-      "maxCompletionTokens": 32768,
-      "pricing": {
-        "promptPer1M": 0.63,
-        "completionPer1M": 3.13,
-        "avgPer1M": 1.88
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "NVIDIA Nemotron 3 Ultra is an open frontier-reasoning and orchestration model from NVIDIA, with 55B active parameters out of 550B total (MoE). Built on a hybrid Transformer-Mamba mixture-of-experts ar"
-    },
-    {
-      "id": "nvidia/nemotron-3-ultra-550b-a55b:batch",
-      "name": "NVIDIA: Nemotron 3 Ultra",
-      "provider": "nvidia",
-      "created": 1780551208,
-      "contextLength": 512288,
-      "maxCompletionTokens": 461059,
+      "maxCompletionTokens": 182520,
       "pricing": {
         "promptPer1M": 0.6,
-        "completionPer1M": 3.6,
-        "avgPer1M": 2.1
+        "completionPer1M": 2.4,
+        "avgPer1M": 1.5
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -4712,11 +4760,11 @@
       "provider": "qwen",
       "created": 1745876478,
       "contextLength": 131072,
-      "maxCompletionTokens": 16384,
+      "maxCompletionTokens": 8192,
       "pricing": {
-        "promptPer1M": 0.12,
-        "completionPer1M": 0.24,
-        "avgPer1M": 0.18
+        "promptPer1M": 0.23,
+        "completionPer1M": 0.91,
+        "avgPer1M": 0.57
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -5112,11 +5160,11 @@
       "provider": "qwen",
       "created": 1771223018,
       "contextLength": 262144,
-      "maxCompletionTokens": 65536,
+      "maxCompletionTokens": 235929,
       "pricing": {
-        "promptPer1M": 0.39,
-        "completionPer1M": 2.34,
-        "avgPer1M": 1.37
+        "promptPer1M": 0.55,
+        "completionPer1M": 3.5,
+        "avgPer1M": 2.03
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -5384,7 +5432,7 @@
       "provider": "qwen",
       "created": 1786551702,
       "contextLength": 1048576,
-      "maxCompletionTokens": 131072,
+      "maxCompletionTokens": 262144,
       "pricing": {
         "promptPer1M": 2,
         "completionPer1M": 6,
@@ -6136,11 +6184,11 @@
       "provider": "z-ai",
       "created": 1759235576,
       "contextLength": 204800,
-      "maxCompletionTokens": 16384,
+      "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.43,
-        "completionPer1M": 1.75,
-        "avgPer1M": 1.09
+        "promptPer1M": 0.55,
+        "completionPer1M": 2.2,
+        "avgPer1M": 1.38
       },
       "architecture": "text->text",
       "multimodal": false,
