@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-03T06:38:30.776Z",
-  "total": 398,
+  "updatedAt": "2026-09-04T06:42:16.274Z",
+  "total": 401,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -122,9 +122,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 943718,
       "pricing": {
-        "promptPer1M": 2.55,
-        "completionPer1M": 12.75,
-        "avgPer1M": 7.65
+        "promptPer1M": 2.5,
+        "completionPer1M": 14,
+        "avgPer1M": 8.25
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -200,11 +200,11 @@
       "provider": "~z-ai",
       "created": 1787151053,
       "contextLength": 1310720,
-      "maxCompletionTokens": 943718,
+      "maxCompletionTokens": 235929,
       "pricing": {
-        "promptPer1M": 1.11,
-        "completionPer1M": 3.48,
-        "avgPer1M": 2.29
+        "promptPer1M": 1.15,
+        "completionPer1M": 3.5,
+        "avgPer1M": 2.33
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1032,11 +1032,11 @@
       "provider": "deepseek",
       "created": 1735241320,
       "contextLength": 163840,
-      "maxCompletionTokens": 16000,
+      "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.26,
-        "completionPer1M": 1.03,
-        "avgPer1M": 0.64
+        "promptPer1M": 0.32,
+        "completionPer1M": 0.89,
+        "avgPer1M": 0.61
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1064,11 +1064,11 @@
       "provider": "deepseek",
       "created": 1755779628,
       "contextLength": 163840,
-      "maxCompletionTokens": 32768,
+      "maxCompletionTokens": 144900,
       "pricing": {
-        "promptPer1M": 0.25,
-        "completionPer1M": 0.95,
-        "avgPer1M": 0.6
+        "promptPer1M": 0.55,
+        "completionPer1M": 1.65,
+        "avgPer1M": 1.1
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -2003,6 +2003,22 @@
       "description": "Mercury 2.5 is the fastest reasoning LLM, and the latest diffusion LLM (dLLM) from Inception. Instead of generating tokens sequentially, Mercury 2.5 produces and refines multiple tokens in parallel, a"
     },
     {
+      "id": "inclusionai/ling-3.0-flash-fin",
+      "name": "Ling 3.0 Flash Fin",
+      "provider": "inclusionai",
+      "created": 1787846290,
+      "contextLength": 262144,
+      "maxCompletionTokens": 235929,
+      "pricing": {
+        "promptPer1M": 0.06,
+        "completionPer1M": 0.18,
+        "avgPer1M": 0.12
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "Ling 3.0 Flash Fin is a finance-focused mixture-of-experts model from InclusionAI, built on Ling 3.0 Flash with 5.1B active parameters out of 124B total. It is designed for real-world investment..."
+    },
+    {
       "id": "inclusionai/ling-3.0-flash",
       "name": "Ling-3.0-flash",
       "provider": "inclusionai",
@@ -2679,8 +2695,8 @@
       "name": "Mistral: Mistral Medium 3.5",
       "provider": "mistralai",
       "created": 1777570439,
-      "contextLength": 262144,
-      "maxCompletionTokens": 209715,
+      "contextLength": 32768,
+      "maxCompletionTokens": 26214,
       "pricing": {
         "promptPer1M": 0.75,
         "completionPer1M": 3.75,
@@ -3112,15 +3128,31 @@
       "provider": "nvidia",
       "created": 1780551208,
       "contextLength": 262144,
-      "maxCompletionTokens": 182520,
+      "maxCompletionTokens": 32768,
       "pricing": {
-        "promptPer1M": 0.6,
-        "completionPer1M": 2.4,
-        "avgPer1M": 1.5
+        "promptPer1M": 0.63,
+        "completionPer1M": 3.13,
+        "avgPer1M": 1.88
       },
       "architecture": "text->text",
       "multimodal": false,
       "description": "NVIDIA Nemotron 3 Ultra is an open frontier-reasoning and orchestration model from NVIDIA, with 55B active parameters out of 550B total (MoE). Built on a hybrid Transformer-Mamba mixture-of-experts ar"
+    },
+    {
+      "id": "nvidia/nemotron-3.5-content-safety",
+      "name": "NVIDIA: Nemotron 3.5 Content Safety",
+      "provider": "nvidia",
+      "created": 1780581864,
+      "contextLength": 131072,
+      "maxCompletionTokens": 117964,
+      "pricing": {
+        "promptPer1M": 0.2,
+        "completionPer1M": 0.2,
+        "avgPer1M": 0.2
+      },
+      "architecture": "text+image->text",
+      "multimodal": true,
+      "description": "NVIDIA Nemotron 3.5 Content Safety is a compact 4B-parameter multimodal guardrail model from NVIDIA, fine-tuned from Google Gemma-3-4B. It moderates both inputs to and responses from LLMs and VLMs, ac"
     },
     {
       "id": "nvidia/nemotron-3.5-lightning",
@@ -4744,11 +4776,11 @@
       "provider": "qwen",
       "created": 1738410311,
       "contextLength": 128000,
-      "maxCompletionTokens": 28800,
+      "maxCompletionTokens": 115200,
       "pricing": {
-        "promptPer1M": 0.25,
-        "completionPer1M": 0.75,
-        "avgPer1M": 0.5
+        "promptPer1M": 0.8,
+        "completionPer1M": 1,
+        "avgPer1M": 0.9
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -4760,11 +4792,11 @@
       "provider": "qwen",
       "created": 1745876478,
       "contextLength": 131072,
-      "maxCompletionTokens": 8192,
+      "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.23,
-        "completionPer1M": 0.91,
-        "avgPer1M": 0.57
+        "promptPer1M": 0.12,
+        "completionPer1M": 0.24,
+        "avgPer1M": 0.18
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -5466,9 +5498,9 @@
       "contextLength": 1000000,
       "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.43,
-        "completionPer1M": 2.55,
-        "avgPer1M": 1.49
+        "promptPer1M": 0.42,
+        "completionPer1M": 3,
+        "avgPer1M": 1.71
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -5944,11 +5976,11 @@
       "provider": "undi95",
       "created": 1689984000,
       "contextLength": 6144,
-      "maxCompletionTokens": 4096,
+      "maxCompletionTokens": 5529,
       "pricing": {
-        "promptPer1M": 0.45,
+        "promptPer1M": 0.35,
         "completionPer1M": 0.65,
-        "avgPer1M": 0.55
+        "avgPer1M": 0.5
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -6045,6 +6077,22 @@
         "promptPer1M": 1.25,
         "completionPer1M": 2.5,
         "avgPer1M": 1.88
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "Grok 4.3 is a reasoning model from SpaceXAI. It accepts text and image inputs with text output, and is suited for agentic workflows, instruction-following tasks, and applications requiring high factua"
+    },
+    {
+      "id": "x-ai/grok-4.3:batch",
+      "name": "SpaceXAI: Grok 4.3",
+      "provider": "x-ai",
+      "created": 1777591821,
+      "contextLength": 1000000,
+      "maxCompletionTokens": 900000,
+      "pricing": {
+        "promptPer1M": 1,
+        "completionPer1M": 2,
+        "avgPer1M": 1.5
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
@@ -6312,7 +6360,7 @@
       "provider": "z-ai",
       "created": 1787086655,
       "contextLength": 1310720,
-      "maxCompletionTokens": 131072,
+      "maxCompletionTokens": 262144,
       "pricing": {
         "promptPer1M": 1.4,
         "completionPer1M": 4.4,
