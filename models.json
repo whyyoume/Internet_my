@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T06:28:38.373Z",
+  "updatedAt": "2026-09-06T06:37:18.452Z",
   "total": 404,
   "models": [
     {
@@ -122,9 +122,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 943718,
       "pricing": {
-        "promptPer1M": 2.5,
-        "completionPer1M": 14,
-        "avgPer1M": 8.25
+        "promptPer1M": 2.55,
+        "completionPer1M": 12.75,
+        "avgPer1M": 7.65
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -202,9 +202,9 @@
       "contextLength": 1310720,
       "maxCompletionTokens": 235929,
       "pricing": {
-        "promptPer1M": 1.15,
-        "completionPer1M": 3.5,
-        "avgPer1M": 2.33
+        "promptPer1M": 1.17,
+        "completionPer1M": 3.96,
+        "avgPer1M": 2.57
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1130,9 +1130,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 384000,
       "pricing": {
-        "promptPer1M": 0.09,
-        "completionPer1M": 0.17,
-        "avgPer1M": 0.13
+        "promptPer1M": 0.08,
+        "completionPer1M": 0.16,
+        "avgPer1M": 0.12
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1194,9 +1194,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 384000,
       "pricing": {
-        "promptPer1M": 0.94,
-        "completionPer1M": 1.88,
-        "avgPer1M": 1.41
+        "promptPer1M": 0.74,
+        "completionPer1M": 1.48,
+        "avgPer1M": 1.11
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -5322,9 +5322,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.08,
-        "completionPer1M": 0.75,
-        "avgPer1M": 0.42
+        "promptPer1M": 0.31,
+        "completionPer1M": 1.25,
+        "avgPer1M": 0.78
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -5944,7 +5944,7 @@
       "provider": "thedrummer",
       "created": 1731103448,
       "contextLength": 1024000,
-      "maxCompletionTokens": 26214,
+      "maxCompletionTokens": 819200,
       "pricing": {
         "promptPer1M": 0.4,
         "completionPer1M": 0.4,
