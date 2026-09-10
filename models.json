@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-09T06:51:48.390Z",
-  "total": 405,
+  "updatedAt": "2026-09-10T06:48:12.513Z",
+  "total": 410,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -184,7 +184,7 @@
       "provider": "~z-ai",
       "created": 1787817633,
       "contextLength": 1310720,
-      "maxCompletionTokens": 943718,
+      "maxCompletionTokens": 131072,
       "pricing": {
         "promptPer1M": 0.08,
         "completionPer1M": 0.25,
@@ -200,11 +200,11 @@
       "provider": "~z-ai",
       "created": 1787151053,
       "contextLength": 1310720,
-      "maxCompletionTokens": 128000,
+      "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 1.11,
-        "completionPer1M": 3.5,
-        "avgPer1M": 2.31
+        "promptPer1M": 1.09,
+        "completionPer1M": 3.43,
+        "avgPer1M": 2.26
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1032,11 +1032,11 @@
       "provider": "deepseek",
       "created": 1735241320,
       "contextLength": 163840,
-      "maxCompletionTokens": 16384,
+      "maxCompletionTokens": 16000,
       "pricing": {
-        "promptPer1M": 0.32,
-        "completionPer1M": 0.89,
-        "avgPer1M": 0.61
+        "promptPer1M": 0.26,
+        "completionPer1M": 1.03,
+        "avgPer1M": 0.64
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1224,11 +1224,11 @@
       "provider": "deepseek",
       "created": 1786549364,
       "contextLength": 1048576,
-      "maxCompletionTokens": 393216,
+      "maxCompletionTokens": 384000,
       "pricing": {
-        "promptPer1M": 0.58,
-        "completionPer1M": 1.74,
-        "avgPer1M": 1.16
+        "promptPer1M": 1.05,
+        "completionPer1M": 3.15,
+        "avgPer1M": 2.1
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1249,6 +1249,22 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "DeepSeek V4 Pro 0813 is a large-scale mixture-of-experts model from DeepSeek. This is the GA release of DeepSeek V4 Pro."
+    },
+    {
+      "id": "deepseek/deepseek-v4.1-flash",
+      "name": "DeepSeek: DeepSeek V4.1 Flash",
+      "provider": "deepseek",
+      "created": 1789021285,
+      "contextLength": 1048576,
+      "maxCompletionTokens": 384000,
+      "pricing": {
+        "promptPer1M": 0.3,
+        "completionPer1M": 1.2,
+        "avgPer1M": 0.75
+      },
+      "architecture": "text+image->text",
+      "multimodal": true,
+      "description": "DeepSeek V4.1 Flash is a sparse mixture-of-experts model from DeepSeek, and the cost-efficient tier of the V4.1 family. DeepSeek reports that it exceeds V4 Pro on performance, speed, and task..."
     },
     {
       "id": "deepseek/deepseek-r1",
@@ -2440,11 +2456,11 @@
       "provider": "minimax",
       "created": 1770908502,
       "contextLength": 204800,
-      "maxCompletionTokens": 128000,
+      "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.27,
-        "completionPer1M": 1.08,
-        "avgPer1M": 0.68
+        "promptPer1M": 0.3,
+        "completionPer1M": 1.2,
+        "avgPer1M": 0.75
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -2563,6 +2579,22 @@
       "description": "Mistral's cutting-edge language model for coding released end of July 2025. Codestral specializes in low-latency, high-frequency tasks such as fill-in-the-middle (FIM), code correction and test genera"
     },
     {
+      "id": "mistralai/codestral-2508:batch",
+      "name": "Mistral: Codestral 2508",
+      "provider": "mistralai",
+      "created": 1754079630,
+      "contextLength": 256000,
+      "maxCompletionTokens": 204800,
+      "pricing": {
+        "promptPer1M": 0.15,
+        "completionPer1M": 0.45,
+        "avgPer1M": 0.3
+      },
+      "architecture": "text+file->text",
+      "multimodal": true,
+      "description": "Mistral's cutting-edge language model for coding released end of July 2025. Codestral specializes in low-latency, high-frequency tasks such as fill-in-the-middle (FIM), code correction and test genera"
+    },
+    {
       "id": "mistralai/devstral-2512",
       "name": "Mistral: Devstral 2 2512",
       "provider": "mistralai",
@@ -2627,6 +2659,22 @@
       "description": "A balanced model in the Ministral 3 family, Ministral 3 8B is a powerful, efficient tiny language model with vision capabilities."
     },
     {
+      "id": "mistralai/ministral-8b-2512:batch",
+      "name": "Mistral: Ministral 3 8B 2512",
+      "provider": "mistralai",
+      "created": 1764681654,
+      "contextLength": 262144,
+      "maxCompletionTokens": 209715,
+      "pricing": {
+        "promptPer1M": 0.08,
+        "completionPer1M": 0.08,
+        "avgPer1M": 0.08
+      },
+      "architecture": "text+image->text",
+      "multimodal": true,
+      "description": "A balanced model in the Ministral 3 family, Ministral 3 8B is a powerful, efficient tiny language model with vision capabilities."
+    },
+    {
       "id": "mistralai/mistral-large-2512",
       "name": "Mistral: Mistral Large 3 2512",
       "provider": "mistralai",
@@ -2637,6 +2685,22 @@
         "promptPer1M": 0.5,
         "completionPer1M": 1.5,
         "avgPer1M": 1
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "Mistral Large 3 2512 is Mistral’s most capable model to date, featuring a sparse mixture-of-experts architecture with 41B active parameters (675B total), and released under the Apache 2.0 license."
+    },
+    {
+      "id": "mistralai/mistral-large-2512:batch",
+      "name": "Mistral: Mistral Large 3 2512",
+      "provider": "mistralai",
+      "created": 1764624472,
+      "contextLength": 262144,
+      "maxCompletionTokens": 209715,
+      "pricing": {
+        "promptPer1M": 0.25,
+        "completionPer1M": 0.75,
+        "avgPer1M": 0.5
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
@@ -2669,6 +2733,22 @@
         "promptPer1M": 0.4,
         "completionPer1M": 2,
         "avgPer1M": 1.2
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "Mistral Medium 3.1 is an updated version of Mistral Medium 3, which is a high-performance enterprise-grade language model designed to deliver frontier-level capabilities at significantly reduced opera"
+    },
+    {
+      "id": "mistralai/mistral-medium-3.1:batch",
+      "name": "Mistral: Mistral Medium 3.1",
+      "provider": "mistralai",
+      "created": 1755095639,
+      "contextLength": 131072,
+      "maxCompletionTokens": 104857,
+      "pricing": {
+        "promptPer1M": 0.2,
+        "completionPer1M": 1,
+        "avgPer1M": 0.6
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
@@ -2787,6 +2867,22 @@
       "description": "Mistral Small 4 is the next major release in the Mistral Small family, unifying the capabilities of several flagship Mistral models into a single system. It combines strong reasoning from..."
     },
     {
+      "id": "mistralai/mistral-small-2603:batch",
+      "name": "Mistral: Mistral Small 4",
+      "provider": "mistralai",
+      "created": 1773695685,
+      "contextLength": 262144,
+      "maxCompletionTokens": 209715,
+      "pricing": {
+        "promptPer1M": 0.08,
+        "completionPer1M": 0.3,
+        "avgPer1M": 0.19
+      },
+      "architecture": "text+image->text",
+      "multimodal": true,
+      "description": "Mistral Small 4 is the next major release in the Mistral Small family, unifying the capabilities of several flagship Mistral models into a single system. It combines strong reasoning from..."
+    },
+    {
       "id": "mistralai/mixtral-8x22b-instruct",
       "name": "Mistral: Mixtral 8x22B Instruct",
       "provider": "mistralai",
@@ -2872,7 +2968,7 @@
       "provider": "moonshotai",
       "created": 1762440622,
       "contextLength": 262144,
-      "maxCompletionTokens": 235929,
+      "maxCompletionTokens": 100352,
       "pricing": {
         "promptPer1M": 0.6,
         "completionPer1M": 2.5,
@@ -3041,22 +3137,6 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "Hermes 4 is a large-scale reasoning model built on Meta-Llama-3.1-405B and released by Nous Research. It introduces a hybrid reasoning mode, where the model can choose to deliberate internally with..."
-    },
-    {
-      "id": "nousresearch/hermes-4-70b",
-      "name": "Nous: Hermes 4 70B",
-      "provider": "nousresearch",
-      "created": 1756236182,
-      "contextLength": 131072,
-      "maxCompletionTokens": 117964,
-      "pricing": {
-        "promptPer1M": 0.13,
-        "completionPer1M": 0.4,
-        "avgPer1M": 0.27
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "Hermes 4 70B is a hybrid reasoning model from Nous Research, built on Meta-Llama-3.1-70B. It introduces the same hybrid mode as the larger 405B release, allowing the model to either..."
     },
     {
       "id": "nvidia/nemotron-3-nano-30b-a3b",
@@ -4904,11 +4984,11 @@
       "provider": "qwen",
       "created": 1753806965,
       "contextLength": 262144,
-      "maxCompletionTokens": 32000,
+      "maxCompletionTokens": 235929,
       "pricing": {
-        "promptPer1M": 0.05,
-        "completionPer1M": 0.19,
-        "avgPer1M": 0.12
+        "promptPer1M": 0.09,
+        "completionPer1M": 0.3,
+        "avgPer1M": 0.2
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -5272,11 +5352,11 @@
       "provider": "qwen",
       "created": 1772053789,
       "contextLength": 262144,
-      "maxCompletionTokens": 81920,
+      "maxCompletionTokens": 65536,
       "pricing": {
-        "promptPer1M": 0.29,
-        "completionPer1M": 2.4,
-        "avgPer1M": 1.35
+        "promptPer1M": 0.26,
+        "completionPer1M": 2.08,
+        "avgPer1M": 1.17
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -5944,7 +6024,7 @@
       "provider": "thinkingmachines",
       "created": 1784325956,
       "contextLength": 1048576,
-      "maxCompletionTokens": 471859,
+      "maxCompletionTokens": 32768,
       "pricing": {
         "promptPer1M": 1,
         "completionPer1M": 4.05,
