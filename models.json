@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-10T06:48:12.513Z",
-  "total": 410,
+  "updatedAt": "2026-09-11T06:47:54.191Z",
+  "total": 412,
   "models": [
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -74,9 +74,9 @@
       "contextLength": 1310720,
       "maxCompletionTokens": 393216,
       "pricing": {
-        "promptPer1M": 0.05,
+        "promptPer1M": 0.04,
         "completionPer1M": 0.16,
-        "avgPer1M": 0.11
+        "avgPer1M": 0.1
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -122,9 +122,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 943718,
       "pricing": {
-        "promptPer1M": 2.4,
-        "completionPer1M": 12,
-        "avgPer1M": 7.2
+        "promptPer1M": 2.34,
+        "completionPer1M": 11.7,
+        "avgPer1M": 7.02
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -200,11 +200,11 @@
       "provider": "~z-ai",
       "created": 1787151053,
       "contextLength": 1310720,
-      "maxCompletionTokens": 131072,
+      "maxCompletionTokens": 943718,
       "pricing": {
-        "promptPer1M": 1.09,
-        "completionPer1M": 3.43,
-        "avgPer1M": 2.26
+        "promptPer1M": 0.9,
+        "completionPer1M": 3.07,
+        "avgPer1M": 1.98
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1050,9 +1050,9 @@
       "contextLength": 163840,
       "maxCompletionTokens": 147456,
       "pricing": {
-        "promptPer1M": 0.29,
-        "completionPer1M": 1.14,
-        "avgPer1M": 0.72
+        "promptPer1M": 0.25,
+        "completionPer1M": 1,
+        "avgPer1M": 0.63
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1224,11 +1224,11 @@
       "provider": "deepseek",
       "created": 1786549364,
       "contextLength": 1048576,
-      "maxCompletionTokens": 384000,
+      "maxCompletionTokens": 943718,
       "pricing": {
-        "promptPer1M": 1.05,
-        "completionPer1M": 3.15,
-        "avgPer1M": 2.1
+        "promptPer1M": 0.66,
+        "completionPer1M": 1.98,
+        "avgPer1M": 1.32
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1264,7 +1264,7 @@
       },
       "architecture": "text+image->text",
       "multimodal": true,
-      "description": "DeepSeek V4.1 Flash is a sparse mixture-of-experts model from DeepSeek, and the cost-efficient tier of the V4.1 family. DeepSeek reports that it exceeds V4 Pro on performance, speed, and task..."
+      "description": "DeepSeek V4.1 Flash is a sparse mixture-of-experts model from DeepSeek, and the first built on the company's Causal Encoder-Decoder (CED) architecture. It activates 8B parameters on input and 16B on.."
     },
     {
       "id": "deepseek/deepseek-r1",
@@ -1799,12 +1799,12 @@
       "name": "Google: Gemma 4 26B A4B",
       "provider": "google",
       "created": 1775227989,
-      "contextLength": 262144,
-      "maxCompletionTokens": 16384,
+      "contextLength": 1000000,
+      "maxCompletionTokens": 32768,
       "pricing": {
-        "promptPer1M": 0.07,
-        "completionPer1M": 0.34,
-        "avgPer1M": 0.21
+        "promptPer1M": 0.04,
+        "completionPer1M": 0.22,
+        "avgPer1M": 0.13
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -2232,11 +2232,11 @@
       "provider": "meta-llama",
       "created": 1721692800,
       "contextLength": 131072,
-      "maxCompletionTokens": 16384,
+      "maxCompletionTokens": 8192,
       "pricing": {
-        "promptPer1M": 0.4,
-        "completionPer1M": 0.4,
-        "avgPer1M": 0.4
+        "promptPer1M": 0.72,
+        "completionPer1M": 0.72,
+        "avgPer1M": 0.72
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -3034,9 +3034,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 943718,
       "pricing": {
-        "promptPer1M": 3,
-        "completionPer1M": 15,
-        "avgPer1M": 9
+        "promptPer1M": 2.34,
+        "completionPer1M": 11.7,
+        "avgPer1M": 7.02
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -5747,6 +5747,22 @@
       "description": "The relace-search model uses 4-12 `view_file` and `grep` tools in parallel to explore a codebase and return relevant files to the user request. In contrast to RAG, relace-search performs agentic..."
     },
     {
+      "id": "sakana/fugu-max",
+      "name": "Sakana: Fugu Max",
+      "provider": "sakana",
+      "created": 1789104771,
+      "contextLength": 1000000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 2,
+        "completionPer1M": 6,
+        "avgPer1M": 4
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "Fugu Max is the cost-performance model in Sakana AI's Fugu family. Rather than a single monolithic model, Fugu is a learned multi-agent orchestration system: a language model trained to route..."
+    },
+    {
       "id": "sakana/fugu-ultra",
       "name": "Sakana: Fugu Ultra",
       "provider": "sakana",
@@ -5761,6 +5777,22 @@
       "architecture": "text+image->text",
       "multimodal": true,
       "description": "Fugu Ultra is the higher-performance model in Sakana AI's Fugu family. Rather than a single monolithic model, Fugu is a learned multi-agent orchestration system: a language model trained to route..."
+    },
+    {
+      "id": "sakana/fugu-ultra-v2",
+      "name": "Sakana: Fugu Ultra v2",
+      "provider": "sakana",
+      "created": 1789105383,
+      "contextLength": 1000000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 5,
+        "completionPer1M": 30,
+        "avgPer1M": 17.5
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "Fugu Ultra v2 is the higher-performance model in Sakana AI's Fugu family. Rather than a single monolithic model, Fugu is a learned multi-agent orchestration system: a language model trained to..."
     },
     {
       "id": "sakana/sakana-namazu",
@@ -6122,9 +6154,9 @@
       "contextLength": 524288,
       "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.03,
-        "completionPer1M": 0.12,
-        "avgPer1M": 0.08
+        "promptPer1M": 0.09,
+        "completionPer1M": 0.36,
+        "avgPer1M": 0.22
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -6391,7 +6423,7 @@
       "name": "Z.ai: GLM 4.7 Flash",
       "provider": "z-ai",
       "created": 1768833913,
-      "contextLength": 202752,
+      "contextLength": 200000,
       "maxCompletionTokens": 117964,
       "pricing": {
         "promptPer1M": 0.06,
@@ -6522,9 +6554,9 @@
       "contextLength": 1310720,
       "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.08,
-        "completionPer1M": 0.25,
-        "avgPer1M": 0.16
+        "promptPer1M": 0.15,
+        "completionPer1M": 0.5,
+        "avgPer1M": 0.33
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
