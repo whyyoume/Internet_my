@@ -1,39 +1,7 @@
 {
-  "updatedAt": "2026-09-12T06:39:52.774Z",
+  "updatedAt": "2026-09-13T06:57:15.542Z",
   "total": 418,
   "models": [
-    {
-      "id": "~anthropic/claude-haiku-latest",
-      "name": "Anthropic Claude Haiku Latest",
-      "provider": "~anthropic",
-      "created": 1777318492,
-      "contextLength": 200000,
-      "maxCompletionTokens": 64000,
-      "pricing": {
-        "promptPer1M": 1,
-        "completionPer1M": 5,
-        "avgPer1M": 3
-      },
-      "architecture": "text+image+file->text",
-      "multimodal": true,
-      "description": "This model always redirects to the latest model in the Anthropic Claude Haiku family."
-    },
-    {
-      "id": "~anthropic/claude-sonnet-latest",
-      "name": "Anthropic Claude Sonnet Latest",
-      "provider": "~anthropic",
-      "created": 1777318368,
-      "contextLength": 1000000,
-      "maxCompletionTokens": 128000,
-      "pricing": {
-        "promptPer1M": 2,
-        "completionPer1M": 10,
-        "avgPer1M": 6
-      },
-      "architecture": "text+image+file->text",
-      "multimodal": true,
-      "description": "This model always redirects to the latest model in the Anthropic Claude Sonnet family."
-    },
     {
       "id": "~anthropic/claude-fable-latest",
       "name": "Anthropic: Claude Fable Latest",
@@ -49,6 +17,22 @@
       "architecture": "text+image+file->text",
       "multimodal": true,
       "description": "This model always redirects to the latest model in the Claude Fable family."
+    },
+    {
+      "id": "~anthropic/claude-haiku-latest",
+      "name": "Anthropic: Claude Haiku Latest",
+      "provider": "~anthropic",
+      "created": 1777318492,
+      "contextLength": 200000,
+      "maxCompletionTokens": 64000,
+      "pricing": {
+        "promptPer1M": 1,
+        "completionPer1M": 5,
+        "avgPer1M": 3
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "This model always redirects to the latest model in the Claude Haiku family."
     },
     {
       "id": "~anthropic/claude-opus-latest",
@@ -67,16 +51,32 @@
       "description": "This model always redirects to the latest model in the Claude Opus family."
     },
     {
+      "id": "~anthropic/claude-sonnet-latest",
+      "name": "Anthropic: Claude Sonnet Latest",
+      "provider": "~anthropic",
+      "created": 1777318368,
+      "contextLength": 1000000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 2,
+        "completionPer1M": 10,
+        "avgPer1M": 6
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "This model always redirects to the latest model in the Claude Sonnet family."
+    },
+    {
       "id": "~deepseek/deepseek-v4-flash-latest",
-      "name": "DeepSeek V4 Flash Latest",
+      "name": "DeepSeek: DeepSeek V4 Flash Latest",
       "provider": "~deepseek",
       "created": 1785606009,
       "contextLength": 1310720,
-      "maxCompletionTokens": 943718,
+      "maxCompletionTokens": 131072,
       "pricing": {
         "promptPer1M": 0.04,
-        "completionPer1M": 0.08,
-        "avgPer1M": 0.06
+        "completionPer1M": 0.11,
+        "avgPer1M": 0.07
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -84,7 +84,7 @@
     },
     {
       "id": "~google/gemini-flash-latest",
-      "name": "Google Gemini Flash Latest",
+      "name": "Google: Gemini Flash Latest",
       "provider": "~google",
       "created": 1777318398,
       "contextLength": 1048576,
@@ -96,11 +96,11 @@
       },
       "architecture": "text+image+file+audio+video->text",
       "multimodal": true,
-      "description": "This model always redirects to the latest model in the Google Gemini Flash family."
+      "description": "This model always redirects to the latest model in the Gemini Flash family."
     },
     {
       "id": "~google/gemini-pro-latest",
-      "name": "Google Gemini Pro Latest",
+      "name": "Google: Gemini Pro Latest",
       "provider": "~google",
       "created": 1777318451,
       "contextLength": 1048576,
@@ -112,27 +112,27 @@
       },
       "architecture": "text+image+file+audio+video->text",
       "multimodal": true,
-      "description": "This model always redirects to the latest model in the Google Gemini Pro family."
+      "description": "This model always redirects to the latest model in the Gemini Pro family."
     },
     {
       "id": "~moonshotai/kimi-latest",
-      "name": "MoonshotAI Kimi Latest",
+      "name": "MoonshotAI: Kimi Latest",
       "provider": "~moonshotai",
       "created": 1777318428,
       "contextLength": 1048576,
       "maxCompletionTokens": 943718,
       "pricing": {
-        "promptPer1M": 2.3,
-        "completionPer1M": 11.55,
-        "avgPer1M": 6.93
+        "promptPer1M": 2.1,
+        "completionPer1M": 10.95,
+        "avgPer1M": 6.53
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
-      "description": "This model always redirects to the latest model in the MoonshotAI Kimi family."
+      "description": "This model always redirects to the latest model in the Kimi family."
     },
     {
       "id": "~openai/gpt-astra-latest",
-      "name": "OpenAI GPT Astra Latest",
+      "name": "OpenAI: GPT Astra Latest",
       "provider": "~openai",
       "created": 1789130932,
       "contextLength": 1050000,
@@ -144,11 +144,11 @@
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
-      "description": "This model always redirects to the latest model in the OpenAI GPT Astra family."
+      "description": "This model always redirects to the latest model in the GPT Astra family."
     },
     {
       "id": "~openai/gpt-luna-latest",
-      "name": "OpenAI GPT Luna Latest",
+      "name": "OpenAI: GPT Luna Latest",
       "provider": "~openai",
       "created": 1789130922,
       "contextLength": 1050000,
@@ -160,11 +160,11 @@
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
-      "description": "This model always redirects to the latest model in the OpenAI GPT Luna family."
+      "description": "This model always redirects to the latest model in the GPT Luna family."
     },
     {
       "id": "~openai/gpt-mini-latest",
-      "name": "OpenAI GPT Mini Latest",
+      "name": "OpenAI: GPT Mini Latest",
       "provider": "~openai",
       "created": 1777318471,
       "contextLength": 400000,
@@ -176,11 +176,11 @@
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
-      "description": "This model always redirects to the latest model in the OpenAI GPT Mini family."
+      "description": "This model always redirects to the latest model in the GPT Mini family."
     },
     {
       "id": "~openai/gpt-sol-latest",
-      "name": "OpenAI GPT Sol Latest",
+      "name": "OpenAI: GPT Sol Latest",
       "provider": "~openai",
       "created": 1789130928,
       "contextLength": 1050000,
@@ -192,11 +192,11 @@
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
-      "description": "This model always redirects to the latest model in the OpenAI GPT Sol family."
+      "description": "This model always redirects to the latest model in the GPT Sol family."
     },
     {
       "id": "~openai/gpt-terra-latest",
-      "name": "OpenAI GPT Terra Latest",
+      "name": "OpenAI: GPT Terra Latest",
       "provider": "~openai",
       "created": 1789130925,
       "contextLength": 1050000,
@@ -208,7 +208,7 @@
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
-      "description": "This model always redirects to the latest model in the OpenAI GPT Terra family."
+      "description": "This model always redirects to the latest model in the GPT Terra family."
     },
     {
       "id": "~x-ai/grok-latest",
@@ -248,11 +248,11 @@
       "provider": "~z-ai",
       "created": 1787151053,
       "contextLength": 1310720,
-      "maxCompletionTokens": 943718,
+      "maxCompletionTokens": 235929,
       "pricing": {
-        "promptPer1M": 0.87,
-        "completionPer1M": 3.36,
-        "avgPer1M": 2.12
+        "promptPer1M": 0.94,
+        "completionPer1M": 3.17,
+        "avgPer1M": 2.05
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1178,9 +1178,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 384000,
       "pricing": {
-        "promptPer1M": 0.07,
-        "completionPer1M": 0.13,
-        "avgPer1M": 0.1
+        "promptPer1M": 0.05,
+        "completionPer1M": 0.1,
+        "avgPer1M": 0.07
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1256,11 +1256,11 @@
       "provider": "deepseek",
       "created": 1777000679,
       "contextLength": 1048576,
-      "maxCompletionTokens": 384000,
+      "maxCompletionTokens": 393216,
       "pricing": {
-        "promptPer1M": 0.82,
-        "completionPer1M": 1.64,
-        "avgPer1M": 1.23
+        "promptPer1M": 1.6,
+        "completionPer1M": 3.2,
+        "avgPer1M": 2.4
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1848,11 +1848,11 @@
       "provider": "google",
       "created": 1775227989,
       "contextLength": 262144,
-      "maxCompletionTokens": 32768,
+      "maxCompletionTokens": 235929,
       "pricing": {
-        "promptPer1M": 0.04,
-        "completionPer1M": 0.22,
-        "avgPer1M": 0.13
+        "promptPer1M": 0.09,
+        "completionPer1M": 0.3,
+        "avgPer1M": 0.2
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -2218,9 +2218,9 @@
       "contextLength": 131072,
       "maxCompletionTokens": 117964,
       "pricing": {
-        "promptPer1M": 0.3,
-        "completionPer1M": 1.1,
-        "avgPer1M": 0.7
+        "promptPer1M": 0.35,
+        "completionPer1M": 1.5,
+        "avgPer1M": 0.93
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -2328,11 +2328,11 @@
       "provider": "meta-llama",
       "created": 1721692800,
       "contextLength": 131072,
-      "maxCompletionTokens": 8192,
+      "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.72,
-        "completionPer1M": 0.72,
-        "avgPer1M": 0.72
+        "promptPer1M": 0.4,
+        "completionPer1M": 0.4,
+        "avgPer1M": 0.4
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -2552,11 +2552,11 @@
       "provider": "minimax",
       "created": 1770908502,
       "contextLength": 204800,
-      "maxCompletionTokens": 131072,
+      "maxCompletionTokens": 128000,
       "pricing": {
-        "promptPer1M": 0.3,
-        "completionPer1M": 1.2,
-        "avgPer1M": 0.75
+        "promptPer1M": 0.27,
+        "completionPer1M": 1.08,
+        "avgPer1M": 0.68
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -3130,9 +3130,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 943718,
       "pricing": {
-        "promptPer1M": 2.3,
-        "completionPer1M": 11.55,
-        "avgPer1M": 6.93
+        "promptPer1M": 2.65,
+        "completionPer1M": 13.28,
+        "avgPer1M": 7.97
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -5080,11 +5080,11 @@
       "provider": "qwen",
       "created": 1753806965,
       "contextLength": 262144,
-      "maxCompletionTokens": 235929,
+      "maxCompletionTokens": 32000,
       "pricing": {
-        "promptPer1M": 0.09,
-        "completionPer1M": 0.3,
-        "avgPer1M": 0.2
+        "promptPer1M": 0.05,
+        "completionPer1M": 0.19,
+        "avgPer1M": 0.12
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -6152,7 +6152,7 @@
       "provider": "thinkingmachines",
       "created": 1784325956,
       "contextLength": 1048576,
-      "maxCompletionTokens": 32768,
+      "maxCompletionTokens": 471859,
       "pricing": {
         "promptPer1M": 1,
         "completionPer1M": 4.05,
@@ -6616,11 +6616,11 @@
       "provider": "z-ai",
       "created": 1787086655,
       "contextLength": 1310720,
-      "maxCompletionTokens": 943718,
+      "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 1.4,
-        "completionPer1M": 4.4,
-        "avgPer1M": 2.9
+        "promptPer1M": 1.09,
+        "completionPer1M": 3.43,
+        "avgPer1M": 2.26
       },
       "architecture": "text->text",
       "multimodal": false,
