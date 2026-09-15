@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T07:19:25.308Z",
+  "updatedAt": "2026-09-15T06:55:48.353Z",
   "total": 418,
   "models": [
     {
@@ -67,15 +67,47 @@
       "description": "This model always redirects to the latest model in the Claude Sonnet family."
     },
     {
+      "id": "~deepseek/deepseek-flash-latest",
+      "name": "DeepSeek: DeepSeek Flash Latest",
+      "provider": "~deepseek",
+      "created": 1789399150,
+      "contextLength": 1048576,
+      "maxCompletionTokens": 943718,
+      "pricing": {
+        "promptPer1M": 0.15,
+        "completionPer1M": 0.6,
+        "avgPer1M": 0.38
+      },
+      "architecture": "text+image->text",
+      "multimodal": true,
+      "description": "This model always redirects to the latest model in the DeepSeek Flash family."
+    },
+    {
+      "id": "~deepseek/deepseek-pro-latest",
+      "name": "DeepSeek: DeepSeek Pro Latest",
+      "provider": "~deepseek",
+      "created": 1789399174,
+      "contextLength": 1048576,
+      "maxCompletionTokens": 943718,
+      "pricing": {
+        "promptPer1M": 0.96,
+        "completionPer1M": 2.88,
+        "avgPer1M": 1.92
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "This model always redirects to the latest model in the DeepSeek Pro family."
+    },
+    {
       "id": "~deepseek/deepseek-v4-flash-latest",
       "name": "DeepSeek: DeepSeek V4 Flash Latest",
       "provider": "~deepseek",
       "created": 1785606009,
       "contextLength": 1310720,
-      "maxCompletionTokens": 131072,
+      "maxCompletionTokens": 393216,
       "pricing": {
         "promptPer1M": 0.04,
-        "completionPer1M": 0.11,
+        "completionPer1M": 0.1,
         "avgPer1M": 0.07
       },
       "architecture": "text->text",
@@ -122,9 +154,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 943718,
       "pricing": {
-        "promptPer1M": 2.1,
-        "completionPer1M": 10.95,
-        "avgPer1M": 6.53
+        "promptPer1M": 1.88,
+        "completionPer1M": 10.5,
+        "avgPer1M": 6.19
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -248,11 +280,11 @@
       "provider": "~z-ai",
       "created": 1787151053,
       "contextLength": 1310720,
-      "maxCompletionTokens": 943718,
+      "maxCompletionTokens": 235929,
       "pricing": {
-        "promptPer1M": 0.92,
-        "completionPer1M": 3.14,
-        "avgPer1M": 2.03
+        "promptPer1M": 0.88,
+        "completionPer1M": 2.97,
+        "avgPer1M": 1.92
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1195,8 +1227,8 @@
       "maxCompletionTokens": 943718,
       "pricing": {
         "promptPer1M": 0.06,
-        "completionPer1M": 0.12,
-        "avgPer1M": 0.09
+        "completionPer1M": 0.11,
+        "avgPer1M": 0.08
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1453,22 +1485,6 @@
         "promptPer1M": 0.63,
         "completionPer1M": 5,
         "avgPer1M": 2.81
-      },
-      "architecture": "text+image+file+audio+video->text",
-      "multimodal": true,
-      "description": "Gemini 2.5 Pro is Google’s state-of-the-art AI model designed for advanced reasoning, coding, mathematics, and scientific tasks. It employs “thinking” capabilities, enabling it to reason through respo"
-    },
-    {
-      "id": "google/gemini-2.5-pro-preview-05-06",
-      "name": "Google: Gemini 2.5 Pro Preview 05-06",
-      "provider": "google",
-      "created": 1746578513,
-      "contextLength": 1048576,
-      "maxCompletionTokens": 65535,
-      "pricing": {
-        "promptPer1M": 1.25,
-        "completionPer1M": 10,
-        "avgPer1M": 5.63
       },
       "architecture": "text+image+file+audio+video->text",
       "multimodal": true,
@@ -2408,11 +2424,11 @@
       "provider": "meta-llama",
       "created": 1743881822,
       "contextLength": 1048576,
-      "maxCompletionTokens": 115200,
+      "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.2,
-        "completionPer1M": 0.7,
-        "avgPer1M": 0.45
+        "promptPer1M": 0.19,
+        "completionPer1M": 0.65,
+        "avgPer1M": 0.42
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -3256,11 +3272,11 @@
       "provider": "nvidia",
       "created": 1773245239,
       "contextLength": 262144,
-      "maxCompletionTokens": 16384,
+      "maxCompletionTokens": 235929,
       "pricing": {
-        "promptPer1M": 0.09,
-        "completionPer1M": 0.4,
-        "avgPer1M": 0.24
+        "promptPer1M": 0.08,
+        "completionPer1M": 0.45,
+        "avgPer1M": 0.26
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -3489,22 +3505,6 @@
       "architecture": "text+image->text",
       "multimodal": true,
       "description": "The latest GPT-4 Turbo model with vision capabilities. Vision requests can now use JSON mode and function calling.\n\nTraining data: up to December 2023."
-    },
-    {
-      "id": "openai/gpt-4-turbo-preview",
-      "name": "OpenAI: GPT-4 Turbo Preview",
-      "provider": "openai",
-      "created": 1706140800,
-      "contextLength": 128000,
-      "maxCompletionTokens": 4096,
-      "pricing": {
-        "promptPer1M": 10,
-        "completionPer1M": 30,
-        "avgPer1M": 20
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "The preview GPT-4 model with improved instruction following, JSON mode, reproducible outputs, parallel function calling, and more. Training data: up to Dec 2023. **Note:** heavily rate limited by Open"
     },
     {
       "id": "openai/gpt-4.1",
@@ -5272,7 +5272,7 @@
       "provider": "qwen",
       "created": 1757612284,
       "contextLength": 262144,
-      "maxCompletionTokens": 235929,
+      "maxCompletionTokens": 32768,
       "pricing": {
         "promptPer1M": 0.15,
         "completionPer1M": 1.2,
@@ -5480,11 +5480,11 @@
       "provider": "qwen",
       "created": 1772053822,
       "contextLength": 262144,
-      "maxCompletionTokens": 16384,
+      "maxCompletionTokens": 65536,
       "pricing": {
-        "promptPer1M": 0.31,
-        "completionPer1M": 1.25,
-        "avgPer1M": 0.78
+        "promptPer1M": 0.16,
+        "completionPer1M": 1.3,
+        "avgPer1M": 0.73
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -6584,11 +6584,11 @@
       "provider": "z-ai",
       "created": 1781631930,
       "contextLength": 1048576,
-      "maxCompletionTokens": 131072,
+      "maxCompletionTokens": 128000,
       "pricing": {
-        "promptPer1M": 0.68,
-        "completionPer1M": 2.15,
-        "avgPer1M": 1.42
+        "promptPer1M": 1.4,
+        "completionPer1M": 4.4,
+        "avgPer1M": 2.9
       },
       "architecture": "text->text",
       "multimodal": false,
