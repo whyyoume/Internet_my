@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-15T06:55:48.353Z",
-  "total": 418,
+  "updatedAt": "2026-09-16T06:57:54.355Z",
+  "total": 415,
   "models": [
     {
       "id": "~anthropic/claude-fable-latest",
@@ -154,9 +154,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 943718,
       "pricing": {
-        "promptPer1M": 1.88,
-        "completionPer1M": 10.5,
-        "avgPer1M": 6.19
+        "promptPer1M": 2,
+        "completionPer1M": 11.2,
+        "avgPer1M": 6.6
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -739,6 +739,38 @@
       "description": "Claude Opus 4.8 is Anthropic's most capable generally available model in the Opus family. It supports text, image, and file inputs with text output, with reasoning support and a 1M-token..."
     },
     {
+      "id": "anthropic/claude-opus-5",
+      "name": "Anthropic: Claude Opus 5",
+      "provider": "anthropic",
+      "created": 1784912544,
+      "contextLength": 1000000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 5,
+        "completionPer1M": 25,
+        "avgPer1M": 15
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "Claude Opus 5 is Anthropic’s flagship model for demanding reasoning, coding, and long-horizon agentic work. It is particularly strong at end-to-end software tasks, code review and bug finding, visual "
+    },
+    {
+      "id": "anthropic/claude-opus-5:batch",
+      "name": "Anthropic: Claude Opus 5",
+      "provider": "anthropic",
+      "created": 1784912544,
+      "contextLength": 1000000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 2.5,
+        "completionPer1M": 12.5,
+        "avgPer1M": 7.5
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "Claude Opus 5 is Anthropic’s flagship model for demanding reasoning, coding, and long-horizon agentic work. It is particularly strong at end-to-end software tasks, code review and bug finding, visual "
+    },
+    {
       "id": "anthropic/claude-sonnet-4",
       "name": "Anthropic: Claude Sonnet 4",
       "provider": "anthropic",
@@ -849,38 +881,6 @@
       "architecture": "text+image+file->text",
       "multimodal": true,
       "description": "Sonnet 5 is Anthropic's most capable Sonnet-class model, with frontier performance across coding, agents, and professional work. It supports adaptive thinking with selectable reasoning effort levels ("
-    },
-    {
-      "id": "anthropic/claude-opus-5",
-      "name": "Claude Opus 5",
-      "provider": "anthropic",
-      "created": 1784912544,
-      "contextLength": 1000000,
-      "maxCompletionTokens": 128000,
-      "pricing": {
-        "promptPer1M": 5,
-        "completionPer1M": 25,
-        "avgPer1M": 15
-      },
-      "architecture": "text+image+file->text",
-      "multimodal": true,
-      "description": "Claude Opus 5 is Anthropic’s flagship model for demanding reasoning, coding, and long-horizon agentic work. It is particularly strong at end-to-end software tasks, code review and bug finding, visual "
-    },
-    {
-      "id": "anthropic/claude-opus-5:batch",
-      "name": "Claude Opus 5",
-      "provider": "anthropic",
-      "created": 1784912544,
-      "contextLength": 1000000,
-      "maxCompletionTokens": 128000,
-      "pricing": {
-        "promptPer1M": 2.5,
-        "completionPer1M": 12.5,
-        "avgPer1M": 7.5
-      },
-      "architecture": "text+image+file->text",
-      "multimodal": true,
-      "description": "Claude Opus 5 is Anthropic’s flagship model for demanding reasoning, coding, and long-horizon agentic work. It is particularly strong at end-to-end software tasks, code review and bug finding, visual "
     },
     {
       "id": "arcee-ai/trinity-large-thinking",
@@ -1227,8 +1227,8 @@
       "maxCompletionTokens": 943718,
       "pricing": {
         "promptPer1M": 0.06,
-        "completionPer1M": 0.11,
-        "avgPer1M": 0.08
+        "completionPer1M": 0.12,
+        "avgPer1M": 0.09
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1891,22 +1891,6 @@
       "description": "Gemma 4 31B Instruct is Google DeepMind's 30.7B dense multimodal model supporting text and image input with text output. Features a 256K token context window, configurable thinking/reasoning mode, nat"
     },
     {
-      "id": "google/gemma-4-31b-it:batch",
-      "name": "Google: Gemma 4 31B",
-      "provider": "google",
-      "created": 1775148486,
-      "contextLength": 262144,
-      "maxCompletionTokens": 235929,
-      "pricing": {
-        "promptPer1M": 0.39,
-        "completionPer1M": 0.97,
-        "avgPer1M": 0.68
-      },
-      "architecture": "text+image+video->text",
-      "multimodal": true,
-      "description": "Gemma 4 31B Instruct is Google DeepMind's 30.7B dense multimodal model supporting text and image input with text output. Features a 256K token context window, configurable thinking/reasoning mode, nat"
-    },
-    {
       "id": "google/gemini-2.5-flash-image",
       "name": "Google: Nano Banana",
       "provider": "google",
@@ -2506,9 +2490,9 @@
       "contextLength": 1000000,
       "maxCompletionTokens": 40000,
       "pricing": {
-        "promptPer1M": 0.55,
+        "promptPer1M": 0.4,
         "completionPer1M": 2.2,
-        "avgPer1M": 1.38
+        "avgPer1M": 1.3
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -2954,9 +2938,9 @@
       "contextLength": 256000,
       "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.08,
-        "completionPer1M": 0.2,
-        "avgPer1M": 0.14
+        "promptPer1M": 0.09,
+        "completionPer1M": 0.25,
+        "avgPer1M": 0.17
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -3131,8 +3115,8 @@
       "maxCompletionTokens": 235929,
       "pricing": {
         "promptPer1M": 0.71,
-        "completionPer1M": 3.5,
-        "avgPer1M": 2.11
+        "completionPer1M": 3.21,
+        "avgPer1M": 1.96
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -3288,11 +3272,11 @@
       "provider": "nvidia",
       "created": 1780551208,
       "contextLength": 262144,
-      "maxCompletionTokens": 182520,
+      "maxCompletionTokens": 32768,
       "pricing": {
-        "promptPer1M": 0.6,
-        "completionPer1M": 2.4,
-        "avgPer1M": 1.5
+        "promptPer1M": 0.63,
+        "completionPer1M": 3.13,
+        "avgPer1M": 1.88
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -4595,22 +4579,6 @@
       "description": "gpt-oss-20b is an open-weight 21B parameter model released by OpenAI under the Apache 2.0 license. It uses a Mixture-of-Experts (MoE) architecture with 3.6B active parameters per forward pass, optimiz"
     },
     {
-      "id": "openai/gpt-oss-20b:batch",
-      "name": "OpenAI: gpt-oss-20b",
-      "provider": "openai",
-      "created": 1754414229,
-      "contextLength": 131072,
-      "maxCompletionTokens": 117964,
-      "pricing": {
-        "promptPer1M": 0.05,
-        "completionPer1M": 0.2,
-        "avgPer1M": 0.12
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "gpt-oss-20b is an open-weight 21B parameter model released by OpenAI under the Apache 2.0 license. It uses a Mixture-of-Experts (MoE) architecture with 3.6B active parameters per forward pass, optimiz"
-    },
-    {
       "id": "openai/gpt-oss-safeguard-20b",
       "name": "OpenAI: gpt-oss-safeguard-20b",
       "provider": "openai",
@@ -5320,11 +5288,11 @@
       "provider": "qwen",
       "created": 1759794476,
       "contextLength": 262144,
-      "maxCompletionTokens": 16384,
+      "maxCompletionTokens": 32768,
       "pricing": {
-        "promptPer1M": 0.15,
-        "completionPer1M": 0.6,
-        "avgPer1M": 0.38
+        "promptPer1M": 0.13,
+        "completionPer1M": 0.52,
+        "avgPer1M": 0.33
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -6195,22 +6163,6 @@
       "description": "Inkling Small is an open-weight multimodal mixture-of-experts model from Thinking Machines Lab, with 12B active parameters out of 276B total. It is positioned as the smaller, more efficient member of."
     },
     {
-      "id": "thinkingmachines/inkling-small:batch",
-      "name": "Thinking Machines: Inkling Small",
-      "provider": "thinkingmachines",
-      "created": 1785443117,
-      "contextLength": 524288,
-      "maxCompletionTokens": 471859,
-      "pricing": {
-        "promptPer1M": 0.5,
-        "completionPer1M": 1.2,
-        "avgPer1M": 0.85
-      },
-      "architecture": "text+image+audio->text",
-      "multimodal": true,
-      "description": "Inkling Small is an open-weight multimodal mixture-of-experts model from Thinking Machines Lab, with 12B active parameters out of 276B total. It is positioned as the smaller, more efficient member of."
-    },
-    {
       "id": "undi95/remm-slerp-l2-13b",
       "name": "ReMM SLERP 13B",
       "provider": "undi95",
@@ -6650,9 +6602,9 @@
       "contextLength": 1310720,
       "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.15,
-        "completionPer1M": 0.5,
-        "avgPer1M": 0.33
+        "promptPer1M": 0.1,
+        "completionPer1M": 0.33,
+        "avgPer1M": 0.22
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
