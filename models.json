@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-18T06:50:28.499Z",
-  "total": 415,
+  "updatedAt": "2026-09-19T06:49:39.537Z",
+  "total": 417,
   "models": [
     {
       "id": "~anthropic/claude-fable-latest",
@@ -74,9 +74,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 943718,
       "pricing": {
-        "promptPer1M": 0.15,
-        "completionPer1M": 0.6,
-        "avgPer1M": 0.38
+        "promptPer1M": 0.13,
+        "completionPer1M": 0.52,
+        "avgPer1M": 0.33
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -88,11 +88,11 @@
       "provider": "~deepseek",
       "created": 1789399174,
       "contextLength": 1048576,
-      "maxCompletionTokens": 384000,
+      "maxCompletionTokens": 393216,
       "pricing": {
-        "promptPer1M": 0.7,
-        "completionPer1M": 2.96,
-        "avgPer1M": 1.83
+        "promptPer1M": 0.58,
+        "completionPer1M": 1.73,
+        "avgPer1M": 1.16
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -104,11 +104,11 @@
       "provider": "~deepseek",
       "created": 1785606009,
       "contextLength": 1310720,
-      "maxCompletionTokens": 943718,
+      "maxCompletionTokens": 384000,
       "pricing": {
-        "promptPer1M": 0.06,
-        "completionPer1M": 0.18,
-        "avgPer1M": 0.12
+        "promptPer1M": 0.05,
+        "completionPer1M": 0.14,
+        "avgPer1M": 0.1
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -154,9 +154,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 943718,
       "pricing": {
-        "promptPer1M": 2,
-        "completionPer1M": 11.2,
-        "avgPer1M": 6.6
+        "promptPer1M": 1.88,
+        "completionPer1M": 10.5,
+        "avgPer1M": 6.19
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -280,11 +280,11 @@
       "provider": "~z-ai",
       "created": 1787151053,
       "contextLength": 1310720,
-      "maxCompletionTokens": 235929,
+      "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.88,
-        "completionPer1M": 2.97,
-        "avgPer1M": 1.92
+        "promptPer1M": 0.89,
+        "completionPer1M": 2.8,
+        "avgPer1M": 1.85
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1210,9 +1210,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 384000,
       "pricing": {
-        "promptPer1M": 0.09,
-        "completionPer1M": 0.18,
-        "avgPer1M": 0.13
+        "promptPer1M": 0.05,
+        "completionPer1M": 0.09,
+        "avgPer1M": 0.07
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1226,9 +1226,9 @@
       "contextLength": 1310720,
       "maxCompletionTokens": 943718,
       "pricing": {
-        "promptPer1M": 0.06,
-        "completionPer1M": 0.12,
-        "avgPer1M": 0.09
+        "promptPer1M": 0.07,
+        "completionPer1M": 0.18,
+        "avgPer1M": 0.12
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1288,11 +1288,11 @@
       "provider": "deepseek",
       "created": 1777000679,
       "contextLength": 1048576,
-      "maxCompletionTokens": 393216,
+      "maxCompletionTokens": 384000,
       "pricing": {
-        "promptPer1M": 1.6,
-        "completionPer1M": 3.2,
-        "avgPer1M": 2.4
+        "promptPer1M": 0.56,
+        "completionPer1M": 1.13,
+        "avgPer1M": 0.85
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1304,11 +1304,11 @@
       "provider": "deepseek",
       "created": 1786549364,
       "contextLength": 1048576,
-      "maxCompletionTokens": 384000,
+      "maxCompletionTokens": 393216,
       "pricing": {
-        "promptPer1M": 1.32,
-        "completionPer1M": 3.96,
-        "avgPer1M": 2.64
+        "promptPer1M": 0.58,
+        "completionPer1M": 1.73,
+        "avgPer1M": 1.16
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1338,9 +1338,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 384000,
       "pricing": {
-        "promptPer1M": 0.3,
-        "completionPer1M": 1.2,
-        "avgPer1M": 0.75
+        "promptPer1M": 0.15,
+        "completionPer1M": 0.6,
+        "avgPer1M": 0.38
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -2218,9 +2218,9 @@
       "contextLength": 131072,
       "maxCompletionTokens": 117964,
       "pricing": {
-        "promptPer1M": 0.3,
-        "completionPer1M": 1.1,
-        "avgPer1M": 0.7
+        "promptPer1M": 0.35,
+        "completionPer1M": 1.5,
+        "avgPer1M": 0.93
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -3114,9 +3114,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 943718,
       "pricing": {
-        "promptPer1M": 2,
-        "completionPer1M": 11.2,
-        "avgPer1M": 6.6
+        "promptPer1M": 1.88,
+        "completionPer1M": 10.5,
+        "avgPer1M": 6.19
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -3256,11 +3256,11 @@
       "provider": "nvidia",
       "created": 1780551208,
       "contextLength": 262144,
-      "maxCompletionTokens": 32768,
+      "maxCompletionTokens": 182520,
       "pricing": {
-        "promptPer1M": 0.63,
-        "completionPer1M": 3.13,
-        "avgPer1M": 1.88
+        "promptPer1M": 0.6,
+        "completionPer1M": 2.4,
+        "avgPer1M": 1.5
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -3288,9 +3288,9 @@
       "provider": "nvidia",
       "created": 1786452751,
       "contextLength": 262144,
-      "maxCompletionTokens": 131072,
+      "maxCompletionTokens": 235929,
       "pricing": {
-        "promptPer1M": 0.08,
+        "promptPer1M": 0.07,
         "completionPer1M": 0.2,
         "avgPer1M": 0.14
       },
@@ -4883,6 +4883,22 @@
       "description": "Laguna XS 2.1 is the latest coding agent model in the 33B-A3B category from [Poolside](https://poolside.ai/) and a step forward from their Laguna XS.2 model (released in April 2026). It combines..."
     },
     {
+      "id": "prism-ml/ternary-bonsai-2-27b",
+      "name": "PrismML: Ternary Bonsai 2 27B",
+      "provider": "prism-ml",
+      "created": 1789754046,
+      "contextLength": 262144,
+      "maxCompletionTokens": 32768,
+      "pricing": {
+        "promptPer1M": 0.08,
+        "completionPer1M": 0.5,
+        "avgPer1M": 0.29
+      },
+      "architecture": "text+image->text",
+      "multimodal": true,
+      "description": "Bonsai 2 27B is a 27B-parameter reasoning model from PrismML derived from Qwen3.8-27B. It supports coding, mathematics, tool calling, and image understanding with a 262K-token context window. Ternary "
+    },
+    {
       "id": "qwen/qwen-plus-2025-07-28",
       "name": "Qwen: Qwen Plus 0728",
       "provider": "qwen",
@@ -5274,9 +5290,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 32768,
       "pricing": {
-        "promptPer1M": 0.13,
-        "completionPer1M": 0.52,
-        "avgPer1M": 0.33
+        "promptPer1M": 0.2,
+        "completionPer1M": 0.7,
+        "avgPer1M": 0.45
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -6536,11 +6552,11 @@
       "provider": "z-ai",
       "created": 1781631930,
       "contextLength": 1048576,
-      "maxCompletionTokens": 163840,
+      "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.49,
-        "completionPer1M": 1.56,
-        "avgPer1M": 1.02
+        "promptPer1M": 0.55,
+        "completionPer1M": 1.74,
+        "avgPer1M": 1.15
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -6568,11 +6584,11 @@
       "provider": "z-ai",
       "created": 1787086655,
       "contextLength": 1310720,
-      "maxCompletionTokens": 943717,
+      "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 1.4,
-        "completionPer1M": 4.4,
-        "avgPer1M": 2.9
+        "promptPer1M": 0.91,
+        "completionPer1M": 2.86,
+        "avgPer1M": 1.89
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -6625,6 +6641,22 @@
       "architecture": "text+image+video->text",
       "multimodal": true,
       "description": "GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains accurate long-contex"
+    },
+    {
+      "id": "z-ai/glm-5.3-flashx",
+      "name": "Z.ai: GLM 5.3 FlashX",
+      "provider": "z-ai",
+      "created": 1789744020,
+      "contextLength": 1048576,
+      "maxCompletionTokens": 131072,
+      "pricing": {
+        "promptPer1M": 0.37,
+        "completionPer1M": 1.25,
+        "avgPer1M": 0.81
+      },
+      "architecture": "text+image+video->text",
+      "multimodal": true,
+      "description": "GLM-5.3-FlashX is the high-speed variant of Z.ai's GLM-5.3-Flash, a native multimodal model delivering inference speeds of up to 200 tokens/s. Built on the same hybrid sparse and linear attention arch"
     },
     {
       "id": "z-ai/glm-5v-turbo",
