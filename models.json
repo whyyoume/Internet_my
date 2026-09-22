@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-21T07:23:13.416Z",
-  "total": 417,
+  "updatedAt": "2026-09-22T07:00:29.787Z",
+  "total": 416,
   "models": [
     {
       "id": "~anthropic/claude-fable-latest",
@@ -88,11 +88,11 @@
       "provider": "~deepseek",
       "created": 1789399174,
       "contextLength": 1048576,
-      "maxCompletionTokens": 943718,
+      "maxCompletionTokens": 384000,
       "pricing": {
-        "promptPer1M": 0.7,
-        "completionPer1M": 2.88,
-        "avgPer1M": 1.79
+        "promptPer1M": 0.64,
+        "completionPer1M": 1.92,
+        "avgPer1M": 1.28
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -106,9 +106,9 @@
       "contextLength": 1310720,
       "maxCompletionTokens": 943718,
       "pricing": {
-        "promptPer1M": 0.04,
-        "completionPer1M": 0.16,
-        "avgPer1M": 0.1
+        "promptPer1M": 0.03,
+        "completionPer1M": 1,
+        "avgPer1M": 0.52
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -154,9 +154,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 943718,
       "pricing": {
-        "promptPer1M": 1.7,
-        "completionPer1M": 8.5,
-        "avgPer1M": 5.1
+        "promptPer1M": 1.5,
+        "completionPer1M": 7.5,
+        "avgPer1M": 4.5
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -250,9 +250,9 @@
       "contextLength": 500000,
       "maxCompletionTokens": 450000,
       "pricing": {
-        "promptPer1M": 2,
-        "completionPer1M": 6,
-        "avgPer1M": 4
+        "promptPer1M": 1.6,
+        "completionPer1M": 4.8,
+        "avgPer1M": 3.2
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
@@ -282,9 +282,9 @@
       "contextLength": 1310720,
       "maxCompletionTokens": 943718,
       "pricing": {
-        "promptPer1M": 0.77,
-        "completionPer1M": 2.43,
-        "avgPer1M": 1.6
+        "promptPer1M": 0.65,
+        "completionPer1M": 2.06,
+        "avgPer1M": 1.36
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -563,22 +563,6 @@
       "description": "Claude Haiku 4.5 is Anthropic’s fastest and most efficient model, delivering near-frontier intelligence at a fraction of the cost and latency of larger Claude models. Matching Claude Sonnet 4’s perfor"
     },
     {
-      "id": "anthropic/claude-opus-4",
-      "name": "Anthropic: Claude Opus 4",
-      "provider": "anthropic",
-      "created": 1747931245,
-      "contextLength": 200000,
-      "maxCompletionTokens": 32000,
-      "pricing": {
-        "promptPer1M": 15,
-        "completionPer1M": 75,
-        "avgPer1M": 45
-      },
-      "architecture": "text+image+file->text",
-      "multimodal": true,
-      "description": "Claude Opus 4 is benchmarked as the world’s best coding model, at time of release, bringing sustained performance on complex, long-running tasks and agent workflows. It sets new benchmarks in..."
-    },
-    {
       "id": "anthropic/claude-opus-4.1",
       "name": "Anthropic: Claude Opus 4.1",
       "provider": "anthropic",
@@ -775,7 +759,7 @@
       "name": "Anthropic: Claude Sonnet 4",
       "provider": "anthropic",
       "created": 1747930371,
-      "contextLength": 1000000,
+      "contextLength": 200000,
       "maxCompletionTokens": 64000,
       "pricing": {
         "promptPer1M": 3,
@@ -1227,8 +1211,8 @@
       "maxCompletionTokens": 943718,
       "pricing": {
         "promptPer1M": 0.04,
-        "completionPer1M": 0.16,
-        "avgPer1M": 0.1
+        "completionPer1M": 0.64,
+        "avgPer1M": 0.34
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -2026,9 +2010,9 @@
       "contextLength": 131072,
       "maxCompletionTokens": 117964,
       "pricing": {
-        "promptPer1M": 0.1,
-        "completionPer1M": 0.15,
-        "avgPer1M": 0.13
+        "promptPer1M": 0.06,
+        "completionPer1M": 0.25,
+        "avgPer1M": 0.16
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -2328,11 +2312,11 @@
       "provider": "meta-llama",
       "created": 1721692800,
       "contextLength": 131072,
-      "maxCompletionTokens": 8192,
+      "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.72,
-        "completionPer1M": 0.72,
-        "avgPer1M": 0.72
+        "promptPer1M": 0.4,
+        "completionPer1M": 0.4,
+        "avgPer1M": 0.4
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -2410,9 +2394,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 16384,
       "pricing": {
-        "promptPer1M": 0.2,
-        "completionPer1M": 0.8,
-        "avgPer1M": 0.5
+        "promptPer1M": 0.19,
+        "completionPer1M": 0.65,
+        "avgPer1M": 0.42
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -2585,22 +2569,6 @@
       "created": 1780245374,
       "contextLength": 1048576,
       "maxCompletionTokens": 512000,
-      "pricing": {
-        "promptPer1M": 0.3,
-        "completionPer1M": 1.2,
-        "avgPer1M": 0.75
-      },
-      "architecture": "text+image+video->text",
-      "multimodal": true,
-      "description": "MiniMax-M3 is a multimodal foundation model from MiniMax. It supports text, image, and video inputs with text output, a 1M-token context window, and is suited for long-horizon agentic work, coding,..."
-    },
-    {
-      "id": "minimax/minimax-m3:batch",
-      "name": "MiniMax: MiniMax M3",
-      "provider": "minimax",
-      "created": 1780245374,
-      "contextLength": 524288,
-      "maxCompletionTokens": 471859,
       "pricing": {
         "promptPer1M": 0.3,
         "completionPer1M": 1.2,
@@ -3114,22 +3082,6 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 943718,
       "pricing": {
-        "promptPer1M": 1.7,
-        "completionPer1M": 8.5,
-        "avgPer1M": 5.1
-      },
-      "architecture": "text+image+video->text",
-      "multimodal": true,
-      "description": "Kimi K3 is a 2.8T parameter open-weight multimodal reasoning model from Moonshot AI. It is suited for complex coding, knowledge work, and long-horizon agentic workflows, and is particularly strong at."
-    },
-    {
-      "id": "moonshotai/kimi-k3:batch",
-      "name": "MoonshotAI: Kimi K3",
-      "provider": "moonshotai",
-      "created": 1784215858,
-      "contextLength": 1048576,
-      "maxCompletionTokens": 943718,
-      "pricing": {
         "promptPer1M": 3,
         "completionPer1M": 15,
         "avgPer1M": 9
@@ -3169,6 +3121,38 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "Morph's high-accuracy apply model for complex code edits. ~4,500 tokens/sec with 98% accuracy for precise code transformations. The model requires the prompt to be in the following format: <instructio"
+    },
+    {
+      "id": "nex-agi/nex-n2.5-mini",
+      "name": "Nex AGI: Nex-N2.5-Mini",
+      "provider": "nex-agi",
+      "created": 1788890061,
+      "contextLength": 262144,
+      "maxCompletionTokens": 235929,
+      "pricing": {
+        "promptPer1M": 0.03,
+        "completionPer1M": 0.1,
+        "avgPer1M": 0.06
+      },
+      "architecture": "text+image->text",
+      "multimodal": true,
+      "description": "Nex-N2.5 is an agentic model built to turn goals into working, verified outcomes. Its core strength is agentic coding within a visual feedback loop: it can explore codebases, implement multi-file..."
+    },
+    {
+      "id": "nex-agi/nex-n2.5-pro",
+      "name": "Nex AGI: Nex-N2.5-Pro",
+      "provider": "nex-agi",
+      "created": 1788890050,
+      "contextLength": 262144,
+      "maxCompletionTokens": 235929,
+      "pricing": {
+        "promptPer1M": 0.08,
+        "completionPer1M": 0.25,
+        "avgPer1M": 0.16
+      },
+      "architecture": "text+image->text",
+      "multimodal": true,
+      "description": "Nex-N2.5 is an agentic model built to turn goals into working, verified outcomes. Its core strength is agentic coding within a visual feedback loop: it can explore codebases, implement multi-file..."
     },
     {
       "id": "nousresearch/hermes-3-llama-3.1-405b",
@@ -3226,9 +3210,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 235929,
       "pricing": {
-        "promptPer1M": 0.06,
-        "completionPer1M": 0.24,
-        "avgPer1M": 0.15
+        "promptPer1M": 0.05,
+        "completionPer1M": 0.2,
+        "avgPer1M": 0.12
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -4531,22 +4515,6 @@
       "description": "gpt-oss-120b is an open-weight, 117B-parameter Mixture-of-Experts (MoE) language model from OpenAI designed for high-reasoning, agentic, and general-purpose production use cases. It activates 5.1B par"
     },
     {
-      "id": "openai/gpt-oss-120b:batch",
-      "name": "OpenAI: gpt-oss-120b",
-      "provider": "openai",
-      "created": 1754414231,
-      "contextLength": 131072,
-      "maxCompletionTokens": 117964,
-      "pricing": {
-        "promptPer1M": 0.15,
-        "completionPer1M": 0.6,
-        "avgPer1M": 0.38
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "gpt-oss-120b is an open-weight, 117B-parameter Mixture-of-Experts (MoE) language model from OpenAI designed for high-reasoning, agentic, and general-purpose production use cases. It activates 5.1B par"
-    },
-    {
       "id": "openai/gpt-oss-20b",
       "name": "OpenAI: gpt-oss-20b",
       "provider": "openai",
@@ -5240,7 +5208,7 @@
       "provider": "qwen",
       "created": 1757612284,
       "contextLength": 262144,
-      "maxCompletionTokens": 32768,
+      "maxCompletionTokens": 235929,
       "pricing": {
         "promptPer1M": 0.15,
         "completionPer1M": 1.2,
@@ -5475,22 +5443,6 @@
       "description": "Qwen3.5-9B is a multimodal foundation model from the Qwen3.5 family, designed to deliver strong reasoning, coding, and visual understanding in an efficient 9B-parameter architecture. It uses a unified"
     },
     {
-      "id": "qwen/qwen3.5-9b:batch",
-      "name": "Qwen: Qwen3.5-9B",
-      "provider": "qwen",
-      "created": 1773152396,
-      "contextLength": 262144,
-      "maxCompletionTokens": 235929,
-      "pricing": {
-        "promptPer1M": 0.17,
-        "completionPer1M": 0.25,
-        "avgPer1M": 0.21
-      },
-      "architecture": "text+image+video->text",
-      "multimodal": true,
-      "description": "Qwen3.5-9B is a multimodal foundation model from the Qwen3.5 family, designed to deliver strong reasoning, coding, and visual understanding in an efficient 9B-parameter architecture. It uses a unified"
-    },
-    {
       "id": "qwen/qwen3.5-flash-02-23",
       "name": "Qwen: Qwen3.5-Flash",
       "provider": "qwen",
@@ -5651,22 +5603,6 @@
       "description": "Qwen3.8 2.4T A95B is an open-weight sparse mixture-of-experts model from Qwen and the open-weight variant of [Qwen3.8 Max](/qwen/qwen3.8-max), with 95 billion active parameters out of 2.4 trillion tot"
     },
     {
-      "id": "qwen/qwen3.8-2.4t-a95b:batch",
-      "name": "Qwen: Qwen3.8 2.4T A95B",
-      "provider": "qwen",
-      "created": 1786551702,
-      "contextLength": 1010000,
-      "maxCompletionTokens": 909000,
-      "pricing": {
-        "promptPer1M": 2,
-        "completionPer1M": 6,
-        "avgPer1M": 4
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "Qwen3.8 2.4T A95B is an open-weight sparse mixture-of-experts model from Qwen and the open-weight variant of [Qwen3.8 Max](/qwen/qwen3.8-max), with 95 billion active parameters out of 2.4 trillion tot"
-    },
-    {
       "id": "qwen/qwen3.8-27b",
       "name": "Qwen: Qwen3.8 27B",
       "provider": "qwen",
@@ -5674,9 +5610,9 @@
       "contextLength": 1000000,
       "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.2,
-        "completionPer1M": 2.5,
-        "avgPer1M": 1.35
+        "promptPer1M": 0.42,
+        "completionPer1M": 3,
+        "avgPer1M": 1.71
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -6131,22 +6067,6 @@
       "description": "Inkling is an open-weight multimodal mixture-of-experts model from Thinking Machines Lab, with 41B active parameters out of 975B total. It is designed for general-purpose reasoning, coding, agentic an"
     },
     {
-      "id": "thinkingmachines/inkling:batch",
-      "name": "Thinking Machines: Inkling",
-      "provider": "thinkingmachines",
-      "created": 1784325956,
-      "contextLength": 524288,
-      "maxCompletionTokens": 471859,
-      "pricing": {
-        "promptPer1M": 1,
-        "completionPer1M": 4.05,
-        "avgPer1M": 2.53
-      },
-      "architecture": "text+image+audio->text",
-      "multimodal": true,
-      "description": "Inkling is an open-weight multimodal mixture-of-experts model from Thinking Machines Lab, with 41B active parameters out of 975B total. It is designed for general-purpose reasoning, coding, agentic an"
-    },
-    {
       "id": "thinkingmachines/inkling-small",
       "name": "Thinking Machines: Inkling Small",
       "provider": "thinkingmachines",
@@ -6336,7 +6256,23 @@
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
-      "description": "Grok 4.6 is SpaceXAI's smartest model with frontier performance on coding, knowledge work, and STEM."
+      "description": "Grok 4.6 is a model from SpaceXAI with frontier performance on coding, knowledge work, and STEM. It is succeeded by [Grok 4.7](/x-ai/grok-4.7)."
+    },
+    {
+      "id": "x-ai/grok-4.7",
+      "name": "SpaceXAI: Grok 4.7",
+      "provider": "x-ai",
+      "created": 1790007541,
+      "contextLength": 500000,
+      "maxCompletionTokens": 450000,
+      "pricing": {
+        "promptPer1M": 1.6,
+        "completionPer1M": 4.8,
+        "avgPer1M": 3.2
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "Grok 4.7 is SpaceXAI's flagship model for coding, agentic tasks, and knowledge work, succeeding Grok 4.6. It is particularly strong at long-running software engineering tasks, verifying its own work, "
     },
     {
       "id": "x-ai/grok-build-0.1",
@@ -6385,6 +6321,54 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "MiMo-V2.5-Pro is Xiaomi’s flagship model, delivering strong performance in general agentic capabilities, complex software engineering, and long-horizon tasks, with top rankings on benchmarks such as C"
+    },
+    {
+      "id": "xiaomi/mimo-v2.6-flash",
+      "name": "Xiaomi: MiMo-V2.6-Flash",
+      "provider": "xiaomi",
+      "created": 1790021264,
+      "contextLength": 1048576,
+      "maxCompletionTokens": 131072,
+      "pricing": {
+        "promptPer1M": 0.14,
+        "completionPer1M": 0.28,
+        "avgPer1M": 0.21
+      },
+      "architecture": "text+image+audio+video->text",
+      "multimodal": true,
+      "description": "MiMo-V2.6-Flash is an open-source foundation model developed by Xiaomi. Built on a Mixture-of-Experts architecture with 309B total parameters and 15B activated per token, it employs a hybrid attention"
+    },
+    {
+      "id": "xiaomi/mimo-v2.6-pro",
+      "name": "Xiaomi: MiMo-V2.6-Pro",
+      "provider": "xiaomi",
+      "created": 1790021259,
+      "contextLength": 1048576,
+      "maxCompletionTokens": 131072,
+      "pricing": {
+        "promptPer1M": 0.44,
+        "completionPer1M": 0.87,
+        "avgPer1M": 0.65
+      },
+      "architecture": "text+image+audio+video->text",
+      "multimodal": true,
+      "description": "MiMo-V2.6-Pro is the flagship foundation model developed by Xiaomi. Built at a scale of over 1T parameters, it is designed to push the ceiling of capability for the most demanding..."
+    },
+    {
+      "id": "xiaomi/mimo-v2.6-pro-ultraspeed",
+      "name": "Xiaomi: MiMo-V2.6-Pro-UltraSpeed",
+      "provider": "xiaomi",
+      "created": 1790021267,
+      "contextLength": 1048576,
+      "maxCompletionTokens": 131072,
+      "pricing": {
+        "promptPer1M": 4.35,
+        "completionPer1M": 8.7,
+        "avgPer1M": 6.53
+      },
+      "architecture": "text+image+audio+video->text",
+      "multimodal": true,
+      "description": "MiMo-V2.6-Pro-UltraSpeed is the fast speed edition of Xiaomi's flagship foundation model, MiMo-V2.6-Pro. Built from the same 1T MiMo-V2.6-Pro checkpoint, it matches the original model in quality while"
     },
     {
       "id": "z-ai/glm-4.5",
@@ -6586,9 +6570,9 @@
       "contextLength": 1310720,
       "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.91,
-        "completionPer1M": 2.86,
-        "avgPer1M": 1.89
+        "promptPer1M": 0.84,
+        "completionPer1M": 2.64,
+        "avgPer1M": 1.74
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -6616,11 +6600,11 @@
       "provider": "z-ai",
       "created": 1787752741,
       "contextLength": 1310720,
-      "maxCompletionTokens": 131072,
+      "maxCompletionTokens": 943718,
       "pricing": {
-        "promptPer1M": 0.09,
-        "completionPer1M": 0.3,
-        "avgPer1M": 0.2
+        "promptPer1M": 0.15,
+        "completionPer1M": 0.5,
+        "avgPer1M": 0.33
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
