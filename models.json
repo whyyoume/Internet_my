@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-22T07:00:29.787Z",
-  "total": 416,
+  "updatedAt": "2026-09-23T06:55:13.249Z",
+  "total": 425,
   "models": [
     {
       "id": "~anthropic/claude-fable-latest",
@@ -42,9 +42,9 @@
       "contextLength": 1000000,
       "maxCompletionTokens": 128000,
       "pricing": {
-        "promptPer1M": 5,
-        "completionPer1M": 25,
-        "avgPer1M": 15
+        "promptPer1M": 4,
+        "completionPer1M": 20,
+        "avgPer1M": 12
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
@@ -74,9 +74,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 943718,
       "pricing": {
-        "promptPer1M": 0.12,
-        "completionPer1M": 0.48,
-        "avgPer1M": 0.3
+        "promptPer1M": 0.04,
+        "completionPer1M": 0.64,
+        "avgPer1M": 0.34
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -90,9 +90,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 384000,
       "pricing": {
-        "promptPer1M": 0.64,
-        "completionPer1M": 1.92,
-        "avgPer1M": 1.28
+        "promptPer1M": 0.4,
+        "completionPer1M": 4.3,
+        "avgPer1M": 2.35
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -107,8 +107,8 @@
       "maxCompletionTokens": 943718,
       "pricing": {
         "promptPer1M": 0.03,
-        "completionPer1M": 1,
-        "avgPer1M": 0.52
+        "completionPer1M": 0.8,
+        "avgPer1M": 0.42
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -154,9 +154,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 943718,
       "pricing": {
-        "promptPer1M": 1.5,
-        "completionPer1M": 7.5,
-        "avgPer1M": 4.5
+        "promptPer1M": 1.19,
+        "completionPer1M": 14.5,
+        "avgPer1M": 7.85
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -186,9 +186,9 @@
       "contextLength": 1050000,
       "maxCompletionTokens": 128000,
       "pricing": {
-        "promptPer1M": 0.2,
-        "completionPer1M": 1.2,
-        "avgPer1M": 0.7
+        "promptPer1M": 0.1,
+        "completionPer1M": 0.5,
+        "avgPer1M": 0.3
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
@@ -264,7 +264,7 @@
       "provider": "~z-ai",
       "created": 1787817633,
       "contextLength": 1310720,
-      "maxCompletionTokens": 943718,
+      "maxCompletionTokens": 131072,
       "pricing": {
         "promptPer1M": 0.08,
         "completionPer1M": 0.25,
@@ -280,11 +280,11 @@
       "provider": "~z-ai",
       "created": 1787151053,
       "contextLength": 1310720,
-      "maxCompletionTokens": 943718,
+      "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.65,
-        "completionPer1M": 2.06,
-        "avgPer1M": 1.36
+        "promptPer1M": 0.56,
+        "completionPer1M": 2.5,
+        "avgPer1M": 1.53
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -755,6 +755,38 @@
       "description": "Claude Opus 5 is Anthropic’s flagship model for demanding reasoning, coding, and long-horizon agentic work. It is particularly strong at end-to-end software tasks, code review and bug finding, visual "
     },
     {
+      "id": "anthropic/claude-opus-5.5",
+      "name": "Anthropic: Claude Opus 5.5",
+      "provider": "anthropic",
+      "created": 1790094732,
+      "contextLength": 1000000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 4,
+        "completionPer1M": 20,
+        "avgPer1M": 12
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "Claude Opus 5.5 is Anthropic's flagship model for demanding reasoning, coding, and long-horizon agentic work, succeeding Claude Opus 5. It is particularly strong at multi-step changes in large codebas"
+    },
+    {
+      "id": "anthropic/claude-opus-5.5:batch",
+      "name": "Anthropic: Claude Opus 5.5",
+      "provider": "anthropic",
+      "created": 1790094732,
+      "contextLength": 1000000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 2,
+        "completionPer1M": 10,
+        "avgPer1M": 6
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "Claude Opus 5.5 is Anthropic's flagship model for demanding reasoning, coding, and long-horizon agentic work, succeeding Claude Opus 5. It is particularly strong at multi-step changes in large codebas"
+    },
+    {
       "id": "anthropic/claude-sonnet-4",
       "name": "Anthropic: Claude Sonnet 4",
       "provider": "anthropic",
@@ -1043,6 +1075,22 @@
       "description": "Command A is an open-weights 111B parameter model with a 256k context window focused on delivering great performance across agentic, multilingual, and coding use cases. Compared to other leading propr"
     },
     {
+      "id": "cohere/command-a-plus",
+      "name": "Cohere: Command A+",
+      "provider": "cohere",
+      "created": 1790102896,
+      "contextLength": 192000,
+      "maxCompletionTokens": 64000,
+      "pricing": {
+        "promptPer1M": 0.3,
+        "completionPer1M": 1.5,
+        "avgPer1M": 0.9
+      },
+      "architecture": "text+image->text",
+      "multimodal": true,
+      "description": "Command A+ is Cohere's flagship model for enterprise agentic workflows. It accepts text and image inputs with a 192K context window, supports native tool calling with strict tool schemas, structured.."
+    },
+    {
       "id": "cohere/command-r-08-2024",
       "name": "Cohere: Command R",
       "provider": "cohere",
@@ -1219,22 +1267,6 @@
       "description": "DeepSeek V4 Flash 0731 is a sparse mixture-of-experts model from DeepSeek, with 13B active parameters out of 284B total. This re-post-trained revision is suited for coding, reasoning, and agent workfl"
     },
     {
-      "id": "deepseek/deepseek-v4-flash-0731:batch",
-      "name": "DeepSeek: DeepSeek V4 Flash 0731",
-      "provider": "deepseek",
-      "created": 1785478908,
-      "contextLength": 1048576,
-      "maxCompletionTokens": 943718,
-      "pricing": {
-        "promptPer1M": 0.11,
-        "completionPer1M": 0.33,
-        "avgPer1M": 0.22
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "DeepSeek V4 Flash 0731 is a sparse mixture-of-experts model from DeepSeek, with 13B active parameters out of 284B total. This re-post-trained revision is suited for coding, reasoning, and agent workfl"
-    },
-    {
       "id": "deepseek/deepseek-v4-flash-vision-exp",
       "name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
       "provider": "deepseek",
@@ -1245,22 +1277,6 @@
         "promptPer1M": 0.22,
         "completionPer1M": 0.66,
         "avgPer1M": 0.44
-      },
-      "architecture": "text+image->text",
-      "multimodal": true,
-      "description": "DeepSeek V4 Flash Vision Exp is an experimental vision-enabled version of [DeepSeek V4 Flash 0731](https://openrouter.ai/deepseek/deepseek-v4-flash-0731) from DeepSeek, adding image understanding whil"
-    },
-    {
-      "id": "deepseek/deepseek-v4-flash-vision-exp:batch",
-      "name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
-      "provider": "deepseek",
-      "created": 1787311563,
-      "contextLength": 1048576,
-      "maxCompletionTokens": 943718,
-      "pricing": {
-        "promptPer1M": 0.11,
-        "completionPer1M": 0.33,
-        "avgPer1M": 0.22
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -1299,32 +1315,32 @@
       "description": "DeepSeek V4 Pro 0813 is a large-scale mixture-of-experts model from DeepSeek. This is the GA release of DeepSeek V4 Pro."
     },
     {
-      "id": "deepseek/deepseek-v4-pro-0813:batch",
-      "name": "DeepSeek: DeepSeek V4 Pro 0813",
-      "provider": "deepseek",
-      "created": 1786549364,
-      "contextLength": 1048576,
-      "maxCompletionTokens": 943718,
-      "pricing": {
-        "promptPer1M": 0.66,
-        "completionPer1M": 1.98,
-        "avgPer1M": 1.32
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "DeepSeek V4 Pro 0813 is a large-scale mixture-of-experts model from DeepSeek. This is the GA release of DeepSeek V4 Pro."
-    },
-    {
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "provider": "deepseek",
       "created": 1789021285,
       "contextLength": 1048576,
-      "maxCompletionTokens": 384000,
+      "maxCompletionTokens": 943718,
       "pricing": {
-        "promptPer1M": 0.3,
-        "completionPer1M": 1.2,
-        "avgPer1M": 0.75
+        "promptPer1M": 0.04,
+        "completionPer1M": 0.64,
+        "avgPer1M": 0.34
+      },
+      "architecture": "text+image->text",
+      "multimodal": true,
+      "description": "DeepSeek V4.1 Flash is a sparse mixture-of-experts model from DeepSeek, and the first built on the company's Causal Encoder-Decoder (CED) architecture. It activates 8B parameters on input and 16B on.."
+    },
+    {
+      "id": "deepseek/deepseek-v4.1-flash:batch",
+      "name": "DeepSeek: DeepSeek V4.1 Flash",
+      "provider": "deepseek",
+      "created": 1789021285,
+      "contextLength": 1048576,
+      "maxCompletionTokens": 131072,
+      "pricing": {
+        "promptPer1M": 0.11,
+        "completionPer1M": 0.34,
+        "avgPer1M": 0.22
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -2131,22 +2147,6 @@
       "description": "Schematron V2 Turbo is a 3B-parameter HTML-to-JSON extraction model from Inference.net. It prioritizes throughput for high-volume extraction workloads. Extraction instructions must be supplied through"
     },
     {
-      "id": "kwaipilot/kat-coder-pro-v2",
-      "name": "Kwaipilot: KAT-Coder-Pro V2",
-      "provider": "kwaipilot",
-      "created": 1774649310,
-      "contextLength": 262144,
-      "maxCompletionTokens": 144000,
-      "pricing": {
-        "promptPer1M": 0.3,
-        "completionPer1M": 1.2,
-        "avgPer1M": 0.75
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "KAT-Coder-Pro V2 is the latest high-performance model in KwaiKAT’s KAT-Coder series, designed for complex enterprise-grade software engineering and SaaS integration. It builds on the agentic coding st"
-    },
-    {
       "id": "kwaipilot/kat-coder-pro-v2.5",
       "name": "Kwaipilot: KAT-Coder-Pro V2.5",
       "provider": "kwaipilot",
@@ -2205,22 +2205,6 @@
         "promptPer1M": 0.3,
         "completionPer1M": 1.2,
         "avgPer1M": 0.75
-      },
-      "architecture": "text+image->text",
-      "multimodal": true,
-      "description": "Muse Glimmer 30B is a dense, open-weight multimodal model from Meta Superintelligence Labs, distilled from Muse Spark and optimized for autonomous agents on consumer hardware. It is suited for long-ho"
-    },
-    {
-      "id": "meta/muse-glimmer-30b:batch",
-      "name": "Meta: Muse Glimmer 30B",
-      "provider": "meta",
-      "created": 1786302394,
-      "contextLength": 131072,
-      "maxCompletionTokens": 117964,
-      "pricing": {
-        "promptPer1M": 0.18,
-        "completionPer1M": 0.75,
-        "avgPer1M": 0.46
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -3067,8 +3051,8 @@
       "maxCompletionTokens": 235929,
       "pricing": {
         "promptPer1M": 0.71,
-        "completionPer1M": 3.21,
-        "avgPer1M": 1.96
+        "completionPer1M": 3.3,
+        "avgPer1M": 2
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -3085,6 +3069,22 @@
         "promptPer1M": 3,
         "completionPer1M": 15,
         "avgPer1M": 9
+      },
+      "architecture": "text+image+video->text",
+      "multimodal": true,
+      "description": "Kimi K3 is a 2.8T parameter open-weight multimodal reasoning model from Moonshot AI. It is suited for complex coding, knowledge work, and long-horizon agentic workflows, and is particularly strong at."
+    },
+    {
+      "id": "moonshotai/kimi-k3:batch",
+      "name": "MoonshotAI: Kimi K3",
+      "provider": "moonshotai",
+      "created": 1784215858,
+      "contextLength": 1048576,
+      "maxCompletionTokens": 16384,
+      "pricing": {
+        "promptPer1M": 2.28,
+        "completionPer1M": 11.4,
+        "avgPer1M": 6.84
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -4499,6 +4499,134 @@
       "description": "GPT-6 Astra Pro is the same underlying model as [GPT-6 Astra](https://openrouter.ai/openai/gpt-6-astra), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n\nLearn"
     },
     {
+      "id": "openai/gpt-6-luna",
+      "name": "OpenAI: GPT-6 Luna",
+      "provider": "openai",
+      "created": 1790100786,
+      "contextLength": 1050000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 0.1,
+        "completionPer1M": 0.5,
+        "avgPer1M": 0.3
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-6 Luna is the fast, cost-efficient model in OpenAI's GPT-6 series, positioned below GPT-6 Sol. It is suited for high-volume and latency-sensitive workloads such as chat, classification, and lightw"
+    },
+    {
+      "id": "openai/gpt-6-luna:batch",
+      "name": "OpenAI: GPT-6 Luna",
+      "provider": "openai",
+      "created": 1790100786,
+      "contextLength": 1050000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 0.05,
+        "completionPer1M": 0.25,
+        "avgPer1M": 0.15
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-6 Luna is the fast, cost-efficient model in OpenAI's GPT-6 series, positioned below GPT-6 Sol. It is suited for high-volume and latency-sensitive workloads such as chat, classification, and lightw"
+    },
+    {
+      "id": "openai/gpt-6-luna-pro",
+      "name": "OpenAI: GPT-6 Luna Pro",
+      "provider": "openai",
+      "created": 1790100791,
+      "contextLength": 1050000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 0.1,
+        "completionPer1M": 0.5,
+        "avgPer1M": 0.3
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-6 Luna Pro is the same underlying model as [GPT-6 Luna](https://openrouter.ai/openai/gpt-6-luna), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n\nLearn mo"
+    },
+    {
+      "id": "openai/gpt-6-luna-pro:batch",
+      "name": "OpenAI: GPT-6 Luna Pro",
+      "provider": "openai",
+      "created": 1790100791,
+      "contextLength": 1050000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 0.05,
+        "completionPer1M": 0.25,
+        "avgPer1M": 0.15
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-6 Luna Pro is the same underlying model as [GPT-6 Luna](https://openrouter.ai/openai/gpt-6-luna), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n\nLearn mo"
+    },
+    {
+      "id": "openai/gpt-6-sol",
+      "name": "OpenAI: GPT-6 Sol",
+      "provider": "openai",
+      "created": 1790100775,
+      "contextLength": 1050000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 2,
+        "completionPer1M": 10,
+        "avgPer1M": 6
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-6 Sol is the cost-efficient high-end model in OpenAI's GPT-6 series, positioned below the flagship GPT-6 Astra and above the fast GPT-6 Luna tier. It is suited for demanding professional..."
+    },
+    {
+      "id": "openai/gpt-6-sol:batch",
+      "name": "OpenAI: GPT-6 Sol",
+      "provider": "openai",
+      "created": 1790100775,
+      "contextLength": 1050000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 1,
+        "completionPer1M": 5,
+        "avgPer1M": 3
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-6 Sol is the cost-efficient high-end model in OpenAI's GPT-6 series, positioned below the flagship GPT-6 Astra and above the fast GPT-6 Luna tier. It is suited for demanding professional..."
+    },
+    {
+      "id": "openai/gpt-6-sol-pro",
+      "name": "OpenAI: GPT-6 Sol Pro",
+      "provider": "openai",
+      "created": 1790100781,
+      "contextLength": 1050000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 2,
+        "completionPer1M": 10,
+        "avgPer1M": 6
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-6 Sol Pro is the same underlying model as [GPT-6 Sol](https://openrouter.ai/openai/gpt-6-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n\nLearn more "
+    },
+    {
+      "id": "openai/gpt-6-sol-pro:batch",
+      "name": "OpenAI: GPT-6 Sol Pro",
+      "provider": "openai",
+      "created": 1790100781,
+      "contextLength": 1050000,
+      "maxCompletionTokens": 128000,
+      "pricing": {
+        "promptPer1M": 1,
+        "completionPer1M": 5,
+        "avgPer1M": 3
+      },
+      "architecture": "text+image+file->text",
+      "multimodal": true,
+      "description": "GPT-6 Sol Pro is the same underlying model as [GPT-6 Sol](https://openrouter.ai/openai/gpt-6-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n\nLearn more "
+    },
+    {
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "provider": "openai",
@@ -4520,11 +4648,27 @@
       "provider": "openai",
       "created": 1754414229,
       "contextLength": 131072,
+      "maxCompletionTokens": 32768,
+      "pricing": {
+        "promptPer1M": 0.02,
+        "completionPer1M": 0.09,
+        "avgPer1M": 0.05
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "gpt-oss-20b is an open-weight 21B parameter model released by OpenAI under the Apache 2.0 license. It uses a Mixture-of-Experts (MoE) architecture with 3.6B active parameters per forward pass, optimiz"
+    },
+    {
+      "id": "openai/gpt-oss-20b:batch",
+      "name": "OpenAI: gpt-oss-20b",
+      "provider": "openai",
+      "created": 1754414229,
+      "contextLength": 131072,
       "maxCompletionTokens": 117964,
       "pricing": {
-        "promptPer1M": 0.03,
-        "completionPer1M": 0.13,
-        "avgPer1M": 0.08
+        "promptPer1M": 0.02,
+        "completionPer1M": 0.11,
+        "avgPer1M": 0.07
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -5464,11 +5608,11 @@
       "provider": "qwen",
       "created": 1777255064,
       "contextLength": 262144,
-      "maxCompletionTokens": 65536,
+      "maxCompletionTokens": 262140,
       "pricing": {
-        "promptPer1M": 0.3,
-        "completionPer1M": 2,
-        "avgPer1M": 1.15
+        "promptPer1M": 0.32,
+        "completionPer1M": 2.7,
+        "avgPer1M": 1.51
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -5649,6 +5793,22 @@
       "architecture": "text+image+video->text",
       "multimodal": true,
       "description": "Qwen3.8 Max 0902 is an updated snapshot of Qwen3.8 Max from Alibaba's Qwen team. It is a 2.4-trillion-parameter mixture-of-experts model that accepts text, image, and video input and returns text,..."
+    },
+    {
+      "id": "qwen/qwen3.8-omni-flash",
+      "name": "Qwen: Qwen3.8 Omni Flash",
+      "provider": "qwen",
+      "created": 1789959954,
+      "contextLength": 1000000,
+      "maxCompletionTokens": 131072,
+      "pricing": {
+        "promptPer1M": 0.15,
+        "completionPer1M": 0.47,
+        "avgPer1M": 0.31
+      },
+      "architecture": "text+image+audio+video->text",
+      "multimodal": true,
+      "description": "Qwen3.8 Omni Flash is an omni-modal reasoning model from Alibaba, the first Qwen model built around agentic capabilities with native audio-video understanding. It is suited for audio-video analysis an"
     },
     {
       "id": "qwen/qwen-2.5-72b-instruct",
@@ -6547,22 +6707,6 @@
       "description": "GLM 5.2 is a large-scale reasoning model from Z.ai. It supports text input and output with a 1M-token context window, and is suited for long-horizon agent workflows, project-level software engineering"
     },
     {
-      "id": "z-ai/glm-5.2:batch",
-      "name": "Z.ai: GLM 5.2",
-      "provider": "z-ai",
-      "created": 1781631930,
-      "contextLength": 1048576,
-      "maxCompletionTokens": 943718,
-      "pricing": {
-        "promptPer1M": 0.7,
-        "completionPer1M": 2.2,
-        "avgPer1M": 1.45
-      },
-      "architecture": "text->text",
-      "multimodal": false,
-      "description": "GLM 5.2 is a large-scale reasoning model from Z.ai. It supports text input and output with a 1M-token context window, and is suited for long-horizon agent workflows, project-level software engineering"
-    },
-    {
       "id": "z-ai/glm-5.3",
       "name": "Z.ai: GLM 5.3",
       "provider": "z-ai",
@@ -6584,11 +6728,11 @@
       "provider": "z-ai",
       "created": 1787086655,
       "contextLength": 1048576,
-      "maxCompletionTokens": 943718,
+      "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.7,
-        "completionPer1M": 2.2,
-        "avgPer1M": 1.45
+        "promptPer1M": 0.72,
+        "completionPer1M": 2.4,
+        "avgPer1M": 1.56
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -6616,11 +6760,11 @@
       "provider": "z-ai",
       "created": 1787752741,
       "contextLength": 1048576,
-      "maxCompletionTokens": 943718,
+      "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.08,
-        "completionPer1M": 0.25,
-        "avgPer1M": 0.16
+        "promptPer1M": 0.06,
+        "completionPer1M": 0.2,
+        "avgPer1M": 0.13
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
