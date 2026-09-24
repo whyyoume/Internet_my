@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-23T06:55:13.249Z",
-  "total": 425,
+  "updatedAt": "2026-09-24T06:54:21.930Z",
+  "total": 429,
   "models": [
     {
       "id": "~anthropic/claude-fable-latest",
@@ -75,8 +75,8 @@
       "maxCompletionTokens": 943718,
       "pricing": {
         "promptPer1M": 0.04,
-        "completionPer1M": 0.64,
-        "avgPer1M": 0.34
+        "completionPer1M": 1,
+        "avgPer1M": 0.52
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -88,11 +88,11 @@
       "provider": "~deepseek",
       "created": 1789399174,
       "contextLength": 1048576,
-      "maxCompletionTokens": 384000,
+      "maxCompletionTokens": 943718,
       "pricing": {
-        "promptPer1M": 0.4,
-        "completionPer1M": 4.3,
-        "avgPer1M": 2.35
+        "promptPer1M": 0.39,
+        "completionPer1M": 2.9,
+        "avgPer1M": 1.65
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -107,8 +107,8 @@
       "maxCompletionTokens": 943718,
       "pricing": {
         "promptPer1M": 0.03,
-        "completionPer1M": 0.8,
-        "avgPer1M": 0.42
+        "completionPer1M": 0.32,
+        "avgPer1M": 0.18
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -154,9 +154,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 943718,
       "pricing": {
-        "promptPer1M": 1.19,
-        "completionPer1M": 14.5,
-        "avgPer1M": 7.85
+        "promptPer1M": 1.4,
+        "completionPer1M": 10.75,
+        "avgPer1M": 6.08
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -264,11 +264,11 @@
       "provider": "~z-ai",
       "created": 1787817633,
       "contextLength": 1310720,
-      "maxCompletionTokens": 131072,
+      "maxCompletionTokens": 128000,
       "pricing": {
-        "promptPer1M": 0.08,
-        "completionPer1M": 0.25,
-        "avgPer1M": 0.16
+        "promptPer1M": 0.05,
+        "completionPer1M": 0.14,
+        "avgPer1M": 0.09
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -289,6 +289,38 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "This model always redirects to the latest GLM model from Z.ai."
+    },
+    {
+      "id": "aion-labs/aion-3.5",
+      "name": "AionLabs: Aion 3.5",
+      "provider": "aion-labs",
+      "created": 1790170961,
+      "contextLength": 262144,
+      "maxCompletionTokens": 32768,
+      "pricing": {
+        "promptPer1M": 3,
+        "completionPer1M": 6,
+        "avgPer1M": 4.5
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "Aion 3.5 is a multi-model roleplaying and storytelling system from AionLabs, built on the GLM family of models. It uses a collaborative generation process in which multiple specialized models each..."
+    },
+    {
+      "id": "aion-labs/aion-3.5-mini",
+      "name": "AionLabs: Aion 3.5 Mini",
+      "provider": "aion-labs",
+      "created": 1790170962,
+      "contextLength": 262144,
+      "maxCompletionTokens": 32768,
+      "pricing": {
+        "promptPer1M": 0.7,
+        "completionPer1M": 1.4,
+        "avgPer1M": 1.05
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "Aion 3.5 Mini is a multi-model roleplaying and storytelling system from AionLabs, built on the GLM family of models. It is the smaller, lower-cost sibling of Aion 3.5 and uses..."
     },
     {
       "id": "aion-labs/aion-2.0",
@@ -1258,9 +1290,9 @@
       "contextLength": 1310720,
       "maxCompletionTokens": 943718,
       "pricing": {
-        "promptPer1M": 0.04,
-        "completionPer1M": 0.64,
-        "avgPer1M": 0.34
+        "promptPer1M": 0.03,
+        "completionPer1M": 0.32,
+        "avgPer1M": 0.18
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1290,9 +1322,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 384000,
       "pricing": {
-        "promptPer1M": 0.96,
-        "completionPer1M": 1.91,
-        "avgPer1M": 1.43
+        "promptPer1M": 0.94,
+        "completionPer1M": 1.88,
+        "avgPer1M": 1.41
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1306,9 +1338,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 384000,
       "pricing": {
-        "promptPer1M": 1.32,
-        "completionPer1M": 3.96,
-        "avgPer1M": 2.64
+        "promptPer1M": 0.46,
+        "completionPer1M": 1.39,
+        "avgPer1M": 0.92
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1320,11 +1352,11 @@
       "provider": "deepseek",
       "created": 1789021285,
       "contextLength": 1048576,
-      "maxCompletionTokens": 943718,
+      "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.04,
-        "completionPer1M": 0.64,
-        "avgPer1M": 0.34
+        "promptPer1M": 0.14,
+        "completionPer1M": 0.42,
+        "avgPer1M": 0.28
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -1393,6 +1425,22 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "DeepSeek R1 Distill Llama 70B is a distilled large language model based on [Llama-3.3-70B-Instruct](/meta-llama/llama-3.3-70b-instruct), using outputs from [DeepSeek R1](/deepseek/deepseek-r1). The mo"
+    },
+    {
+      "id": "fireworks/ember-1",
+      "name": "Fireworks: Ember-1",
+      "provider": "fireworks",
+      "created": 1790208461,
+      "contextLength": 1048576,
+      "maxCompletionTokens": 943718,
+      "pricing": {
+        "promptPer1M": 3,
+        "completionPer1M": 15,
+        "avgPer1M": 9
+      },
+      "architecture": "text+image->text",
+      "multimodal": true,
+      "description": "Ember-1 is a specialized reasoning model from Fireworks Research, built on [Kimi K3](https://openrouter.ai/moonshotai/kimi-k3). It is designed to make every token go further: it produces shorter reaso"
     },
     {
       "id": "google/gemini-2.5-flash",
@@ -2103,7 +2151,7 @@
       "name": "inclusionAI: Ling 3.0 Flash VL",
       "provider": "inclusionai",
       "created": 1789056114,
-      "contextLength": 131072,
+      "contextLength": 262144,
       "maxCompletionTokens": 32768,
       "pricing": {
         "promptPer1M": 0.06,
@@ -2472,11 +2520,11 @@
       "provider": "minimax",
       "created": 1761252093,
       "contextLength": 204800,
-      "maxCompletionTokens": 131072,
+      "maxCompletionTokens": 176947,
       "pricing": {
-        "promptPer1M": 0.26,
-        "completionPer1M": 1.02,
-        "avgPer1M": 0.64
+        "promptPer1M": 0.3,
+        "completionPer1M": 1.2,
+        "avgPer1M": 0.75
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -2641,22 +2689,6 @@
       "architecture": "text+file->text",
       "multimodal": true,
       "description": "Mistral's cutting-edge language model for coding released end of July 2025. Codestral specializes in low-latency, high-frequency tasks such as fill-in-the-middle (FIM), code correction and test genera"
-    },
-    {
-      "id": "mistralai/devstral-2512",
-      "name": "Mistral: Devstral 2 2512",
-      "provider": "mistralai",
-      "created": 1765285419,
-      "contextLength": 262144,
-      "maxCompletionTokens": 209715,
-      "pricing": {
-        "promptPer1M": 0.4,
-        "completionPer1M": 2,
-        "avgPer1M": 1.2
-      },
-      "architecture": "text+file->text",
-      "multimodal": true,
-      "description": "Devstral 2 is a state-of-the-art open-source model by Mistral AI specializing in agentic coding. It is a 123B-parameter dense transformer model supporting a 256K context window. Devstral 2 supports ex"
     },
     {
       "id": "mistralai/ministral-14b-2512",
@@ -3123,38 +3155,6 @@
       "description": "Morph's high-accuracy apply model for complex code edits. ~4,500 tokens/sec with 98% accuracy for precise code transformations. The model requires the prompt to be in the following format: <instructio"
     },
     {
-      "id": "nex-agi/nex-n2.5-mini",
-      "name": "Nex AGI: Nex-N2.5-Mini",
-      "provider": "nex-agi",
-      "created": 1788890061,
-      "contextLength": 262144,
-      "maxCompletionTokens": 235929,
-      "pricing": {
-        "promptPer1M": 0.03,
-        "completionPer1M": 0.1,
-        "avgPer1M": 0.06
-      },
-      "architecture": "text+image->text",
-      "multimodal": true,
-      "description": "Nex-N2.5 is an agentic model built to turn goals into working, verified outcomes. Its core strength is agentic coding within a visual feedback loop: it can explore codebases, implement multi-file..."
-    },
-    {
-      "id": "nex-agi/nex-n2.5-pro",
-      "name": "Nex AGI: Nex-N2.5-Pro",
-      "provider": "nex-agi",
-      "created": 1788890050,
-      "contextLength": 262144,
-      "maxCompletionTokens": 235929,
-      "pricing": {
-        "promptPer1M": 0.08,
-        "completionPer1M": 0.25,
-        "avgPer1M": 0.16
-      },
-      "architecture": "text+image->text",
-      "multimodal": true,
-      "description": "Nex-N2.5 is an agentic model built to turn goals into working, verified outcomes. Its core strength is agentic coding within a visual feedback loop: it can explore codebases, implement multi-file..."
-    },
-    {
       "id": "nousresearch/hermes-3-llama-3.1-405b",
       "name": "Nous: Hermes 3 405B Instruct",
       "provider": "nousresearch",
@@ -3272,9 +3272,9 @@
       "provider": "nvidia",
       "created": 1786452751,
       "contextLength": 262144,
-      "maxCompletionTokens": 235929,
+      "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.07,
+        "promptPer1M": 0.08,
         "completionPer1M": 0.2,
         "avgPer1M": 0.14
       },
@@ -4643,6 +4643,22 @@
       "description": "gpt-oss-120b is an open-weight, 117B-parameter Mixture-of-Experts (MoE) language model from OpenAI designed for high-reasoning, agentic, and general-purpose production use cases. It activates 5.1B par"
     },
     {
+      "id": "openai/gpt-oss-120b:batch",
+      "name": "OpenAI: gpt-oss-120b",
+      "provider": "openai",
+      "created": 1754414231,
+      "contextLength": 131072,
+      "maxCompletionTokens": 117964,
+      "pricing": {
+        "promptPer1M": 0.03,
+        "completionPer1M": 0.14,
+        "avgPer1M": 0.08
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "gpt-oss-120b is an open-weight, 117B-parameter Mixture-of-Experts (MoE) language model from OpenAI designed for high-reasoning, agentic, and general-purpose production use cases. It activates 5.1B par"
+    },
+    {
       "id": "openai/gpt-oss-20b",
       "name": "OpenAI: gpt-oss-20b",
       "provider": "openai",
@@ -5160,11 +5176,11 @@
       "provider": "qwen",
       "created": 1753806965,
       "contextLength": 262144,
-      "maxCompletionTokens": 32000,
+      "maxCompletionTokens": 235929,
       "pricing": {
-        "promptPer1M": 0.05,
-        "completionPer1M": 0.19,
-        "avgPer1M": 0.12
+        "promptPer1M": 0.1,
+        "completionPer1M": 0.3,
+        "avgPer1M": 0.2
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -5336,9 +5352,9 @@
       "provider": "qwen",
       "created": 1757612213,
       "contextLength": 262144,
-      "maxCompletionTokens": 16384,
+      "maxCompletionTokens": 235929,
       "pricing": {
-        "promptPer1M": 0.09,
+        "promptPer1M": 0.1,
         "completionPer1M": 1.1,
         "avgPer1M": 0.6
       },
@@ -5795,6 +5811,22 @@
       "description": "Qwen3.8 Max 0902 is an updated snapshot of Qwen3.8 Max from Alibaba's Qwen team. It is a 2.4-trillion-parameter mixture-of-experts model that accepts text, image, and video input and returns text,..."
     },
     {
+      "id": "qwen/qwen3.8-max-prime",
+      "name": "Qwen: Qwen3.8 Max Prime",
+      "provider": "qwen",
+      "created": 1790191228,
+      "contextLength": 1000000,
+      "maxCompletionTokens": 131072,
+      "pricing": {
+        "promptPer1M": 4,
+        "completionPer1M": 12,
+        "avgPer1M": 8
+      },
+      "architecture": "text+image+video->text",
+      "multimodal": true,
+      "description": "Qwen3.8 Max Prime is a higher-throughput variant of Qwen3.8 Max from Alibaba's Qwen team, served as a separate SKU at a higher price point. It accepts text, image, and video..."
+    },
+    {
       "id": "qwen/qwen3.8-omni-flash",
       "name": "Qwen: Qwen3.8 Omni Flash",
       "provider": "qwen",
@@ -6087,7 +6119,7 @@
       "name": "Tencent: Hy-MT2-30B-A3B",
       "provider": "tencent",
       "created": 1787231561,
-      "contextLength": 8192,
+      "contextLength": 32768,
       "maxCompletionTokens": 4096,
       "pricing": {
         "promptPer1M": 0.07,
@@ -6273,6 +6305,22 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "A recreation trial of the original MythoMax-L2-B13 but with updated models. #merge"
+    },
+    {
+      "id": "upstage/solar-mini4",
+      "name": "Upstage: Solar Mini 4",
+      "provider": "upstage",
+      "created": 1790160358,
+      "contextLength": 524288,
+      "maxCompletionTokens": 131072,
+      "pricing": {
+        "promptPer1M": 0.05,
+        "completionPer1M": 0.2,
+        "avgPer1M": 0.12
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "Solar Mini 4 is Upstage's compact, cost-efficient language model, a 35B-parameter mixture-of-experts with 3B active parameters and a 524K context window. It is built for agentic use cases where respon"
     },
     {
       "id": "upstage/solar-pro-3",
@@ -6730,9 +6778,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.72,
-        "completionPer1M": 2.4,
-        "avgPer1M": 1.56
+        "promptPer1M": 0.45,
+        "completionPer1M": 2,
+        "avgPer1M": 1.23
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -6785,6 +6833,22 @@
       "architecture": "text+image+video->text",
       "multimodal": true,
       "description": "GLM-5.3-FlashX is the high-speed variant of Z.ai's GLM-5.3-Flash, a native multimodal model delivering inference speeds of up to 200 tokens/s. Built on the same hybrid sparse and linear attention arch"
+    },
+    {
+      "id": "z-ai/glm-5.3-prime",
+      "name": "Z.ai: GLM 5.3 Prime",
+      "provider": "z-ai",
+      "created": 1790199651,
+      "contextLength": 1000000,
+      "maxCompletionTokens": 131072,
+      "pricing": {
+        "promptPer1M": 2.8,
+        "completionPer1M": 8.8,
+        "avgPer1M": 5.8
+      },
+      "architecture": "text->text",
+      "multimodal": false,
+      "description": "GLM-5.3-Prime is the high-speed variant of Z.ai's GLM-5.3, inheriting its full capabilities while delivering 1.5–2× the output throughput through inference acceleration. It supports text input and out"
     },
     {
       "id": "z-ai/glm-5v-turbo",
