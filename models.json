@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-25T06:48:50.080Z",
+  "updatedAt": "2026-09-26T06:48:34.673Z",
   "total": 431,
   "models": [
     {
@@ -72,11 +72,11 @@
       "provider": "~deepseek",
       "created": 1789399150,
       "contextLength": 1048576,
-      "maxCompletionTokens": 943718,
+      "maxCompletionTokens": 384000,
       "pricing": {
         "promptPer1M": 0.04,
-        "completionPer1M": 0.49,
-        "avgPer1M": 0.27
+        "completionPer1M": 0.29,
+        "avgPer1M": 0.16
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -90,7 +90,7 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 943718,
       "pricing": {
-        "promptPer1M": 0.26,
+        "promptPer1M": 0.25,
         "completionPer1M": 3.5,
         "avgPer1M": 1.88
       },
@@ -106,9 +106,9 @@
       "contextLength": 1310720,
       "maxCompletionTokens": 943718,
       "pricing": {
-        "promptPer1M": 0.03,
+        "promptPer1M": 0.02,
         "completionPer1M": 0.32,
-        "avgPer1M": 0.18
+        "avgPer1M": 0.17
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -154,9 +154,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 943718,
       "pricing": {
-        "promptPer1M": 0.88,
-        "completionPer1M": 10.53,
-        "avgPer1M": 5.71
+        "promptPer1M": 1.03,
+        "completionPer1M": 9.04,
+        "avgPer1M": 5.04
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -264,11 +264,11 @@
       "provider": "~z-ai",
       "created": 1787817633,
       "contextLength": 1310720,
-      "maxCompletionTokens": 128000,
+      "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.05,
-        "completionPer1M": 0.14,
-        "avgPer1M": 0.09
+        "promptPer1M": 0.04,
+        "completionPer1M": 0.5,
+        "avgPer1M": 0.27
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -282,9 +282,9 @@
       "contextLength": 1310720,
       "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.56,
-        "completionPer1M": 1.76,
-        "avgPer1M": 1.16
+        "promptPer1M": 0.47,
+        "completionPer1M": 1.49,
+        "avgPer1M": 0.98
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -481,22 +481,6 @@
       "architecture": "text->text",
       "multimodal": false,
       "description": "This is a series of models designed to replicate the prose quality of the Claude 3 models, specifically Sonnet(https://openrouter.ai/anthropic/claude-3.5-sonnet) and Opus(https://openrouter.ai/anthrop"
-    },
-    {
-      "id": "anthropic/claude-3-haiku",
-      "name": "Anthropic: Claude 3 Haiku",
-      "provider": "anthropic",
-      "created": 1710288000,
-      "contextLength": 200000,
-      "maxCompletionTokens": 4096,
-      "pricing": {
-        "promptPer1M": 0.25,
-        "completionPer1M": 1.25,
-        "avgPer1M": 0.75
-      },
-      "architecture": "text+image->text",
-      "multimodal": true,
-      "description": "Claude 3 Haiku is Anthropic's fastest and most compact model for\nnear-instant responsiveness. Quick and accurate targeted performance.\n\nSee the launch announcement and benchmark results [here](https:/"
     },
     {
       "id": "anthropic/claude-fable-5",
@@ -784,7 +768,7 @@
       },
       "architecture": "text+image+file->text",
       "multimodal": true,
-      "description": "Claude Opus 5 is Anthropic���s flagship model for demanding reasoning, coding, and long-horizon agentic work. It is particularly strong at end-to-end software tasks, code review and bug finding, visua"
+      "description": "Claude Opus 5 is Anthropic’s flagship model for demanding reasoning, coding, and long-horizon agentic work. It is particularly strong at end-to-end software tasks, code review and bug finding, visual "
     },
     {
       "id": "anthropic/claude-opus-5.5",
@@ -1275,7 +1259,7 @@
       "maxCompletionTokens": 384000,
       "pricing": {
         "promptPer1M": 0.05,
-        "completionPer1M": 0.1,
+        "completionPer1M": 0.09,
         "avgPer1M": 0.07
       },
       "architecture": "text->text",
@@ -1290,9 +1274,9 @@
       "contextLength": 1310720,
       "maxCompletionTokens": 943718,
       "pricing": {
-        "promptPer1M": 0.03,
+        "promptPer1M": 0.02,
         "completionPer1M": 0.32,
-        "avgPer1M": 0.18
+        "avgPer1M": 0.17
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1322,9 +1306,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 384000,
       "pricing": {
-        "promptPer1M": 0.78,
-        "completionPer1M": 1.57,
-        "avgPer1M": 1.18
+        "promptPer1M": 0.42,
+        "completionPer1M": 0.84,
+        "avgPer1M": 0.63
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1338,9 +1322,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 384000,
       "pricing": {
-        "promptPer1M": 0.46,
-        "completionPer1M": 1.39,
-        "avgPer1M": 0.92
+        "promptPer1M": 0.26,
+        "completionPer1M": 0.79,
+        "avgPer1M": 0.53
       },
       "architecture": "text->text",
       "multimodal": false,
@@ -1352,11 +1336,11 @@
       "provider": "deepseek",
       "created": 1789021285,
       "contextLength": 1048576,
-      "maxCompletionTokens": 393216,
+      "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.3,
-        "completionPer1M": 1.2,
-        "avgPer1M": 0.75
+        "promptPer1M": 0.14,
+        "completionPer1M": 0.42,
+        "avgPer1M": 0.28
       },
       "architecture": "text+image->text",
       "multimodal": true,
@@ -1914,9 +1898,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 235929,
       "pricing": {
-        "promptPer1M": 0.09,
-        "completionPer1M": 0.3,
-        "avgPer1M": 0.2
+        "promptPer1M": 0.07,
+        "completionPer1M": 0.22,
+        "avgPer1M": 0.15
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -2154,9 +2138,9 @@
       "contextLength": 262144,
       "maxCompletionTokens": 32768,
       "pricing": {
-        "promptPer1M": 0.06,
-        "completionPer1M": 0.18,
-        "avgPer1M": 0.12
+        "promptPer1M": 0.02,
+        "completionPer1M": 0.06,
+        "avgPer1M": 0.04
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -3130,9 +3114,9 @@
       "contextLength": 1048576,
       "maxCompletionTokens": 943718,
       "pricing": {
-        "promptPer1M": 0.88,
-        "completionPer1M": 10.53,
-        "avgPer1M": 5.71
+        "promptPer1M": 3,
+        "completionPer1M": 15,
+        "avgPer1M": 9
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -3303,7 +3287,7 @@
       "name": "NVIDIA: Nemotron 3.5 Lightning",
       "provider": "nvidia",
       "created": 1786452751,
-      "contextLength": 262144,
+      "contextLength": 1000000,
       "maxCompletionTokens": 131072,
       "pricing": {
         "promptPer1M": 0.08,
@@ -4931,6 +4915,22 @@
       "description": "Perceptron Mk1 (Mark One) is Perceptron's highest-quality vision-language model for video and embodied reasoning.** It accepts image and video inputs paired with natural language queries, and produces"
     },
     {
+      "id": "perceptron/perceptron-mk1.5",
+      "name": "Perceptron: Perceptron Mk1.5",
+      "provider": "perceptron",
+      "created": 1790352661,
+      "contextLength": 36864,
+      "maxCompletionTokens": 8192,
+      "pricing": {
+        "promptPer1M": 0.15,
+        "completionPer1M": 1.5,
+        "avgPer1M": 0.83
+      },
+      "architecture": "text+image+audio+video->text",
+      "multimodal": true,
+      "description": "Perceptron Mk1.5 is Perceptron's embodied reasoning model for physical agents. It accepts text, image, video, and audio input, and answers with text plus optional structured annotations: points, boxes"
+    },
+    {
       "id": "perplexity/sonar",
       "name": "Perplexity: Sonar",
       "provider": "perplexity",
@@ -5656,11 +5656,11 @@
       "provider": "qwen",
       "created": 1777255064,
       "contextLength": 262144,
-      "maxCompletionTokens": 262140,
+      "maxCompletionTokens": 81920,
       "pricing": {
         "promptPer1M": 0.32,
-        "completionPer1M": 2.7,
-        "avgPer1M": 1.51
+        "completionPer1M": 3.2,
+        "avgPer1M": 1.76
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
@@ -6279,7 +6279,7 @@
       "name": "Thinking Machines: Inkling",
       "provider": "thinkingmachines",
       "created": 1784325956,
-      "contextLength": 1048576,
+      "contextLength": 524288,
       "maxCompletionTokens": 471859,
       "pricing": {
         "promptPer1M": 1,
@@ -6295,7 +6295,7 @@
       "name": "Thinking Machines: Inkling Small",
       "provider": "thinkingmachines",
       "created": 1785443117,
-      "contextLength": 1048576,
+      "contextLength": 524288,
       "maxCompletionTokens": 262144,
       "pricing": {
         "promptPer1M": 0.45,
@@ -6583,7 +6583,7 @@
       "name": "Xiaomi: MiMo-V2.6-Pro",
       "provider": "xiaomi",
       "created": 1790021259,
-      "contextLength": 1048576,
+      "contextLength": 1050000,
       "maxCompletionTokens": 131072,
       "pricing": {
         "promptPer1M": 0.44,
@@ -6824,11 +6824,11 @@
       "provider": "z-ai",
       "created": 1787752741,
       "contextLength": 1310720,
-      "maxCompletionTokens": 128000,
+      "maxCompletionTokens": 131072,
       "pricing": {
-        "promptPer1M": 0.05,
-        "completionPer1M": 0.14,
-        "avgPer1M": 0.09
+        "promptPer1M": 0.04,
+        "completionPer1M": 0.5,
+        "avgPer1M": 0.27
       },
       "architecture": "text+image+video->text",
       "multimodal": true,
